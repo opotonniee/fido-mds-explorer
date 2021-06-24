@@ -1,5 +1,5 @@
-var mdsJson;
-var id = 1;
+let  mdsJson;
+let id = 1;
 
 function showAuthr(e, cell) {
   // name: e.target.textContent
@@ -18,11 +18,12 @@ $("#authr-close").click(function(){
 function corsUrl(url) {
   return "https://wtracks-cors-proxy.herokuapp.com/" + url;
 }
+let cors = location.hash == "#cors";
 
 $( function() {
 
-  let mdsUrl = corsUrl("https://mds.fidoalliance.org/");
-  $.get( mdsUrl, function( mdsJwt ) {
+  let mdsUrl = "https://mds.fidoalliance.org/";
+  $.get( cors ? mdsJwt : corsUrl(mdsUrl), function( mdsJwt ) {
     $("#mds-loading").hide();
     processMdsJwt(mdsJwt);
   });
