@@ -1,0 +1,135 @@
+html, body {
+  margin:0;
+}
+body {
+  margin: 0;
+  padding: 15px;
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-weight: bold;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  width: 100%;
+  margin: -15px 0 0 -15px;
+  padding: 15px;
+  background-color: lightsteelblue;
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 2px 1px #888;
+}
+
+
+h2 {
+  width: 100%;
+  margin: 10px 0 10px -15px;
+  padding: 5px;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgb(186, 186, 186);
+  box-shadow: 0 2px 2px 1px #888;
+}
+
+button, #file-label {
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 3px 8px;
+  margin: 2px;
+  background: #E4E4E4;
+  font-size: 13px;
+  text-align: center;
+}
+button:hover,
+#file-label:hover {
+  background-color: #c4e2a5;
+}
+input[type=text],
+input[type=password] {
+  padding: 1px;
+  margin: 0;
+  font-size: 13px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+button:active {
+  color: white;
+}
+#about {
+  float: right;
+}
+#about a {
+  color: white;
+  text-decoration: none;
+}
+
+.fold {
+  color: #1992ca;
+}
+
+.fold:hover {
+  cursor: pointer;
+}
+
+
+.centered {
+  text-align: center !important;
+}
+.disabled {
+  text-decoration: line-through;
+  color: gray;
+}
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+}
+input[type="checkbox"]:not(:checked) {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+input[type="checkbox"]:checked {
+  background: black;
+  color: white;
+  content: "X";
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* MDS */
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+#authr {
+  display: none;
+}
+footer {
+  color: grey;
+  font-size: 80%;
+  text-align: right;
+  margin-top: 10px;
+}
+.tabulator-cell img {
+  max-width: 100px;
+  max-height: 100px;
+}
