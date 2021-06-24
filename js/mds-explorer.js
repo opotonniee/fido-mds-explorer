@@ -20,6 +20,36 @@ function corsUrl(url) {
 }
 let cors = location.hash == "#cors";
 
+function filterCertif(headerValue, rowValue, rowData, filterParams) {
+  if (Array.isArray(headerValue) && headerValue.length == 1) {
+    headerValue = headerValue[0]
+  };
+  if (Array.isArray(headerValue) || (headerValue == "")) return true;
+  let matches = false;
+  $.each(rowValue, function(idx, val) {
+    if (val.status == headerValue) {
+      matches = true;
+    }
+  })
+  return matches;
+}
+
+function filterUV(headerValue, rowValue, rowData, filterParams) {
+  if (Array.isArray(headerValue) && headerValue.length == 1) {
+    headerValue = headerValue[0]
+  };
+  if (Array.isArray(headerValue) || (headerValue == "")) return true;
+  let matches = false;
+  $.each(rowValue, function(idx1, val1) {
+    $.each(val1, function(idx2, val2) {
+      if (val2.userVerificationMethod == headerValue) {
+        matches = true;
+      }
+    })
+  })
+  return matches;
+}
+
 $( function() {
 
   let mdsUrl = "https://mds.fidoalliance.org/";
@@ -45,29 +75,55 @@ $( function() {
     var table = new Tabulator("#mds-table", {
       data: mdsJson.entries,
       columns:[
-        {title:"#", formatter:function(cell, formatterParams, onRendered){ return id++; }},
-        {title:"Name", field:"metadataStatement.description", sorter:"string", headerFilter:true, cellClick:showAuthr},
-        {title:"Protocol", field:"metadataStatement.protocolFamily", sorter:"string", headerFilter:true},
-        //{title:"AAID", field:"aaid", sorter:"string", headerFilter:true},
-        {title:"Icon", field:"metadataStatement.icon", formatter:"image", witdh:150},
-        {title:"Certification", field:"statusReports", formatter:function(cell, formatterParams, onRendered){
-          let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) {res += sep + value.status; sep ="<br>"});
-          return res;
-        }},
-        {title:"User Verif.", field:"metadataStatement.userVerificationDetails", formatter:function(cell, formatterParams, onRendered){
-          let res = "", sep="";
-          $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"}) });
-          return res;
-        }},
-        {title:"Key Protection", field:"metadataStatement.keyProtection", formatter:function(cell, formatterParams, onRendered){
-          let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
-          return res;
-        }},
-        {title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110},
+        {
+          title:"#", formatter:function(cell, formatterParams, onRendered){ return id++; }
+        },
+        {
+          title:"Name", field:"metadataStatement.description", sorter:"string", headerFilter:true, cellClick: showAuthr
+        },
+        {
+          title:"Protocol", field:"metadataStatement.protocolFamily", sorter:"string", headerFilter:"select", 
+          headerFilterParams:{values:["","uaf", "u2f", "fido2"]}
+        },
+        {
+          title:"Icon", field:"metadataStatement.icon", formatter:"image", witdh:150
+        },
+        {
+          title:"Certification", field:"statusReports", formatter:function(cell, formatterParams, onRendered){
+            let res = "", sep="";
+            $.each(cell.getValue(), function(idx,value) {res += sep + value.status; sep ="<br>"});
+            return res;
+          }, headerFilter:"select", headerFilterParams:{values:["","NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"]},
+          headerFilterFunc:filterCertif
+        },
+        {
+          title:"User Verif.", field:"metadataStatement.userVerificationDetails", formatter:function(cell, formatterParams, onRendered){
+            let res = "", sep="";
+            $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"}) });
+            return res;
+          }, headerFilter:"select", headerFilterParams:{values:[
+            "", "presence_internal", "fingerprint_internal", "passcode_internal", "voiceprint_internal", "faceprint_internal", "location_internal",
+            "eyeprint_internal", "pattern_internal", "handprint_internal", "passcode_external", "pattern_external", "none", "all" ]},
+            headerFilterFunc:filterUV
+        },
+        {
+          title:"Attachment", field:"metadataStatement.attachmentHint", formatter:function(cell, formatterParams, onRendered){
+            let res = "", sep="";
+            $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
+            return res;
+          },  headerFilter:"select", headerFilterParams:{values:["", "internal", "external", "wired", "wireless", "nfc", "bluetooth", "network", "ready"]}
+        },
+        {
+          title:"Key Protection", field:"metadataStatement.keyProtection", formatter:function(cell, formatterParams, onRendered){
+            let res = "", sep="";
+            $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
+            return res;
+          },  headerFilter:"select", headerFilterParams:{values:["", "software", "hardware", "tee", "secure_element", "remote_handle" ]}
+        },
+        {
+          title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
+        },
     ]
     });
-  }
-
+  } 
 });
