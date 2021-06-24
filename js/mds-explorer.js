@@ -23,6 +23,7 @@ $( function() {
 
   let mdsUrl = corsUrl("https://mds.fidoalliance.org/");
   $.get( mdsUrl, function( mdsJwt ) {
+    $("#mds-loading").hide();
     processMdsJwt(mdsJwt);
   });
 
