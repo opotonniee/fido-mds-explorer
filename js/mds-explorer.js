@@ -23,7 +23,7 @@ let cors = location.hash == "#cors";
 $( function() {
 
   let mdsUrl = "https://mds.fidoalliance.org/";
-  $.get( cors ? mdsJwt : corsUrl(mdsUrl), function( mdsJwt ) {
+  $.get( cors ? mdsUrl : corsUrl(mdsUrl), function( mdsJwt ) {
     $("#mds-loading").hide();
     processMdsJwt(mdsJwt);
   });
