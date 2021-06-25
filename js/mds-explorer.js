@@ -50,12 +50,14 @@ function showAuthr(e, cell) {
   $("#mds").hide();
   $("#authr").show();
   $("#authr-json").html(stringify(cell.getData()));
+  history.pushState({}, "View", "#view")
 }
-
-$("#authr-close").click(function(){
+function closeAuthr(e) {
   $("#mds").show();
   $("#authr").hide();
-});
+}
+
+$("#authr-close").click(closeAuthr);
 
 function corsUrl(url) {
   return "https://wtracks-cors-proxy.herokuapp.com/" + url;
@@ -90,7 +92,7 @@ function filterUserVerifs(headerValue, rowValue, rowData, filterParams) {
   return isMatchingFilter(headerValue, values);
 }
 
-$( function() {
+$(function() {
 
   let mdsUrl = "https://mds.fidoalliance.org/";
   $.get( cors ? mdsUrl : corsUrl(mdsUrl), function( mdsJwt ) {
@@ -199,4 +201,11 @@ $( function() {
     });
     setTimeout(function() {id = 1; table.redraw(true)}, 100);
   }
+
+  $(window).on('popstate', function() {
+    if ($("#authr").is(":visible")) {
+      closeAuthr();
+    } 
+  });
+
 });
