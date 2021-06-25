@@ -133,3 +133,10 @@ footer {
   max-width: 100px;
   max-height: 50px;
 }
+.tabulator .tabulator-footer {
+  text-align: left;
+  color: #555;
+  white-space: nowrap;
+  font-style: italic;
+  font-weight: initial;
+}
