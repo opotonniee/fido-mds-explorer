@@ -199,7 +199,8 @@ $(function() {
       ],
       footerElement: "<span>" + mdsJson.legalHeader + "</span>"
     });
-    setTimeout(function() {id = 1; table.redraw(true)}, 100);
+
+    setTimeout(function() {id = 1; table.redraw(true)}, 500);
   }
 
   $(window).on('popstate', function() {
