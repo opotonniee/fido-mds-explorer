@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow every day at midnight
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out repository under $GITHUB_WORKSPACE
+      - uses: actions/checkout@v2
+
+      - name: get remote mds blob
+        run: |
+          wget -O mds.new https://mds.fidoalliance.org/ 
+          mv mds.new mds.blob
+
+      - name: commit blob if new
+        run: |
+          x="$(git diff | xargs)"
+          if [ "$x" != "" ]
+          then 
+            echo "MDS updated:"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add mds.blob
+            git commit -m "MDS updated"
+            git push
+          fi
