@@ -123,18 +123,12 @@ function filterUserVerifs(headerValue, rowValue, rowData, filterParams) {
 
 $(function() {
 
-  function corsUrl(url) {
-    return "https://wtracks-cors-proxy.herokuapp.com/" + url;
-  }
-  let cors = location.hash == "#cors";
-
   if (window.mdsJwt) {
     // already loaded
     processMdsJwt(mdsJwt);
   } else {
     // fetch mds blob
-    let mdsUrl = "https://mds.fidoalliance.org/";
-    $.get( cors ? mdsUrl : corsUrl(mdsUrl), function( mdsJwt ) {
+    $.get( "mds.blob", function( mdsJwt ) {
       processMdsJwt(mdsJwt);
     }).fail(function(jqXHR, textStatus, errorThrown) {
       $("#mds-loading").hide();
