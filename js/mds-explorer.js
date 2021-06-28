@@ -128,7 +128,7 @@ $(function() {
   }
   let cors = location.hash == "#cors";
 
-  if (mdsJwt) {
+  if (window.mdsJwt) {
     // already loaded
     processMdsJwt(mdsJwt);
   } else {
