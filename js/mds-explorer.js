@@ -1,36 +1,66 @@
+'use strict';
+
 let  mdsJson;
 let id = 1;
 let table;
+let cert;
 
-function type(obj) { 
-  return Object.prototype.toString.call(obj).match(/.* (.*)\]/)[1] 
+function type(obj) {
+  return Object.prototype.toString.call(obj).match(/.* (.*)\]/)[1]
 }
+
 function certificate(obj) {
-  let cert = decodeCert(obj)
-  return "<li>" + stringify(cert) + "</li>\n"
+  let certHtml = "<li><ul>";
+  try {
+    cert = new x509.X509Certificate(obj.trim()); // trim() to discard leading \n chars in same values
+    certHtml += stringify({ "Subject": cert.subject});
+    certHtml += stringify({ "Issuer": cert.issuer});
+    certHtml += stringify({ "Not Before": cert.notBefore});
+    certHtml += stringify({ "Not After": cert.notAfter});
+    certHtml += stringify({ "Serial Number": cert.serialNumber});
+    certHtml += stringify({ "Public Key": {
+      "Algorithm": cert.publicKey.algorithm,
+      "Value": cert.publicKey.rawData,
+    }});
+    certHtml += stringify({ "Signature": {
+      "Algorithm": cert.signatureAlgorithm,
+      "Value": cert.signature,
+    }});    
+  } catch (error) {
+    certHtml += error;
+  }
+  certHtml += "</ul></li>";
+  return certHtml;
 }
-function stringify(obj) { 
-  if (type(obj) === "Function") { 
-    return "<span>function</span>" 
-  } else if (type(obj) === "Undefined") { 
-    return "<span>undefined</span>" 
+
+function stringify(obj) {
+  if (type(obj) === "Function") {
+    return "<span>function</span>"
+  } else if (type(obj) === "Undefined") {
+    return "<span>undefined</span>"
   } else  if (type(obj) === "Null") {
-      return "<span>null</span>" 
-  } else if (type(obj) === "Number") { 
+    return "<span>null</span>"
+  } else if (type(obj) === "Number") {
     return obj
-  } else if (type(obj) === "String") { 
-    return '"' + obj + '"' 
-  } else if (type(obj) === "Array") { 
-    return '<ol>' + obj.map(function (o) { return "<li>" + stringify(o) + "</li>\n"}).join("") + '</ol>\n' 
+  } else if (type(obj) === "String") {
+    return '"' + obj + '"'
+  } else if (type(obj) === "Date") {
+    return '"' + obj.toGMTString() + '"';
+  } else if (type(obj) === "Array") {
+    return '<ol>' + obj.map(function (o) { return "<li>" + stringify(o) + "</li>\n"}).join("") + '</ol>\n'
+  } else if (type(obj)  === "ArrayBuffer") {
+    return [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('')
   } else if (type(obj) === "Object") {
     var result = [];
-    Object.keys(obj).forEach(function (key) { 
+    Object.keys(obj).forEach(function (key) {
       let val;
-      // specific decodings
+      // specific decodings:
 
+      // Icon
       if (key == "icon") {
         val = "<img src='" + obj[key] + "'/>"
-      
+
+      // Certificates
       } else if (key == "attestationRootCertificates") {
         val = '<ol>' + obj[key].map(function (o) { return certificate(o)}).join("") + '</ol>\n'
 
@@ -38,19 +68,23 @@ function stringify(obj) {
       } else {
         val = stringify(obj[key])
       }
-      if (val !== null) { 
+      if (val !== null) {
           result.push('<li><strong>' + key + '</strong>: ' + val + "</li>\n")
       }
     })
-    return "<ul>" + result.join("") + "</ul>\n" 
-  } 
+    return "<ul>" + result.join("") + "</ul>\n"
+  }
 }
 
-function showAuthr(e, cell) {
+
+function showAuthr(json) {
   $("#mds").hide();
   $("#authr").show();
-  $("#authr-json").html(stringify(cell.getData()));
-  history.pushState({}, "View", "#view")
+  $("#authr-json").html(stringify(json));
+}
+function clickAuthr(e, cell) {
+  showAuthr(cell.getData());
+  history.pushState({"authr": cell.getData()}, "View", "#view")
 }
 function closeAuthr(e) {
   $("#mds").show();
@@ -58,11 +92,6 @@ function closeAuthr(e) {
 }
 
 $("#authr-close").click(closeAuthr);
-
-function corsUrl(url) {
-  return "https://wtracks-cors-proxy.herokuapp.com/" + url;
-}
-let cors = location.hash == "#cors";
 
 function isMatchingFilter(headerValue, values) {
   if (Array.isArray(headerValue) && headerValue.length == 1) {
@@ -94,14 +123,30 @@ function filterUserVerifs(headerValue, rowValue, rowData, filterParams) {
 
 $(function() {
 
-  let mdsUrl = "https://mds.fidoalliance.org/";
-  $.get( cors ? mdsUrl : corsUrl(mdsUrl), function( mdsJwt ) {
-    $("#mds-loading").hide();
+  function corsUrl(url) {
+    return "https://wtracks-cors-proxy.herokuapp.com/" + url;
+  }
+  let cors = location.hash == "#cors";
+
+  if (mdsJwt) {
+    // already loaded
     processMdsJwt(mdsJwt);
-  });
+  } else {
+    // fetch mds blob
+    let mdsUrl = "https://mds.fidoalliance.org/";
+    $.get( cors ? mdsUrl : corsUrl(mdsUrl), function( mdsJwt ) {
+      processMdsJwt(mdsJwt);
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+      $("#mds-loading").hide();
+      $("#mds-error").show();
+      console.error(errorThrown);
+    });  
+  }
 
   function processMdsJwt(mdsJwt) {
-    // extract payload
+    $("#mds-loading").hide();
+    $("#mds").show();
+  // extract payload
     mdsJwt = mdsJwt.substring(mdsJwt.indexOf('.')+1, mdsJwt.lastIndexOf(".")) + "====";
     // size must be modulo 4
     let trim =  mdsJwt.length % 4;
@@ -109,7 +154,7 @@ $(function() {
     // decode base64
     mdsJwt = base64js.toByteArray(mdsJwt);
     let mdsJson = JSON.parse(String.fromCharCode.apply(String, mdsJwt));
-    
+
     // show JSON in console
     console.log(mdsJson);
 
@@ -120,42 +165,42 @@ $(function() {
       //responsiveLayout:"collapse",
       columns:[
         {
-          title: "#", 
+          title: "#",
           formatter: function(cell, formatterParams, onRendered){ return id++; }
         },
         {
-          title: "Name", 
-          field: "metadataStatement.description", 
-          sorter: "string", headerFilter:true, 
-          cellClick: showAuthr
+          title: "Name",
+          field: "metadataStatement.description",
+          sorter: "string", headerFilter:true,
+          cellClick: clickAuthr
         },
         {
-          title: "Protocol", 
-          field: "metadataStatement.protocolFamily", 
-          sorter: "string", 
-          headerFilter: "select", 
+          title: "Protocol",
+          field: "metadataStatement.protocolFamily",
+          sorter: "string",
+          headerFilter: "select",
           headerFilterParams: {values:["","uaf", "u2f", "fido2"]}
         },
         {
-          title: "Icon", 
-          field: "metadataStatement.icon", 
+          title: "Icon",
+          field: "metadataStatement.icon",
           formatter: "image"
         },
         {
-          title: "Certification", 
+          title: "Certification",
           field: "statusReports",
           formatter: function(cell, formatterParams, onRendered){
             let res = "", sep="";
             $.each(cell.getValue(), function(idx,value) {res += sep + value.status; sep ="<br>"});
             return res;
-          }, 
+          },
           headerFilter: "select",
           headerFilterParams: {values:["","NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"]},
           headerFilterFunc: filterCertifs
         },
         {
-          title: "User Verif.", 
-          field: "metadataStatement.userVerificationDetails", 
+          title: "User Verif.",
+          field: "metadataStatement.userVerificationDetails",
           formatter: function(cell, formatterParams, onRendered){
             let res = "", sep="";
             $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"}) });
@@ -203,10 +248,12 @@ $(function() {
     setTimeout(function() {id = 1; table.redraw(true)}, 500);
   }
 
-  $(window).on('popstate', function() {
+  window.addEventListener('popstate', (event) => {
     if ($("#authr").is(":visible")) {
       closeAuthr();
-    } 
+    } else if (event.state && event.state.authr) {
+      showAuthr(event.state.authr);
+    }
   });
 
 });
