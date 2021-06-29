@@ -128,7 +128,8 @@ $(function() {
     processMdsJwt(mdsJwt);
   } else {
     // fetch mds blob
-    $.get( "mds.blob", function( mdsJwt ) {
+    let url = location.hash == "#mds" ? "https://mds.fidoalliance.org/" : "./mds.blob"; 
+    $.get(url , function(mdsJwt) {
       processMdsJwt(mdsJwt);
     }).fail(function(jqXHR, textStatus, errorThrown) {
       $("#mds-loading").hide();
