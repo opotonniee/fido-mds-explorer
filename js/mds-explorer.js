@@ -148,7 +148,7 @@ $(function() {
     mdsJwt = mdsJwt.substring(0, mdsJwt.length- trim);
     // decode base64
     mdsJwt = base64js.toByteArray(mdsJwt);
-    let mdsJson = JSON.parse(String.fromCharCode.apply(String, mdsJwt));
+    let mdsJson = JSON.parse(new TextDecoder().decode(mdsJwt));
 
     // show JSON in console
     console.log(mdsJson);
