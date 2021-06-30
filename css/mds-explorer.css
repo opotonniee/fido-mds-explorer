@@ -123,6 +123,10 @@ pre {
 #authr, #mds, #mds-error {
   display: none;
 }
+.vendor {
+  font-style: italic;
+  color: #555;
+}
 footer {
   color: grey;
   font-size: 80%;
