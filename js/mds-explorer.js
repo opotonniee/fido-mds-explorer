@@ -110,8 +110,15 @@ function getVendor(aaid) {
 function certificate(obj) {
   let certHtml = "<li><ul>";
   try {
-    cert = new x509.X509Certificate(obj.trim()); // trim() to discard leading \n chars in same values
-    certHtml += stringify({ "Subject": cert.subject});
+    obj = obj.trim(); // trim() to discard leading \n chars in some mds values
+
+    cert = new x509.X509Certificate(obj);
+
+    let b64Cert = btoa(obj)
+    let decoderUrl = "https://gchq.github.io/CyberChef/#recipe=Parse_X.509_certificate('Base64')&input=" + b64Cert
+    let certSubject = '<a href="' + decoderUrl + '" target="blank">' + cert.subject + '</a>';
+
+    certHtml += stringify({ "Subject": certSubject});
     certHtml += stringify({ "Issuer": cert.issuer});
     certHtml += stringify({ "Not Before": cert.notBefore});
     certHtml += stringify({ "Not After": cert.notAfter});
