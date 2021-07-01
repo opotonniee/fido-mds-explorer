@@ -29,7 +29,7 @@ jobs:
 
       - name: commit blob if new
         run: |
-          x="$(git diff | xargs)"
+          x="$(git status -s | xargs)"
           if [ "$x" != "" ]
           then 
             echo "MDS updated:"
