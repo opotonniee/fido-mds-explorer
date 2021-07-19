@@ -130,7 +130,7 @@ function certificate(obj) {
     certHtml += stringify({ "Signature": {
       "Algorithm": cert.signatureAlgorithm,
       "Value": cert.signature,
-    }});    
+    }});
   } catch (error) {
     certHtml += error;
   }
@@ -239,14 +239,14 @@ $(function() {
     processMdsJwt(mdsJwt);
   } else {
     // fetch mds blob
-    let url = location.hash == "#mds" ? "https://mds.fidoalliance.org/" : "./mds.blob"; 
+    let url = location.hash == "#mds" ? "https://mds.fidoalliance.org/" : "./mds.blob";
     $.get(url , function(mdsJwt) {
       processMdsJwt(mdsJwt);
     }).fail(function(jqXHR, textStatus, errorThrown) {
       $("#mds-loading").hide();
       $("#mds-error").show();
       console.error(errorThrown);
-    });  
+    });
   }
 
   function processMdsJwt(mdsJwt) {
@@ -348,7 +348,7 @@ $(function() {
           title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
         },
       ],
-      footerElement: "<span>" + mdsJson.legalHeader + "</span>"
+      footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
     });
 
     setTimeout(function() {id = 1; table.redraw(true)}, 500);
