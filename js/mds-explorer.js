@@ -250,20 +250,27 @@ $(function() {
   }
 
   function processMdsJwt(mdsJwt) {
+
     $("#mds-loading").hide();
+
+    try {
+      // extract payload
+      let payloadB64 = mdsJwt.substring(mdsJwt.indexOf('.')+1, mdsJwt.lastIndexOf(".")) + "==";
+      // size must be modulo 4
+      let trim =  payloadB64.length % 4;
+      payloadB64 = payloadB64.substring(0, payloadB64.length - trim);
+      // decode base64
+      let payload = base64js.toByteArray(payloadB64);
+      mdsJson = JSON.parse(new TextDecoder().decode(payload));
+      // show JSON in console
+      console.log(mdsJson);
+    } catch (err) {
+      $("#mds-error").show();
+      console.error(err);
+      return;
+    }
+
     $("#mds").show();
-  // extract payload
-    mdsJwt = mdsJwt.substring(mdsJwt.indexOf('.')+1, mdsJwt.lastIndexOf(".")) + "====";
-    // size must be modulo 4
-    let trim =  mdsJwt.length % 4;
-    mdsJwt = mdsJwt.substring(0, mdsJwt.length- trim);
-    // decode base64
-    mdsJwt = base64js.toByteArray(mdsJwt);
-    mdsJson = JSON.parse(new TextDecoder().decode(mdsJwt));
-
-    // show JSON in console
-    console.log(mdsJson);
-
     // build authenticators table
     table = new Tabulator("#mds-table", {
       data: mdsJson.entries,
