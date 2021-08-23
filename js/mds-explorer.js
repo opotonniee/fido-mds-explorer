@@ -114,7 +114,7 @@ function certificate(obj) {
 
     cert = new x509.X509Certificate(obj);
 
-    let b64Cert = btoa(obj)
+    let b64Cert = encodeURIComponent(btoa(obj));
     let decoderUrl = "https://gchq.github.io/CyberChef/#recipe=Parse_X.509_certificate('Base64')&input=" + b64Cert
     let certSubject = '<a href="' + decoderUrl + '" target="blank">' + cert.subject + '</a>';
 
@@ -191,18 +191,18 @@ function stringify(obj) {
 function showAuthr(json) {
   $("#mds").hide();
   $("#authr").show();
+  $("#authr-name").text(json.metadataStatement.description)
   $("#authr-json").html(stringify(json));
 }
+
 function clickAuthr(e, cell) {
   showAuthr(cell.getData());
   history.pushState({"authr": cell.getData()}, "View", "#view")
 }
-function closeAuthr(e) {
-  $("#mds").show();
-  $("#authr").hide();
-}
 
-$("#authr-close").click(closeAuthr);
+$("#authr-close").click(function() {
+  history.back();
+});
 
 function isMatchingFilter(headerValue, values) {
   if (Array.isArray(headerValue) && headerValue.length == 1) {
@@ -275,6 +275,7 @@ $(function() {
     table = new Tabulator("#mds-table", {
       data: mdsJson.entries,
       layout:"fitDataFill",
+      selectable:false,
       //responsiveLayout:"collapse",
       columns:[
         {
@@ -285,6 +286,10 @@ $(function() {
           title: "Name",
           field: "metadataStatement.description",
           sorter: "string", headerFilter:true,
+          formatter: function(cell, formatterParams, onRendered){
+            let name = cell.getValue();
+            return `<span class='clickable'>${name}</a>`;
+          },
           cellClick: clickAuthr
         },
         {
@@ -363,7 +368,8 @@ $(function() {
 
   window.addEventListener('popstate', (event) => {
     if ($("#authr").is(":visible")) {
-      closeAuthr();
+      $("#mds").show();
+      $("#authr").hide();
     } else if (event.state && event.state.authr) {
       showAuthr(event.state.authr);
     }

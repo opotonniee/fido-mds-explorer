@@ -79,6 +79,12 @@ button:active {
   cursor: pointer;
 }
 
+.clickable, a {
+  color: #0783bd;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 .centered {
   text-align: center !important;
