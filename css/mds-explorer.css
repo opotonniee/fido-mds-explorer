@@ -150,3 +150,7 @@ footer {
   font-style: italic;
   font-weight: initial;
 }
+#authr-json img {
+  max-width: 100px;
+  max-height: 100px;
+}
