@@ -33,9 +33,21 @@ jobs:
           if [ "$x" != "" ]
           then 
             echo "MDS updated:"
+            cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
+            let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
+            echo ${b64Size}
+            echo $((${b64Size} % 4))
+            if [ "$((${b64Size} % 4))" == "2" ]
+            then
+              echo -n "==" >> mdsBody.b64
+            fi
+            base64 -d mdsBody.b64 | jq . > mdsBody.json
+            echo -n "let mdsJson=" > mds.js
+            cat mdsBody.json >> mds.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add mds.blob
+            git add mds.js
             git commit -m "MDS updated"
             git push
           fi
