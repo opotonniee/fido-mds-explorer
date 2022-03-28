@@ -1,6 +1,5 @@
 'use strict';
 
-let  mdsJson;
 let id = 1;
 let table;
 let cert;
@@ -234,137 +233,105 @@ function filterUserVerifs(headerValue, rowValue, rowData, filterParams) {
 
 $(function() {
 
-  if (window.mdsJwt) {
-    // already loaded
-    processMdsJwt(mdsJwt);
-  } else {
-    // fetch mds blob
-    let url = location.hash == "#mds" ? "https://mds.fidoalliance.org/" : "./mds.blob";
-    $.get(url , function(mdsJwt) {
-      processMdsJwt(mdsJwt);
-    }).fail(function(jqXHR, textStatus, errorThrown) {
-      $("#mds-loading").hide();
-      $("#mds-error").show();
-      console.error(errorThrown);
-    });
-  }
+  console.log(mdsJson);
 
-  function processMdsJwt(mdsJwt) {
+  $("#mds-loading").hide()
 
-    $("#mds-loading").hide();
+  $("#mds").show();
+  // build authenticators table
+  table = new Tabulator("#mds-table", {
+    data: mdsJson.entries,
+    layout:"fitDataFill",
+    selectable:false,
+    //responsiveLayout:"collapse",
+    columns:[
+      {
+        title: "#",
+        formatter: function(cell, formatterParams, onRendered){ return id++; }
+      },
+      {
+        title: "Name",
+        field: "metadataStatement.description",
+        sorter: "string", headerFilter:true,
+        formatter: function(cell, formatterParams, onRendered){
+          let name = cell.getValue();
+          return `<span class='clickable'>${name}</a>`;
+        },
+        cellClick: clickAuthr
+      },
+      {
+        title: "Protocol",
+        field: "metadataStatement.protocolFamily",
+        sorter: "string",
+        headerFilter: "select",
+        headerFilterParams: {values:["","uaf", "u2f", "fido2"]}
+      },
+      {
+        title: "Icon",
+        field: "metadataStatement.icon",
+        formatter: "image"
+      },
+      {
+        title: "Certification",
+        field: "statusReports",
+        formatter: function(cell, formatterParams, onRendered){
+          let res = "", sep="";
+          $.each(cell.getValue(), function(idx,value) {res += sep + value.status; sep ="<br>"});
+          return res;
+        },
+        headerFilter: "select",
+        headerFilterParams: {values:["","NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"]},
+        headerFilterFunc: filterCertifs
+      },
+      {
+        title: "User Verif.",
+        field: "metadataStatement.userVerificationDetails",
+        formatter: function(cell, formatterParams, onRendered){
+          let res = "", sep="";
+          $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"}) });
+          return res;
+        },
+        headerFilter: "select",
+        headerFilterParams: {
+          values:["", "presence_internal", "fingerprint_internal", "passcode_internal", "voiceprint_internal", "faceprint_internal", "location_internal",
+            "eyeprint_internal", "pattern_internal", "handprint_internal", "passcode_external", "pattern_external", "none", "all"]
+        },
+        headerFilterFunc: filterUserVerifs
+      },
+      {
+        title: "Attachment",
+        field: "metadataStatement.attachmentHint", formatter:function(cell, formatterParams, onRendered){
+          let res = "", sep="";
+          $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
+          return res;
+        },
+        headerFilter: "select",
+        headerFilterParams: {
+          values: ["", "internal", "external", "wired", "wireless", "nfc", "bluetooth", "network", "ready"]
+        }
+      },
+      {
+        title: "Key Protection",
+        field: "metadataStatement.keyProtection",
+        formatter: function(cell, formatterParams, onRendered){
+          let res = "", sep="";
+          $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
+          return res;
+        },
+        headerFilter: "select",
+        headerFilterParams: {
+          values: ["", "software", "hardware", "tee", "secure_element", "remote_handle" ]
+        }
+      },
+      {
+        title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
+      },
+    ],
+    footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
+  });
 
-    try {
-      // extract payload
-      let payloadB64 = mdsJwt.substring(mdsJwt.indexOf('.')+1, mdsJwt.lastIndexOf(".")) + "==";
-      // size must be modulo 4
-      let trim =  payloadB64.length % 4;
-      payloadB64 = payloadB64.substring(0, payloadB64.length - trim);
-      // decode base64
-      let payload = base64js.toByteArray(payloadB64);
-      mdsJson = JSON.parse(new TextDecoder().decode(payload));
-      // show JSON in console
-      console.log(mdsJson);
-    } catch (err) {
-      $("#mds-error").show();
-      console.error(err);
-      return;
-    }
+  setTimeout(function() {id = 1; table.redraw(true)}, 500);
 
-    $("#mds").show();
-    // build authenticators table
-    table = new Tabulator("#mds-table", {
-      data: mdsJson.entries,
-      layout:"fitDataFill",
-      selectable:false,
-      //responsiveLayout:"collapse",
-      columns:[
-        {
-          title: "#",
-          formatter: function(cell, formatterParams, onRendered){ return id++; }
-        },
-        {
-          title: "Name",
-          field: "metadataStatement.description",
-          sorter: "string", headerFilter:true,
-          formatter: function(cell, formatterParams, onRendered){
-            let name = cell.getValue();
-            return `<span class='clickable'>${name}</a>`;
-          },
-          cellClick: clickAuthr
-        },
-        {
-          title: "Protocol",
-          field: "metadataStatement.protocolFamily",
-          sorter: "string",
-          headerFilter: "select",
-          headerFilterParams: {values:["","uaf", "u2f", "fido2"]}
-        },
-        {
-          title: "Icon",
-          field: "metadataStatement.icon",
-          formatter: "image"
-        },
-        {
-          title: "Certification",
-          field: "statusReports",
-          formatter: function(cell, formatterParams, onRendered){
-            let res = "", sep="";
-            $.each(cell.getValue(), function(idx,value) {res += sep + value.status; sep ="<br>"});
-            return res;
-          },
-          headerFilter: "select",
-          headerFilterParams: {values:["","NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"]},
-          headerFilterFunc: filterCertifs
-        },
-        {
-          title: "User Verif.",
-          field: "metadataStatement.userVerificationDetails",
-          formatter: function(cell, formatterParams, onRendered){
-            let res = "", sep="";
-            $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"}) });
-            return res;
-          },
-          headerFilter: "select",
-          headerFilterParams: {
-            values:["", "presence_internal", "fingerprint_internal", "passcode_internal", "voiceprint_internal", "faceprint_internal", "location_internal",
-              "eyeprint_internal", "pattern_internal", "handprint_internal", "passcode_external", "pattern_external", "none", "all"]
-          },
-          headerFilterFunc: filterUserVerifs
-        },
-        {
-          title: "Attachment",
-          field: "metadataStatement.attachmentHint", formatter:function(cell, formatterParams, onRendered){
-            let res = "", sep="";
-            $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
-            return res;
-          },
-          headerFilter: "select",
-          headerFilterParams: {
-            values: ["", "internal", "external", "wired", "wireless", "nfc", "bluetooth", "network", "ready"]
-          }
-        },
-        {
-          title: "Key Protection",
-          field: "metadataStatement.keyProtection",
-          formatter: function(cell, formatterParams, onRendered){
-            let res = "", sep="";
-            $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
-            return res;
-          },
-          headerFilter: "select",
-          headerFilterParams: {
-            values: ["", "software", "hardware", "tee", "secure_element", "remote_handle" ]
-          }
-        },
-        {
-          title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
-        },
-      ],
-      footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
-    });
-
-    setTimeout(function() {id = 1; table.redraw(true)}, 500);
-  }
 
   window.addEventListener('popstate', (event) => {
     if ($("#authr").is(":visible")) {
