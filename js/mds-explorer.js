@@ -1,11 +1,12 @@
 'use strict';
+/* globals $, x509, mdsJson, Tabulator */
 
 let id = 1;
 let table;
 let cert;
 
 function type(obj) {
-  return Object.prototype.toString.call(obj).match(/.* (.*)\]/)[1]
+  return Object.prototype.toString.call(obj).match(/.* (.*)\]/)[1];
 }
 
 // CSV from http://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3
@@ -114,7 +115,7 @@ function certificate(obj) {
     cert = new x509.X509Certificate(obj);
 
     let b64Cert = encodeURIComponent(btoa(obj));
-    let decoderUrl = "https://gchq.github.io/CyberChef/#recipe=Parse_X.509_certificate('Base64')&input=" + b64Cert
+    let decoderUrl = "https://gchq.github.io/CyberChef/#recipe=Parse_X.509_certificate('Base64')&input=" + b64Cert;
     let certSubject = '<a href="' + decoderUrl + '" target="blank">' + cert.subject + '</a>';
 
     certHtml += stringify({ "Subject": certSubject});
@@ -139,21 +140,21 @@ function certificate(obj) {
 
 function stringify(obj) {
   if (type(obj) === "Function") {
-    return "<span>function</span>"
+    return "<span>function</span>";
   } else if (type(obj) === "Undefined") {
-    return "<span>undefined</span>"
+    return "<span>undefined</span>";
   } else  if (type(obj) === "Null") {
-    return "<span>null</span>"
+    return "<span>null</span>";
   } else if (type(obj) === "Number") {
-    return obj
+    return obj;
   } else if (type(obj) === "String") {
-    return '"' + obj + '"'
+    return '"' + obj + '"';
   } else if (type(obj) === "Date") {
     return '"' + obj.toGMTString() + '"';
   } else if (type(obj) === "Array") {
-    return '<ol>' + obj.map(function (o) { return "<li>" + stringify(o) + "</li>\n"}).join("") + '</ol>\n'
+    return '<ol>' + obj.map(function (o) { return "<li>" + stringify(o) + "</li>\n"; }).join("") + '</ol>\n';
   } else if (type(obj)  === "ArrayBuffer") {
-    return [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('')
+    return [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('');
   } else if (type(obj) === "Object") {
     var result = [];
     Object.keys(obj).forEach(function (key) {
@@ -163,11 +164,11 @@ function stringify(obj) {
 
       // Icon
       if (key == "icon") {
-        val = "<img src='" + obj[key] + "'/>"
+        val = "<img src='" + obj[key] + "'/>";
 
       // Certificates
       } else if (key == "attestationRootCertificates") {
-        val = '<ol>' + obj[key].map(function (o) { return certificate(o)}).join("") + '</ol>\n'
+        val = '<ol>' + obj[key].map(function (o) { return certificate(o); }).join("") + '</ol>\n';
 
       // AAID
       } else if (key == "aaid") {
@@ -175,14 +176,14 @@ function stringify(obj) {
 
       // generic decoding
       } else {
-        val = stringify(obj[key])
+        val = stringify(obj[key]);
       }
 
       if (val !== null) {
-          result.push('<li><strong>' + key + '</strong>: ' + val + "</li>\n")
+          result.push('<li><strong>' + key + '</strong>: ' + val + "</li>\n");
       }
-    })
-    return "<ul>" + result.join("") + "</ul>\n"
+    });
+    return "<ul>" + result.join("") + "</ul>\n";
   }
 }
 
@@ -190,13 +191,13 @@ function stringify(obj) {
 function showAuthr(json) {
   $("#mds").hide();
   $("#authr").show();
-  $("#authr-name").text(json.metadataStatement.description)
+  $("#authr-name").text(json.metadataStatement.description);
   $("#authr-json").html(stringify(json));
 }
 
 function clickAuthr(e, cell) {
   showAuthr(cell.getData());
-  history.pushState({"authr": cell.getData()}, "View", "#view")
+  history.pushState({"authr": cell.getData()}, "View", "#view");
 }
 
 $("#authr-close").click(function() {
@@ -206,18 +207,18 @@ $("#authr-close").click(function() {
 function isMatchingFilter(headerValue, values) {
   if (Array.isArray(headerValue) && headerValue.length == 1) {
     // array with single value, use it
-    headerValue = headerValue[0]
-  };
-  return Array.isArray(headerValue) // if multiple values (i.e. all): no filter
-          || (headerValue == "") // empty: no filter
-          || values.includes(headerValue); // ?
+    headerValue = headerValue[0];
+  }
+  return Array.isArray(headerValue) || // if multiple values (i.e. all): no filter
+          (headerValue == "") || // empty: no filter
+          values.includes(headerValue); // ?
 }
 
 function filterCertifs(headerValue, rowValue, rowData, filterParams) {
   let values = [];
   $.each(rowValue, function(idx, val) {
     values.push(val.status);
-  })
+  });
   return isMatchingFilter(headerValue, values);
 }
 
@@ -226,8 +227,8 @@ function filterUserVerifs(headerValue, rowValue, rowData, filterParams) {
   $.each(rowValue, function(idx1, val1) {
     $.each(val1, function(idx2, val2) {
       values.push(val2.userVerificationMethod);
-    })
-  })
+    });
+  });
   return isMatchingFilter(headerValue, values);
 }
 
@@ -235,7 +236,7 @@ $(function() {
 
   console.log(mdsJson);
 
-  $("#mds-loading").hide()
+  $("#mds-loading").hide();
 
   $("#mds").show();
   // build authenticators table
@@ -255,7 +256,7 @@ $(function() {
         sorter: "string", headerFilter:true,
         formatter: function(cell, formatterParams, onRendered){
           let name = cell.getValue();
-          return `<span class='clickable'>${name}</a>`;
+          return `<span class='clickable notranslate' translate='no'>${name}</a>`;
         },
         cellClick: clickAuthr
       },
@@ -276,7 +277,7 @@ $(function() {
         field: "statusReports",
         formatter: function(cell, formatterParams, onRendered){
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) {res += sep + value.status; sep ="<br>"});
+          $.each(cell.getValue(), function(idx,value) { res += sep + value.status; sep ="<br>"; });
           return res;
         },
         headerFilter: "select",
@@ -288,7 +289,7 @@ $(function() {
         field: "metadataStatement.userVerificationDetails",
         formatter: function(cell, formatterParams, onRendered){
           let res = "", sep="";
-          $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"}) });
+          $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"; }); });
           return res;
         },
         headerFilter: "select",
@@ -302,7 +303,7 @@ $(function() {
         title: "Attachment",
         field: "metadataStatement.attachmentHint", formatter:function(cell, formatterParams, onRendered){
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
+          $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
         },
         headerFilter: "select",
@@ -315,7 +316,7 @@ $(function() {
         field: "metadataStatement.keyProtection",
         formatter: function(cell, formatterParams, onRendered){
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) {res += sep + value; sep ="<br>"});
+          $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
         },
         headerFilter: "select",
@@ -330,7 +331,7 @@ $(function() {
     footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
   });
 
-  setTimeout(function() {id = 1; table.redraw(true)}, 500);
+  setTimeout(function() { id = 1; table.redraw(true); }, 500);
 
 
   window.addEventListener('popstate', (event) => {
