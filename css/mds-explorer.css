@@ -129,6 +129,12 @@ pre {
 #authr, #mds, #mds-error {
   display: none;
 }
+#authr-close {
+  cursor: pointer;
+}
+#authr-close:hover {
+  text-decoration: underline;
+}
 .vendor {
   font-style: italic;
   color: #555;
