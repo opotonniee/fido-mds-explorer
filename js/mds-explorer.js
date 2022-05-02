@@ -110,7 +110,7 @@ function getVendor(aaid) {
 function certificate(obj) {
   let certHtml = "<li><ul>";
   try {
-    obj = obj.trim().replace(/[ \r\n]/gm, ''); // discard spaces and line breaks
+    obj = obj.replace(/[ \r\n]/gm, ''); // discard spaces and line breaks
 
     cert = new x509.X509Certificate(obj);
 
