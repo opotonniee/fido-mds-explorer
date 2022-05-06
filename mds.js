@@ -3740,11 +3740,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-04-26"
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-04-18"
+        },
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-04-18",
+          "url": "https://www.smartdisplayer.com/",
+          "certificationDescriptor": "BobeePass",
+          "certificateNumber": "FIDO20020220418001",
+          "certificationPolicyVersion": "1.2",
+          "certificationRequirementsVersion": "1.4"
         }
       ],
-      "timeOfLastStatusChange": "2022-04-26"
+      "timeOfLastStatusChange": "2022-05-05"
     },
     {
       "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
