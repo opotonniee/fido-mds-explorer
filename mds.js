@@ -801,9 +801,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "4e768f2c-5fab-48b3-b300-220eb487752b",
-        "description": "Hideez Key FIDO2 SDK",
+        "description": "Hideez Key 4 FIDO2 SDK",
         "alternativeDescriptions": {
-          "ru-RU": "FIDO2 Key SDK - от Hideez"
+          "uk-UA": "FIDO2 Key SDK - від Hideez"
         },
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -4796,9 +4796,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "bf8f39a5826eb910de4e436635a530e3ecce410f"
         ],
-        "description": "Hideez Key U2F SDK",
+        "description": "Hideez Key 4 U2F SDK",
         "alternativeDescriptions": {
-          "ru-RU": "U2F Key SDK - от Hideez"
+          "uk-UA": "U2F Key SDK - від Hideez"
         },
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
