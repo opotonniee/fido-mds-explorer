@@ -654,8 +654,8 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_raw",
-          "ed25519_eddsa_sha512_raw"
+          "ed25519_eddsa_sha512_raw",
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -666,19 +666,19 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            },
+            {
               "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -3711,7 +3711,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
-        "description": "Hyper FIDO® Bio Security Key",
+        "description": "Hyper FIDO Bio Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -8553,7 +8553,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2eb9ff3572f67628d1291a3b57924f818aad9e72"
         ],
-        "description": "Hyper FIDO© U2F Mini Security Key",
+        "description": "Hyper FIDO U2F Mini Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
         "schema": 3,
