@@ -1,0 +1,1 @@
+const LAST_MDS_UPDATE = 'Jul 22, 2022, 2:11 PM GMT+2';

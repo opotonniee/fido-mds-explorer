@@ -42,12 +42,13 @@ jobs:
               echo -n "==" >> mdsBody.b64
             fi
             base64 -d mdsBody.b64 | jq . > mdsBody.json
-            echo -n "let mdsJson=" > mds.js
-            cat mdsBody.json >> mds.js
+            echo -n "let mdsJson=" > js/mds.js
+            cat mdsBody.json >> js/mds.js
+            echo "const LAST_MDS_UPDATE = '$(date --rfc-2822)';" > js/last-update.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add mds.blob
-            git add mds.js
+            git add js/mds.js
             git commit -m "MDS updated"
             git push
           fi

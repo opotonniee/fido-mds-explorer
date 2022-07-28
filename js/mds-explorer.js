@@ -237,7 +237,7 @@ $(function() {
   console.log(mdsJson);
 
   $("#mds-loading").hide();
-
+  $("#last-mds-update").text(LAST_MDS_UPDATE);
   $("#mds").show();
   // build authenticators table
   table = new Tabulator("#mds-table", {
