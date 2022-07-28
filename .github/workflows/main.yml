@@ -51,4 +51,6 @@ jobs:
             git add js/mds.js
             git commit -m "MDS updated"
             git push
+          else
+            echo "no MDS change detected"
           fi

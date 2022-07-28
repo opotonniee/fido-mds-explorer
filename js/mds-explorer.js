@@ -1,5 +1,5 @@
 'use strict';
-/* globals $, x509, mdsJson, Tabulator */
+/* globals $, x509, mdsJson, Tabulator, LAST_MDS_UPDATE */
 
 let id = 1;
 let table;
@@ -237,7 +237,10 @@ $(function() {
   console.log(mdsJson);
 
   $("#mds-loading").hide();
-  $("#last-mds-update").text(LAST_MDS_UPDATE);
+  if (LAST_MDS_UPDATE) {
+    $("#last-update-date").text(LAST_MDS_UPDATE);
+    $(".last-update").show();
+  }
   $("#mds").show();
   // build authenticators table
   table = new Tabulator("#mds-table", {
