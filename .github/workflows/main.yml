@@ -49,6 +49,7 @@ jobs:
             git config --local user.name "github-actions[bot]"
             git add mds.blob
             git add js/mds.js
+            git add js/last-update.js
             git commit -m "MDS updated"
             git push
           else
