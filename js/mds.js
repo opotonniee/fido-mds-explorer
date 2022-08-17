@@ -4669,14 +4669,6 @@ let mdsJson={
         },
         {
           "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2020-12-17",
-          "certificationDescriptor": "Android SafetyNet Authenticator",
-          "certificateNumber": "FIDO20020190225001",
-          "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-20",
           "certificationDescriptor": "Android SafetyNet Authenticator",
           "certificateNumber": "FIDO20020190225001",
@@ -7647,16 +7639,8 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2019-06-27",
-          "certificationDescriptor": "NXP Semiconductors FIDO2 Testing Authenticaor",
-          "certificateNumber": "FIDO20020190206001",
-          "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
-        },
-        {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-06-11"
+          "effectiveDate": "2019-07-11"
         },
         {
           "status": "FIDO_CERTIFIED_L1",
@@ -7664,13 +7648,6 @@ let mdsJson={
           "certificationDescriptor": "NXP Semiconductors FIDO2 Testing Authenticaor",
           "certificateNumber": "FIDO20020190206001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2019-06-11",
-          "certificateNumber": "FIDO20020190206001",
-          "certificationPolicyVersion": "1.0.1",
           "certificationRequirementsVersion": "1.1.0"
         }
       ],
@@ -8742,14 +8719,6 @@ let mdsJson={
         }
       },
       "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2019-08-08",
-          "certificationDescriptor": "Hyper FIDO® Pro",
-          "certificateNumber": "FIDO20020190805001",
-          "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
-        },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-08-08"
