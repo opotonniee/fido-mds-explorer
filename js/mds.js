@@ -6535,7 +6535,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "34f5766d-1536-4a24-9033-0e294e510fb0",
-        "description": "YubiKey 5 Series CTAP2.1 Preview 1 ",
+        "description": "YubiKey 5 Series CTAP2.1 Preview Expired ",
         "authenticatorVersion": 50500,
         "protocolFamily": "fido2",
         "schema": 3,
