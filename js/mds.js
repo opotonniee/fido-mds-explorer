@@ -174,10 +174,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
-            },
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -666,12 +681,6 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "none"
-            },
-            {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -679,6 +688,30 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -846,6 +879,16 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
             }
           ],
@@ -854,12 +897,7 @@ let mdsJson={
               "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "passcode_internal"
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -1648,7 +1686,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -1749,6 +1805,24 @@ let mdsJson={
             {
               "userVerificationMethod": "presence_internal"
             }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
           ]
         ],
         "keyProtection": [
@@ -1764,9 +1838,9 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
+          "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
@@ -2248,8 +2322,8 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_raw",
-          "ed25519_eddsa_sha512_raw"
+          "ed25519_eddsa_sha512_raw",
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -2261,12 +2335,30 @@ let mdsJson={
           [
             {
               "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             },
+            {
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
-            },
+            }
+          ],
+          [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
@@ -2452,12 +2544,31 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
             }
           ],
           [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
                 "minLength": 4,
@@ -2480,9 +2591,9 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -2676,7 +2787,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_der"
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -2687,10 +2798,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
-            },
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal"
             }
           ]
         ],
@@ -2785,18 +2916,36 @@ let mdsJson={
           [
             {
               "userVerificationMethod": "none"
-            },
+            }
+          ],
+          [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -2881,8 +3030,23 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "passcode_external"
             },
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
             }
@@ -3210,7 +3374,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -3230,8 +3412,8 @@ let mdsJson={
         "tcDisplay": [],
         "attestationRootCertificates": [
           "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
@@ -3272,10 +3454,7 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-24",
-          "certificationDescriptor": "Feitian FIDO Smart Card",
-          "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "effectiveDate": "2020-04-24"
         }
       ],
       "timeOfLastStatusChange": "2020-04-24"
@@ -3447,6 +3626,24 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
             }
           ]
@@ -3467,8 +3664,8 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
+          "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"
         ],
@@ -3854,12 +4051,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external"
             }
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "fingerprint_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -3877,8 +4092,8 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
@@ -3952,21 +4167,6 @@ let mdsJson={
           "basic_full"
         ],
         "userVerificationDetails": [
-          [
-            {
-              "userVerificationMethod": "fingerprint_internal"
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "passcode_internal"
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "faceprint_internal"
-            }
-          ],
           [
             {
               "userVerificationMethod": "presence_internal"
@@ -4253,12 +4453,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "fingerprint_internal"
             }
           ],
           [
             {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -4358,8 +4576,23 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             },
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
             }
@@ -4448,7 +4681,20 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external",
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 10,
                 "minLength": 4,
@@ -4459,7 +4705,13 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
             }
           ]
         ],
@@ -5261,10 +5513,23 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
             {
               "userVerificationMethod": "presence_internal"
             }
@@ -5505,6 +5770,24 @@ let mdsJson={
             {
               "userVerificationMethod": "presence_internal"
             }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
           ]
         ],
         "keyProtection": [
@@ -5522,8 +5805,8 @@ let mdsJson={
         "tcDisplay": [],
         "attestationRootCertificates": [
           "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
@@ -5680,12 +5963,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
             }
           ],
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -5944,7 +6240,7 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
                 "minLength": 4,
@@ -5956,6 +6252,25 @@ let mdsJson={
           [
             {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -6045,7 +6360,25 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "fingerprint_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -6066,9 +6399,9 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
+          "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
@@ -6142,6 +6475,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
+          "rsassa_pkcsv15_sha256_raw",
           "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
@@ -6153,10 +6487,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
-            },
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal"
             }
           ]
         ],
@@ -6682,8 +7036,7 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-09-17",
-          "certificationDescriptor": "YubiKey CTAP2.1 Preview 1"
+          "effectiveDate": "2020-09-17"
         }
       ],
       "timeOfLastStatusChange": "2020-09-17"
@@ -6924,6 +7277,58 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 15
               }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_internal",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 5,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal",
+              "baDesc": {
+                "selfAttestedFRR": 0,
+                "selfAttestedFAR": 1e-05,
+                "maxTemplates": 5,
+                "maxRetries": 0,
+                "blockSlowdown": 15
+              }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -7219,8 +7624,8 @@ let mdsJson={
         ],
         "description": "OCTATCO EzFinger2 U2F AUTHENTICATOR",
         "alternativeDescriptions": {
-          "en-US": "OCTATCO EzFinger2 U2F AUTHENTICATOR V 1.0",
-          "ko-KR": "옥타코 이지핑거2 U2F 인증기 V 1.0"
+          "ko-KR": "옥타코 이지핑거2 U2F 인증기 V 1.0",
+          "en-US": "OCTATCO EzFinger2 U2F AUTHENTICATOR V 1.0"
         },
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -7232,7 +7637,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_der"
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "ecc_x962_raw"
@@ -7243,12 +7648,12 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "fingerprint_internal"
             }
           ],
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -7681,7 +8086,7 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
@@ -7690,10 +8095,28 @@ let mdsJson={
               }
             },
             {
-              "userVerificationMethod": "none"
-            },
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
             }
           ]
         ],
@@ -7799,10 +8222,23 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "none"
             }
           ],
           [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
             {
               "userVerificationMethod": "presence_internal"
             }
@@ -8245,13 +8681,31 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
@@ -8663,6 +9117,24 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
             }
           ]
@@ -8761,19 +9233,37 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "none"
-            },
+            }
+          ],
+          [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -9071,6 +9561,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
+          "ed25519_eddsa_sha512_raw",
           "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
@@ -9082,13 +9573,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external",
-              "caDesc": {
-                "base": 10,
-                "minLength": 4,
-                "maxRetries": 8,
-                "blockSlowdown": 0
-              }
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ],
           [
@@ -9336,7 +9839,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
-        "description": "YubiKey  5 Series",
+        "description": "YubiKey 5 Series",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -9347,8 +9850,8 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_raw",
-          "ed25519_eddsa_sha512_raw"
+          "ed25519_eddsa_sha512_raw",
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -9359,17 +9862,35 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "none"
-            },
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
             }
@@ -9773,10 +10294,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
-            },
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -9865,7 +10401,20 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -9884,9 +10433,9 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
+          "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
@@ -9953,7 +10502,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_der"
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -9965,7 +10514,7 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "fingerprint_internal"
             }
           ],
           [
@@ -9975,7 +10524,7 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -10054,10 +10603,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
-            },
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -10408,7 +10972,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_der"
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -10583,8 +11147,8 @@ let mdsJson={
         "aaguid": "bc2fe499-0d8e-4ffe-96f3-94a82840cf8c",
         "description": "OCTATCO EzQuant FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
-          "en-US": "OCTATCO EzQuant FIDO2 AUTHENTICATOR V 1.0",
-          "ko-KR": "옥타코 이지퀀트 FIDO2 인증기 V 1.0"
+          "ko-KR": "옥타코 이지퀀트 FIDO2 인증기 V 1.0",
+          "en-US": "OCTATCO EzQuant FIDO2 AUTHENTICATOR V 1.0"
         },
         "authenticatorVersion": 5,
         "protocolFamily": "fido2",
@@ -10596,7 +11160,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_der"
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -10608,12 +11172,12 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "fingerprint_internal"
             }
           ],
           [
@@ -10771,12 +11335,22 @@ let mdsJson={
           [
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
             {
               "userVerificationMethod": "presence_internal"
-            },
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
             {
               "userVerificationMethod": "passcode_external"
             }
@@ -10866,12 +11440,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "presence_internal"
             }
           ],
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "fingerprint_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -10889,8 +11481,8 @@ let mdsJson={
         "tcDisplay": [],
         "attestationRootCertificates": [
           "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
@@ -10973,7 +11565,25 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -10990,9 +11600,9 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
+          "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNi0xMi0zMFQxNDozMzowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTYtMTItMzBUMDc6MzE6NTkrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6SGlzdG9yeT0iMjAxNi0xMi0zMFQxNTozMDoyNyswODowMCYjeDk75paH5Lu2IOacquagh+mimC0xIOW3suaJk+W8gCYjeEE7IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzFCRkZDQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJFNzFCRkZEQzY3RjExRTY5NzhEQTlDQkI2NDYzRjkwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkU3MUJGRkFDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkU3MUJGRkJDNjdGMTFFNjk3OERBOUNCQjY0NjNGOTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz477JXFAAAAYFBMVEX///8EVqIXZavG2OoqcLG2zOOkwt0BSJtqlcXV4u+autlWhbzk7PUAMY9HcrKjtNbq8feAl8aBoszz9vpdjsGGqtF3n8uTsNSZpc6JsNT5+v0xYKnu8Pff5/L48fg/friczJgYAAADAElEQVR42kRUCZbDIAjFXZOY1TatNc39bzksSYc3r4ME4fMBAaD6zl8y/9TOget8d5jfN78bwM/dDCRpR521zXfojHJ05IIyhBAUSVAONdGzBYt2f7KFrfkJaAkHh9FZhcDXHRkTKo9MLihGaavImnV3qyEX0Eprgz/4DwUD7kCHRnd8QFN43Go4UVmDDgza4w27oizdA2+cK+uuUpjjo2+xwc/42W50x5LGYeDBsR0HVIx5x8iF60CblbTEEkFr27bNDBUVSq1OKVPbE62b3EH8FqBg5OOOEuc2t8ZJiqMOuGp+cKjg7wVGceozqN4pxgVPQkjFYgbVJKDUhDCjYrawP5q4ETgC9fIMRHtitpQcCvJOELcbMsQgnciRkljpyQjvG44jqBUETFiBi1PEIyekOzsW+Ty5cLHos5R+dMS1LtSSxf3gQHczR2CI4gMNpW4IRA1QMa6tJ4+C6uHuGE8mNDIyFqg/OP/MMUueS6Iq8S90dAeBJSEy/qKkK+BNwz8cYY4jb5J6u4iWCI2B1Z56LW5kEc4hkdMpsvUC5585SX0QubcgNqyfgDFEcTt+40/0S5Nx0waCw3OKkcObA5In0AYp01pjjw2n626UDjtHwa28iHuTKqtrv+reW41NZ6iGlr7uuLJCfkFtctcG04sgm1eNS+ZaDnpaTErGoyX5JK2iMz8xs0nOwWGcPDN49qaCd4bzJozDZm/aBK+EozLw+XhNBiYwHf0siOu1XPkG/zKwvqYKcfSwDEcH/oUe07es/WQ8rIyg2DOXj8tjkZduDB/b8hzDllMMOCS5BEnd534f8ti3UZc4kMs3xLyafMSsJhdG8XPqjNk5tAgO25feKChnVdDj/J0FMkOsU/xMBv0wFhYeEGfVH13fuDU0yDFLa4fc7RnWHBfuTFV2tEmNwadc7ac3UY2jfBl7HT36fe34iQO5mNCFFBW07KjPgqhOLU01vZ8PueZ2JClFZN8jkUs69uka9ePp6+EfL4AF5+NywSbirHtcB8Ml/gkwAEjkK64KjHPeAAAAAElFTkSuQmCC",
         "authenticatorGetInfo": {
