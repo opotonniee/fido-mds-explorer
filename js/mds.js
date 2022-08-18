@@ -129,16 +129,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-11-08",
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2020-11-19",
           "certificationDescriptor": "Feitian ePass FIDO-NFC Security Key",
           "certificateNumber": "U2F100020151221001",
           "certificationPolicyVersion": "1.0.1",
           "certificationRequirementsVersion": "1.0.1"
         },
         {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2020-11-19",
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-11-08",
           "certificationDescriptor": "Feitian ePass FIDO-NFC Security Key",
           "certificateNumber": "U2F100020151221001",
           "certificationPolicyVersion": "1.0.1",
@@ -430,16 +430,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "YubiKey 5Ci",
           "certificateNumber": "FIDO20020191017003",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -534,16 +534,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-02-13"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-02-13",
           "certificationDescriptor": "Vancosys Android Authenticator",
           "certificateNumber": "FIDO20020190109001",
           "certificationPolicyVersion": "1.0.0",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-02-13"
         }
       ],
       "timeOfLastStatusChange": "2019-02-13"
@@ -802,16 +802,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "YubiKey 5Ci",
           "certificateNumber": "U2F110020191017007",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -1095,16 +1095,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-11-01"
-        },
-        {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2018-11-01",
           "certificationDescriptor": "ePass FIDO Security Key",
           "certificateNumber": "U2F100020180228007",
           "certificationPolicyVersion": "1.0.1",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-11-01"
         }
       ],
       "timeOfLastStatusChange": "2018-11-01"
@@ -1322,10 +1322,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-10-09"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-10-09",
           "url": "https://authentrend.com/atkey-pro/",
@@ -1333,6 +1329,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020191008001",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-10-09"
         }
       ],
       "timeOfLastStatusChange": "2019-10-09"
@@ -1607,16 +1607,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-05",
           "certificationDescriptor": "Windows Hello Hardware Authenticator",
           "certificateNumber": "FIDO20020190418002",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-08-05"
         }
       ],
       "timeOfLastStatusChange": "2020-08-05"
@@ -1807,16 +1807,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-10-26"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-10-26",
           "certificationDescriptor": "Feitian ePass FIDO2-NFC Authenticator",
           "certificateNumber": "FIDO20020180929002",
           "certificationPolicyVersion": "1.3.4",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-10-26"
         }
       ],
       "timeOfLastStatusChange": "2018-10-26"
@@ -2411,16 +2411,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-01"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-08-01",
           "certificationDescriptor": "FIDO L1 Client/Authenticator Combo",
           "certificateNumber": "UAF100020180221001",
           "certificationPolicyVersion": "1.3.2",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-08-01"
         }
       ],
       "timeOfLastStatusChange": "2018-08-01"
@@ -2508,10 +2508,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-12-04"
-        },
-        {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2021-03-05",
           "certificationDescriptor": "GoTrust Idem Key",
@@ -2526,6 +2522,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020191122001",
           "certificationPolicyVersion": "1.0.0",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-12-04"
         }
       ],
       "timeOfLastStatusChange": "2021-03-05"
@@ -2840,16 +2840,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "FIDO20020180926001",
           "certificationPolicyVersion": "1.0.0",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -3405,10 +3405,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-11"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-11",
           "url": "www.yubico.com",
@@ -3416,6 +3412,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020210811001",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.4"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-08-11"
         }
       ],
       "timeOfLastStatusChange": "2021-08-18"
@@ -3603,16 +3603,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-02-08"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-02-08",
           "certificationDescriptor": "Vancosys iOS Authenticator",
           "certificateNumber": "FIDO20020190109002",
           "certificationPolicyVersion": "1.0.0",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-02-08"
         }
       ],
       "timeOfLastStatusChange": "2019-02-08"
@@ -3746,16 +3746,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
           "certificationDescriptor": "TrustKey Solutions T120 U2F Authenticator",
           "certificateNumber": "U2F110020200814002",
           "certificationPolicyVersion": "1.3.7",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-12-21"
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -3909,16 +3909,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-09-29"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-09-29",
           "certificationDescriptor": "Feitian BioPass FIDO2 Authenticator",
           "certificateNumber": "FIDO20020180929001",
           "certificationPolicyVersion": "1.2",
           "certificationRequirementsVersion": "1.2"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-09-29"
         }
       ],
       "timeOfLastStatusChange": "2021-07-31"
@@ -4130,16 +4130,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-18"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
           "certificationDescriptor": "YK 5Ci FIPS",
           "certificateNumber": "FIDO20020210118005",
           "certificationPolicyVersion": "1.3.7",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-02-18"
         }
       ],
       "timeOfLastStatusChange": "2021-02-18"
@@ -4522,10 +4522,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-04-18"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-04-18",
           "url": "https://www.smartdisplayer.com/",
@@ -4533,6 +4529,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020220418001",
           "certificationPolicyVersion": "1.2",
           "certificationRequirementsVersion": "1.4"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-04-18"
         }
       ],
       "timeOfLastStatusChange": "2022-05-05"
@@ -4660,16 +4660,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05",
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2020-08-20",
           "certificationDescriptor": "Android SafetyNet Authenticator",
           "certificateNumber": "FIDO20020190225001",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.1.0"
         },
         {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2020-08-20",
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-08-05",
           "certificationDescriptor": "Android SafetyNet Authenticator",
           "certificateNumber": "FIDO20020190225001",
           "certificationPolicyVersion": "1.3.6",
@@ -4786,16 +4786,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "YubiKey 5 NFC Series",
           "certificateNumber": "FIDO20020190826002",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -5032,16 +5032,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-05",
           "certificationDescriptor": "Windows Hello VBS Hardware Authenticator",
           "certificateNumber": "FIDO20020190418001",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-08-05"
         }
       ],
       "timeOfLastStatusChange": "2020-08-05"
@@ -5219,10 +5219,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-06"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-06",
           "url": "www.yubico.com",
@@ -5230,6 +5226,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020210806001",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.4"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-08-06"
         }
       ],
       "timeOfLastStatusChange": "2021-08-10"
@@ -5462,16 +5462,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "U2F110020191017010",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -5563,16 +5563,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-24"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-24",
           "certificationDescriptor": "Feitian iePass FIDO®",
           "certificateNumber": "FIDO20020200417002",
           "certificationPolicyVersion": "1.2",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-04-24"
         }
       ],
       "timeOfLastStatusChange": "2020-04-24"
@@ -5999,16 +5999,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-12-04"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-12-04",
           "certificationDescriptor": "GoTrust Idem Card",
           "certificateNumber": "FIDO20020190520001",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-12-04"
         }
       ],
       "timeOfLastStatusChange": "2019-12-04"
@@ -6112,16 +6112,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-05-27"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-05-27",
           "certificationDescriptor": "Feitian BioPass FIDO USB/NFC/BLE",
           "certificateNumber": "FIDO20020190311004",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-05-27"
         }
       ],
       "timeOfLastStatusChange": "2019-05-27"
@@ -6212,16 +6212,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-09-27"
-        },
-        {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2021-09-27",
           "certificationDescriptor": "InnaIT Key PK1100",
           "certificateNumber": "FIDO20020211018001",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-09-27"
         }
       ],
       "timeOfLastStatusChange": "2021-12-15"
@@ -6352,16 +6352,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-01"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-08-01",
           "certificationDescriptor": "FIDO L1 Client/Authenticator Combo",
           "certificateNumber": "UAF100020180221004",
           "certificationPolicyVersion": "1.3.2",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-08-01"
         }
       ],
       "timeOfLastStatusChange": "2018-08-01"
@@ -6516,16 +6516,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-30"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-08-30",
           "certificationDescriptor": "PixelPin iOS",
           "certificateNumber": "UAF110020180511001",
           "certificationPolicyVersion": "1.0.1",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-08-30"
         }
       ],
       "timeOfLastStatusChange": "2018-08-30"
@@ -6988,16 +6988,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-02"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-02",
           "certificationDescriptor": "Crayonic KeyVault",
           "certificateNumber": "FIDO20020201110001",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-12-02"
         }
       ],
       "timeOfLastStatusChange": "2022-03-08"
@@ -7639,16 +7639,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-11"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-07-11",
           "certificationDescriptor": "NXP Semiconductors FIDO2 Testing Authenticaor",
           "certificateNumber": "FIDO20020190206001",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-07-11"
         }
       ],
       "timeOfLastStatusChange": "2019-07-11"
@@ -7755,16 +7755,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "FIDO20020191017005",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -7932,16 +7932,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "YubiKey 5 Series (USB)",
           "certificateNumber": "U2F110020191017008",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -8003,16 +8003,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
           "certificationDescriptor": "Trustkey Solutions T310 U2F Authenticator",
           "certificateNumber": "U2F110020200814003",
           "certificationPolicyVersion": "1.3.7",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-12-21"
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -8103,16 +8103,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-05",
           "certificationDescriptor": "Windows Hello Software Authenticator",
           "certificateNumber": "FIDO20020190418003",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-08-05"
         }
       ],
       "timeOfLastStatusChange": "2020-08-05"
@@ -8720,16 +8720,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-08-08"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-07-17",
           "certificationDescriptor": "Hyper FIDO® Pro",
           "certificateNumber": "FIDO20020190805001",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-08-08"
         }
       ],
       "timeOfLastStatusChange": "2020-07-17"
@@ -8817,10 +8817,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-21"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-21",
           "url": "https://www.identiv.com",
@@ -8828,6 +8824,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020200821001",
           "certificationPolicyVersion": "1.2",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-08-21"
         }
       ],
       "timeOfLastStatusChange": "2022-04-07"
@@ -8894,16 +8894,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-09-14"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-09-14",
           "certificationDescriptor": "Universal Second Factor (U2F)",
           "certificateNumber": "U2F100020180221001",
           "certificationPolicyVersion": "1.3.2",
           "certificationRequirementsVersion": "1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-09-14"
         }
       ],
       "timeOfLastStatusChange": "2018-09-14"
@@ -9038,16 +9038,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-18"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
           "certificationDescriptor": "YK 5 FIPS",
           "certificateNumber": "FIDO20020210118004",
           "certificationPolicyVersion": "1.3.7",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-02-18"
         }
       ],
       "timeOfLastStatusChange": "2021-02-18"
@@ -9154,16 +9154,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-11-11"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-11-11",
           "certificationDescriptor": "AuthTron USB Key FIDO2",
           "certificateNumber": "FIDO20020210421002",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-11-11"
         }
       ],
       "timeOfLastStatusChange": "2021-11-11"
@@ -9230,8 +9230,8 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-09-11",
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2021-03-09",
           "url": "https://www.gotrustid.com/idem-key",
           "certificationDescriptor": "U2F Authenticator (Idem Sense)",
           "certificateNumber": "U2F100020160323001",
@@ -9248,8 +9248,8 @@ let mdsJson={
           "certificationRequirementsVersion": "1.3.0"
         },
         {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2021-03-09",
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-09-11",
           "url": "https://www.gotrustid.com/idem-key",
           "certificationDescriptor": "U2F Authenticator (Idem Sense)",
           "certificateNumber": "U2F100020160323001",
@@ -9317,16 +9317,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-11-01"
-        },
-        {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2018-11-01",
           "certificationDescriptor": "MultiPass FIDO Security Key",
           "certificateNumber": "U2F100020180228006",
           "certificationPolicyVersion": "1.0.1",
           "certificationRequirementsVersion": "1.0.1"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-11-01"
         }
       ],
       "timeOfLastStatusChange": "2018-11-01"
@@ -9415,16 +9415,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "YubiKey 5A",
           "certificateNumber": "FIDO20020181031001",
           "certificationPolicyVersion": "1.0.0",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -9613,16 +9613,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
           "certificationDescriptor": "TrustKey Solutions T110 U2F Authenticator",
           "certificateNumber": "U2F110020200814001",
           "certificationPolicyVersion": "1.3.7",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-12-21"
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -9732,16 +9732,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
           "certificationDescriptor": "YubiKey 5 Series (USB)",
           "certificateNumber": "FIDO20020191017002",
           "certificationPolicyVersion": "1.1.1",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-05-12"
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -9818,10 +9818,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-02"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-02",
           "url": "https://solokeys.com",
@@ -9829,6 +9825,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020191001001",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-04-02"
         }
       ],
       "timeOfLastStatusChange": "2020-04-02"
@@ -10296,16 +10296,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-02-26"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-02-26",
           "certificationDescriptor": "AuthenTrend Technology Inc. ATKey.card",
           "certificateNumber": "FIDO20020180926019",
           "certificationPolicyVersion": "1.3.4",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-02-26"
         }
       ],
       "timeOfLastStatusChange": "2019-02-26"
@@ -10477,16 +10477,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-18"
-        },
-        {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2019-07-18",
           "certificationDescriptor": "eWBM eFA310 FIDO2 Authenticator",
           "certificateNumber": "FIDO20020190709003",
           "certificationPolicyVersion": "1.3.4",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-07-18"
         }
       ],
       "timeOfLastStatusChange": "2019-07-18"
@@ -10652,10 +10652,6 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-06-08"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-06-08",
           "url": "www.octatco.com",
@@ -10663,6 +10659,10 @@ let mdsJson={
           "certificateNumber": "FIDO20020210608001",
           "certificationPolicyVersion": "1.3",
           "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-06-08"
         }
       ],
       "timeOfLastStatusChange": "2021-08-10"
@@ -10932,16 +10932,16 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-10-26"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-10-26",
           "certificationDescriptor": "Feitian BioPass FIDO2 authenticator",
           "certificateNumber": "FIDO20020180929001",
           "certificationPolicyVersion": "1.3.4",
           "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2018-10-26"
         }
       ],
       "timeOfLastStatusChange": "2018-10-26"
@@ -11032,17 +11032,17 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-05-27",
-          "certificationPolicyVersion": "1.3.6"
-        },
-        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-05-27",
           "certificationDescriptor": "Feitian ePass FIDO2 USB only",
           "certificateNumber": "FIDO20020190311003",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-05-27",
+          "certificationPolicyVersion": "1.3.6"
         }
       ],
       "timeOfLastStatusChange": "2019-05-27"
