@@ -345,7 +345,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
         "description": "YubiKey 5Ci",
-        "authenticatorVersion": 50200,
+        "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -2171,7 +2171,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
         "description": "YubiKey 5 FIPS Series",
-        "authenticatorVersion": 50400,
+        "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -4208,7 +4208,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
         "description": "YubiKey 5Ci FIPS",
-        "authenticatorVersion": 50400,
+        "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -4936,7 +4936,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
         "description": "YubiKey 5 Series with NFC",
-        "authenticatorVersion": 50200,
+        "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -9404,7 +9404,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
         "description": "YubiKey 5 FIPS Series with NFC",
-        "authenticatorVersion": 50400,
+        "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -10154,7 +10154,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
         "description": "YubiKey 5 Series",
-        "authenticatorVersion": 50200,
+        "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
