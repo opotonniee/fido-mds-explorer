@@ -1,1 +1,1 @@
-const LAST_MDS_UPDATE = 'Fri, 19 Aug 2022 12:10:50 +0000';
+const LAST_MDS_UPDATE = 'Mon, 22 Aug 2022 12:11:59 +0000';

@@ -1258,7 +1258,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
         "description": "ATKey.Pro CTAP2.0",
-        "authenticatorVersion": 2,
+        "authenticatorVersion": 10013,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -1268,7 +1268,8 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp256r1_ecdsa_sha256_raw"
+          "secp256r1_ecdsa_sha256_raw",
+          "ed25519_eddsa_sha512_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -1279,20 +1280,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal",
-              "baDesc": {
-                "selfAttestedFRR": 0,
-                "selfAttestedFAR": 0,
-                "maxTemplates": 0,
-                "maxRetries": 0,
-                "blockSlowdown": 0
-              }
+              "userVerificationMethod": "fingerprint_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             },
             {
               "userVerificationMethod": "presence_internal"
-            },
+            }
+          ],
+          [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -4230,16 +4241,6 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "none"
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "presence_internal"
-            }
-          ],
-          [
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -4252,15 +4253,25 @@ let mdsJson={
           [
             {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal",
+              "caDesc": {
+                "base": 64,
+                "minLength": 6,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
             },
             {
-              "userVerificationMethod": "passcode_external",
-              "caDesc": {
-                "base": 64,
-                "minLength": 6,
-                "maxRetries": 8,
-                "blockSlowdown": 0
-              }
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -4958,19 +4969,37 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "none"
-            },
-            {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
@@ -10176,10 +10205,28 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
             {
-              "userVerificationMethod": "passcode_internal",
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
                 "minLength": 4,
@@ -10188,7 +10235,7 @@ let mdsJson={
               }
             },
             {
-              "userVerificationMethod": "none"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -10764,7 +10811,7 @@ let mdsJson={
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
         "description": "ATKey.Card CTAP2.0",
-        "authenticatorVersion": 2,
+        "authenticatorVersion": 3000039,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -10785,17 +10832,30 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal",
-              "baDesc": {
-                "selfAttestedFRR": 0,
-                "selfAttestedFAR": 0,
-                "maxTemplates": 0,
-                "maxRetries": 0,
-                "blockSlowdown": 0
-              }
+              "userVerificationMethod": "presence_internal"
             },
             {
+              "userVerificationMethod": "passcode_external"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal"
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
