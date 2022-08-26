@@ -250,13 +250,10 @@ $(function() {
     //responsiveLayout:"collapse",
     columns:[
       {
-        title: "#",
-        formatter: function(cell, formatterParams, onRendered){ return id++; }
-      },
-      {
         title: "Name",
         field: "metadataStatement.description",
-        sorter: "string", headerFilter:true,
+        sorter: "string", 
+        headerFilter:true,
         formatter: function(cell, formatterParams, onRendered){
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no'>${name}</a>`;
