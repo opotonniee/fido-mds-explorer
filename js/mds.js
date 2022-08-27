@@ -344,7 +344,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
-        "description": "YubiKey 5Ci",
+        "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -788,7 +788,7 @@ let mdsJson={
           "b6d44a4b8d4b0407872969b1f6b2263021be627e",
           "6d491f223af73cdf81784a6c0890f8a1d527a12c"
         ],
-        "description": "YubiKey 5Ci",
+        "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -4218,7 +4218,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
         "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
-        "description": "YubiKey 5Ci FIPS",
+        "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
         "schema": 3,
