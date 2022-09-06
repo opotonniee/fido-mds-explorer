@@ -8,7 +8,7 @@ let mdsJson={
         "1434d2f277fe479c35ddf6aa4d08a07cbce99dd7"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "1434d2f277fe479c35ddf6aa4d08a07cbce99dd7"
         ],
@@ -75,7 +75,7 @@ let mdsJson={
         "55464d5bea84e7073074b21d1204934358c7db4d"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "f4b64a68c334e901b8e23c6e66e6866c31931f5d",
           "d5db4dd48fe46afd8af8f1f7cfbdee61640bbbcc",
@@ -150,7 +150,7 @@ let mdsJson={
     {
       "aaguid": "9c835346-796b-4c27-8898-d6032f515cc5",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9c835346-796b-4c27-8898-d6032f515cc5",
         "description": "Cryptnox FIDO2",
         "authenticatorVersion": 2,
@@ -264,7 +264,7 @@ let mdsJson={
     {
       "aaid": "4e4e#4005",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4005",
         "description": "Touch ID, Face ID, or Passcode",
         "authenticatorVersion": 256,
@@ -342,7 +342,7 @@ let mdsJson={
     {
       "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 328706,
@@ -462,7 +462,7 @@ let mdsJson={
     {
       "aaguid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
         "description": "Vancosys Android Authenticator",
         "authenticatorVersion": 2,
@@ -566,7 +566,7 @@ let mdsJson={
     {
       "aaguid": "3789da91-f943-46bc-95c3-50ea2012f03a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3789da91-f943-46bc-95c3-50ea2012f03a",
         "description": "NEOWAVE Winkeo FIDO2",
         "authenticatorVersion": 2,
@@ -656,7 +656,7 @@ let mdsJson={
     {
       "aaguid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 50100,
@@ -780,7 +780,7 @@ let mdsJson={
         "6d491f223af73cdf81784a6c0890f8a1d527a12c"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "bf7bcaa0d0c6187a8c6abbdd16a15640e7c7bde2",
           "753300d65dcc73a39a7db31ef308db9fa0b566ae",
@@ -852,7 +852,7 @@ let mdsJson={
     {
       "aaguid": "4e768f2c-5fab-48b3-b300-220eb487752b",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4e768f2c-5fab-48b3-b300-220eb487752b",
         "description": "Hideez Key 4 FIDO2 SDK",
         "alternativeDescriptions": {
@@ -964,7 +964,7 @@ let mdsJson={
     {
       "aaguid": "931327dd-c89b-406c-a81e-ed7058ef36c6",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "931327dd-c89b-406c-a81e-ed7058ef36c6",
         "description": "Swissbit iShield FIDO2",
         "alternativeDescriptions": {
@@ -1077,7 +1077,7 @@ let mdsJson={
         "6cd99d8b0abfa6a4378138a1475f7e46df217a25"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "046a7e232c03189dbc2b9b6a765702b52665be21",
           "c10bc4c6f614b63371d929596ededde3e458404d",
@@ -1150,7 +1150,7 @@ let mdsJson={
     {
       "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9a",
         "description": "Ensurity ThinC",
         "authenticatorVersion": 2,
@@ -1255,7 +1255,7 @@ let mdsJson={
     {
       "aaguid": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
         "description": "ATKey.Pro CTAP2.0",
         "authenticatorVersion": 10013,
@@ -1391,7 +1391,7 @@ let mdsJson={
         "32526f73dfca12da9c1d87d6e0adb64e843f73da"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "32526f73dfca12da9c1d87d6e0adb64e843f73da"
         ],
@@ -1460,7 +1460,7 @@ let mdsJson={
     {
       "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
         "description": "TOKEN2 FIDO2 Security Key",
         "authenticatorVersion": 2,
@@ -1571,7 +1571,7 @@ let mdsJson={
     {
       "aaguid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
         "description": "Windows Hello Hardware Authenticator",
         "authenticatorVersion": 1,
@@ -1673,7 +1673,7 @@ let mdsJson={
     {
       "aaguid": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
         "description": "KEY-ID FIDO2 Authenticator",
         "authenticatorVersion": 1,
@@ -1790,7 +1790,7 @@ let mdsJson={
     {
       "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
         "description": "Feitian ePass FIDO2-NFC Authenticator",
         "authenticatorVersion": 1,
@@ -1909,7 +1909,7 @@ let mdsJson={
     {
       "aaid": "0066#0002",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0066#0002",
         "description": "CAPY UAF",
         "authenticatorVersion": 1,
@@ -1983,7 +1983,7 @@ let mdsJson={
     {
       "aaguid": "5343502d-5343-5343-6172-644649444f32",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5343502d-5343-5343-6172-644649444f32",
         "description": "ESS Smart Card Inc. Authenticator",
         "alternativeDescriptions": {
@@ -2105,7 +2105,7 @@ let mdsJson={
     {
       "aaid": "4e4e#4010",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4010",
         "description": "Android Fingerprint",
         "authenticatorVersion": 256,
@@ -2179,7 +2179,7 @@ let mdsJson={
     {
       "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
         "description": "YubiKey 5 FIPS Series",
         "authenticatorVersion": 328706,
@@ -2320,7 +2320,7 @@ let mdsJson={
     {
       "aaguid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 50200,
@@ -2457,7 +2457,7 @@ let mdsJson={
     {
       "aaid": "0052#0002",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0052#0002",
         "description": "i-Sprint Android FingerPrint UAF Authenticator",
         "authenticatorVersion": 1,
@@ -2531,7 +2531,7 @@ let mdsJson={
     {
       "aaguid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
         "description": "GoTrust Idem Key FIDO2 Authenticator",
         "authenticatorVersion": 2,
@@ -2655,7 +2655,7 @@ let mdsJson={
     {
       "aaid": "4e4e#4011",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4011",
         "description": "Samsung Pass",
         "authenticatorVersion": 256,
@@ -2727,7 +2727,7 @@ let mdsJson={
         "3c22b597f30e8689ed2460f9dfe99b75103292f6"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "3c22b597f30e8689ed2460f9dfe99b75103292f6"
         ],
@@ -2785,7 +2785,7 @@ let mdsJson={
     {
       "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
         "description": "eWBM eFPA FIDO2 Authenticator",
         "authenticatorVersion": 1,
@@ -2901,7 +2901,7 @@ let mdsJson={
     {
       "aaguid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
         "description": "Security Key by Yubico",
         "authenticatorVersion": 50100,
@@ -3017,7 +3017,7 @@ let mdsJson={
     {
       "aaguid": "8976631b-d4a0-427f-5773-0ec71c9e0279",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8976631b-d4a0-427f-5773-0ec71c9e0279",
         "description": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
@@ -3123,7 +3123,7 @@ let mdsJson={
         "573402ae901e27c11438eb8a44e746ec7372dee3"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "573402ae901e27c11438eb8a44e746ec7372dee3"
         ],
@@ -3190,7 +3190,7 @@ let mdsJson={
     {
       "aaid": "0042#0002",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0042#0002",
         "description": "SSenStone FIDO UAF Authenticator for iOS",
         "authenticatorVersion": 1,
@@ -3277,7 +3277,7 @@ let mdsJson={
     {
       "aaid": "0022#1100",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0022#1100",
         "description": "Movenda Egomet FIDO UAF iOS Touch ID/Face ID Authenticator",
         "authenticatorVersion": 1,
@@ -3361,7 +3361,7 @@ let mdsJson={
     {
       "aaguid": "2c0df832-92de-4be1-8412-88a8f074df4a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2c0df832-92de-4be1-8412-88a8f074df4a",
         "description": "Feitian FIDO Smart Card",
         "authenticatorVersion": 1,
@@ -3473,7 +3473,7 @@ let mdsJson={
     {
       "aaid": "006F#0002",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "006F#0002",
         "description": "Hanko UAF Client/Authenticator Combo for iOS",
         "authenticatorVersion": 1,
@@ -3540,7 +3540,7 @@ let mdsJson={
         "786544772ecc9d3e85049222ae33226345b59c69"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "786544772ecc9d3e85049222ae33226345b59c69"
         ],
@@ -3613,7 +3613,7 @@ let mdsJson={
     {
       "aaguid": "c5703116-972b-4851-a3e7-ae1259843399",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c5703116-972b-4851-a3e7-ae1259843399",
         "description": "NEOWAVE Badgeo FIDO2",
         "authenticatorVersion": 2,
@@ -3724,7 +3724,7 @@ let mdsJson={
     {
       "aaguid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
         "description": "Vancosys iOS Authenticator",
         "authenticatorVersion": 2,
@@ -3831,7 +3831,7 @@ let mdsJson={
         "fd36573d24be3f7f32ad5040271ab61035a1fcad"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "c55f74c70c68e8dce5b7fdb4cdda772ad9294c67",
           "fd36573d24be3f7f32ad5040271ab61035a1fcad"
@@ -3901,7 +3901,7 @@ let mdsJson={
         "096bfc8bdbaaa740b9ed8f74b054b5e8a81841d2"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "096bfc8bdbaaa740b9ed8f74b054b5e8a81841d2"
         ],
@@ -3974,7 +3974,7 @@ let mdsJson={
         "42db24c2644bd0c30948a33ccc26635d91dbe40f"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "44561a95d9a2664d32a267dbfe86ce0bb19e5926",
           "42db24c2644bd0c30948a33ccc26635d91dbe40f"
@@ -4038,7 +4038,7 @@ let mdsJson={
     {
       "aaguid": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
         "description": "Feitian BioPass FIDO2 Plus Authenticator",
         "authenticatorVersion": 1,
@@ -4154,7 +4154,7 @@ let mdsJson={
         "fff940d3579bc4404055747b3670d43a1e97d054"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "fff940d3579bc4404055747b3670d43a1e97d054"
         ],
@@ -4216,7 +4216,7 @@ let mdsJson={
     {
       "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
         "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328706,
@@ -4365,7 +4365,7 @@ let mdsJson={
         "75d9266a79599e9cac604ac2be3f03a0f0444d74"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "67ef0f4c36b51780a3facc0a92324593ab196685",
           "9be8c86f3b7da9f5026a56607b2b93f0ffd058ae",
@@ -4440,7 +4440,7 @@ let mdsJson={
     {
       "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
         "description": "Hyper FIDO Bio Security Key",
         "authenticatorVersion": 1,
@@ -4563,7 +4563,7 @@ let mdsJson={
     {
       "aaguid": "9876631b-d4a0-427f-5773-0ec71c9e0279",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9876631b-d4a0-427f-5773-0ec71c9e0279",
         "description": "Somu Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
@@ -4665,7 +4665,7 @@ let mdsJson={
     {
       "aaguid": "516d3969-5a57-5651-5958-4e7a49434167",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "516d3969-5a57-5651-5958-4e7a49434167",
         "description": "SmartDisplayer BobeePass (NFC-BLE FIDO2 Authenticator)",
         "alternativeDescriptions": {
@@ -4803,7 +4803,7 @@ let mdsJson={
     {
       "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
         "description": "Android Authenticator with SafetyNet Attestation",
         "authenticatorVersion": 1,
@@ -4944,7 +4944,7 @@ let mdsJson={
     {
       "aaguid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 328706,
@@ -5086,7 +5086,7 @@ let mdsJson={
         "e077926504cd75eb405a45be160f783044e3f5a2"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "e077926504cd75eb405a45be160f783044e3f5a2"
         ],
@@ -5156,7 +5156,7 @@ let mdsJson={
     {
       "aaid": "4e4e#400b",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#400b",
         "description": "Touch ID or Face ID",
         "authenticatorVersion": 256,
@@ -5227,7 +5227,7 @@ let mdsJson={
     {
       "aaguid": "9ddd1817-af5a-4672-a2b9-3e3dd95000a9",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ddd1817-af5a-4672-a2b9-3e3dd95000a9",
         "description": "Windows Hello VBS Hardware Authenticator",
         "authenticatorVersion": 1,
@@ -5330,7 +5330,7 @@ let mdsJson={
     {
       "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
         "description": "YubiKey Bio Series",
         "authenticatorVersion": 328965,
@@ -5518,7 +5518,7 @@ let mdsJson={
     {
       "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
         "description": "HID Crescendo Key",
         "authenticatorVersion": 10,
@@ -5628,7 +5628,7 @@ let mdsJson={
         "31116a647069d1493f58fc5b54e5449e2a52d43e"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "31116a647069d1493f58fc5b54e5449e2a52d43e"
         ],
@@ -5699,7 +5699,7 @@ let mdsJson={
         "b88023f2545fdd6ea62060ab89d33294132b9bc9"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "4e29df05a59c17a73c7ea64a94fdfff1f9e9ae0f",
           "bf12365afcb14d3dd820be7ec4be163cb7c85de0",
@@ -5773,7 +5773,7 @@ let mdsJson={
     {
       "aaguid": "3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d",
         "description": "Feitian iePass FIDO Authenticator",
         "authenticatorVersion": 1,
@@ -5894,7 +5894,7 @@ let mdsJson={
         "bf8f39a5826eb910de4e436635a530e3ecce410f"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "bf8f39a5826eb910de4e436635a530e3ecce410f"
         ],
@@ -5968,7 +5968,7 @@ let mdsJson={
     {
       "aaguid": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
         "description": "HID Crescendo C2300",
         "authenticatorVersion": 30,
@@ -6075,7 +6075,7 @@ let mdsJson={
     {
       "aaguid": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
         "description": "eWBM eFA320 FIDO2 Authenticator",
         "authenticatorVersion": 1,
@@ -6174,7 +6174,7 @@ let mdsJson={
     {
       "aaid": "4e4e#400a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#400a",
         "description": "Touch ID or Face ID",
         "authenticatorVersion": 256,
@@ -6245,7 +6245,7 @@ let mdsJson={
     {
       "aaguid": "9f0d8150-baa5-4c00-9299-ad62c8bb4e87",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9f0d8150-baa5-4c00-9299-ad62c8bb4e87",
         "description": "GoTrust Idem Card FIDO2 Authenticator",
         "authenticatorVersion": 2,
@@ -6360,7 +6360,7 @@ let mdsJson={
     {
       "aaguid": "12ded745-4bed-47d4-abaa-e713f51d6393",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "12ded745-4bed-47d4-abaa-e713f51d6393",
         "description": "Feitian AllinOne FIDO2 Authenticator",
         "authenticatorVersion": 1,
@@ -6491,7 +6491,7 @@ let mdsJson={
     {
       "aaguid": "88bbd2f0-342a-42e7-9729-dd158be5407a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "88bbd2f0-342a-42e7-9729-dd158be5407a",
         "description": "Precision InnaIT Key FIDO 2 Level 2 certified",
         "authenticatorVersion": 1,
@@ -6612,7 +6612,7 @@ let mdsJson={
     {
       "aaid": "4e4e#4009",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4009",
         "description": "iOS Passcode",
         "authenticatorVersion": 256,
@@ -6678,7 +6678,7 @@ let mdsJson={
     {
       "aaid": "0052#0001",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0052#0001",
         "description": "i-Sprint iOS FingerPrint UAF Authenticator",
         "authenticatorVersion": 1,
@@ -6752,7 +6752,7 @@ let mdsJson={
     {
       "aaid": "0022#0100",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0022#0100",
         "description": "Movenda Egomet FIDO UAF Android Fingerprint Authenticator",
         "authenticatorVersion": 1,
@@ -6840,7 +6840,7 @@ let mdsJson={
     {
       "aaid": "0056#0002",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0056#0002",
         "description": "PixelPin - Picture Login",
         "authenticatorVersion": 1,
@@ -6916,7 +6916,7 @@ let mdsJson={
     {
       "aaguid": "34f5766d-1536-4a24-9033-0e294e510fb0",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "34f5766d-1536-4a24-9033-0e294e510fb0",
         "description": "YubiKey 5 Series CTAP2.1 Preview Expired ",
         "authenticatorVersion": 50500,
@@ -7073,7 +7073,7 @@ let mdsJson={
     {
       "aaguid": "83c47309-aabb-4108-8470-8be838b573cb",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "83c47309-aabb-4108-8470-8be838b573cb",
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 328965,
@@ -7263,7 +7263,7 @@ let mdsJson={
     {
       "aaguid": "be727034-574a-f799-5c76-0929e0430973",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "be727034-574a-f799-5c76-0929e0430973",
         "description": "Crayonic KeyVault K1 (USB-NFC-BLE FIDO2 Authenticator)",
         "authenticatorVersion": 1,
@@ -7439,7 +7439,7 @@ let mdsJson={
     {
       "aaid": "4e4e#4006",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4006",
         "description": "Android PIN",
         "authenticatorVersion": 256,
@@ -7514,7 +7514,7 @@ let mdsJson={
         "5fbc4ba753052187aab3c741d1f9ec6fb3c4d875"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "5fbc4ba753052187aab3c741d1f9ec6fb3c4d875"
         ],
@@ -7580,7 +7580,7 @@ let mdsJson={
         "f83f10cabe50537051ba3086ac101ae4326e0de1"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "f83f10cabe50537051ba3086ac101ae4326e0de1"
         ],
@@ -7647,7 +7647,7 @@ let mdsJson={
         "3e1b66cbc88605adbb34e0a2d6b86e8862c56627"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "3e1b66cbc88605adbb34e0a2d6b86e8862c56627"
         ],
@@ -7729,7 +7729,7 @@ let mdsJson={
         "a7c65ac944e8d5146f5cbeb5fc328931908a5352"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "a7c65ac944e8d5146f5cbeb5fc328931908a5352"
         ],
@@ -7799,7 +7799,7 @@ let mdsJson={
         "80245f8e317cbc795c664bf84389e80a97c5e623"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "6b96167157ed487760701bdf004907d1fe917ee1",
           "8bf7115763ea49b6549e083c9fe8dc7b4ef60e19",
@@ -7867,7 +7867,7 @@ let mdsJson={
         "85d28d8324e23ab50b028592bdbbf4e4ac8a1317"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "85d28d8324e23ab50b028592bdbbf4e4ac8a1317"
         ],
@@ -7942,7 +7942,7 @@ let mdsJson={
         "2fea8f357c7a54a57f45cda72fafb34d1d449fd4"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "2fea8f357c7a54a57f45cda72fafb34d1d449fd4"
         ],
@@ -8006,7 +8006,7 @@ let mdsJson={
     {
       "aaguid": "07a9f89c-6407-4594-9d56-621d5f1e358b",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "07a9f89c-6407-4594-9d56-621d5f1e358b",
         "description": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticator",
         "authenticatorVersion": 2,
@@ -8090,7 +8090,7 @@ let mdsJson={
     {
       "aaguid": "b92c3f9a-c014-4056-887f-140a2501163b",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b92c3f9a-c014-4056-887f-140a2501163b",
         "description": "Security Key by Yubico",
         "authenticatorVersion": 50200,
@@ -8224,7 +8224,7 @@ let mdsJson={
     {
       "aaguid": "54d9fee8-e621-4291-8b18-7157b99c5bec",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "54d9fee8-e621-4291-8b18-7157b99c5bec",
         "description": "HID Crescendo Enabled",
         "alternativeDescriptions": {
@@ -8341,7 +8341,7 @@ let mdsJson={
         "99b011819a9b1539b28b86f625547f173eb5d57b"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "57918bc33803503900ef15ae9b2aef0d547bd6f5",
           "c48b78caeae7af65c1cda4a3b9b9bfa46bbc065a",
@@ -8416,7 +8416,7 @@ let mdsJson={
         "a97b3319eecdb5993c4184276441b059b48506f1"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "a97b3319eecdb5993c4184276441b059b48506f1"
         ],
@@ -8485,7 +8485,7 @@ let mdsJson={
     {
       "aaguid": "6028b017-b1d4-4c02-b4b3-afcdafc96bb2",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6028b017-b1d4-4c02-b4b3-afcdafc96bb2",
         "description": "Windows Hello Software Authenticator",
         "authenticatorVersion": 1,
@@ -8585,7 +8585,7 @@ let mdsJson={
     {
       "aaguid": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
         "description": "OneSpan FIDO Touch",
         "authenticatorVersion": 2,
@@ -8685,7 +8685,7 @@ let mdsJson={
     {
       "aaguid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 50100,
@@ -8807,7 +8807,7 @@ let mdsJson={
         "b76632e2c75e992c90277f99afd2c139968f3d2e"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "4e3038f6a4ebfd6cea2cfe14e448c6f8f3085167",
           "b39e6a8f5e4da7117121b2b1481abb1d15f157bb",
@@ -8873,7 +8873,7 @@ let mdsJson={
     {
       "aaguid": "e416201b-afeb-41ca-a03d-2281c28322aa",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e416201b-afeb-41ca-a03d-2281c28322aa",
         "description": "ATKey.Pro CTAP2.1",
         "authenticatorVersion": 20001,
@@ -9048,7 +9048,7 @@ let mdsJson={
     {
       "aaid": "0066#0001",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0066#0001",
         "description": "CAPY UAF",
         "authenticatorVersion": 3,
@@ -9122,7 +9122,7 @@ let mdsJson={
     {
       "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
         "description": "Hyper FIDO Pro",
         "authenticatorVersion": 1,
@@ -9238,7 +9238,7 @@ let mdsJson={
     {
       "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
         "description": "uTrust FIDO2 Security Key",
         "authenticatorVersion": 100,
@@ -9356,7 +9356,7 @@ let mdsJson={
         "c889abd01627b98d2f7c1cd9d5d16d2d0262f696"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "c889abd01627b98d2f7c1cd9d5d16d2d0262f696"
         ],
@@ -9430,7 +9430,7 @@ let mdsJson={
     {
       "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
         "description": "YubiKey 5 FIPS Series with NFC",
         "authenticatorVersion": 328706,
@@ -9574,7 +9574,7 @@ let mdsJson={
     {
       "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
         "description": "WiSECURE AuthTron USB FIDO2 Authenticator",
         "alternativeDescriptions": {
@@ -9707,7 +9707,7 @@ let mdsJson={
         "8dc2a6f293ea4845bb76a42c42b89601aab547f8"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "3bc1211c12d952a32b03c55b88d3ea6f7d152f18",
           "8dc2a6f293ea4845bb76a42c42b89601aab547f8"
@@ -9798,7 +9798,7 @@ let mdsJson={
         "525ea96c47b9a47933a09b4871c398df6407aaa4"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "418377e213db14abc6509db5e10c9598b42f92ea",
           "525ea96c47b9a47933a09b4871c398df6407aaa4"
@@ -9867,7 +9867,7 @@ let mdsJson={
     {
       "aaguid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 50100,
@@ -9985,7 +9985,7 @@ let mdsJson={
         "556d27f38b231bb3d818bfc1b615f260f6b08f20"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "556d27f38b231bb3d818bfc1b615f260f6b08f20"
         ],
@@ -10049,7 +10049,7 @@ let mdsJson={
         "2eb9ff3572f67628d1291a3b57924f818aad9e72"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "2eb9ff3572f67628d1291a3b57924f818aad9e72"
         ],
@@ -10115,7 +10115,7 @@ let mdsJson={
         "cd9dd77cf580dfe05d9d089865a164dbb6432cd2"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "cd9dd77cf580dfe05d9d089865a164dbb6432cd2"
         ],
@@ -10181,7 +10181,7 @@ let mdsJson={
     {
       "aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 328706,
@@ -10318,7 +10318,7 @@ let mdsJson={
     {
       "aaguid": "8876631b-d4a0-427f-5773-0ec71c9e0279",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8876631b-d4a0-427f-5773-0ec71c9e0279",
         "description": "Solo Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
@@ -10420,7 +10420,7 @@ let mdsJson={
     {
       "aaguid": "8c97a730-3f7b-41a6-87d6-1e9b62bda6f0",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c97a730-3f7b-41a6-87d6-1e9b62bda6f0",
         "description": "FT-JCOS FIDO Fingerprint Card",
         "authenticatorVersion": 1,
@@ -10533,7 +10533,7 @@ let mdsJson={
     {
       "aaguid": "a1f52be5-dfab-4364-b51c-2bd496b14a56",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a1f52be5-dfab-4364-b51c-2bd496b14a56",
         "description": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
@@ -10624,7 +10624,7 @@ let mdsJson={
     {
       "aaguid": "3e078ffd-4c54-4586-8baa-a77da113aec5",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e078ffd-4c54-4586-8baa-a77da113aec5",
         "description": "Hideez Key 3 FIDO2",
         "alternativeDescriptions": {
@@ -10738,7 +10738,7 @@ let mdsJson={
         "ce68d1b75fb4cd3da077fd3f833c4d6e20bf287c"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "c57d0641653225b173bc6b4d95879f87915222f9",
           "923881fe2f214ee465484371aeb72e97f5a58e0a",
@@ -10809,7 +10809,7 @@ let mdsJson={
     {
       "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
         "description": "ATKey.Card CTAP2.0",
         "authenticatorVersion": 3000039,
@@ -10945,7 +10945,7 @@ let mdsJson={
         "ed5bdb96011e3d457d858af39e30ac57c5ac95e6"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "e55878ab0b0a584e4c1add5633e19c25f0899a2d",
           "43c0f809b1d75616aa152c3cba57d73465057f21",
@@ -11020,7 +11020,7 @@ let mdsJson={
     {
       "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
         "description": "eWBM eFA310 FIDO2 Authenticator",
         "authenticatorVersion": 1,
@@ -11119,7 +11119,7 @@ let mdsJson={
     {
       "aaid": "006F#0001",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "006F#0001",
         "description": "Hanko UAF Client/Authenticator Combo for Android",
         "authenticatorVersion": 1,
@@ -11204,7 +11204,7 @@ let mdsJson={
     {
       "aaguid": "bc2fe499-0d8e-4ffe-96f3-94a82840cf8c",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bc2fe499-0d8e-4ffe-96f3-94a82840cf8c",
         "description": "OCTATCO EzQuant FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
@@ -11301,7 +11301,7 @@ let mdsJson={
         "aa8ce6fdcd722f701ee0657e18fa9f2a685e81cd"
       ],
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "bd79e8deafca17a472e4c37f2c7c861268e49fd5",
           "a72096772326b1b282b286c3e7d64089bd7aaad9",
@@ -11368,7 +11368,7 @@ let mdsJson={
     {
       "aaguid": "1c086528-58d5-f211-823c-356786e36140",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1c086528-58d5-f211-823c-356786e36140",
         "description": "Atos CardOS FIDO2",
         "alternativeDescriptions": {
@@ -11477,7 +11477,7 @@ let mdsJson={
     {
       "aaguid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
         "description": "Feitian BioPass FIDO2 Authenticator",
         "authenticatorVersion": 1,
@@ -11602,7 +11602,7 @@ let mdsJson={
     {
       "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
       "metadataStatement": {
-        "legalHeader": "https://fidoalliance.org/metadata/metadata-statement-legal-header/",
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
         "description": "Feitian ePass FIDO2 Authenticator",
         "authenticatorVersion": 1,
