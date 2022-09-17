@@ -569,7 +569,7 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3789da91-f943-46bc-95c3-50ea2012f03a",
         "description": "NEOWAVE Winkeo FIDO2",
-        "authenticatorVersion": 2,
+        "authenticatorVersion": 3,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
