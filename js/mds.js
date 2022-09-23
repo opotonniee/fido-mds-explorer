@@ -1671,6 +1671,89 @@ let mdsJson={
       "timeOfLastStatusChange": "2020-08-05"
     },
     {
+      "aaguid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaguid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
+        "description": "Nymi FIDO2 Authenticator",
+        "authenticatorVersion": 2,
+        "protocolFamily": "fido2",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 0
+          }
+        ],
+        "authenticationAlgorithms": [
+          "secp256r1_ecdsa_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "cose"
+        ],
+        "attestationTypes": [
+          "basic_full"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal"
+            }
+          ]
+        ],
+        "keyProtection": [
+          "hardware"
+        ],
+        "matcherProtection": [
+          "on_chip"
+        ],
+        "cryptoStrength": 128,
+        "attachmentHint": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "tcDisplay": [],
+        "attestationRootCertificates": [
+          "MIIBsjCCAVmgAwIBAgIIR6lgwksfjygwCgYIKoZIzj0EAwIwLTErMCkGA1UEAwwiTnltaSBGSURPIEF0dGVzdGF0aW9uIFJvb3QgQ0EgR29sZDAeFw0yMDA2MjYxNjIzNTJaFw0zNTA2MjMxNjIzNTJaMC0xKzApBgNVBAMMIk55bWkgRklETyBBdHRlc3RhdGlvbiBSb290IENBIEdvbGQwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQZVyzYLsvbvmg4bmRNyZjrVXzzzUfUeYiWYZiR3vACavX4j/Vx3jY/wvmdSc5baCmVQh+rN0Q+++LGwUj1kFico2MwYTAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFHmq8KC578jV43CJxTxxBKYbo1iMMB0GA1UdDgQWBBR5qvCgue/I1eNwicU8cQSmG6NYjDAOBgNVHQ8BAf8EBAMCAYYwCgYIKoZIzj0EAwIDRwAwRAIgKh1HcgL7oxpdWnnck9uCWF6C6b2tsbGPjSHu31G48WMCIHuEstSHGkMlFTH367ptmfC6wixmaCdwT8CV/ijrOTMI"
+        ],
+        "icon": "data:image/png;base64,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",
+        "authenticatorGetInfo": {
+          "versions": [
+            "U2F_V2",
+            "FIDO_2_0",
+            "FIDO_2_1_PRE"
+          ],
+          "extensions": [
+            "credProtect",
+            "hmac-secret"
+          ],
+          "aaguid": "0acf3011bc60f375fb536f05f43154e0",
+          "options": {
+            "plat": false,
+            "rk": true,
+            "up": false,
+            "uv": true,
+            "credMgmt": true
+          },
+          "maxMsgSize": 1200,
+          "maxCredentialCountInList": 20,
+          "maxCredentialIdLength": 128
+        }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-03-22",
+          "certificationDescriptor": "Nymi FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020210218007",
+          "certificationPolicyVersion": "1.3.7",
+          "certificationRequirementsVersion": "1.3.0"
+        }
+      ],
+      "timeOfLastStatusChange": "2021-03-22"
+    },
+    {
       "aaguid": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
