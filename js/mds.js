@@ -2341,11 +2341,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-10-06"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-10-07",
+          "url": "https://www.rsa.com",
+          "certificationDescriptor": "DS100",
+          "certificateNumber": "FIDO20020221007001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-10-07"
         }
       ],
-      "timeOfLastStatusChange": "2022-10-06"
+      "timeOfLastStatusChange": "2022-10-07"
     },
     {
       "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
@@ -10629,11 +10638,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-08-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-06-23",
+          "url": "https://authentrend.com/atkey-pro/",
+          "certificationDescriptor": "ATKey.Pro",
+          "certificateNumber": "FIDO20020220623001",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.4.1"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-06-23"
         }
       ],
-      "timeOfLastStatusChange": "2022-08-04"
+      "timeOfLastStatusChange": "2022-10-07"
     },
     {
       "attestationCertificateKeyIdentifiers": [
