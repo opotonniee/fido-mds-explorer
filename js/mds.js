@@ -11976,13 +11976,11 @@ let mdsJson={
     },
     {
       "attestationCertificateKeyIdentifiers": [
-        "413486e96dbd403f9936dd65352a8dd5",
         "0a426ee17afd16533b1cdfa95de1e920a6aedf3a"
       ],
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
-          "413486e96dbd403f9936dd65352a8dd5",
           "0a426ee17afd16533b1cdfa95de1e920a6aedf3a"
         ],
         "description": "VivoKey Apex U2F",
