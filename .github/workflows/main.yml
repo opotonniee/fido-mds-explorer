@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# Workflow to update MDS blob and JSON in repo
 
 name: CI
 
@@ -11,7 +11,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -24,14 +24,14 @@ jobs:
 
       - name: get remote mds blob
         run: |
-          wget -O mds.new https://mds.fidoalliance.org/ 
+          wget -O mds.new https://mds.fidoalliance.org/
           mv mds.new mds.blob
 
       - name: commit blob if new
         run: |
           x="$(git status -s | xargs)"
           if [ "$x" != "" ]
-          then 
+          then
             echo "MDS updated:"
             cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
             let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
@@ -43,14 +43,19 @@ jobs:
             fi
             base64 -d mdsBody.b64 | jq . > mdsBody.json
             echo -n "let mdsJson=" > js/mds.js
-            cat mdsBody.json >> js/mds.js
+            cat mdsBody.json >> js/mds-new.js
+            sed "s+let mdsJson={+{+" js/mds.js | jq -r ".entries[].metadataStatement.description" > prev.authrs
+            sed "s+let mdsJson={+{+" js/mds-new.js | jq -r ".entries[].metadataStatement.description" > new.authrs
+            MSG="MDS updated\n$(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | | sed 's+\"+ +g')"
+            rm prev.authrs new.authrs
+            mv js/mds-new.js js/mds.js
             echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-update.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add mds.blob
             git add js/mds.js
             git add js/last-update.js
-            git commit -m "MDS updated"
+            git commit -m "$MSG"
             git push
           else
             echo "no MDS change detected"
