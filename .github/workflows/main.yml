@@ -35,7 +35,7 @@ jobs:
             echo "MDS updated:"
             cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
             let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
-            echo base64 size: ${b64Size}
+            echo base64 size: _${b64Size}_
             let modulo=$(expr ${b64Size} % 4)
             echo modulo: ${modulo}
             if [ "${modulo}" == "2" ]
