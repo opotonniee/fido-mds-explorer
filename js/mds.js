@@ -12720,6 +12720,11 @@ let mdsJson={
           "certificateNumber": "FIDO20020190311003",
           "certificationPolicyVersion": "1.3.6",
           "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-05-27",
+          "certificationPolicyVersion": "1.3.6"
         }
       ],
       "timeOfLastStatusChange": "2019-05-27"
