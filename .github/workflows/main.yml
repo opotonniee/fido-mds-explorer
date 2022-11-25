@@ -44,7 +44,7 @@ jobs:
             echo "prev.authrs ready"
             sed "s+let mdsJson={+{+" js/mds-new.js | jq -r ".entries[].metadataStatement.description" > new.authrs
             echo "new.authrs ready"
-            MSG="MDS updated\n$(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | | sed 's+\"+ +g')"
+            MSG="MDS updated\n$(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | sed 's+\"+ +g')"
             echo "MSG=$MSG"
             rm prev.authrs new.authrs
             mv js/mds-new.js js/mds.js
