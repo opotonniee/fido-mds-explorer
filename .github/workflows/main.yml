@@ -41,8 +41,11 @@ jobs:
             cat mdsBody.json >> js/mds-new.js
             echo "new js ready"
             sed "s+let mdsJson={+{+" js/mds.js | jq -r ".entries[].metadataStatement.description" > prev.authrs
+            echo "prev.authrs ready"
             sed "s+let mdsJson={+{+" js/mds-new.js | jq -r ".entries[].metadataStatement.description" > new.authrs
+            echo "new.authrs ready"
             MSG="MDS updated\n$(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | | sed 's+\"+ +g')"
+            echo "MSG=$MSG"
             rm prev.authrs new.authrs
             mv js/mds-new.js js/mds.js
             echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-update.js
