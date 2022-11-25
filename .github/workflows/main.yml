@@ -34,20 +34,18 @@ jobs:
           then
             echo "MDS updated:"
             cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
-            b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
-            echo base64 size: _${b64Size}_
-            modulo=$(expr ${b64Size} % 4)
-            echo modulo: ${modulo}
-            if [ "${modulo}" == "2" ]
+            let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
+            echo base64 size: ${b64Size}
+            if [ "$((${b64Size} % 4))" == "2" ]
             then
               echo -n "==" >> mdsBody.b64
             fi
             base64 -d mdsBody.b64 | jq . > mdsBody.json
-            echo -n "let mdsJson=" > js/mds.js
+            echo -n "let mdsJson=" > js/mds-new.js
             cat mdsBody.json >> js/mds-new.js
             sed "s+let mdsJson={+{+" js/mds.js | jq -r ".entries[].metadataStatement.description" > prev.authrs
             sed "s+let mdsJson={+{+" js/mds-new.js | jq -r ".entries[].metadataStatement.description" > new.authrs
-            MSG="MDS updated\n$(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | | sed 's+\"+ +g')"
+            MSG="MDS updated $(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | sed 's+\"+ +g')"
             rm prev.authrs new.authrs
             mv js/mds-new.js js/mds.js
             echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-update.js
