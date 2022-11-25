@@ -35,19 +35,17 @@ jobs:
             echo "MDS updated:"
             cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
             # optimistic: assume no padding needed
+            set +e
             base64 -d mdsBody.b64 | jq . > mdsBody.json
             if [ $? -ne 0 ]
             then
+              set -e
               # was too optimistic: add padding
               echo "Adding padding"
               echo -n "==" >> mdsBody.b64
               base64 -d mdsBody.b64 | jq . > mdsBody.json
-              if [ $? -ne 0 ]
-              then
-                echo "Failed to parse JSON"
-                exit 1
-              fi
             fi
+            set -e
             echo -n "let mdsJson=" > js/mds.js
             cat mdsBody.json >> js/mds-new.js
             sed "s+let mdsJson={+{+" js/mds.js | jq -r ".entries[].metadataStatement.description" > prev.authrs
