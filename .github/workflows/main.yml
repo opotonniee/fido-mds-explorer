@@ -34,18 +34,15 @@ jobs:
           then
             echo "MDS updated:"
             cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
-            # optimistic: assume no padding needed
-            set +e
-            base64 -d mdsBody.b64 | jq . > mdsBody.json
-            if [ $? -ne 0 ]
+            b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
+            echo base64 size: _${b64Size}_
+            modulo=$(expr ${b64Size} % 4)
+            echo modulo: ${modulo}
+            if [ "${modulo}" == "2" ]
             then
-              set -e
-              # was too optimistic: add padding
-              echo "Adding padding"
               echo -n "==" >> mdsBody.b64
-              base64 -d mdsBody.b64 | jq . > mdsBody.json
             fi
-            set -e
+            base64 -d mdsBody.b64 | jq . > mdsBody.json
             echo -n "let mdsJson=" > js/mds.js
             cat mdsBody.json >> js/mds-new.js
             sed "s+let mdsJson={+{+" js/mds.js | jq -r ".entries[].metadataStatement.description" > prev.authrs
