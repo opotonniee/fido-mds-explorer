@@ -464,7 +464,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
-        "description": "Vancosys Android Authenticator",
+        "description": "IDmelon Android Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -527,7 +527,8 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUtmc3y+fyWzOZis9rK5fI6n9B8v+Cw2ezl8vlHptNVrNbX7Paj0ulvud293++JxuP///89HRvpAAAAEXRSTlP/////////////////////ACWtmWIAAABsSURBVHgBxdPBCoAwDIPh/yDise//tIIQCZo6RNGdtuWDstFSg/UOgMiADQBJ6J4iCwS4BgzBuEQHCoFa+mdM+qijsDMVhBfdoRFaAL4nAe6AeghODYPnsaNyLuAqg5AHwO9AYu5BmqEPhncFmecvM5KKQHMAAAAASUVORK5CYII=",
         "authenticatorGetInfo": {
@@ -4009,7 +4010,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
-        "description": "Vancosys iOS Authenticator",
+        "description": "IDmelon iOS Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -4072,6 +4073,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
+          "MIIByzCCAXGgAwIBAgIJANmMNK6jVpuuMAoGCCqGSM49BAMCMEExJDAiBgNVBAoMG1ZhbmNvc3lzIERhdGEgU2VjdXJpdHkgSW5jLjEZMBcGA1UEAwwQVmFuY29zeXMgUm9vdCBDQTAgFw0yMjEyMTQxODQxMDlaGA8yMDcyMTIwMTE4NDEwOVowQTEkMCIGA1UECgwbVmFuY29zeXMgRGF0YSBTZWN1cml0eSBJbmMuMRkwFwYDVQQDDBBWYW5jb3N5cyBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEalYgEopnKScAm+d9f1XpGB3zbkZCD3hZEKuxTclpBYlj4ypNRg0gMSa7geBgd6nck50YaVhdy75uIc2wbWX8t6NQME4wHQYDVR0OBBYEFOxyf0cDs8Yl+VnWSZ1uYJAKkFeVMB8GA1UdIwQYMBaAFOxyf0cDs8Yl+VnWSZ1uYJAKkFeVMAwGA1UdEwQFMAMBAf8wCgYIKoZIzj0EAwIDSAAwRQIhAO2XuiRDXxy/UkWhsuZQYNUXeOj08AeTWADAqXvcA30hAiBi2cdGd61PNwHDTYjXPenPcD8S0rFTDncNWfs3E/WDXA==",
           "MIIB/zCCAaSgAwIBAgIUPbddlpEdAdN+fm8JFanUXurNZy8wCgYIKoZIzj0EAwIwQTEkMCIGA1UECgwbVmFuY29zeXMgRGF0YSBTZWN1cml0eSBJbmMuMRkwFwYDVQQDDBBWYW5jb3N5cyBSb290IENBMCAXDTIwMTEwNDA2NDQxN1oYDzIwNzAxMDIzMDY0NDE3WjBBMSQwIgYDVQQKDBtWYW5jb3N5cyBEYXRhIFNlY3VyaXR5IEluYy4xGTAXBgNVBAMMEFZhbmNvc3lzIFJvb3QgQ0EwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARqViASimcpJwCb531/VekYHfNuRkIPeFkQq7FNyWkFiWPjKk1GDSAxJruB4GB3qdyTnRhpWF3Lvm4hzbBtZfy3o3gwdjBmBgNVHSMEXzBdoUWkQzBBMSQwIgYDVQQKDBtWYW5jb3N5cyBEYXRhIFNlY3VyaXR5IEluYy4xGTAXBgNVBAMMEFZhbmNvc3lzIFJvb3QgQ0GCFD23XZaRHQHTfn5vCRWp1F7qzWcvMAwGA1UdEwQFMAMBAf8wCgYIKoZIzj0EAwIDSQAwRgIhAOGjcwJUT7A/ER+5pACEPrOg79wbE/h8YMYUgymrXR6GAiEA7N6U3EWeQweMOmTOqavtWCdYCsMJcop9p13l9QbohDo="
         ],
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUtmc3y+fyWzOZis9rK5fI6n9B8v+Cw2ezl8vlHptNVrNbX7Paj0ulvud293++JxuP///89HRvpAAAAEXRSTlP/////////////////////ACWtmWIAAABsSURBVHgBxdPBCoAwDIPh/yDise//tIIQCZo6RNGdtuWDstFSg/UOgMiADQBJ6J4iCwS4BgzBuEQHCoFa+mdM+qijsDMVhBfdoRFaAL4nAe6AeghODYPnsaNyLuAqg5AHwO9AYu5BmqEPhncFmecvM5KKQHMAAAAASUVORK5CYII=",
