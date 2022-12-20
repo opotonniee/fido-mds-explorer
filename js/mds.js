@@ -9571,6 +9571,88 @@ let mdsJson={
       "timeOfLastStatusChange": "2018-07-20"
     },
     {
+      "aaguid": "91ad6b93-264b-4987-8737-3a690cad6917",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaguid": "91ad6b93-264b-4987-8737-3a690cad6917",
+        "description": "Token Ring FIDO2 Authenticator",
+        "authenticatorVersion": 2,
+        "protocolFamily": "fido2",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 0
+          }
+        ],
+        "authenticationAlgorithms": [
+          "secp256r1_ecdsa_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "cose"
+        ],
+        "attestationTypes": [
+          "basic_surrogate",
+          "basic_full"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
+              "userVerificationMethod": "fingerprint_internal"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ]
+        ],
+        "keyProtection": [
+          "hardware",
+          "secure_element"
+        ],
+        "matcherProtection": [
+          "on_chip"
+        ],
+        "cryptoStrength": 128,
+        "attachmentHint": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "tcDisplay": [],
+        "attestationRootCertificates": [
+          "MIIB/DCCAaGgAwIBAgIUEL/WkZfnxDw9s85XzUSJgycJjrQwCgYIKoZIzj0EAwIwcTELMAkGA1UEBhMCVVMxETAPBgNVBAgMCE5ldyBZb3JrMRYwFAYDVQQKDA1Ub2tlbml6ZSBJbmMuMSIwIAYDVQQLDBlBdXRoZW50aWNhdG9yIEF0dGVzdGF0aW9uMRMwEQYDVQQDDApUb2tlbiBSaW5nMB4XDTIxMDYyMTE2MTczNFoXDTMxMDYxOTE2MTczNFowezELMAkGA1UEBhMCVVMxETAPBgNVBAgMCE5ldyBZb3JrMRYwFAYDVQQKDA1Ub2tlbml6ZSBJbmMuMSIwIAYDVQQLDBlBdXRoZW50aWNhdG9yIEF0dGVzdGF0aW9uMR0wGwYDVQQDDBRUb2tlbjEgQXV0aGVudGljYXRvcjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABLcwU5AdnQaYblLiW4XswD8s6zeQ+nEAvKKjxy32PK1CWUxvv5RAgQ6wUQJJYVU4RcqVfdrGFqI9dIAuv1nec3yjDTALMAkGA1UdEwQCMAAwCgYIKoZIzj0EAwIDSQAwRgIhALt+Hz3l+gfZGEAm/ee5Mgp2IBCw+UYLSg7r2LXRC9SkAiEA1zjzej6tz9soS0oz2Vs4D6AtzoXY2HWZBgYt8G1KniE="
+        ],
+        "authenticatorGetInfo": {
+          "versions": [
+            "FIDO_2_0",
+            "U2F_V2"
+          ],
+          "extensions": [
+            "hmac-secret"
+          ],
+          "aaguid": "91ad6b93264b498787373a690cad6917",
+          "options": {
+            "rk": true,
+            "clientPin": false,
+            "uv": true
+          },
+          "pinUvAuthProtocols": [
+            1
+          ]
+        }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2022-12-19"
+        }
+      ],
+      "timeOfLastStatusChange": "2022-12-19"
+    },
+    {
       "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
