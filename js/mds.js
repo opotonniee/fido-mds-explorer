@@ -3356,11 +3356,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-30"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-03-30",
+          "url": "https://crp.to",
+          "certificationDescriptor": "OnlyKey",
+          "certificateNumber": "FIDO20020220330001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.4"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-03-30"
         }
       ],
-      "timeOfLastStatusChange": "2022-11-30"
+      "timeOfLastStatusChange": "2023-01-11"
     },
     {
       "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
@@ -9859,11 +9868,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-12-19"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-01-25",
+          "url": "https://tokenring.com/",
+          "certificationDescriptor": "Token Ring",
+          "certificateNumber": "FIDO20020220125002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-01-25"
         }
       ],
-      "timeOfLastStatusChange": "2022-12-19"
+      "timeOfLastStatusChange": "2023-01-11"
     },
     {
       "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
@@ -10938,11 +10956,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-10-26"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-10-20",
+          "url": "https://www.hypr.com/",
+          "certificationDescriptor": "HYPR FIDO2 Mobile Authenticator",
+          "certificateNumber": "FIDO20020221020001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-10-20"
         }
       ],
-      "timeOfLastStatusChange": "2022-10-26"
+      "timeOfLastStatusChange": "2023-01-11"
     },
     {
       "attestationCertificateKeyIdentifiers": [
