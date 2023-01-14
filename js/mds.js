@@ -774,7 +774,9 @@ let mdsJson={
     {
       "attestationCertificateKeyIdentifiers": [
         "bf7bcaa0d0c6187a8c6abbdd16a15640e7c7bde2",
+        "3012b66092a16d3d7687241634b20a3bde2634e8",
         "753300d65dcc73a39a7db31ef308db9fa0b566ae",
+        "98552aea456370e22e1901e31817359142b92888",
         "b753a0e460fb2dc7c7c487e35f24cf63b065347c",
         "b6d44a4b8d4b0407872969b1f6b2263021be627e",
         "6d491f223af73cdf81784a6c0890f8a1d527a12c"
@@ -783,7 +785,9 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "bf7bcaa0d0c6187a8c6abbdd16a15640e7c7bde2",
+          "3012b66092a16d3d7687241634b20a3bde2634e8",
           "753300d65dcc73a39a7db31ef308db9fa0b566ae",
+          "98552aea456370e22e1901e31817359142b92888",
           "b753a0e460fb2dc7c7c487e35f24cf63b065347c",
           "b6d44a4b8d4b0407872969b1f6b2263021be627e",
           "6d491f223af73cdf81784a6c0890f8a1d527a12c"
@@ -5125,7 +5129,9 @@ let mdsJson={
     },
     {
       "attestationCertificateKeyIdentifiers": [
+        "d002f4c0a88a7c27d5201c6a51a0e0546b6d8f75",
         "67ef0f4c36b51780a3facc0a92324593ab196685",
+        "b95206228ead492b9e14504abefcb20546b0e53b",
         "9be8c86f3b7da9f5026a56607b2b93f0ffd058ae",
         "7295499531c0fb059d6c88d1b29665547757c6c6",
         "ea5442c9cc56f6456db5344b369689c647a7a1e1",
@@ -5135,7 +5141,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
+          "d002f4c0a88a7c27d5201c6a51a0e0546b6d8f75",
           "67ef0f4c36b51780a3facc0a92324593ab196685",
+          "b95206228ead492b9e14504abefcb20546b0e53b",
           "9be8c86f3b7da9f5026a56607b2b93f0ffd058ae",
           "7295499531c0fb059d6c88d1b29665547757c6c6",
           "ea5442c9cc56f6456db5344b369689c647a7a1e1",
@@ -6807,6 +6815,7 @@ let mdsJson={
         "4e29df05a59c17a73c7ea64a94fdfff1f9e9ae0f",
         "bf12365afcb14d3dd820be7ec4be163cb7c85de0",
         "16e77496450b20c32c0bdec2a24b2917bf1815f3",
+        "859df0774129f02bc41bfba91f3cba271da7c866",
         "ec9f709878dd14dbb676bbe49f1405ec770d02f0",
         "2cc1afbae08569a5de0889824e5c404d35721ad3",
         "8e900037d095ad7a8ada6c4c18143b7dbeb44674",
@@ -6818,6 +6827,7 @@ let mdsJson={
           "4e29df05a59c17a73c7ea64a94fdfff1f9e9ae0f",
           "bf12365afcb14d3dd820be7ec4be163cb7c85de0",
           "16e77496450b20c32c0bdec2a24b2917bf1815f3",
+          "859df0774129f02bc41bfba91f3cba271da7c866",
           "ec9f709878dd14dbb676bbe49f1405ec770d02f0",
           "2cc1afbae08569a5de0889824e5c404d35721ad3",
           "8e900037d095ad7a8ada6c4c18143b7dbeb44674",
@@ -9004,6 +9014,7 @@ let mdsJson={
     {
       "attestationCertificateKeyIdentifiers": [
         "6b96167157ed487760701bdf004907d1fe917ee1",
+        "8e16186d1843a956625e5db37dc77dc74c21904c",
         "8bf7115763ea49b6549e083c9fe8dc7b4ef60e19",
         "80245f8e317cbc795c664bf84389e80a97c5e623"
       ],
@@ -9011,6 +9022,7 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
           "6b96167157ed487760701bdf004907d1fe917ee1",
+          "8e16186d1843a956625e5db37dc77dc74c21904c",
           "8bf7115763ea49b6549e083c9fe8dc7b4ef60e19",
           "80245f8e317cbc795c664bf84389e80a97c5e623"
         ],
@@ -9643,6 +9655,8 @@ let mdsJson={
         "57918bc33803503900ef15ae9b2aef0d547bd6f5",
         "c48b78caeae7af65c1cda4a3b9b9bfa46bbc065a",
         "bdeb7f015a66e4c8448b414ffd41ca669bba6b4a",
+        "e2dcab78099040240176b22a20d6c3d993508bd1",
+        "4ff886e107ddd7f136cbb5fcc9df23006e2c2d27",
         "6849a4f8ccf79f1422497d779cdc901a81b60221",
         "e3e26f22e55a3ee1a4493d7f0200985eafee2572",
         "99b011819a9b1539b28b86f625547f173eb5d57b"
@@ -9653,6 +9667,8 @@ let mdsJson={
           "57918bc33803503900ef15ae9b2aef0d547bd6f5",
           "c48b78caeae7af65c1cda4a3b9b9bfa46bbc065a",
           "bdeb7f015a66e4c8448b414ffd41ca669bba6b4a",
+          "e2dcab78099040240176b22a20d6c3d993508bd1",
+          "4ff886e107ddd7f136cbb5fcc9df23006e2c2d27",
           "6849a4f8ccf79f1422497d779cdc901a81b60221",
           "e3e26f22e55a3ee1a4493d7f0200985eafee2572",
           "99b011819a9b1539b28b86f625547f173eb5d57b"
@@ -13093,6 +13109,7 @@ let mdsJson={
     },
     {
       "attestationCertificateKeyIdentifiers": [
+        "85c8d4690647591b5ac9f756cd875e980461ffc4",
         "e55878ab0b0a584e4c1add5633e19c25f0899a2d",
         "43c0f809b1d75616aa152c3cba57d73465057f21",
         "11c0910a9782ba3d0bd8f86bba49e282365cc05c",
@@ -13103,6 +13120,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
+          "85c8d4690647591b5ac9f756cd875e980461ffc4",
           "e55878ab0b0a584e4c1add5633e19c25f0899a2d",
           "43c0f809b1d75616aa152c3cba57d73465057f21",
           "11c0910a9782ba3d0bd8f86bba49e282365cc05c",
