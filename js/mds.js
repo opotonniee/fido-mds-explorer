@@ -6691,11 +6691,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-01-13"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-11-17",
+          "url": "https://www.acs.com.hk/",
+          "certificationDescriptor": "ACS FIDO Authenticator",
+          "certificateNumber": "FIDO20020221117001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-11-17"
         }
       ],
-      "timeOfLastStatusChange": "2023-01-13"
+      "timeOfLastStatusChange": "2023-01-18"
     },
     {
       "aaguid": "f7c558a0-f465-11e8-b568-0800200c9a66",
