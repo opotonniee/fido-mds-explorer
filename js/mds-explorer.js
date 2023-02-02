@@ -281,7 +281,7 @@ $(function() {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: function(cell, formatterParams, onRendered){
-          imageTag(cell.getValue());
+          return imageTag(cell.getValue());
         }
       },
       {
