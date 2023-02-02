@@ -170,7 +170,7 @@ function stringify(obj) {
 
       // Icon
       if (key == "icon") {
-        val = "<img src='" + obj[key] + "'/>";
+        val = obj[key] ? "<img src='" + obj[key] + "'/>" : "-";
 
       // Certificates
       } else if (key == "attestationRootCertificates") {
@@ -258,7 +258,7 @@ $(function() {
       {
         title: "Name",
         field: "metadataStatement.description",
-        sorter: "string", 
+        sorter: "string",
         headerFilter:true,
         formatter: function(cell, formatterParams, onRendered){
           let name = cell.getValue();
