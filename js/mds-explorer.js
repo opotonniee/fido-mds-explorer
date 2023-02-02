@@ -281,9 +281,7 @@ $(function() {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: function(cell, formatterParams, onRendered){
-          let imgSrc = cell.getValue();
-          return imgSrc ? imageTag(imgSrc) : "";
-
+          imageTag(cell.getValue());
         }
       },
       {
