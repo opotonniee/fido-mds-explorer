@@ -113,6 +113,10 @@ function getVendor(aaid) {
   return vendorName ? vendorName : "??";
 }
 
+function imageTag(src) {
+  return src ? "<img src='" + src + "'/>" : "";
+}
+
 function certificate(obj) {
   let certHtml = "<li><ul>";
   try {
@@ -170,7 +174,7 @@ function stringify(obj) {
 
       // Icon
       if (key == "icon") {
-        val = obj[key] ? "<img src='" + obj[key] + "'/>" : "-";
+        val = imageTag(obj[key]);
 
       // Certificates
       } else if (key == "attestationRootCertificates") {
@@ -276,7 +280,11 @@ $(function() {
       {
         title: "Icon",
         field: "metadataStatement.icon",
-        formatter: "image"
+        formatter: function(cell, formatterParams, onRendered){
+          let imgSrc = cell.getValue();
+          return imgSrc ? imageTag(imgSrc) : "";
+
+        }
       },
       {
         title: "Certification",
