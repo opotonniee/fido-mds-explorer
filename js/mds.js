@@ -1752,7 +1752,7 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9d3df6ba-282f-11ed-a261-0242ac120002",
         "description": "Arculus FIDO2/U2F Key Card",
-        "authenticatorVersion": 1000000,
+        "authenticatorVersion": 10,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
@@ -1777,6 +1777,27 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 6,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -1791,28 +1812,7 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            }
-          ],
-          [
-            {
               "userVerificationMethod": "none"
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "presence_internal"
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "passcode_external",
-              "caDesc": {
-                "base": 64,
-                "minLength": 6,
-                "maxRetries": 8,
-                "blockSlowdown": 0
-              }
             }
           ]
         ],
