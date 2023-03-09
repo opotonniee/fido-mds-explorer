@@ -11530,12 +11530,12 @@ let mdsJson={
     },
     {
       "attestationCertificateKeyIdentifiers": [
-        "bab1487181fa4b7f6064b7f6bba6cff9efdfd7"
+        "bab1487181fa4b7f6064b7f6bba6cff9efdfd71e"
       ],
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
-          "bab1487181fa4b7f6064b7f6bba6cff9efdfd7"
+          "bab1487181fa4b7f6064b7f6bba6cff9efdfd71e"
         ],
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 328707,
