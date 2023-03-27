@@ -352,16 +352,31 @@ $(function() {
     }
   });
 
+  let searchedAuthr;
   if (location.search) {
     let params = new URLSearchParams(location.search);
     if (params.has("aaguid")) {
       let aaguid = params.get("aaguid");
       for (const entry of mdsJson.entries) {
         if (entry.aaguid == aaguid) {
-          showAuthr(entry);
+          searchedAuthr = entry;
           break;
         }
       }
+    } else if (params.has("x5c")) {
+      let x5c = params.get("x5c");
+      for (const entry of mdsJson.entries) {
+        if (entry.metadataStatement.attestationRootCertificates.includes(x5c)) {
+          searchedAuthr = entry;
+          break;
+        }
+      }
+    }
+    if (searchedAuthr) {
+      showAuthr(searchedAuthr);
+    } else {
+      alert("The authenticator your are looking for was not found");
+      window.location = "."
     }
   } else {
     setTimeout(function() { id = 1; table.redraw(true); }, 500);
