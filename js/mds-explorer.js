@@ -343,9 +343,6 @@ $(function() {
     footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
   });
 
-  setTimeout(function() { id = 1; table.redraw(true); }, 500);
-
-
   window.addEventListener('popstate', (event) => {
     if ($("#authr").is(":visible")) {
       $("#mds").show();
@@ -355,4 +352,18 @@ $(function() {
     }
   });
 
+  if (location.search) {
+    let params = new URLSearchParams(location.search);
+    if (params.has("aaguid")) {
+      let aaguid = params.get("aaguid");
+      for (const entry of mdsJson.entries) {
+        if (entry.aaguid == aaguid) {
+          showAuthr(entry);
+          break;
+        }
+      }
+    }
+  } else {
+    setTimeout(function() { id = 1; table.redraw(true); }, 500);
+  }
 });
