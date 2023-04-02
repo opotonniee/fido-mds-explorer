@@ -1,7 +1,7 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 25,
-  "nextUpdate": "2023-04-01",
+  "no": 26,
+  "nextUpdate": "2023-05-01",
   "entries": [
     {
       "attestationCertificateKeyIdentifiers": [
@@ -2436,6 +2436,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-03-28",
+          "url": "https://www.yubico.com/products/",
+          "certificationDescriptor": "Security Key NFC by Yubico",
+          "certificateNumber": "FIDO20020230328002",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-02-02",
           "url": "https://www.yubico.com/",
@@ -2449,7 +2458,7 @@ let mdsJson={
           "effectiveDate": "2023-02-02"
         }
       ],
-      "timeOfLastStatusChange": "2023-02-08"
+      "timeOfLastStatusChange": "2023-03-29"
     },
     {
       "aaguid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
@@ -3555,6 +3564,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-03-28",
+          "url": "https://www.yubico.com/products/",
+          "certificationDescriptor": "YubiKey 5 FIPS Series",
+          "certificateNumber": "FIDO20020230328004",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
           "certificationDescriptor": "YK 5 FIPS",
@@ -3567,7 +3585,7 @@ let mdsJson={
           "effectiveDate": "2021-02-18"
         }
       ],
-      "timeOfLastStatusChange": "2021-02-18"
+      "timeOfLastStatusChange": "2023-03-29"
     },
     {
       "aaguid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
@@ -5881,6 +5899,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-03-28",
+          "url": "https://www.yubico.com/products/",
+          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning",
+          "certificateNumber": "FIDO20020230328005",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
           "certificationDescriptor": "YK 5Ci FIPS",
@@ -5893,7 +5920,7 @@ let mdsJson={
           "effectiveDate": "2021-02-18"
         }
       ],
-      "timeOfLastStatusChange": "2021-02-18"
+      "timeOfLastStatusChange": "2023-03-29"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -12260,6 +12287,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-03-28",
+          "url": "https://www.yubico.com/products/",
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
+          "certificateNumber": "FIDO20020230328003",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-02-02",
           "url": "https://www.yubico.com/",
@@ -12273,7 +12309,7 @@ let mdsJson={
           "effectiveDate": "2023-02-02"
         }
       ],
-      "timeOfLastStatusChange": "2023-02-08"
+      "timeOfLastStatusChange": "2023-03-29"
     },
     {
       "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
@@ -12597,6 +12633,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-03-28",
+          "url": "https://www.yubico.com/products",
+          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC",
+          "certificateNumber": "FIDO20020230328001",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
           "certificationDescriptor": "YK 5 FIPS",
@@ -12609,7 +12654,7 @@ let mdsJson={
           "effectiveDate": "2021-02-18"
         }
       ],
-      "timeOfLastStatusChange": "2021-02-18"
+      "timeOfLastStatusChange": "2023-03-29"
     },
     {
       "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
