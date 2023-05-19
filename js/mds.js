@@ -2772,11 +2772,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-12-02"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-01-17",
+          "url": "https://www.improveid.com/",
+          "certificationDescriptor": "ImproveID Authenticator",
+          "certificateNumber": "FIDO20020230117002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-01-17"
         }
       ],
-      "timeOfLastStatusChange": "2022-12-02"
+      "timeOfLastStatusChange": "2023-05-18"
     },
     {
       "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
@@ -13313,11 +13322,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-12-02"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-01-17",
+          "url": "https://www.improveid.com/",
+          "certificationDescriptor": "ImproveID Authenticator",
+          "certificateNumber": "U2F00020230117002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-01-17"
         }
       ],
-      "timeOfLastStatusChange": "2022-12-02"
+      "timeOfLastStatusChange": "2023-05-18"
     },
     {
       "aaguid": "0076631b-d4a0-427f-5773-0ec71c9e0279",
