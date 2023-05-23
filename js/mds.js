@@ -11003,7 +11003,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db6",
-        "description": "TOKEN2 FIDO2 Security Key",
+        "description": "TEST (DUMMY RECORD)",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
         "schema": 3,
