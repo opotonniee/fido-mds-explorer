@@ -4876,26 +4876,24 @@ let mdsJson={
     },
     {
       "attestationCertificateKeyIdentifiers": [
+        "a1833532e81bccc79245fa6f5296c4815dff599c",
+        "342938e0ee65d51ee05611c28202c674dfd5c9de",
         "d53edd23adb6b5b4add102fb4ad1b4037ff4a7ae",
         "a1833532e81bccc79245fa6f5296c4815dff599c",
         "342938e0ee65d51ee05611c28202c674dfd5c9de",
         "d53edd23adb6b5b4add102fb4ad1b4037ff4a7ae",
-        "f5f6eef729a0264752053c22e89fc3028f1536c1",
-        "f5f6eef729a0264752053c22e89fc3028f1536c1",
-        "342938e0ee65d51ee05611c28202c674dfd5c9de",
-        "a1833532e81bccc79245fa6f5296c4815dff599c"
+        "f5f6eef729a0264752053c22e89fc3028f1536c1"
       ],
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "attestationCertificateKeyIdentifiers": [
+          "a1833532e81bccc79245fa6f5296c4815dff599c",
+          "342938e0ee65d51ee05611c28202c674dfd5c9de",
           "d53edd23adb6b5b4add102fb4ad1b4037ff4a7ae",
           "a1833532e81bccc79245fa6f5296c4815dff599c",
           "342938e0ee65d51ee05611c28202c674dfd5c9de",
           "d53edd23adb6b5b4add102fb4ad1b4037ff4a7ae",
-          "f5f6eef729a0264752053c22e89fc3028f1536c1",
-          "f5f6eef729a0264752053c22e89fc3028f1536c1",
-          "342938e0ee65d51ee05611c28202c674dfd5c9de",
-          "a1833532e81bccc79245fa6f5296c4815dff599c"
+          "f5f6eef729a0264752053c22e89fc3028f1536c1"
         ],
         "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328707,
