@@ -6365,9 +6365,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "516d3969-5a57-5651-5958-4e7a49434167",
-        "description": "SmartDisplayer BobeePass (NFC-BLE FIDO2 Authenticator)",
+        "description": "SmartDisplayer BobeePass FIDO2 Authenticator",
         "alternativeDescriptions": {
-          "zh-TW": "SmartDisplayer (NFC-BLE FIDO2 身份驗證器)"
+          "zh-TW": "SmartDisplayer BobeePass FIDO2 身份驗證器"
         },
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
