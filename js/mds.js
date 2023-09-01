@@ -1,7 +1,7 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 30,
-  "nextUpdate": "2023-09-01",
+  "no": 31,
+  "nextUpdate": "2023-10-01",
   "entries": [
     {
       "attestationCertificateKeyIdentifiers": [
