@@ -6947,11 +6947,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-08-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-08-16",
+          "certificationDescriptor": "Arculus FIDO2/U2F Key Card [P71]",
+          "certificateNumber": "U2F000020230816001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-08-16"
         }
       ],
-      "timeOfLastStatusChange": "2023-08-04"
+      "timeOfLastStatusChange": "2023-09-12"
     },
     {
       "aaguid": "f4c63eff-d26c-4248-801c-3736c7eaa93a",
@@ -8362,11 +8370,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-08-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-08-16",
+          "certificationDescriptor": "Arculus FIDO 2.1 Key Card [P71]",
+          "certificateNumber": "FIDO20020230816001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-08-16"
         }
       ],
-      "timeOfLastStatusChange": "2023-08-04"
+      "timeOfLastStatusChange": "2023-09-12"
     },
     {
       "aaguid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
