@@ -6843,6 +6843,14 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-06-02",
+          "certificationDescriptor": "SmartDisplayer BobeePass FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020230602001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-04-18",
           "url": "https://www.smartdisplayer.com/",
@@ -6856,7 +6864,7 @@ let mdsJson={
           "effectiveDate": "2022-04-18"
         }
       ],
-      "timeOfLastStatusChange": "2022-05-05"
+      "timeOfLastStatusChange": "2023-09-18"
     },
     {
       "attestationCertificateKeyIdentifiers": [
