@@ -2570,11 +2570,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-24"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-07-20",
+          "certificationDescriptor": "ACS FIDO Authenticator Card",
+          "certificateNumber": "FIDO20020230720001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-07-20"
         }
       ],
-      "timeOfLastStatusChange": "2023-07-24"
+      "timeOfLastStatusChange": "2023-10-03"
     },
     {
       "aaguid": "1105e4ed-af1d-02ff-ffff-ffffffffffff",
@@ -4535,11 +4543,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-31"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-07-19",
+          "certificationDescriptor": "Chunghwa Telecom FIDO2 Smart Card Authenticator",
+          "certificateNumber": "FIDO20020230719001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-07-19"
         }
       ],
-      "timeOfLastStatusChange": "2023-07-31"
+      "timeOfLastStatusChange": "2023-10-03"
     },
     {
       "aaguid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
@@ -7326,11 +7342,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-24"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-07-20",
+          "certificationDescriptor": "ACS FIDO Authenticator Card",
+          "certificateNumber": "U2F100020230720001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-07-20"
         }
       ],
-      "timeOfLastStatusChange": "2023-07-24"
+      "timeOfLastStatusChange": "2023-10-03"
     },
     {
       "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
@@ -13054,11 +13078,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-05"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-03-28",
+          "certificationDescriptor": "authenton1 - CTAP2.1",
+          "certificateNumber": "U2F100020230328001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-03-28"
         }
       ],
-      "timeOfLastStatusChange": "2023-07-05"
+      "timeOfLastStatusChange": "2023-10-03"
     },
     {
       "aaid": "0066#0001",
@@ -15652,11 +15684,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-04-28"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-03-28",
+          "certificationDescriptor": "authenton1 - CTAP2.1",
+          "certificateNumber": "FIDO20020230328006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-03-28"
         }
       ],
-      "timeOfLastStatusChange": "2023-04-28"
+      "timeOfLastStatusChange": "2023-10-03"
     },
     {
       "aaguid": "b50d5e0a-7f81-4959-9b12-f45407407503",
