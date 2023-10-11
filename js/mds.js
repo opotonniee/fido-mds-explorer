@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 33,
+  "no": 34,
   "nextUpdate": "2023-11-01",
   "entries": [
     {
@@ -1863,11 +1863,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-24"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-12-15",
+          "url": "https://www.acs.com.hk/",
+          "certificationDescriptor": "ACS FIDO Authenticator",
+          "certificateNumber": "U2F100020221214001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-12-15"
         }
       ],
-      "timeOfLastStatusChange": "2023-07-24"
+      "timeOfLastStatusChange": "2023-10-10"
     },
     {
       "aaguid": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
@@ -3664,11 +3673,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-11"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2020-10-15",
+          "certificationDescriptor": "KX906 Smart Token FIDO®",
+          "certificateNumber": "FIDO20020201015002",
+          "certificationPolicyVersion": "1.2",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-10-15"
         }
       ],
-      "timeOfLastStatusChange": "2023-09-11"
+      "timeOfLastStatusChange": "2023-10-10"
     },
     {
       "aaguid": "5343502d-5343-5343-6172-644649444f32",
@@ -5378,11 +5395,20 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-21"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2023-06-02",
+          "url": "https://www.smartdisplayer.com/fido",
+          "certificationDescriptor": "SmartDisplayer BobeePass FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020230602001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-06-02"
         }
       ],
-      "timeOfLastStatusChange": "2023-09-21"
+      "timeOfLastStatusChange": "2023-10-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -15690,11 +15716,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-12-14"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-03-27",
+          "certificationDescriptor": "KX701 SmartToken FIDO",
+          "certificateNumber": "FIDO20020230327001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-03-27"
         }
       ],
-      "timeOfLastStatusChange": "2022-12-14"
+      "timeOfLastStatusChange": "2023-10-10"
     },
     {
       "aaguid": "b267239b-954f-4041-a01b-ee4f33c145b6",
