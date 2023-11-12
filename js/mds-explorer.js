@@ -337,6 +337,16 @@ $(function() {
         }
       },
       {
+        title: "Algorithms",
+        field: "metadataStatement.authenticationAlgorithms",
+        formatter: function(cell, formatterParams, onRendered){
+          let res = "", sep="";
+          $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
+          return res;
+        },
+        headerFilter: true
+      },
+      {
         title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
       },
     ],
