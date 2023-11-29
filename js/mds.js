@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 44,
+  "no": 45,
   "nextUpdate": "2023-12-01",
   "entries": [
     {
@@ -1062,6 +1062,112 @@ let mdsJson={
         }
       ],
       "timeOfLastStatusChange": "2019-02-13"
+    },
+    {
+      "aaguid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaguid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+        "description": "OpenSK authenticator",
+        "authenticatorVersion": 1,
+        "protocolFamily": "fido2",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 0
+          }
+        ],
+        "authenticationAlgorithms": [
+          "secp256r1_ecdsa_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "ecc_x962_raw",
+          "cose"
+        ],
+        "attestationTypes": [
+          "basic_surrogate"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ]
+        ],
+        "keyProtection": [
+          "hardware"
+        ],
+        "matcherProtection": [
+          "on_chip"
+        ],
+        "cryptoStrength": 128,
+        "attachmentHint": [
+          "external",
+          "wired"
+        ],
+        "tcDisplay": [],
+        "attestationRootCertificates": [
+          "MIIBGDCBwAIJAM8A3ehdpiFuMAoGCCqGSM49BAMCMBQxEjAQBgNVBAMMCU9wZW5TSyBDQTAgFw0yMDA5MTQxMjEyNDBaGA8yMDgwMDkxNDEyMTI0MFowFDESMBAGA1UEAwwJT3BlblNLIENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEs/54X/I8ydmZgFVEJ4yKnlA4uIJramAQcc3do2xDzRGcxDTzttIbdk4XX2rz6aZETeXt7E8+7HMLI4khuJpUXjAKBggqhkjOPQQDAgNHADBEAiAhnTLXit4GJNHqh8h1DHNb90V5OW5vRmOl6lvE/cPz9QIgb3d3huE3Yh0yQ/HQuIo6dHM+F/4teazhJZF15gYLwCc="
+        ],
+        "icon": "data:image/png;base64,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",
+        "authenticatorGetInfo": {
+          "versions": [
+            "FIDO_2_0",
+            "U2F_V2"
+          ],
+          "extensions": [
+            "hmac-secret"
+          ],
+          "aaguid": "664d9f6784a2412a9ff7b4f7d8ee6d05",
+          "options": {
+            "rk": true,
+            "clientPin": false,
+            "up": true
+          },
+          "maxMsgSize": 1024,
+          "pinUvAuthProtocols": [
+            1
+          ]
+        }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2023-11-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2023-11-07"
     },
     {
       "aaguid": "3789da91-f943-46bc-95c3-50ea2012f03a",
