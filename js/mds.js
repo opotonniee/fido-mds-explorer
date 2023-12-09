@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 46,
+  "no": 47,
   "nextUpdate": "2024-01-01",
   "entries": [
     {
@@ -833,11 +833,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-03"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2019-12-10",
+          "certificationDescriptor": "Excelsecu eSecu FIDO2 Pro Security Key",
+          "certificateNumber": "FIDO20020191210001",
+          "certificationPolicyVersion": "1.1.1",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-12-10"
         }
       ],
-      "timeOfLastStatusChange": "2023-11-03"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
@@ -2171,11 +2179,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-10-11"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-10-19",
+          "certificationDescriptor": "IDEMIA ID-ONE Card",
+          "certificateNumber": "FIDO20020231019001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-10-19"
         }
       ],
-      "timeOfLastStatusChange": "2023-10-11"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9a",
@@ -9362,11 +9378,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-10-11"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-10-19",
+          "certificationDescriptor": "IDEMIA ID-ONE Card",
+          "certificateNumber": "U2F100020231019001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-10-19"
         }
       ],
-      "timeOfLastStatusChange": "2023-10-11"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "aaguid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
@@ -15569,11 +15593,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-03"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-05-09",
+          "certificationDescriptor": "Excelsecu eSecu FIDO2 NFC Security Key",
+          "certificateNumber": "FIDO20020220509002",
+          "certificationPolicyVersion": "1.2",
+          "certificationRequirementsVersion": "1.4"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-05-09"
         }
       ],
-      "timeOfLastStatusChange": "2023-11-03"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -15806,11 +15838,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-03"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-11-02",
+          "certificationDescriptor": "ATKey.Card NFC",
+          "certificateNumber": "FIDO20020231102001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-11-02"
         }
       ],
-      "timeOfLastStatusChange": "2023-11-03"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "aaguid": "6002f033-3c07-ce3e-d0f7-0ffe5ed42543",
@@ -15990,11 +16030,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-03"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-05-16",
+          "certificationDescriptor": "Excelsecu eSecu FIDO2 Fingerprint Key",
+          "certificateNumber": "FIDO20020230516001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-05-16"
         }
       ],
-      "timeOfLastStatusChange": "2023-11-03"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "aaguid": "5fdb81b8-53f0-4967-a881-f5ec26fe4d18",
@@ -18091,11 +18139,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2021-08-05",
+          "certificationDescriptor": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+          "certificateNumber": "FIDO20020210805001",
+          "certificationPolicyVersion": "1.2",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-08-05"
         }
       ],
-      "timeOfLastStatusChange": "2023-09-04"
+      "timeOfLastStatusChange": "2023-12-08"
     },
     {
       "attestationCertificateKeyIdentifiers": [
