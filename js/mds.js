@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 59,
+  "no": 60,
   "nextUpdate": "2024-03-01",
   "entries": [
     {
@@ -19040,11 +19040,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-04-06"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-09-13",
+          "certificationDescriptor": "Swissbit iShield Key Pro",
+          "certificateNumber": "FIDO20020230913002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-09-13"
         }
       ],
-      "timeOfLastStatusChange": "2023-04-06"
+      "timeOfLastStatusChange": "2024-02-13"
     },
     {
       "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
