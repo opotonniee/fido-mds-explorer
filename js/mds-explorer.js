@@ -10,7 +10,7 @@ function type(obj) {
 }
 
 // CSV from http://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3
-// replace "^(.*),(.*)$"" with "  $2: $1,"
+// replace "^(.*),(.*)$" with "  $2: $1,"
 // last update: 28 June 2021
 const vendors = {
   // from payload
@@ -85,7 +85,11 @@ const vendors = {
   "0081": "Honor Device Co., Ltd.",
   "0083": "Hyweb Global Technology Co. Ltd",
   "0085": "CyberLink Corp.",
+  "0087": "Wultra s.r.o.",
   "008A": "Tendyron Corporation",
+  "0090": "CORETECH KNOWLEDGE INC.",
+  "0091": "Starfish GmbH",
+  "0093": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
   "0261": "TWCA",
   "0262": "TD Tech Ltd",
   "0263": "Presidio Identity",
