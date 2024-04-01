@@ -1,8 +1,13 @@
 
-// CSV from http://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3
-// last update: $(date)
+/*
+   GENERATED FILE
+   from http://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3
+*/
+
+// eslint-disable-next-line no-unused-vars
 const vendors = {
 
+  // extracted
   "0010": "Sharp",
   "0011": "FUJITSU CONNECTED TECHNOLOGIES LIMITED",
   "0012": "RaonSecure Co., Ltd.",
@@ -12,10 +17,10 @@ const vendors = {
   "0016": "Sensory, Inc.",
   "0019": "GOTRUSTID Inc.",
   "001B": "Huawei Device Co., Ltd.",
-  "001D": "Shenzhen National Engineering Laboratory of Digital Television  Co.，Ltd.",
+  "001D": "Shenzhen National Engineering Laboratory of Digital Television  Co.,Ltd.",
   "001F": "EyeVerify, Inc.",
   "0020": "Dream Security Co., Ltd. Korea",
-  "0024": "Giesecke  Devrient",
+  "0024": "Giesecke & Devrient",
   "0027": "Secuve Co., Ltd.",
   "0028": "SGA Solutions",
   "002A": "Coolpad Group Limited",
@@ -75,7 +80,7 @@ const vendors = {
   "2E84": "MOTOROLA mobile technology (wuhan) communications co., LTD",
   "4359": "Cypress",
   "4746": "Shenzhen Goodix Technology Co., Ltd",
-  "4D48": "Safran Identity  Security",
+  "4D48": "Safran Identity & Security",
   "4E4E": "Nok Nok Labs",
   "5143": "Qualcomm Technologies, Inc.",
   "53D5": "Samsung SDS",
@@ -101,4 +106,3 @@ const vendors = {
   "1EA8": "Excelsecu",
   "DAB8": "DDS"
 };
-
