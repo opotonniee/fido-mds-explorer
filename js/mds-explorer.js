@@ -1,7 +1,6 @@
 'use strict';
 /* globals $, x509, mdsJson, Tabulator, LAST_MDS_UPDATE, vendors */
 
-let id = 1;
 let table;
 let cert;
 
@@ -126,7 +125,7 @@ function isMatchingFilter(headerValue, values) {
           values.includes(headerValue); // ?
 }
 
-function filterCertifs(headerValue, rowValue, rowData, filterParams) {
+function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
   let values = [];
   $.each(rowValue, function(idx, val) {
     values.push(val.status);
@@ -134,7 +133,7 @@ function filterCertifs(headerValue, rowValue, rowData, filterParams) {
   return isMatchingFilter(headerValue, values);
 }
 
-function filterUserVerifs(headerValue, rowValue, rowData, filterParams) {
+function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   let values = [];
   $.each(rowValue, function(idx1, val1) {
     $.each(val1, function(idx2, val2) {
@@ -166,9 +165,9 @@ $(function() {
         field: "metadataStatement.description",
         sorter: "string",
         headerFilter:true,
-        formatter: function(cell, formatterParams, onRendered){
+        formatter: function(cell/*, formatterParams, onRendered*/){
           let name = cell.getValue();
-          return `<span class='clickable notranslate' translate='no'>${name}</a>`;
+          return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
         },
         cellClick: clickAuthr
       },
@@ -182,14 +181,14 @@ $(function() {
       {
         title: "Icon",
         field: "metadataStatement.icon",
-        formatter: function(cell, formatterParams, onRendered){
+        formatter: function(cell/*, formatterParams, onRendered*/){
           return imageTag(cell.getValue());
         }
       },
       {
         title: "Certification",
         field: "statusReports",
-        formatter: function(cell, formatterParams, onRendered){
+        formatter: function(cell/*, formatterParams, onRendered*/){
           let res = "", sep="";
           $.each(cell.getValue(), function(idx,value) { res += sep + value.status; sep ="<br>"; });
           return res;
@@ -201,7 +200,7 @@ $(function() {
       {
         title: "User Verif.",
         field: "metadataStatement.userVerificationDetails",
-        formatter: function(cell, formatterParams, onRendered){
+        formatter: function(cell/*, formatterParams, onRendered*/){
           let res = "", sep="";
           $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"; }); });
           return res;
@@ -215,7 +214,7 @@ $(function() {
       },
       {
         title: "Attachment",
-        field: "metadataStatement.attachmentHint", formatter:function(cell, formatterParams, onRendered){
+        field: "metadataStatement.attachmentHint", formatter:function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
@@ -228,7 +227,7 @@ $(function() {
       {
         title: "Key Protection",
         field: "metadataStatement.keyProtection",
-        formatter: function(cell, formatterParams, onRendered){
+        formatter: function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
@@ -241,7 +240,7 @@ $(function() {
       {
         title: "Algorithms",
         field: "metadataStatement.authenticationAlgorithms",
-        formatter: function(cell, formatterParams, onRendered){
+        formatter: function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
@@ -291,6 +290,6 @@ $(function() {
       window.location = "."
     }
   } else {
-    setTimeout(function() { id = 1; table.redraw(true); }, 500);
+    setTimeout(function() { table.redraw(true); }, 500);
   }
 });

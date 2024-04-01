@@ -1,0 +1,22 @@
+{
+  "name": "fido-mds-explorer",
+  "version": "1.0.0",
+  "description": "FIDO MDS Explorer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opotonniee/fido-mds-explorer.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/opotonniee/fido-mds-explorer/issues"
+  },
+  "homepage": "https://github.com/opotonniee/fido-mds-explorer#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
