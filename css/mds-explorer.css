@@ -78,6 +78,9 @@ button:active {
   color: white;
   text-decoration: none;
 }
+#about img {
+  max-width: 36px;
+}
 
 .fold {
   color: #1992ca;
