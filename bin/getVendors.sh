@@ -1,18 +1,22 @@
 #!/bin/sh
 
 HTML=vendors.html
+CSV=vendors.csv
 TMP=entries.tmp
 JS=vendors.js
+COOKIES=cookies.tmp
 
-wget -O $HTML "https://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3"
-
+wget -O $HTML --save-cookies $COOKIES "https://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3"
 if [ ! -f $HTML ]; then
   echo Failed to fetch vendor list
   exit 1
 fi
 
-grep '<table ' vendors.html | sed -e 's/<script.*$//g' | sed -e 's/^<div [^>]*><div [^>]*>//' | sed -e "s/action=[^ ]*//" | sed -e 's/&[a-z]*;//g' | xpath -q -e "//table[@data-cb-name='cbTable']/tr" | tail -n +2 | sed -e 's/^.*<td.*cbResultSetCalculatedField">//' | sed -e "s/<\/td><td[^>]*>/@@@/"  | sed -e 's/<\/td>.*$//' | sed -r 's/([^@]*)@@@([^@]*)/  \"\2\": \"\1\",/' > $TMP
+APP_SESSION=$(grep appSession vendors.html | sed -r 's/^.*"appSession":"([^"]+)".*$/\1/' | tail -n 1)
 
+wget --post-data "downloadFormat=csv&AjaxActionHostName=https://c0ezh785.caspio.com&cbAjaxReferrer=https%3A%2F%2Fc0ezh785.caspio.com%2Fdp.asp%3FAppKey%3Df8df3000b085149a62d743569af3&cbParamList=" -O $CSV --load-cookies $COOKIES "https://c0ezh785.caspio.com/dp/f8df3000b085149a62d743569af3?appSession=${APP_SESSION}&RecordID=&PageID=2&PrevPageID=&cpipage=&download=1&rnd=1712004236605"
+
+tail -n +2 $CSV | sed -r 's/"([^"]*)","([^"]*)"/  "\2": "\1",/' > $TMP
 
 if [ ! -f $TMP ]; then
   echo Failed to convert file
@@ -27,7 +31,8 @@ echo '
 
 // eslint-disable-next-line no-unused-vars
 const vendors = {
-' > $JS
+
+  // extracted' > $JS
 
  cat $TMP >> $JS
 
@@ -46,5 +51,5 @@ echo '
   "DAB8": "DDS"
 };' >> $JS
 
-rm $HTML $TMP
+rm $HTML $CSV $TMP $COOKIES
 mv $JS ../js
