@@ -22,6 +22,12 @@ jobs:
       # Checks-out repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v3
 
+      - name: get remote vendors list
+        run: |
+          cd bin
+          ./getVendors.sh
+          cd -
+
       - name: get remote mds blob
         run: |
           wget -O mds.new https://mds.fidoalliance.org/
