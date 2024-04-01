@@ -50,7 +50,7 @@ echo '
   "1EA8": "Excelsecu",
   "DAB8": "DDS"
 };' >> $JS
-dos2unix $JS
+sed -i 's/\x0D$//' $JS
 
 rm $HTML $CSV $TMP $COOKIES
 mv $JS ../js
