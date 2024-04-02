@@ -165,6 +165,3 @@ footer {
   max-width: 100px;
   max-height: 100px;
 }
-.tabulator-row .tabulator-cell:first-of-type {
-  max-width: 25%;
-}

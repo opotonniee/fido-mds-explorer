@@ -169,6 +169,7 @@ $(function() {
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
         },
+        maxWidth: 350,
         cellClick: clickAuthr
       },
       {
