@@ -54,4 +54,4 @@ echo '
 sed -i -e 's/\r//g' $JS
 
 mv $JS ../js
-rm $HTML $CSV $TMP $COOKIES $JS*
+rm -f $HTML $CSV $TMP $COOKIES $JS*
