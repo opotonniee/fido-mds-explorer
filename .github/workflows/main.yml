@@ -29,12 +29,14 @@ jobs:
           cd -
           if [ "$(git status -s js/vendors.js | xargs)" != "" ]
           then
-            echo "Vendors updated"
+            echo "UAF vendors list updated"
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add js/vendors.js
             git commit -m "UAF vendors list updated"
             git push
+          else
+            echo "No change in UAF vendors list"
           fi
 
       - name: get remote mds blob

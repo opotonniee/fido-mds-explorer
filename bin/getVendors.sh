@@ -50,7 +50,8 @@ echo '
   "1EA8": "Excelsecu",
   "DAB8": "DDS"
 };' >> $JS
-sed -i 's/\x0D$//' $JS
 
-rm $HTML $CSV $TMP $COOKIES
+sed -i -e 's/\r//g' $JS
+
 mv $JS ../js
+rm $HTML $CSV $TMP $COOKIES $JS*
