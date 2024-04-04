@@ -25,6 +25,7 @@ jobs:
       - name: get remote vendors list
         run: |
           cd bin
+          chmod +x ./getVendors.sh
           ./getVendors.sh
           cd -
           if [ "$(git status -s js/vendors.js | xargs)" != "" ]
