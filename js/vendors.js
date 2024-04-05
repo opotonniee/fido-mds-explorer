@@ -32,7 +32,7 @@ const vendors = {
   "0038": "Redrock Biometrics, Inc.",
   "0039": "Lightfactor",
   "003A": "LG Uplus Corp.",
-  "003B": "Austria Card",
+  "003B": "",
   "003D": "IsItYou, Ltd.",
   "003F": "thinkAT",
   "0040": "Highmaru Inc.",
