@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 70,
+  "no": 71,
   "nextUpdate": "2024-05-01",
   "entries": [
     {
@@ -2497,7 +2497,7 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "secp384r1_ecdsa_sha384_raw"
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -2530,9 +2530,7 @@ let mdsJson={
           "external",
           "wired"
         ],
-        "tcDisplay": [
-          "any"
-        ],
+        "tcDisplay": [],
         "attestationRootCertificates": [
           "MIICiTCCAg6gAwIBAgIUOkmU35IicXoVPjfvwpG7MN6tHPUwCgYIKoZIzj0EAwMwQzELMAkGA1UEBhMCREUxFDASBgNVBAoMC1N3aXNzYml0IEFHMR4wHAYDVQQDDBVTd2lzc2JpdCBGSURPIFJvb3QgQ0EwIBcNMjExMDA3MDkzMDQyWhgPMjA1MTEwMDcwOTMwNDJaMEMxCzAJBgNVBAYTAkRFMRQwEgYDVQQKDAtTd2lzc2JpdCBBRzEeMBwGA1UEAwwVU3dpc3NiaXQgRklETyBSb290IENBMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEtgOC7IKxipMJ7bVPTT83Oe90xzHPCebxyCtg/WrsTrRaSnYigmJCB8/jqBN4OQG2dZ5jcNsL6SwHosYDRJc+O1zk9i5GEZWf3Ir992A6duMsp51lq4fAga/UzTN9/Ebzo4HAMIG9MB0GA1UdDgQWBBTfxzg8GGzYAidKL63uhSiraXJIKDB+BgNVHSMEdzB1gBTfxzg8GGzYAidKL63uhSiraXJIKKFHpEUwQzELMAkGA1UEBhMCREUxFDASBgNVBAoMC1N3aXNzYml0IEFHMR4wHAYDVQQDDBVTd2lzc2JpdCBGSURPIFJvb3QgQ0GCFDpJlN+SInF6FT4378KRuzDerRz1MAwGA1UdEwQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMDA2kAMGYCMQDsv4K6NfJvfvzd0OygwJ/ABiLtgtJWhXTeUlltdqa4WsOM9tvx636v5FIvZRkK1XoCMQCdoPQ+a4fDBEiNuj0Ws33uUQhGrpsePDGfVXn4kEpbTIBeOdVAx//TrMC/SVb+bsg="
         ],
@@ -21085,37 +21083,37 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "none"
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
             }
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
             },
             {
-              "userVerificationMethod": "passcode_external",
-              "caDesc": {
-                "base": 256,
-                "minLength": 4,
-                "maxRetries": 0,
-                "blockSlowdown": 0
-              }
-            }
-          ],
-          [
-            {
-              "userVerificationMethod": "passcode_external",
-              "caDesc": {
-                "base": 256,
-                "minLength": 4,
-                "maxRetries": 0,
-                "blockSlowdown": 0
-              }
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
             {
               "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
             }
           ]
         ],
