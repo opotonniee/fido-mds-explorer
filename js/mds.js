@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 74,
+  "no": 75,
   "nextUpdate": "2024-07-01",
   "entries": [
     {
@@ -2626,11 +2626,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-01"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-04",
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
+          "certificateNumber": "FIDO20020240604002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-04"
         }
       ],
-      "timeOfLastStatusChange": "2024-05-01"
+      "timeOfLastStatusChange": "2024-06-04"
     },
     {
       "aaguid": "931327dd-c89b-406c-a81e-ed7058ef36c6",
@@ -7552,11 +7560,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-01"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-04",
+          "certificationDescriptor": "YubiKey 5 Series with Lightning",
+          "certificateNumber": "FIDO20020240604004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-04"
         }
       ],
-      "timeOfLastStatusChange": "2024-05-01"
+      "timeOfLastStatusChange": "2024-06-04"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -14927,11 +14943,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-01"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-04",
+          "certificationDescriptor": "Security Key NFC by Yubico",
+          "certificateNumber": "FIDO20020240604001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-04"
         }
       ],
-      "timeOfLastStatusChange": "2024-05-01"
+      "timeOfLastStatusChange": "2024-06-04"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -15324,11 +15348,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-01"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-04",
+          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
+          "certificateNumber": "FIDO20020240604005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-04"
         }
       ],
-      "timeOfLastStatusChange": "2024-05-01"
+      "timeOfLastStatusChange": "2024-06-04"
     },
     {
       "aaguid": "07a9f89c-6407-4594-9d56-621d5f1e358b",
@@ -16115,11 +16147,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-01"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-04",
+          "certificationDescriptor": "YubiKey 5 Series with NFC",
+          "certificateNumber": "FIDO20020240604000",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-04"
         }
       ],
-      "timeOfLastStatusChange": "2024-05-01"
+      "timeOfLastStatusChange": "2024-06-04"
     },
     {
       "aaguid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
@@ -19165,11 +19205,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-01"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-04",
+          "certificationDescriptor": "YubiKey 5 Series",
+          "certificateNumber": "FIDO20020240604003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-04"
         }
       ],
-      "timeOfLastStatusChange": "2024-05-01"
+      "timeOfLastStatusChange": "2024-06-04"
     },
     {
       "aaguid": "da1fa263-8b25-42b6-a820-c0036f21ba7f",
