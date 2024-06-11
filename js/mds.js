@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 75,
+  "no": 76,
   "nextUpdate": "2024-07-01",
   "entries": [
     {
@@ -2061,7 +2061,7 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0",
         "description": "Pone Biometrics OFFPAD Authenticator",
-        "authenticatorVersion": 1,
+        "authenticatorVersion": 2,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
