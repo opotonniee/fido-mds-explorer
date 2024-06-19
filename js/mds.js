@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 76,
+  "no": 77,
   "nextUpdate": "2024-07-01",
   "entries": [
     {
@@ -332,11 +332,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-12-28",
+          "certificationDescriptor": "Thales IDPrime FIDO Bio",
+          "certificateNumber": "FIDO20020231228002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-12-28"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -1497,11 +1505,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-01-06",
+          "certificationDescriptor": "IDPrime 931 Fido",
+          "certificateNumber": "FIDO20020220106002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-01-06"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
@@ -3134,6 +3150,14 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2019-06-05",
+          "certificationDescriptor": "Ensurity ThinC",
+          "certificateNumber": "FIDO20020190605001",
+          "certificationPolicyVersion": "1.0.0",
+          "certificationRequirementsVersion": "1.0"
+        },
+        {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-06-10",
           "certificationDescriptor": "Ensurity ThinC FIDO2 Biometric Security Key",
@@ -3142,7 +3166,7 @@ let mdsJson={
           "certificationRequirementsVersion": "1.0.0"
         }
       ],
-      "timeOfLastStatusChange": "2019-06-10"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -4205,11 +4229,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-08-16",
+          "certificationDescriptor": "SafeNet eToken Fusion",
+          "certificateNumber": "FIDO20020220822001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-08-16"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "1105e4ed-af1d-02ff-ffff-ffffffffffff",
@@ -11703,11 +11735,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-05-14",
+          "certificationDescriptor": "IDPrime 941 Fido",
+          "certificateNumber": "FIDO20020220314001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-05-14"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
@@ -12287,11 +12327,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-08-16",
+          "certificationDescriptor": "SafeNet eToken Fusion CC",
+          "certificateNumber": "FIDO20020220822002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-08-16"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "234cd403-35a2-4cc2-8015-77ea280c77f5",
@@ -12418,11 +12466,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-02-21"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-07-18",
+          "certificationDescriptor": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
+          "certificateNumber": "FIDO20020220718001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-07-18"
         }
       ],
-      "timeOfLastStatusChange": "2024-02-21"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -16373,11 +16429,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-07-22",
+          "certificationDescriptor": "IDPrime 3930 FIDO",
+          "certificateNumber": "FIDO20020220722001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-07-22"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db6",
@@ -18596,11 +18660,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-12-08"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2021-01-04",
+          "certificationDescriptor": "VeriMark DT Fingerprint Key",
+          "certificateNumber": "U2F100020210204002",
+          "certificationPolicyVersion": "1.2",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-01-04"
         }
       ],
-      "timeOfLastStatusChange": "2023-12-08"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
@@ -22501,11 +22573,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2021-08-16",
+          "certificationDescriptor": "IDCore 3121 Fido",
+          "certificateNumber": "FIDO20020210816001",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.4"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-08-16"
         }
       ],
-      "timeOfLastStatusChange": "2024-01-04"
+      "timeOfLastStatusChange": "2024-06-18"
     },
     {
       "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
