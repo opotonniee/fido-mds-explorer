@@ -15,7 +15,7 @@ function getVendor(aaid) {
 }
 
 function imageTag(src) {
-  return src ? "<img src='" + src + "'/>" : "";
+  return src ? "<img src='" + src + "'>" : "";
 }
 
 function certificate(obj) {
@@ -156,7 +156,7 @@ $(function() {
   // build authenticators table
   table = new Tabulator("#mds-table", {
     data: mdsJson.entries,
-    layout:"fitDataFill",
+    layout:"fitDataTable",
     selectable:false,
     //responsiveLayout:"collapse",
     columns:[
@@ -176,8 +176,8 @@ $(function() {
         title: "Protocol",
         field: "metadataStatement.protocolFamily",
         sorter: "string",
-        headerFilter: "select",
-        headerFilterParams: {values:["","uaf", "u2f", "fido2"]}
+        headerFilter: "list",
+        headerFilterParams: {values: ["uaf", "u2f", "fido2"]}
       },
       {
         title: "Icon",
@@ -194,9 +194,12 @@ $(function() {
           $.each(cell.getValue(), function(idx,value) { res += sep + value.status; sep ="<br>"; });
           return res;
         },
-        headerFilter: "select",
-        headerFilterParams: {values:["","NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"]},
-        headerFilterFunc: filterCertifs
+        headerFilter: "list",
+        headerFilterParams: {
+          values:["NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"],
+        },
+        headerFilterFunc: filterCertifs,
+        sorter: "array"
       },
       {
         title: "User Verif.",
@@ -206,12 +209,13 @@ $(function() {
           $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"; }); });
           return res;
         },
-        headerFilter: "select",
+        headerFilter: "list",
         headerFilterParams: {
-          values:["", "presence_internal", "fingerprint_internal", "passcode_internal", "voiceprint_internal", "faceprint_internal", "location_internal",
+          values:["presence_internal", "fingerprint_internal", "passcode_internal", "voiceprint_internal", "faceprint_internal", "location_internal",
             "eyeprint_internal", "pattern_internal", "handprint_internal", "passcode_external", "pattern_external", "none", "all"]
         },
-        headerFilterFunc: filterUserVerifs
+        headerFilterFunc: filterUserVerifs,
+        sorter: "array"
       },
       {
         title: "Attachment",
@@ -220,10 +224,11 @@ $(function() {
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
         },
-        headerFilter: "select",
+        headerFilter: "list",
         headerFilterParams: {
-          values: ["", "internal", "external", "wired", "wireless", "nfc", "bluetooth", "network", "ready"]
-        }
+          values: ["internal", "external", "wired", "wireless", "nfc", "bluetooth", "network", "ready"]
+        },
+        sorter: "array"
       },
       {
         title: "Key Protection",
@@ -233,10 +238,11 @@ $(function() {
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
         },
-        headerFilter: "select",
+        headerFilter: "list",
         headerFilterParams: {
-          values: ["", "software", "hardware", "tee", "secure_element", "remote_handle" ]
-        }
+          values: ["software", "hardware", "tee", "secure_element", "remote_handle" ]
+        },
+        sorter: "array"
       },
       {
         title: "Algorithms",
@@ -246,7 +252,8 @@ $(function() {
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
         },
-        headerFilter: true
+        headerFilter: true,
+        sorter: "array"
       },
       {
         title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
@@ -291,6 +298,6 @@ $(function() {
       window.location = "."
     }
   } else {
-    setTimeout(function() { table.redraw(true); }, 500);
+    //setTimeout(function() { table.redraw(true); }, 500);
   }
 });
