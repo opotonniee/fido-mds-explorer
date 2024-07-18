@@ -9,9 +9,8 @@ COOKIES=cookies.tmp
 # Download URL from https://fidoalliance.org/certification/functional-certification/vendor-ids/
 
 CASPIO_ID=$1
-VENDORS_URL=https://c0ezh785.caspio.com/dp/$CASPIO_ID
 
-wget -O $CSV ${VENDORS_URL}&downloadFormat=csv&RecordID=&PageID=2&PrevPageID=&cpipage=&download=1&rnd=1712004236605
+wget -O $CSV "https://c0ezh785.caspio.com/dp.asp?AppKey=${CASPIO_ID}&downloadFormat=csv&RecordID=&PageID=2&PrevPageID=&cpipage=&download=1&rnd=1712004236605"
 
 if [ ! -f $CSV ]; then
   echo Failed to fetch vendor list
