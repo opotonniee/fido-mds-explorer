@@ -26,7 +26,7 @@ jobs:
         run: |
           cd bin
           chmod +x ./getVendors.sh
-          ./getVendors.sh
+          ./getVendors.sh secrets.CASPIO_ID
           cd -
           if [ "$(git status -s js/vendors.js | xargs)" != "" ]
           then
