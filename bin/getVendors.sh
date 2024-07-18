@@ -11,7 +11,7 @@ COOKIES=cookies.tmp
 CASPIO_ID=$1
 VENDORS_URL=https://c0ezh785.caspio.com/dp/$CASPIO_ID
 
-wget -O $CSV https://c0ezh785.caspio.com/dp.asp?AppKey=f8df3000b085149a62d743569af3&downloadFormat=csv&RecordID=&PageID=2&PrevPageID=&cpipage=&download=1&rnd=1712004236605
+wget -O $CSV ${VENDORS_URL}&downloadFormat=csv&RecordID=&PageID=2&PrevPageID=&cpipage=&download=1&rnd=1712004236605
 
 if [ ! -f $CSV ]; then
   echo Failed to fetch vendor list
@@ -56,4 +56,4 @@ echo '
 sed -i -e 's/\r//g' $JS
 
 mv $JS ../js
-rm -f $HTML $CSV $TMP $COOKIES $JS*
+rm -f $CSV $TMP $JS*
