@@ -298,6 +298,7 @@ $(function() {
       window.location = "."
     }
   } else {
-    //setTimeout(function() { table.redraw(true); }, 500);
+    // refresh UI so that icons column is properly sized
+    setTimeout(function() { table.redraw(true); }, 500);
   }
 });
