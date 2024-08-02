@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 84,
+  "no": 85,
   "nextUpdate": "2024-09-01",
   "entries": [
     {
@@ -15103,7 +15103,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "47268ea13d5e33ddbbb4ae000c13c9478cd173af"
         ],
-        "description": "ZTPass Card",
+        "description": "ZTPass SmartAuth",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -22307,7 +22307,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "99bf4610-ec26-4252-b31f-7380ccd59db5",
-        "description": "ZTPass Card",
+        "description": "ZTPass SmartAuth",
         "authenticatorVersion": 45,
         "protocolFamily": "fido2",
         "schema": 3,
