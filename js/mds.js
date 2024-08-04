@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 85,
+  "no": 86,
   "nextUpdate": "2024-09-01",
   "entries": [
     {
@@ -12152,11 +12152,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-07-09"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-02",
+          "certificationDescriptor": "OneSpan DIGIPASS FX7",
+          "certificateNumber": "FIDO20020240802001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-02"
         }
       ],
-      "timeOfLastStatusChange": "2024-07-09"
+      "timeOfLastStatusChange": "2024-08-03"
     },
     {
       "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
@@ -20638,11 +20646,19 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-07-09"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-02",
+          "certificationDescriptor": "OneSpan DIGIPASS FX1a",
+          "certificateNumber": "FIDO20020240802003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-02"
         }
       ],
-      "timeOfLastStatusChange": "2024-07-09"
+      "timeOfLastStatusChange": "2024-08-03"
     },
     {
       "aaguid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
