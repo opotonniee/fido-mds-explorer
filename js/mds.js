@@ -8,6 +8,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fcb1bcb4-f370-078c-6993-bc24d0ae3fbe",
+        "friendlyNames": {
+          "en-US": "Ledger Nano X FIDO2 Authenticator"
+        },
         "description": "Ledger Nano X FIDO2 Authenticator",
         "authenticatorVersion": 10500,
         "protocolFamily": "fido2",
@@ -125,7 +128,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-18"
+          "effectiveDate": "2023-09-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-09-18"
@@ -139,6 +145,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "1434d2f277fe479c35ddf6aa4d08a07cbce99dd7"
         ],
+        "friendlyNames": {
+          "en-US": "NEOWAVE Winkeo FIDO2"
+        },
         "description": "NEOWAVE Winkeo FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -189,7 +198,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-09-21"
+          "effectiveDate": "2021-09-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-09-21"
@@ -199,6 +211,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4d41190c-7beb-4a84-8018-adf265a6352d",
+        "friendlyNames": {
+          "en-US": "Thales IDPrime FIDO Bio"
+        },
         "description": "Thales IDPrime FIDO Bio",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -334,14 +349,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-12-28",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "Thales IDPrime FIDO Bio",
           "certificateNumber": "FIDO20020231228002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-12-28"
+          "effectiveDate": "2023-12-28",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -361,6 +382,9 @@ let mdsJson={
           "39d11cb1d6da8f646f584eea184133a03d85a2cc",
           "55464d5bea84e7073074b21d1204934358c7db4d"
         ],
+        "friendlyNames": {
+          "en-US": "Feitian ePass FIDO-NFC Security Key"
+        },
         "description": "Feitian ePass FIDO-NFC Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -410,18 +434,24 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-11-19",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian ePass FIDO-NFC Security Key",
           "certificateNumber": "U2F100020151221001",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.0.1"
+          "certificationRequirementsVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2018-11-08",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian ePass FIDO-NFC Security Key",
           "certificateNumber": "U2F100020151221001",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.0.1"
+          "certificationRequirementsVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-11-19"
@@ -431,6 +461,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2772ce93-eb4b-4090-8b73-330f48477d73",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition Preview"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -575,7 +608,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
+          "effectiveDate": "2024-04-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-04-07"
@@ -585,6 +621,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6dae43be-af9c-417b-8b9f-1b611168ec60",
+        "friendlyNames": {
+          "en-US": "Dapple Authenticator from Dapple Security Inc."
+        },
         "description": "Dapple Authenticator from Dapple Security Inc.",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -669,7 +708,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-05"
+          "effectiveDate": "2024-06-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-05"
@@ -679,6 +721,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5626bed4-e756-430b-a7ff-ca78c8b12738",
+        "friendlyNames": {
+          "en-US": "VALMIDO PRO FIDO"
+        },
         "description": "VALMIDO PRO FIDO",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -718,6 +763,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 12,
                 "maxRetries": 8,
                 "blockSlowdown": 0
@@ -787,14 +833,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-08-23",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "VALMIDO PRO FIDO",
           "certificateNumber": "FIDO20020230823001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-08-23"
+          "effectiveDate": "2023-08-23",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-02-14"
@@ -804,6 +856,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "260e3021-482d-442d-838c-7edfbe153b7e",
+        "friendlyNames": {
+          "en-US": "Feitian ePass FIDO2-NFC Plus Authenticator"
+        },
         "description": "Feitian ePass FIDO2-NFC Plus Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -908,7 +963,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-07-19"
+          "effectiveDate": "2024-07-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-07-19"
@@ -918,6 +976,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "95e4d58c-056e-4a65-866d-f5a69659e880",
+        "friendlyNames": {
+          "en-US": "TruU Windows Authenticator"
+        },
         "description": "TruU Windows Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -1014,7 +1075,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-01"
+          "effectiveDate": "2023-11-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-11-01"
@@ -1024,6 +1088,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -1056,6 +1123,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -1106,6 +1174,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -1200,14 +1269,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
           "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
           "certificateNumber": "FIDO20020240812002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-12"
+          "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -1221,6 +1296,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "51ffab2e30a87ccfda4cca13f5c0a23a70b90773"
         ],
+        "friendlyNames": {
+          "en-US": "Arculus FIDO 2.1 Key Card"
+        },
         "description": "Arculus FIDO 2.1 Key Card",
         "authenticatorVersion": 10,
         "protocolFamily": "u2f",
@@ -1308,15 +1386,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-11-15",
+          "authenticatorVersion": 10,
           "url": "https://www.getarculus.com/",
           "certificationDescriptor": "Arculus FIDO2/U2F Card",
           "certificateNumber": "U2F100020221115001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-15"
+          "effectiveDate": "2022-11-15",
+          "authenticatorVersion": 10,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-22"
@@ -1326,6 +1410,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9c835346-796b-4c27-8898-d6032f515cc5",
+        "friendlyNames": {
+          "en-US": "Cryptnox FIDO2"
+        },
         "description": "Cryptnox FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -1424,14 +1511,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-01-02",
+          "authenticatorVersion": 0,
           "url": "www.cryptnox.ch",
           "certificateNumber": "FIDO20020200803001",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3.0"
+          "certificationRequirementsVersion": "1.3.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-01-02"
+          "effectiveDate": "2021-01-02",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-01-02"
@@ -1441,6 +1534,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4005",
+        "friendlyNames": {
+          "en-US": "Touch ID, Face ID, or Passcode"
+        },
         "description": "Touch ID, Face ID, or Passcode",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -1482,6 +1578,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -1509,7 +1606,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -1519,6 +1619,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0d9b2e56-566b-c393-2940-f821b7f15d6d",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 Pro Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 Pro Security Key",
         "authenticatorVersion": 256,
         "protocolFamily": "fido2",
@@ -1667,14 +1770,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-12-10",
+          "authenticatorVersion": 256,
           "certificationDescriptor": "Excelsecu eSecu FIDO2 Pro Security Key",
           "certificateNumber": "FIDO20020191210001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-12-10"
+          "effectiveDate": "2019-12-10",
+          "authenticatorVersion": 256,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -1684,6 +1793,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning"
+        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -1787,14 +1899,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5Ci",
           "certificateNumber": "FIDO20020191017003",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -1804,6 +1922,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2194b428-9397-4046-8f39-007a1605a482",
+        "friendlyNames": {
+          "en-US": "IDPrime 931 Fido"
+        },
         "description": "IDPrime 931 Fido",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -1908,14 +2029,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-01-06",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "IDPrime 931 Fido",
           "certificateNumber": "FIDO20020220106002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-01-06"
+          "effectiveDate": "2022-01-06",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -1925,6 +2052,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
+        "friendlyNames": {
+          "en-US": "IDmelon Android Authenticator"
+        },
         "description": "IDmelon Android Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -2012,14 +2142,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-02-13",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Vancosys Android Authenticator",
           "certificateNumber": "FIDO20020190109001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-02-13"
+          "effectiveDate": "2019-02-13",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-02-13"
@@ -2029,6 +2165,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+        "friendlyNames": {
+          "en-US": "OpenSK authenticator"
+        },
         "description": "OpenSK authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -2126,14 +2265,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-09",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "OpenSK authenticator",
           "certificateNumber": "FIDO20020210209001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-09"
+          "effectiveDate": "2021-02-09",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-02-08"
@@ -2143,6 +2288,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3789da91-f943-46bc-95c3-50ea2012f03a",
+        "friendlyNames": {
+          "en-US": "NEOWAVE Winkeo FIDO2"
+        },
         "description": "NEOWAVE Winkeo FIDO2",
         "authenticatorVersion": 3,
         "protocolFamily": "fido2",
@@ -2223,7 +2371,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-09-21"
+          "effectiveDate": "2021-09-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-09-21"
@@ -2233,6 +2384,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC"
+        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -2334,14 +2488,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey Series 5 with NFC",
           "certificateNumber": "FIDO20020180918001",
           "certificationPolicyVersion": "1.1.0",
-          "certificationRequirementsVersion": "1.2"
+          "certificationRequirementsVersion": "1.2",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -2351,6 +2511,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "341e4da9-3c2e-8103-5a9f-aad887135200",
+        "friendlyNames": {
+          "en-US": "Ledger Nano S FIDO2 Authenticator"
+        },
         "description": "Ledger Nano S FIDO2 Authenticator",
         "authenticatorVersion": 10500,
         "protocolFamily": "fido2",
@@ -2467,7 +2630,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
+          "effectiveDate": "2024-01-04",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-01-04"
@@ -2477,6 +2643,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0",
+        "friendlyNames": {
+          "en-US": "Pone Biometrics OFFPAD Authenticator"
+        },
         "description": "Pone Biometrics OFFPAD Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -2585,15 +2754,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-05-03",
+          "authenticatorVersion": 1,
           "url": "https://ponebiometrics.com/",
           "certificationDescriptor": "Pone Biometrics OFFPAD Authenticator",
           "certificateNumber": "FIDO200202305001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-05-03"
+          "effectiveDate": "2023-05-03",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-07-10"
@@ -2619,6 +2794,9 @@ let mdsJson={
           "b6d44a4b8d4b0407872969b1f6b2263021be627e",
           "6d491f223af73cdf81784a6c0890f8a1d527a12c"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning"
+        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -2668,14 +2846,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5Ci",
           "certificateNumber": "U2F110020191017007",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -2685,6 +2869,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "89b19028-256b-4025-8872-255358d950e4",
+        "friendlyNames": {
+          "en-US": "Sentry Enterprises CTAP2 Authenticator"
+        },
         "description": "Sentry Enterprises CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -2778,7 +2965,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-08"
+          "effectiveDate": "2022-11-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-11-08"
@@ -2788,6 +2978,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4e768f2c-5fab-48b3-b300-220eb487752b",
+        "friendlyNames": {
+          "en-US": "Hideez Key 4 FIDO2 SDK"
+        },
         "description": "Hideez Key 4 FIDO2 SDK",
         "alternativeDescriptions": {
           "uk-UA": "FIDO2 Key SDK - від Hideez"
@@ -2882,15 +3075,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-04-09",
+          "authenticatorVersion": 0,
           "url": "www.hideez.com",
           "certificationDescriptor": "FIDO2",
           "certificateNumber": "FIDO20020210409001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-04-09"
+          "effectiveDate": "2021-04-09",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-08-02"
@@ -2900,6 +3099,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "47ab2fb4-66ac-4184-9ae1-86be814012d5",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -3045,14 +3247,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
           "certificateNumber": "FIDO20020240604002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-04"
@@ -3062,6 +3270,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "931327dd-c89b-406c-a81e-ed7058ef36c6",
+        "friendlyNames": {
+          "en-US": "Swissbit iShield Key FIDO2"
+        },
         "description": "Swissbit iShield Key FIDO2",
         "alternativeDescriptions": {
           "de-DE": "Swissbit iShield Key FIDO2"
@@ -3158,22 +3369,31 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-09-13",
+          "authenticatorVersion": 5,
           "certificationDescriptor": "Swissbit iShield Key FIDO2",
           "certificateNumber": "FIDO20020230913002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-01-16",
+          "authenticatorVersion": 5,
           "certificationDescriptor": "Swissbit iShield Key FIDO2",
           "certificateNumber": "FIDO20020230913002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-16"
+          "effectiveDate": "2024-01-16",
+          "authenticatorVersion": 5,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-01-16"
@@ -3187,6 +3407,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0198563c9ee881bd199b411b7b38b61bb560a641"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -3238,15 +3461,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
           "url": "https://www.yubico.com/",
           "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
           "certificateNumber": "U2F100020230202001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-02"
+          "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-08"
@@ -3268,6 +3497,9 @@ let mdsJson={
           "76e47b47e32814aaa6a87c280cfcbd527881a404",
           "6cd99d8b0abfa6a4378138a1475f7e46df217a25"
         ],
+        "friendlyNames": {
+          "en-US": "Feitian ePass FIDO Security Key"
+        },
         "description": "Feitian ePass FIDO Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -3318,14 +3550,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2018-11-01",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "ePass FIDO Security Key",
           "certificateNumber": "U2F100020180228007",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-11-01"
+          "effectiveDate": "2018-11-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-11-01"
@@ -3335,6 +3573,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
+        "friendlyNames": {
+          "en-US": "IDEMIA ID-ONE Card"
+        },
         "description": "IDEMIA ID-ONE Card",
         "authenticatorVersion": 82,
         "protocolFamily": "fido2",
@@ -3444,14 +3685,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-10-19",
+          "authenticatorVersion": 82,
           "certificationDescriptor": "IDEMIA ID-ONE Card",
           "certificateNumber": "FIDO20020231019001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-10-19"
+          "effectiveDate": "2023-10-19",
+          "authenticatorVersion": 82,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -3461,6 +3708,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9a",
+        "friendlyNames": {
+          "en-US": "Ensurity ThinC"
+        },
         "description": "Ensurity ThinC",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -3487,6 +3737,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -3553,18 +3804,24 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-06-05",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "Ensurity ThinC",
           "certificateNumber": "FIDO20020190605001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0"
+          "certificationRequirementsVersion": "1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-06-10",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Ensurity ThinC FIDO2 Biometric Security Key",
           "certificateNumber": "FIDO20020190605001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -3578,6 +3835,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2e86293cbd07db24c270be554d913563d606fd47"
         ],
+        "friendlyNames": {
+          "en-US": "ACS FIDO Authenticator"
+        },
         "description": "ACS FIDO Authenticator",
         "authenticatorVersion": 10000,
         "protocolFamily": "u2f",
@@ -3639,15 +3899,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-12-15",
+          "authenticatorVersion": 10000,
           "url": "https://www.acs.com.hk/",
           "certificationDescriptor": "ACS FIDO Authenticator",
           "certificateNumber": "U2F100020221214001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-12-15"
+          "effectiveDate": "2022-12-15",
+          "authenticatorVersion": 10000,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-10"
@@ -3657,6 +3923,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
+        "friendlyNames": {
+          "en-US": "ATKey.Pro CTAP2.0"
+        },
         "description": "ATKey.Pro CTAP2.0",
         "authenticatorVersion": 10013,
         "protocolFamily": "fido2",
@@ -3772,15 +4041,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-10-09",
+          "authenticatorVersion": 0,
           "url": "https://authentrend.com/atkey-pro/",
           "certificationDescriptor": "FIDO2 Authenticator",
           "certificateNumber": "FIDO20020191008001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-10-09"
+          "effectiveDate": "2019-10-09",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-10-09"
@@ -3790,6 +4065,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ff4cc65-6154-4fff-ba09-9e2af7882ad2",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Pro"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -3936,7 +4214,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "effectiveDate": "2024-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-05"
@@ -3950,6 +4231,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "32526f73dfca12da9c1d87d6e0adb64e843f73da"
         ],
+        "friendlyNames": {
+          "en-US": "TrustKey G320 U2F Authenticator"
+        },
         "description": "TrustKey G320 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -4001,14 +4285,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "TrustKey Solutions T320 U2F Authenticator",
           "certificateNumber": "U2F110020200814004",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
+          "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -4018,6 +4308,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9d3df6ba-282f-11ed-a261-0242ac120002",
+        "friendlyNames": {
+          "en-US": "Arculus FIDO2/U2F Key Card"
+        },
         "description": "Arculus FIDO2/U2F Key Card",
         "authenticatorVersion": 100,
         "protocolFamily": "fido2",
@@ -4151,15 +4444,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-11-07",
+          "authenticatorVersion": 10,
           "url": "https://www.getarculus.com/",
           "certificationDescriptor": "Arculus FIDO2/U2F Card",
           "certificateNumber": "FIDO20020221107001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-07"
+          "effectiveDate": "2022-11-07",
+          "authenticatorVersion": 10,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-22"
@@ -4169,6 +4468,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 NFC Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 NFC Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -4242,14 +4544,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-07-30",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eSecu FIDO2® NFC",
           "certificateNumber": "FIDO20020191022001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-07-30"
+          "effectiveDate": "2020-07-30",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-07-30"
@@ -4259,6 +4567,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "62e54e98-c209-4df3-b692-de71bb6a8528",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series with NFC Preview"
+        },
         "description": "YubiKey 5 FIPS Series with NFC Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -4405,7 +4716,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
+          "effectiveDate": "2024-04-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-04-07"
@@ -4415,6 +4729,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
+        "friendlyNames": {
+          "en-US": "TOKEN2 FIDO2 Security Key"
+        },
         "description": "TOKEN2 FIDO2 Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -4513,19 +4830,25 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-12-03",
+          "authenticatorVersion": 2,
           "url": "https://www.token2.com",
           "certificationDescriptor": "TOKEN2 FIDO2 Security Key",
           "certificateNumber": "FIDO20020191203001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0"
+          "certificationRequirementsVersion": "1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-12-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "TOKEN2 T2F2-ALU",
           "certificateNumber": "FIDO20020191203001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-03-01"
@@ -4539,6 +4862,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "fcb86e019086d4008f647698194a1f63644f521d"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio FIDO Edition"
+        },
         "description": "YubiKey Bio FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -4589,14 +4915,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
           "certificationDescriptor": "YubiKey Bio FIDO Edition",
           "certificateNumber": "U2F100020240812001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-12"
+          "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -4606,6 +4938,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "973446ca-e21c-9a9b-99f5-9b985a67af0f",
+        "friendlyNames": {
+          "en-US": "ACS FIDO Authenticator Card"
+        },
         "description": "ACS FIDO Authenticator Card",
         "authenticatorVersion": 10000,
         "protocolFamily": "fido2",
@@ -4738,14 +5073,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-07-20",
+          "authenticatorVersion": 10000,
           "certificationDescriptor": "ACS FIDO Authenticator Card",
           "certificateNumber": "FIDO20020230720001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-20"
+          "effectiveDate": "2023-07-20",
+          "authenticatorVersion": 10000,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-03"
@@ -4755,6 +5096,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
+        "friendlyNames": {
+          "en-US": "SafeNet eToken Fusion"
+        },
         "description": "SafeNet eToken Fusion",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -4859,14 +5203,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-08-16",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "SafeNet eToken Fusion",
           "certificateNumber": "FIDO20020220822001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-08-16"
+          "effectiveDate": "2022-08-16",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -4876,6 +5226,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1105e4ed-af1d-02ff-ffff-ffffffffffff",
+        "friendlyNames": {
+          "en-US": "Egomet FIDO2 Authenticator for Android"
+        },
         "description": "Egomet FIDO2 Authenticator for Android",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -4964,11 +5317,17 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-06-09",
-          "certificateNumber": "FIDO20020200512001"
+          "authenticatorVersion": 0,
+          "certificateNumber": "FIDO20020200512001",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-06-09"
+          "effectiveDate": "2020-06-09",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-06-09"
@@ -4978,6 +5337,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
+        "friendlyNames": {
+          "en-US": "Windows Hello Hardware Authenticator"
+        },
         "description": "Windows Hello Hardware Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5063,14 +5425,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Windows Hello Hardware Authenticator",
           "certificateNumber": "FIDO20020190418002",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05"
+          "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-08-05"
@@ -5080,6 +5448,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico"
+        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 328707,
         "protocolFamily": "fido2",
@@ -5203,24 +5574,33 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 328707,
           "url": "https://www.yubico.com/products/",
           "certificationDescriptor": "Security Key NFC by Yubico",
           "certificateNumber": "FIDO20020230328002",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
           "url": "https://www.yubico.com/",
           "certificationDescriptor": "Security Key NFC by Yubico",
           "certificateNumber": "FIDO20020230202002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-02"
+          "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-03-29"
@@ -5230,6 +5610,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
+        "friendlyNames": {
+          "en-US": "Nymi FIDO2 Authenticator"
+        },
         "description": "Nymi FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -5300,10 +5683,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2021-03-22",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Nymi FIDO2 Authenticator",
           "certificateNumber": "FIDO20020210218007",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3.0"
+          "certificationRequirementsVersion": "1.3.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-03-22"
@@ -5313,6 +5699,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
+        "friendlyNames": {
+          "en-US": "KEY-ID FIDO2 Authenticator"
+        },
         "description": "KEY-ID FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5413,14 +5802,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-07-15",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "KEY-ID FIDO2® Security Key with U2F",
           "certificateNumber": "FIDO20020200319001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-07-15"
+          "effectiveDate": "2020-07-15",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-07-15"
@@ -5430,6 +5825,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4c50ff10-1057-4fc6-b8ed-43a529530c3c",
+        "friendlyNames": {
+          "en-US": "ImproveID Authenticator"
+        },
         "description": "ImproveID Authenticator",
         "authenticatorVersion": 45,
         "protocolFamily": "fido2",
@@ -5539,15 +5937,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-01-17",
+          "authenticatorVersion": 45,
           "url": "https://www.improveid.com/",
           "certificationDescriptor": "ImproveID Authenticator",
           "certificateNumber": "FIDO20020230117002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-01-17"
+          "effectiveDate": "2023-01-17",
+          "authenticatorVersion": 45,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-05-18"
@@ -5557,6 +5961,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
+        "friendlyNames": {
+          "en-US": "Feitian ePass FIDO2-NFC Authenticator"
+        },
         "description": "Feitian ePass FIDO2-NFC Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5659,14 +6066,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-10-26",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian ePass FIDO2-NFC Authenticator",
           "certificateNumber": "FIDO20020180929002",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-10-26"
+          "effectiveDate": "2018-10-26",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-10-26"
@@ -5676,6 +6089,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0066#0002",
+        "friendlyNames": {
+          "en-US": "CAPY UAF"
+        },
         "description": "CAPY UAF",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -5740,7 +6156,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-17"
+          "effectiveDate": "2018-08-17",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-08-17"
@@ -5750,6 +6169,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4",
+        "friendlyNames": {
+          "en-US": "Safenet eToken FIDO"
+        },
         "description": "Safenet eToken FIDO",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -5822,14 +6244,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-17",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "SafeNet eToken FIDO",
           "certificateNumber": "FIDO20020200207001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-17"
+          "effectiveDate": "2020-05-17",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-17"
@@ -5839,6 +6267,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
+        "friendlyNames": {
+          "en-US": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -5953,14 +6384,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-10-15",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "KX906 Smart Token FIDO®",
           "certificateNumber": "FIDO20020201015002",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-10-15"
+          "effectiveDate": "2020-10-15",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-10"
@@ -5970,6 +6407,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4c0cf95d-2f40-43b5-ba42-4c83a11c04ba",
+        "friendlyNames": {
+          "en-US": "Feitian BioPass FIDO2 Pro Authenticator"
+        },
         "description": "Feitian BioPass FIDO2 Pro Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -6105,7 +6545,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-13"
+          "effectiveDate": "2023-11-13",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-11-13"
@@ -6115,6 +6558,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5343502d-5343-5343-6172-644649444f32",
+        "friendlyNames": {
+          "en-US": "ESS Smart Card Inc. Authenticator"
+        },
         "description": "ESS Smart Card Inc. Authenticator",
         "alternativeDescriptions": {
           "fr-CA": "SSE Carte à Puce Inc. Authentificateur"
@@ -6227,7 +6673,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-01"
+          "effectiveDate": "2022-07-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-07-01"
@@ -6237,6 +6686,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4010",
+        "friendlyNames": {
+          "en-US": "Android Fingerprint"
+        },
         "description": "Android Fingerprint",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -6267,6 +6719,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 30
@@ -6301,7 +6754,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -6311,6 +6767,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "09591fc6-9811-48f7-8f57-b9f23df6413f",
+        "friendlyNames": {
+          "en-US": "Pone Biometrics OFFPAD Authenticator"
+        },
         "description": "Pone Biometrics OFFPAD Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -6385,7 +6844,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-10"
+          "effectiveDate": "2022-11-10",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-11-10"
@@ -6395,6 +6857,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7e3f3d30-3557-4442-bdae-139312178b39",
+        "friendlyNames": {
+          "en-US": "RSA DS100"
+        },
         "description": "RSA DS100",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -6474,15 +6939,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-10-07",
+          "authenticatorVersion": 1,
           "url": "https://www.rsa.com",
           "certificationDescriptor": "DS100",
           "certificateNumber": "FIDO20020221007001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-10-07"
+          "effectiveDate": "2022-10-07",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-10-07"
@@ -6492,6 +6963,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series"
+        },
         "description": "YubiKey 5 FIPS Series",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -6616,23 +7090,32 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 328706,
           "url": "https://www.yubico.com/products/",
           "certificationDescriptor": "YubiKey 5 FIPS Series",
           "certificateNumber": "FIDO20020230328004",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YK 5 FIPS",
           "certificateNumber": "FIDO20020210118004",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-18"
+          "effectiveDate": "2021-02-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-03-29"
@@ -6642,6 +7125,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
+        "friendlyNames": {
+          "en-US": "Security Key by Yubico with NFC"
+        },
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 50200,
         "protocolFamily": "fido2",
@@ -6762,14 +7248,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Security Key NFC by Yubico",
           "certificateNumber": "FIDO20020191017004",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "FIDO200201"
+          "certificationRequirementsVersion": "FIDO200201",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -6779,6 +7271,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0052#0002",
+        "friendlyNames": {
+          "en-US": "i-Sprint Android FingerPrint UAF Authenticator"
+        },
         "description": "i-Sprint Android FingerPrint UAF Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -6836,14 +7331,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-08-01",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "FIDO L1 Client/Authenticator Combo",
           "certificateNumber": "UAF100020180221001",
           "certificationPolicyVersion": "1.3.2",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-01"
+          "effectiveDate": "2018-08-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-08-01"
@@ -6853,6 +7354,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b90e7dc1-316e-4fee-a25a-56a666a670fe",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning (Enterprise Profile)"
+        },
         "description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -6999,7 +7503,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "effectiveDate": "2024-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-05"
@@ -7009,6 +7516,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "175cd298-83d2-4a26-b637-313c07a6434e",
+        "friendlyNames": {
+          "en-US": "Chunghwa Telecom FIDO2 Smart Card Authenticator"
+        },
         "description": "Chunghwa Telecom FIDO2 Smart Card Authenticator",
         "alternativeDescriptions": {
           "zh-CN": "中華電信智慧卡FIDO2身份驗證器"
@@ -7141,14 +7651,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-07-19",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Chunghwa Telecom FIDO2 Smart Card Authenticator",
           "certificateNumber": "FIDO20020230719001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-19"
+          "effectiveDate": "2023-07-19",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-03"
@@ -7158,6 +7674,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
+        "friendlyNames": {
+          "en-US": "GoTrust Idem Key FIDO2 Authenticator"
+        },
         "description": "GoTrust Idem Key FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -7257,22 +7776,31 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2021-03-05",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "GoTrust Idem Key",
           "certificateNumber": "FIDO20020210305001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-12-04",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "GoTrust Idem Key",
           "certificateNumber": "FIDO20020191122001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-12-04"
+          "effectiveDate": "2019-12-04",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-03-05"
@@ -7282,6 +7810,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4011",
+        "friendlyNames": {
+          "en-US": "Samsung Pass"
+        },
         "description": "Samsung Pass",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -7308,6 +7839,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 30
@@ -7342,7 +7874,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -7356,6 +7891,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3c22b597f30e8689ed2460f9dfe99b75103292f6"
         ],
+        "friendlyNames": {
+          "en-US": "Redsys U2F Authenticator"
+        },
         "description": "Redsys U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -7402,7 +7940,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-10-11"
+          "effectiveDate": "2018-10-11",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-10-11"
@@ -7412,6 +7953,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "998f358b-2dd2-4cbe-a43a-e8107438dfb3",
+        "friendlyNames": {
+          "en-US": "OnlyKey Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "OnlyKey Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -7514,15 +8058,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-03-30",
+          "authenticatorVersion": 2,
           "url": "https://crp.to",
           "certificationDescriptor": "OnlyKey",
           "certificateNumber": "FIDO20020220330001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-03-30"
+          "effectiveDate": "2022-03-30",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-11"
@@ -7532,6 +8082,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
+        "friendlyNames": {
+          "en-US": "eWBM eFPA FIDO2 Authenticator"
+        },
         "description": "eWBM eFPA FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -7632,14 +8185,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2019-04-04",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eWBM eFPA FIDO2 Authenticator",
           "certificateNumber": "FIDO20020180926020",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-04-04"
+          "effectiveDate": "2019-04-04",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-04-04"
@@ -7649,6 +8208,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series (Enterprise Profile)"
+        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -7716,6 +8278,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -7728,6 +8291,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -7825,7 +8389,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "effectiveDate": "2024-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-05"
@@ -7835,6 +8402,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
+        "friendlyNames": {
+          "en-US": "Security Key by Yubico"
+        },
         "description": "Security Key by Yubico",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -7934,14 +8504,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "FIDO20020180926001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -7951,6 +8527,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8976631b-d4a0-427f-5773-0ec71c9e0279",
+        "friendlyNames": {
+          "en-US": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -8037,15 +8616,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-03",
+          "authenticatorVersion": 0,
           "url": "https://solokeys.com",
           "certificationDescriptor": "Solo Tap FIDO2 Authenticator",
           "certificateNumber": "FIDO20020191206003",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-03"
+          "effectiveDate": "2020-04-03",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-03"
@@ -8055,6 +8640,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "516d3969-5a57-5651-5958-4e7a49434167",
+        "friendlyNames": {
+          "en-US": "SmartDisplayer BobeePass FIDO2 Authenticator"
+        },
         "description": "SmartDisplayer BobeePass FIDO2 Authenticator",
         "alternativeDescriptions": {
           "zh-TW": "SmartDisplayer BobeePass FIDO2 身份驗證器"
@@ -8162,15 +8750,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-06-02",
+          "authenticatorVersion": 2,
           "url": "https://www.smartdisplayer.com/fido",
           "certificationDescriptor": "SmartDisplayer BobeePass FIDO2 Authenticator",
           "certificateNumber": "FIDO20020230602001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-06-02"
+          "effectiveDate": "2023-06-02",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-10"
@@ -8180,6 +8774,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8681a073-5f50-4d52-bce4-e21658d207b3",
+        "friendlyNames": {
+          "en-US": "RSA Authenticator 4 for iOS"
+        },
         "description": "RSA Authenticator 4 for iOS",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -8262,7 +8859,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-16"
+          "effectiveDate": "2024-08-16",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-16"
@@ -8276,6 +8876,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "573402ae901e27c11438eb8a44e746ec7372dee3"
         ],
+        "friendlyNames": {
+          "en-US": "SOLID webKey"
+        },
         "description": "SOLID webKey",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -8324,14 +8927,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-04-11",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "SOLID webKey",
           "certificateNumber": "U2F110020190319004",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.1"
+          "certificationRequirementsVersion": "1.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-04-11"
+          "effectiveDate": "2019-04-11",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-04-11"
@@ -8341,6 +8950,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0042#0002",
+        "friendlyNames": {
+          "en-US": "SSenStone FIDO UAF Authenticator for iOS"
+        },
         "description": "SSenStone FIDO UAF Authenticator for iOS",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -8418,7 +9030,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-09-13"
+          "effectiveDate": "2018-09-13",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-09-13"
@@ -8428,6 +9043,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0022#1100",
+        "friendlyNames": {
+          "en-US": "Movenda Egomet FIDO UAF iOS Touch ID/Face ID Authenticator"
+        },
         "description": "Movenda Egomet FIDO UAF iOS Touch ID/Face ID Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -8499,10 +9117,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-10-30",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Client/Authenticator Combo Certification",
           "certificateNumber": "UAF100020190506002",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-10-30"
@@ -8512,6 +9133,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning"
+        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -8656,14 +9280,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "YubiKey 5 Series with Lightning",
           "certificateNumber": "FIDO20020240604004",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-04"
@@ -8683,6 +9313,9 @@ let mdsJson={
           "a1833532e81bccc79245fa6f5296c4815dff599c",
           "f5f6eef729a0264752053c22e89fc3028f1536c1"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series with Lightning"
+        },
         "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -8731,7 +9364,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-08"
+          "effectiveDate": "2023-02-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-08"
@@ -8741,6 +9377,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2c0df832-92de-4be1-8412-88a8f074df4a",
+        "friendlyNames": {
+          "en-US": "Feitian FIDO Smart Card"
+        },
         "description": "Feitian FIDO Smart Card",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -8843,7 +9482,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-24"
+          "effectiveDate": "2020-04-24",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-24"
@@ -8853,6 +9495,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "59f85fe7-faa5-4c92-9f52-697b9d4d5473",
+        "friendlyNames": {
+          "en-US": "RSA Authenticator 4 for Android"
+        },
         "description": "RSA Authenticator 4 for Android",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -8935,7 +9580,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-16"
+          "effectiveDate": "2024-08-16",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-16"
@@ -8945,6 +9593,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "006F#0002",
+        "friendlyNames": {
+          "en-US": "Hanko UAF Client/Authenticator Combo for iOS"
+        },
         "description": "Hanko UAF Client/Authenticator Combo for iOS",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -9000,7 +9651,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-10-21"
+          "effectiveDate": "2020-10-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-10-21"
@@ -9014,6 +9668,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "786544772ecc9d3e85049222ae33226345b59c69"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series"
+        },
         "description": "YubiKey Bio Series",
         "authenticatorVersion": 328965,
         "protocolFamily": "u2f",
@@ -9067,15 +9724,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-11",
+          "authenticatorVersion": 328965,
           "url": "www.yubico.com",
           "certificationDescriptor": "YubiKey Bio",
           "certificateNumber": "FIDO20020210811001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-11"
+          "effectiveDate": "2021-08-11",
+          "authenticatorVersion": 328965,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-08-18"
@@ -9089,6 +9752,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2bd915ec436fdae476aff40c51256cd61e0f2e4e"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico"
+        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -9140,14 +9806,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "Security Key NFC by Yubico",
           "certificateNumber": "U2F100020240604002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -9157,6 +9829,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "970c8d9c-19d2-46af-aa32-3f448db49e35",
+        "friendlyNames": {
+          "en-US": "WinMagic FIDO Eazy - TPM"
+        },
         "description": "WinMagic FIDO Eazy - TPM",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -9240,7 +9915,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-26"
+          "effectiveDate": "2024-01-26",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-01-26"
@@ -9250,6 +9928,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c5703116-972b-4851-a3e7-ae1259843399",
+        "friendlyNames": {
+          "en-US": "NEOWAVE Badgeo FIDO2"
+        },
         "description": "NEOWAVE Badgeo FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -9351,7 +10032,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-09-21"
+          "effectiveDate": "2021-09-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-09-21"
@@ -9365,6 +10049,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "628756125e2f2242adbe979cf342992efc21c6de"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning"
+        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -9414,14 +10101,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "YubiKey 5 Series with Lightning",
           "certificateNumber": "U2F100020240604003",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -9431,6 +10124,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c80dbd9a-533f-4a17-b941-1a2f1c7cedff",
+        "friendlyNames": {
+          "en-US": "HID Crescendo C3000"
+        },
         "description": "HID Crescendo C3000",
         "authenticatorVersion": 30,
         "protocolFamily": "fido2",
@@ -9505,15 +10201,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-01-20",
+          "authenticatorVersion": 30,
           "url": "https://www.hidglobal.com/",
           "certificationDescriptor": "HID Crescendo C3000",
           "certificateNumber": "FIDO20020230120002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-01-20"
+          "effectiveDate": "2023-01-20",
+          "authenticatorVersion": 30,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-24"
@@ -9527,6 +10229,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "00c43ffcc8a97788f28aec0864c09cdd37aa37f8"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning (Enterprise Profile)"
+        },
         "description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -9575,7 +10280,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-15"
+          "effectiveDate": "2024-08-15",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-15"
@@ -9585,6 +10293,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5b0e46ba-db02-44ac-b979-ca9b84f5e335",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series with Lightning Preview"
+        },
         "description": "YubiKey 5 FIPS Series with Lightning Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -9730,7 +10441,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
+          "effectiveDate": "2024-04-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-04-07"
@@ -9740,6 +10454,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
+        "friendlyNames": {
+          "en-US": "IDmelon iOS Authenticator"
+        },
         "description": "IDmelon iOS Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -9827,14 +10544,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-02-08",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Vancosys iOS Authenticator",
           "certificateNumber": "FIDO20020190109002",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-02-08"
+          "effectiveDate": "2019-02-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-02-08"
@@ -9850,6 +10573,9 @@ let mdsJson={
           "c55f74c70c68e8dce5b7fdb4cdda772ad9294c67",
           "fd36573d24be3f7f32ad5040271ab61035a1fcad"
         ],
+        "friendlyNames": {
+          "en-US": "GoTrust Idem Card U2F Authenticator"
+        },
         "description": "GoTrust Idem Card U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -9902,10 +10628,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-09-02",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "GoTrust Idem Card U2F110020170403001",
           "certificateNumber": "U2F110020170403001",
           "certificationPolicyVersion": "1.2.5",
-          "certificationRequirementsVersion": "1.3.0"
+          "certificationRequirementsVersion": "1.3.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-09-02"
@@ -9919,6 +10648,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "096bfc8bdbaaa740b9ed8f74b054b5e8a81841d2"
         ],
+        "friendlyNames": {
+          "en-US": "TrustKey T120 U2F Authenticator"
+        },
         "description": "TrustKey T120 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -9971,14 +10703,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "TrustKey Solutions T120 U2F Authenticator",
           "certificateNumber": "U2F110020200814002",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
+          "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -9994,6 +10732,9 @@ let mdsJson={
           "2806df6c60b1656a78f97a28e168e5ec8d2937b4",
           "2806df6c60b1656a78f97a28e168e5ec8d2937b4"
         ],
+        "friendlyNames": {
+          "en-US": "RSA DS100"
+        },
         "description": "RSA DS100",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -10046,7 +10787,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-05-03"
+          "effectiveDate": "2023-05-03",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-05-03"
@@ -10056,6 +10800,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3124e301-f14e-4e38-876d-fbeeb090e7bf",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with Lightning Preview"
+        },
         "description": "YubiKey 5 Series with Lightning Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -10199,7 +10946,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
+          "effectiveDate": "2024-04-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-04-07"
@@ -10215,6 +10965,9 @@ let mdsJson={
           "44561a95d9a2664d32a267dbfe86ce0bb19e5926",
           "42db24c2644bd0c30948a33ccc26635d91dbe40f"
         ],
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO Security Key"
+        },
         "description": "Excelsecu eSecu FIDO Security Key",
         "authenticatorVersion": 3,
         "protocolFamily": "u2f",
@@ -10263,10 +11016,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-09-04",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Excelsecu eSecu FIDO Security Key",
           "certificateNumber": "U2F100020160607005",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.0.1"
+          "certificationRequirementsVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-09-04"
@@ -10276,6 +11032,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
+        "friendlyNames": {
+          "en-US": "Feitian BioPass FIDO2 Plus Authenticator"
+        },
         "description": "Feitian BioPass FIDO2 Plus Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -10373,14 +11132,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-09-29",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Feitian BioPass FIDO2 Authenticator",
           "certificateNumber": "FIDO20020180929001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.2"
+          "certificationRequirementsVersion": "1.2",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-09-29"
+          "effectiveDate": "2018-09-29",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-07-31"
@@ -10394,6 +11159,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "fff940d3579bc4404055747b3670d43a1e97d054"
         ],
+        "friendlyNames": {
+          "en-US": "Bluink Key U2F Authenticator"
+        },
         "description": "Bluink Key U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -10441,10 +11209,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-01-07",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Bluink Ltd, Injector, U2F",
           "certificateNumber": "U2F100020150811001",
           "certificationPolicyVersion": "1.0",
-          "certificationRequirementsVersion": "1.0"
+          "certificationRequirementsVersion": "1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-01-07"
@@ -10454,6 +11225,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series with Lightning"
+        },
         "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -10579,23 +11353,32 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 328706,
           "url": "https://www.yubico.com/products/",
           "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning",
           "certificateNumber": "FIDO20020230328005",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YK 5Ci FIPS",
           "certificateNumber": "FIDO20020210118005",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-18"
+          "effectiveDate": "2021-02-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-03-29"
@@ -10623,6 +11406,9 @@ let mdsJson={
           "07e44a7c2e7e0b6054c0292fba691eebfdb481bd",
           "75d9266a79599e9cac604ac2be3f03a0f0444d74"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC"
+        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -10674,14 +11460,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5 NFC",
           "certificateNumber": "U2F110020191017006",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -10691,6 +11483,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
+        "friendlyNames": {
+          "en-US": "Hyper FIDO Bio Security Key"
+        },
         "description": "Hyper FIDO Bio Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -10797,14 +11592,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-09",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Hyper FIDO® Bio Security Key",
           "certificateNumber": "FIDO20020210208001",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-09"
+          "effectiveDate": "2021-02-09",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-02-09"
@@ -10814,6 +11615,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9876631b-d4a0-427f-5773-0ec71c9e0279",
+        "friendlyNames": {
+          "en-US": "Somu Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "Somu Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -10898,15 +11702,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-03",
+          "authenticatorVersion": 0,
           "url": "https://solokeys.com",
           "certificationDescriptor": "Somu FIDO2 Authenticator",
           "certificateNumber": "FIDO20020191206004",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-03"
+          "effectiveDate": "2020-04-03",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-03"
@@ -10916,6 +11726,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f56f58b3-d711-4afc-ba7d-6ac05f88cb19",
+        "friendlyNames": {
+          "en-US": "WinMagic FIDO Eazy - Phone"
+        },
         "description": "WinMagic FIDO Eazy - Phone",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -10999,7 +11812,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-26"
+          "effectiveDate": "2024-01-26",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-01-26"
@@ -11013,6 +11829,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "a867797eed1446ec184e3b5600ae00b49aba6214"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -11064,14 +11883,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
           "certificateNumber": "U2F100020240604001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -11085,6 +11910,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3c6092374c0d0862bade1878b8647f7200519c23"
         ],
+        "friendlyNames": {
+          "en-US": "Arculus FIDO2/U2F Key Card [P71]"
+        },
         "description": "Arculus FIDO2/U2F Key Card [P71]",
         "authenticatorVersion": 100,
         "protocolFamily": "u2f",
@@ -11167,14 +11995,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-08-16",
+          "authenticatorVersion": 100,
           "certificationDescriptor": "Arculus FIDO2/U2F Key Card [P71]",
           "certificateNumber": "U2F000020230816001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-08-16"
+          "effectiveDate": "2023-08-16",
+          "authenticatorVersion": 100,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-09-12"
@@ -11184,6 +12018,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f4c63eff-d26c-4248-801c-3736c7eaa93a",
+        "friendlyNames": {
+          "en-US": "FIDO KeyPass S3"
+        },
         "description": "FIDO KeyPass S3",
         "authenticatorVersion": 3,
         "protocolFamily": "fido2",
@@ -11254,11 +12091,17 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-03-10",
-          "certificateNumber": "FIDO20020200717001"
+          "authenticatorVersion": 0,
+          "certificateNumber": "FIDO20020200717001",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-03-10"
+          "effectiveDate": "2021-03-10",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-03-10"
@@ -11268,6 +12111,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d384db22-4d50-ebde-2eac-5765cf1e2a44",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 Fingerprint Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -11294,6 +12140,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 0,
                 "blockSlowdown": 0
@@ -11351,14 +12198,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-09-04",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Excelsecu eSecu FIDO2 Fingerprint Key",
           "certificateNumber": "FIDO20020190708001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-09-04"
+          "effectiveDate": "2019-09-04",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-09-04"
@@ -11372,6 +12225,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "85f44f9ff0f3be6c373c211e346e2e6bc4eb2d5c"
         ],
+        "friendlyNames": {
+          "en-US": "ACS FIDO Authenticator Card"
+        },
         "description": "ACS FIDO Authenticator Card",
         "authenticatorVersion": 10000,
         "protocolFamily": "u2f",
@@ -11434,14 +12290,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-07-20",
+          "authenticatorVersion": 10000,
           "certificationDescriptor": "ACS FIDO Authenticator Card",
           "certificateNumber": "U2F100020230720001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-07-20"
+          "effectiveDate": "2023-07-20",
+          "authenticatorVersion": 10000,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-03"
@@ -11451,6 +12313,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
+        "friendlyNames": {
+          "en-US": "Android Authenticator with SafetyNet Attestation"
+        },
         "description": "Android Authenticator with SafetyNet Attestation",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -11571,18 +12436,24 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-20",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Android SafetyNet Authenticator",
           "certificateNumber": "FIDO20020190225001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Android SafetyNet Authenticator",
           "certificateNumber": "FIDO20020190225001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-17"
@@ -11592,6 +12463,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC"
+        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -11715,14 +12589,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5 NFC Series",
           "certificateNumber": "FIDO20020190826002",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -11732,6 +12612,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "31c3f7ff-bf15-4327-83ec-9336abcbcd34",
+        "friendlyNames": {
+          "en-US": "WinMagic FIDO Eazy - Software"
+        },
         "description": "WinMagic FIDO Eazy - Software",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -11814,7 +12697,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-26"
+          "effectiveDate": "2024-01-26",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-01-26"
@@ -11828,6 +12714,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "e077926504cd75eb405a45be160f783044e3f5a2"
         ],
+        "friendlyNames": {
+          "en-US": "ATKey.Hello TypeC"
+        },
         "description": "ATKey.Hello TypeC",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -11854,6 +12743,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 0,
                 "blockSlowdown": 0
@@ -11883,10 +12773,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-02-26",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "AuthenTrend Technology Inc. ATKey.Hello TypeC",
           "certificateNumber": "U2F100020180228004",
           "certificationPolicyVersion": "1.3.3",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-02-26"
@@ -11896,6 +12789,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#400b",
+        "friendlyNames": {
+          "en-US": "Touch ID or Face ID"
+        },
         "description": "Touch ID or Face ID",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -11926,6 +12822,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -11957,7 +12854,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -11967,6 +12867,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ddd1817-af5a-4672-a2b9-3e3dd95000a9",
+        "friendlyNames": {
+          "en-US": "Windows Hello VBS Hardware Authenticator"
+        },
         "description": "Windows Hello VBS Hardware Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -12053,14 +12956,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Windows Hello VBS Hardware Authenticator",
           "certificateNumber": "FIDO20020190418001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05"
+          "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-08-05"
@@ -12070,6 +12979,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series"
+        },
         "description": "YubiKey Bio Series",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
@@ -12109,6 +13021,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -12151,6 +13064,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -12240,15 +13154,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-06",
+          "authenticatorVersion": 328964,
           "url": "www.yubico.com",
           "certificationDescriptor": "YubiKey Bio",
           "certificateNumber": "FIDO20020210806001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-06"
+          "effectiveDate": "2021-08-06",
+          "authenticatorVersion": 328964,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-08-10"
@@ -12258,6 +13178,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
+        "friendlyNames": {
+          "en-US": "ACS FIDO Authenticator"
+        },
         "description": "ACS FIDO Authenticator",
         "authenticatorVersion": 10000,
         "protocolFamily": "fido2",
@@ -12388,15 +13311,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-11-17",
+          "authenticatorVersion": 10000,
           "url": "https://www.acs.com.hk/",
           "certificationDescriptor": "ACS FIDO Authenticator",
           "certificateNumber": "FIDO20020221117001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-17"
+          "effectiveDate": "2022-11-17",
+          "authenticatorVersion": 10000,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-18"
@@ -12406,6 +13335,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f7c558a0-f465-11e8-b568-0800200c9a66",
+        "friendlyNames": {
+          "en-US": "KONAI Secp256R1 FIDO2 Conformance Testing CTAP2 Authenticator"
+        },
         "description": "KONAI Secp256R1 FIDO2 Conformance Testing CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -12432,6 +13364,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 1,
                 "maxRetries": 1,
                 "blockSlowdown": 30
@@ -12476,14 +13409,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-29",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "KONA FIDO2 BIOPASS",
           "certificateNumber": "FIDO20020190402001",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-29"
+          "effectiveDate": "2020-04-29",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-29"
@@ -12497,6 +13436,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "dd66a09a46a1b7ad54ca335efdada2fcabf84bcb"
         ],
+        "friendlyNames": {
+          "en-US": "SHALO AUTH"
+        },
         "description": "SHALO AUTH",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -12545,15 +13487,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-01-17",
+          "authenticatorVersion": 1,
           "url": "https://www.axell.co.jp/en/",
           "certificationDescriptor": "SHALO AUTH",
           "certificateNumber": "U2F100020230117001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-01-17"
+          "effectiveDate": "2023-01-17",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-27"
@@ -12563,6 +13511,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3f59672f-20aa-4afe-b6f4-7e5e916b6d98",
+        "friendlyNames": {
+          "en-US": "Arculus FIDO 2.1 Key Card [P71]"
+        },
         "description": "Arculus FIDO 2.1 Key Card [P71]",
         "authenticatorVersion": 100,
         "protocolFamily": "fido2",
@@ -12690,14 +13641,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-08-16",
+          "authenticatorVersion": 100,
           "certificationDescriptor": "Arculus FIDO 2.1 Key Card [P71]",
           "certificateNumber": "FIDO20020230816001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-08-16"
+          "effectiveDate": "2023-08-16",
+          "authenticatorVersion": 100,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-09-12"
@@ -12711,6 +13668,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "33e25f4ac1a431ea9bda37dbdd3febeb1e0d88ac"
         ],
+        "friendlyNames": {
+          "en-US": "IDEMIA ID-ONE Card"
+        },
         "description": "IDEMIA ID-ONE Card",
         "authenticatorVersion": 82,
         "protocolFamily": "u2f",
@@ -12772,14 +13732,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-10-19",
+          "authenticatorVersion": 82,
           "certificationDescriptor": "IDEMIA ID-ONE Card",
           "certificateNumber": "U2F100020231019001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-10-19"
+          "effectiveDate": "2023-10-19",
+          "authenticatorVersion": 82,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -12789,6 +13755,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
+        "friendlyNames": {
+          "en-US": "Google Titan Security Key v2"
+        },
         "description": "Google Titan Security Key v2",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -12900,14 +13869,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-06-12",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Google Titan Security Key v2",
           "certificateNumber": "FIDO20020230612002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-06-12"
+          "effectiveDate": "2023-06-12",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-09-03"
@@ -12927,6 +13902,9 @@ let mdsJson={
           "aba470623cf889425307246b582b1ca19d2088c3",
           "5e24f0eb349a707b3ac4de536b905e59f5bcb845"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series"
+        },
         "description": "YubiKey 5 FIPS Series",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -12975,7 +13953,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-08"
+          "effectiveDate": "2023-02-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-08"
@@ -12985,6 +13966,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "361a3082-0278-4583-a16f-72a527f973e4",
+        "friendlyNames": {
+          "en-US": "eWBM eFA500 FIDO2 Authenticator"
+        },
         "description": "eWBM eFA500 FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -13044,14 +14028,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2019-07-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eWBM eFA500 FIDO2 Authenticator",
           "certificateNumber": "FIDO20020190709001",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-18"
+          "effectiveDate": "2019-07-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-07-18"
@@ -13071,6 +14061,9 @@ let mdsJson={
           "6d1e2fbd1fed73771b039a8ba444456021b2e484",
           "d75e7bf9b2444b46698827d1be2e1b8f781cc4a4"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series with NFC"
+        },
         "description": "YubiKey 5 FIPS Series with NFC",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -13121,7 +14114,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-07"
+          "effectiveDate": "2023-02-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-07"
@@ -13131,6 +14127,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2ffd6452-01da-471f-821b-ea4bf6c8676a",
+        "friendlyNames": {
+          "en-US": "IDPrime 941 Fido"
+        },
         "description": "IDPrime 941 Fido",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -13235,14 +14234,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-05-14",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "IDPrime 941 Fido",
           "certificateNumber": "FIDO20020220314001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-05-14"
+          "effectiveDate": "2022-05-14",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -13252,6 +14257,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4ff7-b00b-addc96ba6a98",
+        "friendlyNames": {
+          "en-US": "OneSpan DIGIPASS FX7"
+        },
         "description": "OneSpan DIGIPASS FX7",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -13376,14 +14384,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-02",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "OneSpan DIGIPASS FX7",
           "certificateNumber": "FIDO20020240802001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-02"
+          "effectiveDate": "2024-08-02",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-03"
@@ -13393,6 +14407,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
+        "friendlyNames": {
+          "en-US": "HID Crescendo Key"
+        },
         "description": "HID Crescendo Key",
         "authenticatorVersion": 10,
         "protocolFamily": "fido2",
@@ -13484,14 +14501,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-10-08",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "HID Crescendo Key",
           "certificateNumber": "FIDO20020190821002",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-10-08"
+          "effectiveDate": "2019-10-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-10-08"
@@ -13505,6 +14528,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "99629e992e6d8f3b01ab17b401c12183a7836d79"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Pro"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -13555,7 +14581,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-15"
+          "effectiveDate": "2024-08-15",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-15"
@@ -13569,6 +14598,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "31116a647069d1493f58fc5b54e5449e2a52d43e"
         ],
+        "friendlyNames": {
+          "en-US": "Yubikey Edge"
+        },
         "description": "Yubikey Edge",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -13618,9 +14650,12 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-12-29",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Yubikey Edge (v4)",
           "certificateNumber": "U2F100020150520002",
-          "certificationRequirementsVersion": "1.0"
+          "certificationRequirementsVersion": "1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-29"
@@ -13648,6 +14683,9 @@ let mdsJson={
           "8e900037d095ad7a8ada6c4c18143b7dbeb44674",
           "b88023f2545fdd6ea62060ab89d33294132b9bc9"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key by Yubico"
+        },
         "description": "Security Key by Yubico",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -13697,14 +14735,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "U2F110020191017010",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -13714,6 +14758,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 PRO Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 PRO Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -13792,14 +14839,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-03",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eSecu FIDO2® Pro",
           "certificateNumber": "FIDO20020191210001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-03"
+          "effectiveDate": "2020-08-03",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-08-03"
@@ -13809,6 +14862,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d",
+        "friendlyNames": {
+          "en-US": "Feitian iePass FIDO Authenticator"
+        },
         "description": "Feitian iePass FIDO Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -13911,14 +14967,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-24",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian iePass FIDO®",
           "certificateNumber": "FIDO20020200417002",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-24"
+          "effectiveDate": "2020-04-24",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-24"
@@ -13932,6 +14994,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "910a763ddf79dbf496c482e7f313c520a89f7bec"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC"
+        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -13983,14 +15048,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "YubiKey 5 Series with NFC",
           "certificateNumber": "U2F100020240604000",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -14000,6 +15071,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "23786452-f02d-4344-87ed-aaf703726881",
+        "friendlyNames": {
+          "en-US": "SafeNet eToken Fusion CC"
+        },
         "description": "SafeNet eToken Fusion CC",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -14104,14 +15178,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-08-16",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "SafeNet eToken Fusion CC",
           "certificateNumber": "FIDO20020220822002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-08-16"
+          "effectiveDate": "2022-08-16",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -14121,6 +15201,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "234cd403-35a2-4cc2-8015-77ea280c77f5",
+        "friendlyNames": {
+          "en-US": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)"
+        },
         "description": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -14244,14 +15327,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-07-18",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
           "certificateNumber": "FIDO20020220718001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-18"
+          "effectiveDate": "2022-07-18",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -14265,6 +15354,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "bf8f39a5826eb910de4e436635a530e3ecce410f"
         ],
+        "friendlyNames": {
+          "en-US": "Hideez Key 4 U2F SDK"
+        },
         "description": "Hideez Key 4 U2F SDK",
         "alternativeDescriptions": {
           "uk-UA": "U2F Key SDK - від Hideez"
@@ -14320,14 +15412,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-12-10",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Hideez Key 4",
           "certificateNumber": "U2F100020210409001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-12-10"
+          "effectiveDate": "2021-12-10",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-09-13"
@@ -14337,6 +15435,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
+        "friendlyNames": {
+          "en-US": "HID Crescendo C2300"
+        },
         "description": "HID Crescendo C2300",
         "authenticatorVersion": 30,
         "protocolFamily": "fido2",
@@ -14427,14 +15528,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-09-27",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "HID Crescendo C2300",
           "certificateNumber": "FIDO20020190821001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-09-27"
+          "effectiveDate": "2019-09-27",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-09-27"
@@ -14444,6 +15551,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
+        "friendlyNames": {
+          "en-US": "eWBM eFA320 FIDO2 Authenticator"
+        },
         "description": "eWBM eFA320 FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -14527,14 +15637,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2019-07-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eWBM eFA320 FIDO2 Authenticator",
           "certificateNumber": "FIDO20020190709002",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-18"
+          "effectiveDate": "2019-07-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-07-18"
@@ -14548,6 +15664,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "70323a5e5a3a12682ddf96cba40a114ba6d21f21"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC (Enterprise Profile)"
+        },
         "description": "YubiKey 5 Series with NFC (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -14598,7 +15717,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-15"
+          "effectiveDate": "2024-08-15",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-15"
@@ -14608,6 +15730,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "58276709-bb4b-4bb3-baf1-60eea99282a7",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -14661,6 +15786,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -14690,6 +15816,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -14780,14 +15907,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
           "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN",
           "certificateNumber": "FIDO20020240812003",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-12"
+          "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -14797,6 +15930,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7d2afadd-bf6b-44a2-a66b-e831fceb8eff",
+        "friendlyNames": {
+          "en-US": "Taglio CTAP2.1 EP"
+        },
         "description": "Taglio CTAP2.1 EP",
         "authenticatorVersion": 2308,
         "protocolFamily": "fido2",
@@ -14912,14 +16048,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-14",
+          "authenticatorVersion": 2308,
           "certificationDescriptor": "Taglio CTAP2.1 Enterprise Smartcard",
           "certificateNumber": "FIDO20020240614001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-14"
+          "effectiveDate": "2024-06-14",
+          "authenticatorVersion": 2308,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-08"
@@ -14929,6 +16071,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "20ac7a17-c814-4833-93fe-539f0d5e3389",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series (Enterprise Profile)"
+        },
         "description": "YubiKey 5 Series (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -15074,7 +16219,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "effectiveDate": "2024-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-05"
@@ -15084,6 +16232,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#400a",
+        "friendlyNames": {
+          "en-US": "Touch ID or Face ID"
+        },
         "description": "Touch ID or Face ID",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -15119,6 +16270,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -15145,7 +16297,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -15155,6 +16310,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9f0d8150-baa5-4c00-9299-ad62c8bb4e87",
+        "friendlyNames": {
+          "en-US": "GoTrust Idem Card FIDO2 Authenticator"
+        },
         "description": "GoTrust Idem Card FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -15253,14 +16411,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-12-04",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "GoTrust Idem Card",
           "certificateNumber": "FIDO20020190520001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-12-04"
+          "effectiveDate": "2019-12-04",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-12-04"
@@ -15270,6 +16434,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "12ded745-4bed-47d4-abaa-e713f51d6393",
+        "friendlyNames": {
+          "en-US": "Feitian AllinOne FIDO2 Authenticator"
+        },
         "description": "Feitian AllinOne FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -15386,14 +16553,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-05-27",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian BioPass FIDO USB/NFC/BLE",
           "certificateNumber": "FIDO20020190311004",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-05-27"
+          "effectiveDate": "2019-05-27",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-05-27"
@@ -15403,6 +16576,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "88bbd2f0-342a-42e7-9729-dd158be5407a",
+        "friendlyNames": {
+          "en-US": "Precision InnaIT Key FIDO 2 Level 2 certified"
+        },
         "description": "Precision InnaIT Key FIDO 2 Level 2 certified",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -15507,14 +16683,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2021-09-27",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "InnaIT Key PK1100",
           "certificateNumber": "FIDO20020211018001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-09-27"
+          "effectiveDate": "2021-09-27",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-12-15"
@@ -15528,6 +16710,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "b6f1389fea15b3410381eb96d938cf12cade9692"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -15576,7 +16761,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-23"
+          "effectiveDate": "2024-08-23",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-23"
@@ -15586,6 +16774,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "dd86a2da-86a0-4cbe-b462-4bd31f57bc6f",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio FIDO Edition"
+        },
         "description": "YubiKey Bio FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -15618,6 +16809,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -15633,6 +16825,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -15762,14 +16955,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
           "certificationDescriptor": "YubiKey Bio FIDO Edition",
           "certificateNumber": "FIDO20020240812000",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-12"
+          "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -15779,6 +16978,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4009",
+        "friendlyNames": {
+          "en-US": "iOS Passcode"
+        },
         "description": "iOS Passcode",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -15835,7 +17037,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -15845,6 +17050,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0052#0001",
+        "friendlyNames": {
+          "en-US": "i-Sprint iOS FingerPrint UAF Authenticator"
+        },
         "description": "i-Sprint iOS FingerPrint UAF Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -15902,14 +17110,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-08-01",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "FIDO L1 Client/Authenticator Combo",
           "certificateNumber": "UAF100020180221004",
           "certificationPolicyVersion": "1.3.2",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-01"
+          "effectiveDate": "2018-08-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-08-01"
@@ -15919,6 +17133,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0022#0100",
+        "friendlyNames": {
+          "en-US": "Movenda Egomet FIDO UAF Android Fingerprint Authenticator"
+        },
         "description": "Movenda Egomet FIDO UAF Android Fingerprint Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -15994,10 +17211,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-10-30",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Client/Authenticator Combo Certification",
           "certificateNumber": "UAF100020190506001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-10-30"
@@ -16007,6 +17227,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0056#0002",
+        "friendlyNames": {
+          "en-US": "PixelPin - Picture Login"
+        },
         "description": "PixelPin - Picture Login",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -16066,14 +17289,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-08-30",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "PixelPin iOS",
           "certificateNumber": "UAF110020180511001",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-08-30"
+          "effectiveDate": "2018-08-30",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-08-30"
@@ -16083,6 +17312,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "34f5766d-1536-4a24-9033-0e294e510fb0",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC Preview"
+        },
         "description": "YubiKey 5 Series with NFC Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -16231,7 +17463,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-09-17"
+          "effectiveDate": "2020-09-17",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-09-17"
@@ -16241,6 +17476,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "83c47309-aabb-4108-8470-8be838b573cb",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series (Enterprise Profile)"
+        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
@@ -16297,6 +17535,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -16317,6 +17556,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -16413,15 +17653,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-06",
+          "authenticatorVersion": 328965,
           "url": "www.yubico.com",
           "certificationDescriptor": "YubiKey Bio(Enterprise Profile)",
           "certificateNumber": "FIDO20020210806001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-06"
+          "effectiveDate": "2021-08-06",
+          "authenticatorVersion": 328965,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-08-16"
@@ -16431,6 +17677,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "be727034-574a-f799-5c76-0929e0430973",
+        "friendlyNames": {
+          "en-US": "Crayonic KeyVault K1 (USB-NFC-BLE FIDO2 Authenticator)"
+        },
         "description": "Crayonic KeyVault K1 (USB-NFC-BLE FIDO2 Authenticator)",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -16468,6 +17717,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 1e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 0,
                 "blockSlowdown": 15
@@ -16517,6 +17767,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 1e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 0,
                 "blockSlowdown": 15
@@ -16590,14 +17841,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-02",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Crayonic KeyVault",
           "certificateNumber": "FIDO20020201110001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-02"
+          "effectiveDate": "2020-12-02",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-03-08"
@@ -16607,6 +17864,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4006",
+        "friendlyNames": {
+          "en-US": "Android PIN"
+        },
         "description": "Android PIN",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -16670,7 +17930,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-05-19"
+          "effectiveDate": "2018-05-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-05-19"
@@ -16680,6 +17943,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "092277e5-8437-46b5-b911-ea64b294acb7",
+        "friendlyNames": {
+          "en-US": "Taglio CTAP2.1 CS"
+        },
         "description": "Taglio CTAP2.1 CS",
         "authenticatorVersion": 2308,
         "protocolFamily": "fido2",
@@ -16793,14 +18059,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-14",
+          "authenticatorVersion": 2308,
           "certificationDescriptor": "Taglio CTAP2.1 Consumer Authenticator",
           "certificateNumber": "FIDO20020240614002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-14"
+          "effectiveDate": "2024-06-14",
+          "authenticatorVersion": 2308,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-08"
@@ -16810,6 +18082,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ca87cb70-4c1b-4579-a8e8-4efdd7c007e0",
+        "friendlyNames": {
+          "en-US": "FIDO Alliance TruU Sample FIDO2 Authenticator"
+        },
         "description": "FIDO Alliance TruU Sample FIDO2 Authenticator",
         "alternativeDescriptions": {
           "ru-RU": "Пример TruU FIDO2 аутентификатора от FIDO Alliance",
@@ -16841,6 +18116,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 2e-06,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -16922,7 +18198,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-10-06"
+          "effectiveDate": "2023-10-06",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-06"
@@ -16938,6 +18217,9 @@ let mdsJson={
           "93761744e2aa5afce83a67fbeebdd3fe1ed24294",
           "93761744e2aa5afce83a67fbeebdd3fe1ed24294"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series"
+        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -16987,14 +18269,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "YubiKey 5 Series",
           "certificateNumber": "U2F100020240604004",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -17008,6 +18296,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "5fbc4ba753052187aab3c741d1f9ec6fb3c4d875"
         ],
+        "friendlyNames": {
+          "en-US": "HyperFIDO U2F Security Key"
+        },
         "description": "HyperFIDO U2F Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -17057,10 +18348,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-08-02",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "HyperFIDO U2F Security Key",
           "certificateNumber": "U2F100020150805001",
           "certificationPolicyVersion": "1",
-          "certificationRequirementsVersion": "1"
+          "certificationRequirementsVersion": "1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-08-02"
@@ -17074,6 +18368,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "f83f10cabe50537051ba3086ac101ae4326e0de1"
         ],
+        "friendlyNames": {
+          "en-US": "Hideez Key 3 U2F"
+        },
         "description": "Hideez Key 3 U2F",
         "alternativeDescriptions": {
           "uk-UA": "U2F Key - від Hideez"
@@ -17127,7 +18424,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-08"
+          "effectiveDate": "2022-07-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-07-08"
@@ -17141,6 +18441,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3e1b66cbc88605adbb34e0a2d6b86e8862c56627"
         ],
+        "friendlyNames": {
+          "en-US": "OCTATCO EzFinger2 U2F AUTHENTICATOR"
+        },
         "description": "OCTATCO EzFinger2 U2F AUTHENTICATOR",
         "alternativeDescriptions": {
           "ko-KR": "옥타코 이지핑거2 U2F 인증기 V 1.0",
@@ -17202,14 +18505,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-04",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Ezfinger FIDO U2F",
           "certificateNumber": "U2F100020210204001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-04"
+          "effectiveDate": "2021-02-04",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-08-05"
@@ -17223,6 +18532,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "47268ea13d5e33ddbbb4ae000c13c9478cd173af"
         ],
+        "friendlyNames": {
+          "en-US": "ZTPass SmartAuth"
+        },
         "description": "ZTPass SmartAuth",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -17283,7 +18595,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-24"
+          "effectiveDate": "2023-11-24",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-11-24"
@@ -17293,6 +18608,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "58b44d0b-0a7c-f33a-fd48-f7153c871352",
+        "friendlyNames": {
+          "en-US": "Ledger Nano S Plus FIDO2 Authenticator"
+        },
         "description": "Ledger Nano S Plus FIDO2 Authenticator",
         "authenticatorVersion": 10500,
         "protocolFamily": "fido2",
@@ -17410,7 +18728,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-18"
+          "effectiveDate": "2023-09-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-09-18"
@@ -17420,6 +18741,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9b",
+        "friendlyNames": {
+          "en-US": "Ensurity AUTH BioPro"
+        },
         "description": "Ensurity AUTH BioPro",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -17462,6 +18786,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -17553,7 +18878,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-03-09"
+          "effectiveDate": "2024-03-09",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-03-09"
@@ -17567,6 +18895,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "a7c65ac944e8d5146f5cbeb5fc328931908a5352"
         ],
+        "friendlyNames": {
+          "en-US": "KONAI Secp256R1 Conformance Testing U2F Authenticator"
+        },
         "description": "KONAI Secp256R1 Conformance Testing U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -17618,10 +18949,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-04-29",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "KONA FIDO2 BIOPASS",
           "certificateNumber": "U2F110020200421002",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-29"
@@ -17631,6 +18965,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico"
+        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -17776,14 +19113,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "Security Key NFC by Yubico",
           "certificateNumber": "FIDO20020240604001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-04"
@@ -17803,6 +19146,9 @@ let mdsJson={
           "8bf7115763ea49b6549e083c9fe8dc7b4ef60e19",
           "80245f8e317cbc795c664bf84389e80a97c5e623"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey NEO"
+        },
         "description": "YubiKey NEO",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -17854,8 +19200,11 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-09-16",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey NEO",
-          "certificateNumber": "U2F100020151223006"
+          "certificateNumber": "U2F100020151223006",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-09-16"
@@ -17869,6 +19218,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "85d28d8324e23ab50b028592bdbbf4e4ac8a1317"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series (Enterprise Profile)"
+        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "u2f",
@@ -17922,15 +19274,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-06",
+          "authenticatorVersion": 328965,
           "url": "www.yubico.com",
           "certificationDescriptor": "YubiKey Bio (Enterprise Profile)",
           "certificateNumber": "FIDO20020210806001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-06"
+          "effectiveDate": "2021-08-06",
+          "authenticatorVersion": 328965,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-08-18"
@@ -17944,6 +19302,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2fea8f357c7a54a57f45cda72fafb34d1d449fd4"
         ],
+        "friendlyNames": {
+          "en-US": "NEOWAVE Badgeo FIDO2"
+        },
         "description": "NEOWAVE Badgeo FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -17996,7 +19357,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-09-21"
+          "effectiveDate": "2021-09-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-09-21"
@@ -18010,6 +19374,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "79c1009622bbeed23ba0c493cf76ab088a1ad505"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329222,
         "protocolFamily": "u2f",
@@ -18060,14 +19427,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329222,
           "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
           "certificateNumber": "U2F100020240604005",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329222,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -18077,6 +19450,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329222,
         "protocolFamily": "fido2",
@@ -18109,6 +19485,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -18156,6 +19533,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -18252,14 +19630,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329222,
           "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
           "certificateNumber": "FIDO20020240604005",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329222,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-04"
@@ -18269,6 +19653,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "07a9f89c-6407-4594-9d56-621d5f1e358b",
+        "friendlyNames": {
+          "en-US": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticato"
+        },
         "description": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -18336,14 +19723,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-07-11",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "NXP Semiconductors FIDO2 Testing Authenticaor",
           "certificateNumber": "FIDO20020190206001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-11"
+          "effectiveDate": "2019-07-11",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-07-11"
@@ -18353,6 +19746,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d61d3b87-3e7c-4aea-9c50-441c371903ad",
+        "friendlyNames": {
+          "en-US": "KeyVault Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "KeyVault Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -18433,15 +19829,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-12",
+          "authenticatorVersion": 0,
           "url": "https://crayonic.com/keyvault",
           "certificationDescriptor": "Crayonic KeyVault",
           "certificateNumber": "FIDO20020201110001",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-12"
+          "effectiveDate": "2020-12-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-12"
@@ -18451,6 +19853,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5ca1ab1e-1337-fa57-f1d0-a117e71ca702",
+        "friendlyNames": {
+          "en-US": "Allthenticator App: roaming BLE FIDO2 Allthenticator for Window"
+        },
         "description": "Allthenticator App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers",
         "authenticatorVersion": 5,
         "protocolFamily": "fido2",
@@ -18477,6 +19882,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 2e-06,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -18500,6 +19906,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 2e-06,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -18568,7 +19975,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-10-19"
+          "effectiveDate": "2023-10-19",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-19"
@@ -18578,6 +19988,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b92c3f9a-c014-4056-887f-140a2501163b",
+        "friendlyNames": {
+          "en-US": "Security Key by Yubico"
+        },
         "description": "Security Key by Yubico",
         "authenticatorVersion": 50200,
         "protocolFamily": "fido2",
@@ -18695,14 +20108,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "FIDO20020191017005",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -18712,6 +20131,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "54d9fee8-e621-4291-8b18-7157b99c5bec",
+        "friendlyNames": {
+          "en-US": "HID Crescendo Enabled"
+        },
         "description": "HID Crescendo Enabled",
         "alternativeDescriptions": {
           "en-US": "HID Crescendo Enabled"
@@ -18805,14 +20227,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-01-04",
+          "authenticatorVersion": 30,
           "certificationDescriptor": "HID Crescendo Enabled",
           "certificateNumber": "FIDO20020220104002",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-01-04"
+          "effectiveDate": "2022-01-04",
+          "authenticatorVersion": 30,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-02-02"
@@ -18840,6 +20268,9 @@ let mdsJson={
           "e3e26f22e55a3ee1a4493d7f0200985eafee2572",
           "99b011819a9b1539b28b86f625547f173eb5d57b"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series"
+        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -18889,14 +20320,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5 Series (USB)",
           "certificateNumber": "U2F110020191017008",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -18906,6 +20343,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a25342c0-3cdc-4414-8e46-f4807fca511c",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC"
+        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -19051,14 +20491,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "YubiKey 5 Series with NFC",
           "certificateNumber": "FIDO20020240604000",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-04"
@@ -19068,6 +20514,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 Fingerprint Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -19099,6 +20548,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 0,
                 "blockSlowdown": 0
@@ -19155,14 +20605,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-03",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eSecu FIDO2® Fingerprint Key",
           "certificateNumber": "FIDO20020190708001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-03"
+          "effectiveDate": "2020-08-03",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-08-03"
@@ -19172,6 +20628,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ca4cff1b-5a81-4404-8194-59aabcf1660b",
+        "friendlyNames": {
+          "en-US": "IDPrime 3930 FIDO"
+        },
         "description": "IDPrime 3930 FIDO",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -19277,14 +20736,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-07-22",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "IDPrime 3930 FIDO",
           "certificateNumber": "FIDO20020220722001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-22"
+          "effectiveDate": "2022-07-22",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -19294,6 +20759,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db6",
+        "friendlyNames": {
+          "en-US": "TEST (DUMMY RECORD)"
+        },
         "description": "TEST (DUMMY RECORD)",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -19391,7 +20859,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-28"
+          "effectiveDate": "2023-02-28",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-28"
@@ -19401,6 +20872,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "760eda36-00aa-4d29-855b-4012a182cdeb",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico Preview"
+        },
         "description": "Security Key NFC by Yubico Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -19545,7 +21019,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
+          "effectiveDate": "2024-04-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-04-07"
@@ -19559,6 +21036,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "a97b3319eecdb5993c4184276441b059b48506f1"
         ],
+        "friendlyNames": {
+          "en-US": "TrustKey G310 U2F Authenticator"
+        },
         "description": "TrustKey G310 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -19610,14 +21090,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Trustkey Solutions T310 U2F Authenticator",
           "certificateNumber": "U2F110020200814003",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
+          "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -19627,6 +21113,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6028b017-b1d4-4c02-b4b3-afcdafc96bb2",
+        "friendlyNames": {
+          "en-US": "Windows Hello Software Authenticator"
+        },
         "description": "Windows Hello Software Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -19710,14 +21199,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Windows Hello Software Authenticator",
           "certificateNumber": "FIDO20020190418003",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-05"
+          "effectiveDate": "2020-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-08-05"
@@ -19727,6 +21222,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
+        "friendlyNames": {
+          "en-US": "OneSpan FIDO Touch"
+        },
         "description": "OneSpan FIDO Touch",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -19815,17 +21313,23 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-02-13",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "OneSpan FIDO Touch",
           "certificateNumber": "FIDO20020200213001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-10-28",
+          "authenticatorVersion": 0,
           "certificateNumber": "FIDO20020180926016",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.1"
+          "certificationRequirementsVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-19"
@@ -19835,6 +21339,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1ac71f64-468d-4fe0-bef1-0e5f2f551f18",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series with NFC (Enterprise Profile)"
+        },
         "description": "YubiKey 5 Series with NFC (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -19981,7 +21488,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "effectiveDate": "2024-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-05"
@@ -19995,6 +21505,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "c76507e315328fbb06d7184bdeef12af0e327f4e"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series (Enterprise Profile)"
+        },
         "description": "YubiKey 5 Series (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -20043,7 +21556,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-15"
+          "effectiveDate": "2024-08-15",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-15"
@@ -20053,6 +21569,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
+        "friendlyNames": {
+          "en-US": "Security Key by Yubico with NFC"
+        },
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -20154,14 +21673,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Security Key by Yubico with NFC",
           "certificateNumber": "FIDO20020180918001",
           "certificationPolicyVersion": "1.1.0",
-          "certificationRequirementsVersion": "1.2"
+          "certificationRequirementsVersion": "1.2",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -20179,6 +21704,9 @@ let mdsJson={
           "b39e6a8f5e4da7117121b2b1481abb1d15f157bb",
           "b76632e2c75e992c90277f99afd2c139968f3d2e"
         ],
+        "friendlyNames": {
+          "en-US": "Gemalto MultiApp FIDO Authenticator"
+        },
         "description": "Gemalto MultiApp FIDO Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -20229,9 +21757,12 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-07-16",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Universal Second Factor (U2F)",
           "certificateNumber": "U2F110020180523001",
-          "certificationPolicyVersion": "1.0.1"
+          "certificationPolicyVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-07-16"
@@ -20241,6 +21772,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "eabb46cc-e241-80bf-ae9e-96fa6d2975cf",
+        "friendlyNames": {
+          "en-US": "TOKEN2 PIN Plus Security Key Series "
+        },
         "description": "TOKEN2 PIN Plus Security Key Series ",
         "alternativeDescriptions": {
           "fr": "Série de clés de sécurité TOKEN2 PIN Plus"
@@ -20389,14 +21923,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-01-17",
+          "authenticatorVersion": 256,
           "certificationDescriptor": "TOKEN2 PIN Plus Security Key Series",
           "certificateNumber": "FIDO20020240117001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-17"
+          "effectiveDate": "2024-01-17",
+          "authenticatorVersion": 256,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-01-30"
@@ -20406,6 +21946,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "53414d53-554e-4700-0000-000000000000",
+        "friendlyNames": {
+          "en-US": "Samsung Pass"
+        },
         "description": "Samsung Pass",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -20470,7 +22013,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-03-12"
+          "effectiveDate": "2024-03-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-03-12"
@@ -20484,6 +22030,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "bab1487181fa4b7f6064b7f6bba6cff9efdfd71e"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico"
+        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -20535,15 +22084,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
           "url": "https://www.yubico.com/",
           "certificationDescriptor": "Security Key NFC by Yubico",
           "certificateNumber": "U2F100020230202002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-02"
+          "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-02-08"
@@ -20553,6 +22108,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e416201b-afeb-41ca-a03d-2281c28322aa",
+        "friendlyNames": {
+          "en-US": "ATKey.Pro CTAP2.1"
+        },
         "description": "ATKey.Pro CTAP2.1",
         "authenticatorVersion": 20001,
         "protocolFamily": "fido2",
@@ -20605,6 +22163,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0.02,
                 "selfAttestedFAR": 2e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 10,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -20711,14 +22270,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-03-15",
+          "authenticatorVersion": 20001,
           "url": "https://www.authentrend.com/",
           "certificateNumber": "FIDO20020220315001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-03-15"
+          "effectiveDate": "2022-03-15",
+          "authenticatorVersion": 20001,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-08-02"
@@ -20732,6 +22297,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "f367c73c58a67a95420778900dff4759a1354fec"
         ],
+        "friendlyNames": {
+          "en-US": "authenton1 - CTAP 2.1"
+        },
         "description": "authenton1 - CTAP 2.1",
         "alternativeDescriptions": {
           "fr-FR": "authenton1 - CTAP 2.1",
@@ -20799,14 +22367,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "authenton1 - CTAP2.1",
           "certificateNumber": "U2F100020230328001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-03-28"
+          "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-03"
@@ -20816,6 +22390,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0066#0001",
+        "friendlyNames": {
+          "en-US": "CAPY UAF"
+        },
         "description": "CAPY UAF",
         "authenticatorVersion": 3,
         "protocolFamily": "uaf",
@@ -20880,7 +22457,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2018-07-20"
+          "effectiveDate": "2018-07-20",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-07-20"
@@ -20890,6 +22470,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cfcb13a2-244f-4b36-9077-82b79d6a7de7",
+        "friendlyNames": {
+          "en-US": "USB/NFC Passcode Authenticator"
+        },
         "description": "USB/NFC Passcode Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -20950,14 +22533,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-16",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "SLE78 CTAP USB/NFC Ref Design",
           "certificateNumber": "FIDO20020180926015",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-16"
+          "effectiveDate": "2020-04-16",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-16"
@@ -20967,6 +22556,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "91ad6b93-264b-4987-8737-3a690cad6917",
+        "friendlyNames": {
+          "en-US": "Token Ring FIDO2 Authenticator"
+        },
         "description": "Token Ring FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -21040,15 +22632,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-01-25",
+          "authenticatorVersion": 2,
           "url": "https://tokenring.com/",
           "certificationDescriptor": "Token Ring",
           "certificateNumber": "FIDO20020220125002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-01-25"
+          "effectiveDate": "2022-01-25",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-11"
@@ -21058,6 +22656,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5753362b-4e6b-6345-7b2f-255438404c75",
+        "friendlyNames": {
+          "en-US": "WiSECURE Blentity FIDO2 Authenticator"
+        },
         "description": "WiSECURE Blentity FIDO2 Authenticator",
         "alternativeDescriptions": {
           "zh-TW": "WiSECURE Blentity FIDO2 身份驗證器"
@@ -21166,7 +22767,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-02-23"
+          "effectiveDate": "2024-02-23",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-02-23"
@@ -21176,6 +22780,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
+        "friendlyNames": {
+          "en-US": "Hyper FIDO Pro"
+        },
         "description": "Hyper FIDO Pro",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -21275,14 +22882,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-07-17",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Hyper FIDO® Pro",
           "certificateNumber": "FIDO20020190805001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-08-08"
+          "effectiveDate": "2019-08-08",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-07-17"
@@ -21292,6 +22905,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
+        "friendlyNames": {
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
+        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 328707,
         "protocolFamily": "fido2",
@@ -21415,24 +23031,33 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 328707,
           "url": "https://www.yubico.com/products/",
           "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
           "certificateNumber": "FIDO20020230328003",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
           "url": "https://www.yubico.com/",
           "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
           "certificateNumber": "FIDO20020230202001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-02-02"
+          "effectiveDate": "2023-02-02",
+          "authenticatorVersion": 328707,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-03-29"
@@ -21446,6 +23071,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "1f4bd023d5596ab8f504f6af93f98cff63a58507"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series (Enterprise Profile)"
+        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -21494,7 +23122,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-23"
+          "effectiveDate": "2024-08-23",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-23"
@@ -21504,6 +23135,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
+        "friendlyNames": {
+          "en-US": "uTrust FIDO2 Security Key"
+        },
         "description": "uTrust FIDO2 Security Key",
         "authenticatorVersion": 100,
         "protocolFamily": "fido2",
@@ -21604,15 +23238,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-08-21",
+          "authenticatorVersion": 2,
           "url": "https://www.identiv.com",
           "certificationDescriptor": "uTrust FIDO2 Security Key",
           "certificateNumber": "FIDO20020200821001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-08-21"
+          "effectiveDate": "2020-08-21",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-04-07"
@@ -21626,6 +23266,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "c889abd01627b98d2f7c1cd9d5d16d2d0262f696"
         ],
+        "friendlyNames": {
+          "en-US": "Egis U2F BLE Authenticator"
+        },
         "description": "Egis U2F BLE Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -21652,6 +23295,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 0,
                 "maxRetries": 0,
                 "blockSlowdown": 0
@@ -21681,14 +23325,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-09-14",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Universal Second Factor (U2F)",
           "certificateNumber": "U2F100020180221001",
           "certificationPolicyVersion": "1.3.2",
-          "certificationRequirementsVersion": "1.0"
+          "certificationRequirementsVersion": "1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-09-14"
+          "effectiveDate": "2018-09-14",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-09-14"
@@ -21698,6 +23348,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 FIPS Series with NFC"
+        },
         "description": "YubiKey 5 FIPS Series with NFC",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -21825,23 +23478,32 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 328706,
           "url": "https://www.yubico.com/products",
           "certificationDescriptor": "YubiKey 5 FIPS Series with NFC",
           "certificateNumber": "FIDO20020230328001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-02-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YK 5 FIPS",
           "certificateNumber": "FIDO20020210118004",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-02-18"
+          "effectiveDate": "2021-02-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-03-29"
@@ -21855,6 +23517,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0e8020d782b67d00f47839f442ddc242dbe4fc2f"
         ],
+        "friendlyNames": {
+          "en-US": "VeriMark DT Fingerprint Key"
+        },
         "description": "VeriMark DT Fingerprint Key",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -21906,14 +23571,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-01-04",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "VeriMark DT Fingerprint Key",
           "certificateNumber": "U2F100020210204002",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-01-04"
+          "effectiveDate": "2021-01-04",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -21923,6 +23594,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
+        "friendlyNames": {
+          "en-US": "WiSECURE AuthTron USB FIDO2 Authenticator"
+        },
         "description": "WiSECURE AuthTron USB FIDO2 Authenticator",
         "alternativeDescriptions": {
           "zh-TW": "WiSECURE AuthTron USB FIDO2 身份驗證器"
@@ -22036,14 +23710,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-11-11",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "AuthTron USB Key FIDO2",
           "certificateNumber": "FIDO20020210421002",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-11-11"
+          "effectiveDate": "2021-11-11",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-11-11"
@@ -22059,6 +23739,9 @@ let mdsJson={
           "3bc1211c12d952a32b03c55b88d3ea6f7d152f18",
           "8dc2a6f293ea4845bb76a42c42b89601aab547f8"
         ],
+        "friendlyNames": {
+          "en-US": "GoTrust Idem Key U2F Authenticator"
+        },
         "description": "GoTrust Idem Key U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -22112,29 +23795,38 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2021-03-09",
+          "authenticatorVersion": 0,
           "url": "https://www.gotrustid.com/idem-key",
           "certificationDescriptor": "U2F Authenticator (Idem Sense)",
           "certificateNumber": "U2F100020160323001",
           "certificationPolicyVersion": "1.2.0",
-          "certificationRequirementsVersion": "1.3.0"
+          "certificationRequirementsVersion": "1.3.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-09-18",
+          "authenticatorVersion": 0,
           "url": "https://www.gotrustid.com/idem-key",
           "certificationDescriptor": "U2F Authenticator (Idem Sense)",
           "certificateNumber": "U2F100020160323001",
           "certificationPolicyVersion": "1.2.0",
-          "certificationRequirementsVersion": "1.3.0"
+          "certificationRequirementsVersion": "1.3.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-09-11",
+          "authenticatorVersion": 0,
           "url": "https://www.gotrustid.com/idem-key",
           "certificationDescriptor": "U2F Authenticator (Idem Sense)",
           "certificateNumber": "U2F100020160323001",
           "certificationPolicyVersion": "1.2.0",
-          "certificationRequirementsVersion": "1.3.0"
+          "certificationRequirementsVersion": "1.3.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-03-09"
@@ -22144,6 +23836,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a3975549-b191-fd67-b8fb-017e2917fdb3",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 NFC Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 NFC Security Key",
         "authenticatorVersion": 256,
         "protocolFamily": "fido2",
@@ -22290,14 +23985,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-05-09",
+          "authenticatorVersion": 256,
           "certificationDescriptor": "Excelsecu eSecu FIDO2 NFC Security Key",
           "certificateNumber": "FIDO20020220509002",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-05-09"
+          "effectiveDate": "2022-05-09",
+          "authenticatorVersion": 256,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -22313,6 +24014,9 @@ let mdsJson={
           "418377e213db14abc6509db5e10c9598b42f92ea",
           "525ea96c47b9a47933a09b4871c398df6407aaa4"
         ],
+        "friendlyNames": {
+          "en-US": "Feitian MultiPass FIDO Security Key"
+        },
         "description": "Feitian MultiPass FIDO Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -22362,14 +24066,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2018-11-01",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "MultiPass FIDO Security Key",
           "certificateNumber": "U2F100020180228006",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.0.1"
+          "certificationRequirementsVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-11-01"
+          "effectiveDate": "2018-11-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-11-01"
@@ -22379,6 +24089,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series"
+        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -22523,14 +24236,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
           "certificationDescriptor": "YubiKey 5 Series",
           "certificateNumber": "FIDO20020240604003",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-04"
+          "effectiveDate": "2024-06-04",
+          "authenticatorVersion": 329473,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-04"
@@ -22540,6 +24259,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "da1fa263-8b25-42b6-a820-c0036f21ba7f",
+        "friendlyNames": {
+          "en-US": "ATKey.Card NFC"
+        },
         "description": "ATKey.Card NFC",
         "authenticatorVersion": 501,
         "protocolFamily": "fido2",
@@ -22575,6 +24297,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0.01,
                 "selfAttestedFAR": 4e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 2,
                 "maxRetries": 15,
                 "blockSlowdown": 0
@@ -22696,14 +24419,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-11-02",
+          "authenticatorVersion": 501,
           "certificationDescriptor": "ATKey.Card NFC",
           "certificateNumber": "FIDO20020231102001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-02"
+          "effectiveDate": "2023-11-02",
+          "authenticatorVersion": 501,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -22713,6 +24442,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6002f033-3c07-ce3e-d0f7-0ffe5ed42543",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 Fingerprint Key"
+        },
         "description": "Excelsecu eSecu FIDO2 Fingerprint Key",
         "authenticatorVersion": 256,
         "protocolFamily": "fido2",
@@ -22749,6 +24481,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 1e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 30,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -22764,6 +24497,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 1e-05,
                 "selfAttestedFAR": 0.01,
+                "iAPARThreshold": 0,
                 "maxTemplates": 30,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -22888,14 +24622,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-05-16",
+          "authenticatorVersion": 256,
           "certificationDescriptor": "Excelsecu eSecu FIDO2 Fingerprint Key",
           "certificateNumber": "FIDO20020230516001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-05-16"
+          "effectiveDate": "2023-05-16",
+          "authenticatorVersion": 256,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -22905,6 +24645,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5fdb81b8-53f0-4967-a881-f5ec26fe4d18",
+        "friendlyNames": {
+          "en-US": "VinCSS FIDO2 Authenticator"
+        },
         "description": "VinCSS FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -22975,14 +24718,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-25",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "VinCSS FIDO2® Authenticator",
           "certificateNumber": "FIDO20020191224001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-25"
+          "effectiveDate": "2020-05-25",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-25"
@@ -22992,6 +24741,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2d3bec26-15ee-4f5d-88b2-53622490270b",
+        "friendlyNames": {
+          "en-US": "HID Crescendo Key V2"
+        },
         "description": "HID Crescendo Key V2",
         "authenticatorVersion": 30,
         "protocolFamily": "fido2",
@@ -23067,15 +24819,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-01-20",
+          "authenticatorVersion": 30,
           "url": "https://www.hidglobal.com/",
           "certificationDescriptor": "HID Crescendo Key V2",
           "certificateNumber": "FIDO20020230120001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-01-20"
+          "effectiveDate": "2023-01-20",
+          "authenticatorVersion": 30,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-24"
@@ -23085,6 +24843,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4ff1-010b-addc96ba6a98",
+        "friendlyNames": {
+          "en-US": "OneSpan DIGIPASS FX1a"
+        },
         "description": "OneSpan DIGIPASS FX1a",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -23131,6 +24892,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0.03,
                 "selfAttestedFAR": 1e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 3,
                 "blockSlowdown": 0
@@ -23229,14 +24991,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-02",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "OneSpan DIGIPASS FX1a",
           "certificateNumber": "FIDO20020240802003",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-02"
+          "effectiveDate": "2024-08-02",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-03"
@@ -23246,6 +25014,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series"
+        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -23345,14 +25116,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5A",
           "certificateNumber": "FIDO20020181031001",
           "certificationPolicyVersion": "1.0.0",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -23366,6 +25143,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "96f0ccc135dff9dcd6b3ffe1852fe06e8f5cabeb"
         ],
+        "friendlyNames": {
+          "en-US": "ImproveID Authenticator"
+        },
         "description": "ImproveID Authenticator",
         "authenticatorVersion": 45,
         "protocolFamily": "u2f",
@@ -23427,15 +25207,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-01-17",
+          "authenticatorVersion": 45,
           "url": "https://www.improveid.com/",
           "certificationDescriptor": "ImproveID Authenticator",
           "certificateNumber": "U2F00020230117002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-01-17"
+          "effectiveDate": "2023-01-17",
+          "authenticatorVersion": 45,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-05-18"
@@ -23445,6 +25231,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0076631b-d4a0-427f-5773-0ec71c9e0279",
+        "friendlyNames": {
+          "en-US": "HYPR FIDO2 Authenticator"
+        },
         "description": "HYPR FIDO2 Authenticator",
         "alternativeDescriptions": {
           "en-US": "HYPR FIDO2 Authenticator"
@@ -23567,15 +25356,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-10-20",
+          "authenticatorVersion": 2,
           "url": "https://www.hypr.com/",
           "certificationDescriptor": "HYPR FIDO2 Mobile Authenticator",
           "certificateNumber": "FIDO20020221020001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-10-20"
+          "effectiveDate": "2022-10-20",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-01-11"
@@ -23589,6 +25384,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "556d27f38b231bb3d818bfc1b615f260f6b08f20"
         ],
+        "friendlyNames": {
+          "en-US": "MK Keypass S1"
+        },
         "description": "MK Keypass S1",
         "authenticatorVersion": 3,
         "protocolFamily": "u2f",
@@ -23635,11 +25433,14 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-01-07",
+          "authenticatorVersion": 0,
           "url": "mk.com.vn",
           "certificationDescriptor": "U2F Authenticator",
           "certificateNumber": "U2F110020180709001",
           "certificationPolicyVersion": "1.3.3",
-          "certificationRequirementsVersion": "1.1"
+          "certificationRequirementsVersion": "1.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-01-07"
@@ -23649,6 +25450,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d7a423ad-3e19-4492-9200-78137dccc136",
+        "friendlyNames": {
+          "en-US": "VivoKey Apex FIDO2"
+        },
         "description": "VivoKey Apex FIDO2",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -23722,7 +25526,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-08-14"
+          "effectiveDate": "2022-08-14",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-08-14"
@@ -23732,6 +25539,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ba76a271-6eb6-4171-874d-b6428dbe3437",
+        "friendlyNames": {
+          "en-US": "ATKey.ProS"
+        },
         "description": "ATKey.ProS",
         "authenticatorVersion": 50001,
         "protocolFamily": "fido2",
@@ -23768,6 +25578,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0.02,
                 "selfAttestedFAR": 2e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 10,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -23889,15 +25700,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-06-23",
+          "authenticatorVersion": 50001,
           "url": "https://authentrend.com/atkey-pro/",
           "certificationDescriptor": "ATKey.Pro",
           "certificateNumber": "FIDO20020220623001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4.1"
+          "certificationRequirementsVersion": "1.4.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-06-23"
+          "effectiveDate": "2022-06-23",
+          "authenticatorVersion": 50001,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-10-07"
@@ -23911,6 +25728,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2eb9ff3572f67628d1291a3b57924f818aad9e72"
         ],
+        "friendlyNames": {
+          "en-US": "Hyper FIDO U2F Mini Security Key"
+        },
         "description": "Hyper FIDO U2F Mini Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -23960,10 +25780,13 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-08-02",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Hyper FIDO® Mini",
           "certificateNumber": "U2F100020180918001",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-08-02"
@@ -23977,6 +25800,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "cd9dd77cf580dfe05d9d089865a164dbb6432cd2"
         ],
+        "friendlyNames": {
+          "en-US": "TrustKey T110 U2F Authenticator"
+        },
         "description": "TrustKey T110 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -24025,14 +25851,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "TrustKey Solutions T110 U2F Authenticator",
           "certificateNumber": "U2F110020200814001",
           "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-21"
+          "effectiveDate": "2020-12-21",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-12-21"
@@ -24042,6 +25874,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "97e6a830-c952-4740-95fc-7c78dc97ce47",
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -24074,6 +25909,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -24091,6 +25927,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0,
                 "selfAttestedFAR": 0,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
                 "blockSlowdown": 0
@@ -24218,7 +26055,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "effectiveDate": "2024-08-05",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-05"
@@ -24228,6 +26068,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
+        "friendlyNames": {
+          "en-US": "YubiKey 5 Series"
+        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -24348,14 +26191,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "YubiKey 5 Series (USB)",
           "certificateNumber": "FIDO20020191017002",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -24365,6 +26214,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8876631b-d4a0-427f-5773-0ec71c9e0279",
+        "friendlyNames": {
+          "en-US": "Solo Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "Solo Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -24449,15 +26301,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-02",
+          "authenticatorVersion": 0,
           "url": "https://solokeys.com",
           "certificationDescriptor": "Solo FIDO2 Authenticator",
           "certificateNumber": "FIDO20020191001001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-02"
+          "effectiveDate": "2020-04-02",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-02"
@@ -24467,6 +26325,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fec067a1-f1d0-4c5e-b4c0-cc3237475461",
+        "friendlyNames": {
+          "en-US": "KX701 SmartToken FIDO"
+        },
         "description": "KX701 SmartToken FIDO",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -24585,14 +26446,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-03-27",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "KX701 SmartToken FIDO",
           "certificateNumber": "FIDO20020230327001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-03-27"
+          "effectiveDate": "2023-03-27",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-10"
@@ -24602,6 +26469,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4ff1-b00b-addc96ba6a98",
+        "friendlyNames": {
+          "en-US": "OneSpan DIGIPASS FX1 BIO"
+        },
         "description": "OneSpan DIGIPASS FX1 BIO",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -24658,6 +26528,7 @@ let mdsJson={
               "baDesc": {
                 "selfAttestedFRR": 0.03,
                 "selfAttestedFAR": 1e-05,
+                "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 3,
                 "blockSlowdown": 0
@@ -24749,14 +26620,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-11-16",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "OneSpan DIGIPASS FX1 BIO",
           "certificateNumber": "FIDO20020231116001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-16"
+          "effectiveDate": "2023-11-16",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-19"
@@ -24766,6 +26643,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b267239b-954f-4041-a01b-ee4f33c145b6",
+        "friendlyNames": {
+          "en-US": "authenton1 - CTAP2.1"
+        },
         "description": "authenton1 - CTAP2.1",
         "authenticatorVersion": 6,
         "protocolFamily": "fido2",
@@ -24868,14 +26748,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 5,
           "certificationDescriptor": "authenton1 - CTAP2.1",
           "certificateNumber": "FIDO20020230328006",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-03-28"
+          "effectiveDate": "2023-03-28",
+          "authenticatorVersion": 5,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-10-03"
@@ -24885,6 +26771,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b50d5e0a-7f81-4959-9b12-f45407407503",
+        "friendlyNames": {
+          "en-US": "IDPrime 3940 FIDO"
+        },
         "description": "IDPrime 3940 FIDO",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -24959,15 +26848,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-01-06",
+          "authenticatorVersion": 0,
           "url": "https://www.thalesgroup.com/en?gclid=Cj0KCQiA3NX_BRDQARIsALA3fIK-zxiNU1qQ9gm-SJtQu2ULuYuxJtUo_YljzXb5kbY510xuuJocXEwaApj5EALw_wcB",
           "certificationDescriptor": "IDPrime 3940 FIDO",
           "certificateNumber": "FIDO20020201118001",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-06-16"
+          "effectiveDate": "2020-06-16",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-01-06"
@@ -24981,6 +26876,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3e2c42a59e85513f9edac8cf74c3953f5793dab6"
         ],
+        "friendlyNames": {
+          "en-US": "OneKey U2F Authenticator"
+        },
         "description": "OneKey U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -25037,7 +26935,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-07-15"
+          "effectiveDate": "2024-07-15",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-07-15"
@@ -25047,6 +26948,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c97a730-3f7b-41a6-87d6-1e9b62bda6f0",
+        "friendlyNames": {
+          "en-US": "FT-JCOS FIDO Fingerprint Card"
+        },
         "description": "FT-JCOS FIDO Fingerprint Card",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -25143,14 +27047,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-04-24",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "FT-JCOS FIDO® Fingerprint Card",
           "certificateNumber": "FIDO20020200417001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-24"
+          "effectiveDate": "2020-04-24",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-04-24"
@@ -25160,6 +27070,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "99bf4610-ec26-4252-b31f-7380ccd59db5",
+        "friendlyNames": {
+          "en-US": "ZTPass SmartAuth"
+        },
         "description": "ZTPass SmartAuth",
         "authenticatorVersion": 45,
         "protocolFamily": "fido2",
@@ -25268,7 +27181,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-24"
+          "effectiveDate": "2023-11-24",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-11-24"
@@ -25278,6 +27194,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a1f52be5-dfab-4364-b51c-2bd496b14a56",
+        "friendlyNames": {
+          "en-US": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR"
+        },
         "description": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
           "ko-KR": "옥타코 이지핑거2 FIDO2 인증기 V 1.0",
@@ -25352,14 +27271,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-03-20",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR",
           "certificateNumber": "FIDO20020200320001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-03-20"
+          "effectiveDate": "2020-03-20",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-07-27"
@@ -25369,6 +27294,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ba86dc56-635f-4141-aef6-00227b1b9af6",
+        "friendlyNames": {
+          "en-US": "TruU Windows Authenticator"
+        },
         "description": "TruU Windows Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -25464,11 +27392,17 @@ let mdsJson={
       "statusReports": [
         {
           "status": "REVOKED",
-          "effectiveDate": "2023-12-20"
+          "effectiveDate": "2023-12-20",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-07"
+          "effectiveDate": "2023-11-07",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-20"
@@ -25478,6 +27412,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e078ffd-4c54-4586-8baa-a77da113aec5",
+        "friendlyNames": {
+          "en-US": "Hideez Key 3 FIDO2"
+        },
         "description": "Hideez Key 3 FIDO2",
         "alternativeDescriptions": {
           "uk-UA": "FIDO2 Key - від Hideez"
@@ -25577,7 +27514,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-11"
+          "effectiveDate": "2022-07-11",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-07-11"
@@ -25587,6 +27527,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
+        "friendlyNames": {
+          "en-US": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator"
+        },
         "description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -25701,14 +27644,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-05",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
           "certificateNumber": "FIDO20020210805001",
           "certificationPolicyVersion": "1.2",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-05"
+          "effectiveDate": "2021-08-05",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-12-08"
@@ -25728,6 +27677,9 @@ let mdsJson={
           "4b54614236c4c4e93beb2d3dc1b75b62978ee488",
           "ce68d1b75fb4cd3da077fd3f833c4d6e20bf287c"
         ],
+        "friendlyNames": {
+          "en-US": "Feitian BioPass FIDO Security Key"
+        },
         "description": "Feitian BioPass FIDO Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -25777,14 +27729,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2018-11-01",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian BioPass FIDO U2F Security Key",
           "certificateNumber": "U2F100020180228005",
           "certificationPolicyVersion": "1.0.1",
-          "certificationRequirementsVersion": "1.0.1"
+          "certificationRequirementsVersion": "1.0.1",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-11-01"
+          "effectiveDate": "2018-11-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-11-01"
@@ -25794,6 +27752,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5d629218-d3a5-11ed-afa1-0242ac120002",
+        "friendlyNames": {
+          "en-US": "Swissbit iShield Key Pro"
+        },
         "description": "Swissbit iShield Key Pro",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -25902,14 +27863,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2023-09-13",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "Swissbit iShield Key Pro",
           "certificateNumber": "FIDO20020230913002",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-13"
+          "effectiveDate": "2023-09-13",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-02-13"
@@ -25919,6 +27886,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
+        "friendlyNames": {
+          "en-US": "ATKey.Card CTAP2.0"
+        },
         "description": "ATKey.Card CTAP2.0",
         "authenticatorVersion": 3000039,
         "protocolFamily": "fido2",
@@ -26030,14 +28000,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-02-26",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "AuthenTrend Technology Inc. ATKey.card",
           "certificateNumber": "FIDO20020180926019",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-02-26"
+          "effectiveDate": "2019-02-26",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-02-26"
@@ -26063,6 +28039,9 @@ let mdsJson={
           "d0d844edff117c979a05fa668a3296bce6965598",
           "ed5bdb96011e3d457d858af39e30ac57c5ac95e6"
         ],
+        "friendlyNames": {
+          "en-US": "Security Key by Yubico with NFC"
+        },
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -26114,14 +28093,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Security Key by Yubico",
           "certificateNumber": "U2F110020191017010",
           "certificationPolicyVersion": "1.1.1",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-05-12"
+          "effectiveDate": "2020-05-12",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-05-12"
@@ -26131,6 +28116,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e86addcd-7711-47e5-b42a-c18257b0bf61",
+        "friendlyNames": {
+          "en-US": "IDCore 3121 Fido"
+        },
         "description": "IDCore 3121 Fido",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -26236,14 +28224,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-08-16",
+          "authenticatorVersion": 2,
           "certificationDescriptor": "IDCore 3121 Fido",
           "certificateNumber": "FIDO20020210816001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-08-16"
+          "effectiveDate": "2021-08-16",
+          "authenticatorVersion": 2,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-06-18"
@@ -26253,6 +28247,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
+        "friendlyNames": {
+          "en-US": "eWBM eFA310 FIDO2 Authenticator"
+        },
         "description": "eWBM eFA310 FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -26336,14 +28333,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L2",
           "effectiveDate": "2019-07-18",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "eWBM eFA310 FIDO2 Authenticator",
           "certificateNumber": "FIDO20020190709003",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-18"
+          "effectiveDate": "2019-07-18",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-07-18"
@@ -26353,6 +28356,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "006F#0001",
+        "friendlyNames": {
+          "en-US": "Hanko UAF Client/Authenticator Combo for Android"
+        },
         "description": "Hanko UAF Client/Authenticator Combo for Android",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -26428,7 +28434,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-10-14"
+          "effectiveDate": "2020-10-14",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-10-14"
@@ -26438,6 +28447,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cdbdaea2-c415-5073-50f7-c04e968640b6",
+        "friendlyNames": {
+          "en-US": "Excelsecu eSecu FIDO2 Security Key"
+        },
         "description": "Excelsecu eSecu FIDO2 Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -26509,14 +28521,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-09-03",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Excelsecu eSecu FIDO2 Security Key",
           "certificateNumber": "FIDO20020190327001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-09-03"
+          "effectiveDate": "2019-09-03",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-09-03"
@@ -26526,6 +28544,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bc2fe499-0d8e-4ffe-96f3-94a82840cf8c",
+        "friendlyNames": {
+          "en-US": "OCTATCO EzQuant FIDO2 AUTHENTICATOR"
+        },
         "description": "OCTATCO EzQuant FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
           "ko-KR": "옥타코 이지퀀트 FIDO2 인증기 V 1.0",
@@ -26599,15 +28620,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-06-08",
+          "authenticatorVersion": 1,
           "url": "www.octatco.com",
           "certificationDescriptor": "EzQuant FIDO2 Fingerprint",
           "certificateNumber": "FIDO20020210608001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-06-08"
+          "effectiveDate": "2021-06-08",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-08-10"
@@ -26621,6 +28648,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "d7c0c8dc35393096e717aa5b9cd3acc8c4ae8ce5"
         ],
+        "friendlyNames": {
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
+        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -26671,14 +28701,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
           "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
           "certificateNumber": "U2F100020240812000",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-12"
+          "effectiveDate": "2024-08-12",
+          "authenticatorVersion": 329474,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2024-08-13"
@@ -26688,6 +28724,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "eb3b131e-59dc-536a-d176-cb7306da10f5",
+        "friendlyNames": {
+          "en-US": "ellipticSecure MIRkey USB Authenticator"
+        },
         "description": "ellipticSecure MIRkey USB Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -26753,13 +28792,19 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-10-28",
+          "authenticatorVersion": 0,
           "certificateNumber": "FIDO20020190926001",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-10-01"
+          "effectiveDate": "2019-10-01",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-10-28"
@@ -26781,6 +28826,9 @@ let mdsJson={
           "88c7c34b0c9cbbbdbbd7d4c0de404e14a74b6c8a",
           "aa8ce6fdcd722f701ee0657e18fa9f2a685e81cd"
         ],
+        "friendlyNames": {
+          "en-US": "YK4 Series Key by Yubico"
+        },
         "description": "YK4 Series Key by Yubico",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -26830,9 +28878,12 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2020-09-16",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Yubikey 4",
           "certificateNumber": "U2F110020170324001",
-          "certificationPolicyVersion": "1.2.5"
+          "certificationPolicyVersion": "1.2.5",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2020-09-16"
@@ -26846,6 +28897,9 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0a426ee17afd16533b1cdfa95de1e920a6aedf3a"
         ],
+        "friendlyNames": {
+          "en-US": "VivoKey Apex U2F"
+        },
         "description": "VivoKey Apex U2F",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -26897,7 +28951,10 @@ let mdsJson={
       "statusReports": [
         {
           "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-08-14"
+          "effectiveDate": "2022-08-14",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2022-08-14"
@@ -26907,6 +28964,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1c086528-58d5-f211-823c-356786e36140",
+        "friendlyNames": {
+          "en-US": "Atos CardOS FIDO2"
+        },
         "description": "Atos CardOS FIDO2",
         "alternativeDescriptions": {
           "de-DE": "Atos CardOS FIDO2"
@@ -26999,14 +29059,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2021-06-22",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "CardOS FIDO2",
           "certificateNumber": "FIDO20020210622001",
           "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
+          "certificationRequirementsVersion": "1.3",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-06-22"
+          "effectiveDate": "2021-06-22",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2021-11-24"
@@ -27016,6 +29082,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
+        "friendlyNames": {
+          "en-US": "Feitian BioPass FIDO2 Authenticator"
+        },
         "description": "Feitian BioPass FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -27124,14 +29193,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2018-10-26",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian BioPass FIDO2 authenticator",
           "certificateNumber": "FIDO20020180929001",
           "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.1.0"
+          "certificationRequirementsVersion": "1.1.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2018-10-26"
+          "effectiveDate": "2018-10-26",
+          "authenticatorVersion": 0,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2018-10-26"
@@ -27141,6 +29216,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d94a29d9-52dd-4247-9c2d-8b818b610389",
+        "friendlyNames": {
+          "en-US": "VeriMark Guard Fingerprint Key"
+        },
         "description": "VeriMark Guard Fingerprint Key",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -27235,14 +29313,20 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2022-01-06",
+          "authenticatorVersion": 1,
           "certificationDescriptor": "VeriMark™ Guard Fingerprint Key",
           "certificateNumber": "FIDO20020220106001",
           "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.4"
+          "certificationRequirementsVersion": "1.4",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-01-06"
+          "effectiveDate": "2022-01-06",
+          "authenticatorVersion": 1,
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2023-11-15"
@@ -27252,6 +29336,9 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
+        "friendlyNames": {
+          "en-US": "Feitian ePass FIDO2 Authenticator"
+        },
         "description": "Feitian ePass FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -27353,15 +29440,21 @@ let mdsJson={
         {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2019-05-27",
+          "authenticatorVersion": 0,
           "certificationDescriptor": "Feitian ePass FIDO2 USB only",
           "certificateNumber": "FIDO20020190311003",
           "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
+          "certificationRequirementsVersion": "1.0.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         },
         {
           "status": "FIDO_CERTIFIED",
           "effectiveDate": "2019-05-27",
-          "certificationPolicyVersion": "1.3.6"
+          "authenticatorVersion": 0,
+          "certificationPolicyVersion": "1.3.6",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
         }
       ],
       "timeOfLastStatusChange": "2019-05-27"
