@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 95,
+  "no": 96,
   "nextUpdate": "2024-10-01",
   "entries": [
     {
@@ -4066,7 +4066,7 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ff4cc65-6154-4fff-ba09-9e2af7882ad2",
         "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Pro"
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
         },
         "description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
         "authenticatorVersion": 329473,
@@ -14529,7 +14529,7 @@ let mdsJson={
           "99629e992e6d8f3b01ab17b401c12183a7836d79"
         ],
         "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Pro"
+          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
         },
         "description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
         "authenticatorVersion": 329473,
@@ -16711,7 +16711,7 @@ let mdsJson={
           "b6f1389fea15b3410381eb96d938cf12cade9692"
         ],
         "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile"
+          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
         },
         "description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
@@ -18877,14 +18877,28 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-03-09",
-          "authenticatorVersion": 0,
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-04-16",
+          "authenticatorVersion": 2,
+          "certificationDescriptor": "Ensurity AUTH BioPro",
+          "certificateNumber": "FIDO20020240416001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-16",
+          "authenticatorVersion": 2,
           "fipsRevision": 0,
           "fipsPhysicalSecurityLevel": 0
         }
       ],
-      "timeOfLastStatusChange": "2024-03-09"
+      "timeOfLastStatusChange": "2024-09-05"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -19854,7 +19868,7 @@ let mdsJson={
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5ca1ab1e-1337-fa57-f1d0-a117e71ca702",
         "friendlyNames": {
-          "en-US": "Allthenticator App: roaming BLE FIDO2 Allthenticator for Window"
+          "en-US": "Allthenticator App: roaming BLE FIDO2 Allthenticator"
         },
         "description": "Allthenticator App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers",
         "authenticatorVersion": 5,
