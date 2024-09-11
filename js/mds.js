@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 97,
+  "no": 98,
   "nextUpdate": "2024-10-01",
   "entries": [
     {
@@ -8858,14 +8858,25 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-16",
-          "authenticatorVersion": 0,
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "RSA Authenticator for iOS",
+          "certificateNumber": "FIDO20020240822003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1,
           "fipsRevision": 0,
           "fipsPhysicalSecurityLevel": 0
         }
       ],
-      "timeOfLastStatusChange": "2024-08-16"
+      "timeOfLastStatusChange": "2024-09-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -9579,14 +9590,25 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-16",
-          "authenticatorVersion": 0,
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "RSA Authenticator for Android",
+          "certificateNumber": "FIDO20020240822002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1,
           "fipsRevision": 0,
           "fipsPhysicalSecurityLevel": 0
         }
       ],
-      "timeOfLastStatusChange": "2024-08-16"
+      "timeOfLastStatusChange": "2024-09-10"
     },
     {
       "aaid": "006F#0002",
@@ -10786,14 +10808,25 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-05-03",
-          "authenticatorVersion": 0,
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2023-05-01",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "RSA DS100",
+          "certificateNumber": "U2F100020230501001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0",
+          "fipsRevision": 0,
+          "fipsPhysicalSecurityLevel": 0
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2023-05-01",
+          "authenticatorVersion": 1,
           "fipsRevision": 0,
           "fipsPhysicalSecurityLevel": 0
         }
       ],
-      "timeOfLastStatusChange": "2023-05-03"
+      "timeOfLastStatusChange": "2024-09-10"
     },
     {
       "aaguid": "3124e301-f14e-4e38-876d-fbeeb090e7bf",
