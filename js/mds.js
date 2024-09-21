@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 98,
+  "no": 99,
   "nextUpdate": "2024-10-01",
   "entries": [
     {
@@ -23994,11 +23994,24 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-27"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-09-06",
+          "authenticatorVersion": 16777216,
+          "certificationDescriptor": "ID-One Card",
+          "certificateNumber": "FIDO20020240906001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-06",
+          "authenticatorVersion": 16777216
         }
       ],
-      "timeOfLastStatusChange": "2024-08-27"
+      "timeOfLastStatusChange": "2024-09-20"
     },
     {
       "aaguid": "2d3bec26-15ee-4f5d-88b2-53622490270b",
