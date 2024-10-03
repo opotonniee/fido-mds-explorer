@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 102,
+  "no": 103,
   "nextUpdate": "2024-11-01",
   "entries": [
     {
@@ -10187,11 +10187,24 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-03"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-29",
+          "authenticatorVersion": 262144,
+          "certificationDescriptor": "HID Crescendo 4000",
+          "certificateNumber": "FIDO20020240829001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-29",
+          "authenticatorVersion": 262144
         }
       ],
-      "timeOfLastStatusChange": "2024-06-03"
+      "timeOfLastStatusChange": "2024-10-02"
     },
     {
       "aaguid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
