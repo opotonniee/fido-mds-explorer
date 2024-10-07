@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 103,
+  "no": 104,
   "nextUpdate": "2024-11-01",
   "entries": [
     {
@@ -8,9 +8,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fcb1bcb4-f370-078c-6993-bc24d0ae3fbe",
-        "friendlyNames": {
-          "en-US": "Ledger Nano X FIDO2 Authenticator"
-        },
         "description": "Ledger Nano X FIDO2 Authenticator",
         "authenticatorVersion": 10500,
         "protocolFamily": "fido2",
@@ -142,9 +139,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "1434d2f277fe479c35ddf6aa4d08a07cbce99dd7"
         ],
-        "friendlyNames": {
-          "en-US": "NEOWAVE Winkeo FIDO2"
-        },
         "description": "NEOWAVE Winkeo FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -203,9 +197,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4d41190c-7beb-4a84-8018-adf265a6352d",
-        "friendlyNames": {
-          "en-US": "Thales IDPrime FIDO Bio"
-        },
         "description": "Thales IDPrime FIDO Bio",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -370,9 +361,6 @@ let mdsJson={
           "39d11cb1d6da8f646f584eea184133a03d85a2cc",
           "55464d5bea84e7073074b21d1204934358c7db4d"
         ],
-        "friendlyNames": {
-          "en-US": "Feitian ePass FIDO-NFC Security Key"
-        },
         "description": "Feitian ePass FIDO-NFC Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -443,9 +431,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2772ce93-eb4b-4090-8b73-330f48477d73",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition Preview"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -600,9 +585,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6dae43be-af9c-417b-8b9f-1b611168ec60",
-        "friendlyNames": {
-          "en-US": "Dapple Authenticator from Dapple Security Inc."
-        },
         "description": "Dapple Authenticator from Dapple Security Inc.",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -697,9 +679,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5626bed4-e756-430b-a7ff-ca78c8b12738",
-        "friendlyNames": {
-          "en-US": "VALMIDO PRO FIDO"
-        },
         "description": "VALMIDO PRO FIDO",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -828,9 +807,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "260e3021-482d-442d-838c-7edfbe153b7e",
-        "friendlyNames": {
-          "en-US": "Feitian ePass FIDO2-NFC Plus Authenticator"
-        },
         "description": "Feitian ePass FIDO2-NFC Plus Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -945,9 +921,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "95e4d58c-056e-4a65-866d-f5a69659e880",
-        "friendlyNames": {
-          "en-US": "TruU Windows Authenticator"
-        },
         "description": "TruU Windows Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -1054,9 +1027,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -1162,8 +1132,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -1258,9 +1227,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "51ffab2e30a87ccfda4cca13f5c0a23a70b90773"
         ],
-        "friendlyNames": {
-          "en-US": "Arculus FIDO 2.1 Key Card"
-        },
         "description": "Arculus FIDO 2.1 Key Card",
         "authenticatorVersion": 10,
         "protocolFamily": "u2f",
@@ -1368,9 +1334,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9c835346-796b-4c27-8898-d6032f515cc5",
-        "friendlyNames": {
-          "en-US": "Cryptnox FIDO2"
-        },
         "description": "Cryptnox FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -1486,9 +1449,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4005",
-        "friendlyNames": {
-          "en-US": "Touch ID, Face ID, or Passcode"
-        },
         "description": "Touch ID, Face ID, or Passcode",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -1568,9 +1528,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0d9b2e56-566b-c393-2940-f821b7f15d6d",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 Pro Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 Pro Security Key",
         "authenticatorVersion": 256,
         "protocolFamily": "fido2",
@@ -1738,9 +1695,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning"
-        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -1861,9 +1815,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2194b428-9397-4046-8f39-007a1605a482",
-        "friendlyNames": {
-          "en-US": "IDPrime 931 Fido"
-        },
         "description": "IDPrime 931 Fido",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -1987,9 +1938,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
-        "friendlyNames": {
-          "en-US": "IDmelon Android Authenticator"
-        },
         "description": "IDmelon Android Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -2094,9 +2042,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
-        "friendlyNames": {
-          "en-US": "OpenSK authenticator"
-        },
         "description": "OpenSK authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -2213,9 +2158,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3789da91-f943-46bc-95c3-50ea2012f03a",
-        "friendlyNames": {
-          "en-US": "NEOWAVE Winkeo FIDO2"
-        },
         "description": "NEOWAVE Winkeo FIDO2",
         "authenticatorVersion": 3,
         "protocolFamily": "fido2",
@@ -2304,9 +2246,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fa2b99dc-9e39-4257-8f92-4a30d23c4118",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC"
-        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -2425,9 +2364,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "341e4da9-3c2e-8103-5a9f-aad887135200",
-        "friendlyNames": {
-          "en-US": "Ledger Nano S FIDO2 Authenticator"
-        },
         "description": "Ledger Nano S FIDO2 Authenticator",
         "authenticatorVersion": 10500,
         "protocolFamily": "fido2",
@@ -2554,9 +2490,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0",
-        "friendlyNames": {
-          "en-US": "Pone Biometrics OFFPAD Authenticator"
-        },
         "description": "Pone Biometrics OFFPAD Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -2701,9 +2634,6 @@ let mdsJson={
           "b6d44a4b8d4b0407872969b1f6b2263021be627e",
           "6d491f223af73cdf81784a6c0890f8a1d527a12c"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning"
-        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -2770,9 +2700,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "89b19028-256b-4025-8872-255358d950e4",
-        "friendlyNames": {
-          "en-US": "Sentry Enterprises CTAP2 Authenticator"
-        },
         "description": "Sentry Enterprises CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -2876,9 +2803,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4e768f2c-5fab-48b3-b300-220eb487752b",
-        "friendlyNames": {
-          "en-US": "Hideez Key 4 FIDO2 SDK"
-        },
         "description": "Hideez Key 4 FIDO2 SDK",
         "alternativeDescriptions": {
           "uk-UA": "FIDO2 Key SDK - від Hideez"
@@ -2991,9 +2915,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "47ab2fb4-66ac-4184-9ae1-86be814012d5",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -3158,9 +3079,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "931327dd-c89b-406c-a81e-ed7058ef36c6",
-        "friendlyNames": {
-          "en-US": "Swissbit iShield Key FIDO2"
-        },
         "description": "Swissbit iShield Key FIDO2",
         "alternativeDescriptions": {
           "de-DE": "Swissbit iShield Key FIDO2"
@@ -3289,9 +3207,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0198563c9ee881bd199b411b7b38b61bb560a641"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -3375,9 +3290,6 @@ let mdsJson={
           "76e47b47e32814aaa6a87c280cfcbd527881a404",
           "6cd99d8b0abfa6a4378138a1475f7e46df217a25"
         ],
-        "friendlyNames": {
-          "en-US": "Feitian ePass FIDO Security Key"
-        },
         "description": "Feitian ePass FIDO Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -3445,9 +3357,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
-        "friendlyNames": {
-          "en-US": "IDEMIA ID-ONE Card"
-        },
         "description": "IDEMIA ID-ONE Card",
         "authenticatorVersion": 82,
         "protocolFamily": "fido2",
@@ -3576,9 +3485,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9a",
-        "friendlyNames": {
-          "en-US": "Ensurity ThinC"
-        },
         "description": "Ensurity ThinC",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -3698,9 +3604,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2e86293cbd07db24c270be554d913563d606fd47"
         ],
-        "friendlyNames": {
-          "en-US": "ACS FIDO Authenticator"
-        },
         "description": "ACS FIDO Authenticator",
         "authenticatorVersion": 10000,
         "protocolFamily": "u2f",
@@ -3782,9 +3685,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
-        "friendlyNames": {
-          "en-US": "ATKey.Pro CTAP2.0"
-        },
         "description": "ATKey.Pro CTAP2.0",
         "authenticatorVersion": 10013,
         "protocolFamily": "fido2",
@@ -3918,9 +3818,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ff4cc65-6154-4fff-ba09-9e2af7882ad2",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -3997,8 +3894,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -4081,9 +3977,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "32526f73dfca12da9c1d87d6e0adb64e843f73da"
         ],
-        "friendlyNames": {
-          "en-US": "TrustKey G320 U2F Authenticator"
-        },
         "description": "TrustKey G320 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -4152,9 +4045,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9d3df6ba-282f-11ed-a261-0242ac120002",
-        "friendlyNames": {
-          "en-US": "Arculus FIDO2/U2F Key Card"
-        },
         "description": "Arculus FIDO2/U2F Key Card",
         "authenticatorVersion": 100,
         "protocolFamily": "fido2",
@@ -4308,9 +4198,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 NFC Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 NFC Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -4401,9 +4288,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "62e54e98-c209-4df3-b692-de71bb6a8528",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series with NFC Preview"
-        },
         "description": "YubiKey 5 FIPS Series with NFC Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -4560,9 +4444,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
-        "friendlyNames": {
-          "en-US": "TOKEN2 FIDO2 Security Key"
-        },
         "description": "TOKEN2 FIDO2 Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -4688,9 +4569,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "fcb86e019086d4008f647698194a1f63644f521d"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio FIDO Edition"
-        },
         "description": "YubiKey Bio FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -4732,7 +4610,6 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
         ],
         "icon": "data:image/png;base64,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"
@@ -4760,9 +4637,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "973446ca-e21c-9a9b-99f5-9b985a67af0f",
-        "friendlyNames": {
-          "en-US": "ACS FIDO Authenticator Card"
-        },
         "description": "ACS FIDO Authenticator Card",
         "authenticatorVersion": 10000,
         "protocolFamily": "fido2",
@@ -4914,9 +4788,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
-        "friendlyNames": {
-          "en-US": "SafeNet eToken Fusion"
-        },
         "description": "SafeNet eToken Fusion",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -5040,9 +4911,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1105e4ed-af1d-02ff-ffff-ffffffffffff",
-        "friendlyNames": {
-          "en-US": "Egomet FIDO2 Authenticator for Android"
-        },
         "description": "Egomet FIDO2 Authenticator for Android",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5145,9 +5013,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
-        "friendlyNames": {
-          "en-US": "Windows Hello Hardware Authenticator"
-        },
         "description": "Windows Hello Hardware Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5250,9 +5115,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico"
-        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 328707,
         "protocolFamily": "fido2",
@@ -5406,9 +5268,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0acf3011-bc60-f375-fb53-6f05f43154e0",
-        "friendlyNames": {
-          "en-US": "Nymi FIDO2 Authenticator"
-        },
         "description": "Nymi FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -5492,9 +5351,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
-        "friendlyNames": {
-          "en-US": "KEY-ID FIDO2 Authenticator"
-        },
         "description": "KEY-ID FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5612,9 +5468,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4c50ff10-1057-4fc6-b8ed-43a529530c3c",
-        "friendlyNames": {
-          "en-US": "ImproveID Authenticator"
-        },
         "description": "ImproveID Authenticator",
         "authenticatorVersion": 45,
         "protocolFamily": "fido2",
@@ -5744,9 +5597,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
-        "friendlyNames": {
-          "en-US": "Feitian ePass FIDO2-NFC Authenticator"
-        },
         "description": "Feitian ePass FIDO2-NFC Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -5866,9 +5716,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0066#0002",
-        "friendlyNames": {
-          "en-US": "CAPY UAF"
-        },
         "description": "CAPY UAF",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -5943,9 +5790,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4",
-        "friendlyNames": {
-          "en-US": "Safenet eToken FIDO"
-        },
         "description": "Safenet eToken FIDO",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -6035,9 +5879,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
-        "friendlyNames": {
-          "en-US": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -6171,9 +6012,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4c0cf95d-2f40-43b5-ba42-4c83a11c04ba",
-        "friendlyNames": {
-          "en-US": "Feitian BioPass FIDO2 Pro Authenticator"
-        },
         "description": "Feitian BioPass FIDO2 Pro Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -6319,9 +6157,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5343502d-5343-5343-6172-644649444f32",
-        "friendlyNames": {
-          "en-US": "ESS Smart Card Inc. Authenticator"
-        },
         "description": "ESS Smart Card Inc. Authenticator",
         "alternativeDescriptions": {
           "fr-CA": "SSE Carte à Puce Inc. Authentificateur"
@@ -6444,9 +6279,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4010",
-        "friendlyNames": {
-          "en-US": "Android Fingerprint"
-        },
         "description": "Android Fingerprint",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -6522,9 +6354,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "09591fc6-9811-48f7-8f57-b9f23df6413f",
-        "friendlyNames": {
-          "en-US": "Pone Biometrics OFFPAD Authenticator"
-        },
         "description": "Pone Biometrics OFFPAD Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -6609,9 +6438,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7e3f3d30-3557-4442-bdae-139312178b39",
-        "friendlyNames": {
-          "en-US": "RSA DS100"
-        },
         "description": "RSA DS100",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -6711,9 +6537,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series"
-        },
         "description": "YubiKey 5 FIPS Series",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -6865,9 +6688,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
-        "friendlyNames": {
-          "en-US": "Security Key by Yubico with NFC"
-        },
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 50200,
         "protocolFamily": "fido2",
@@ -7005,9 +6825,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0052#0002",
-        "friendlyNames": {
-          "en-US": "i-Sprint Android FingerPrint UAF Authenticator"
-        },
         "description": "i-Sprint Android FingerPrint UAF Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -7082,9 +6899,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b90e7dc1-316e-4fee-a25a-56a666a670fe",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning (Enterprise Profile)"
-        },
         "description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -7161,7 +6975,6 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
         ],
         "icon": "data:image/png;base64,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",
@@ -7241,9 +7054,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "175cd298-83d2-4a26-b637-313c07a6434e",
-        "friendlyNames": {
-          "en-US": "Chunghwa Telecom FIDO2 Smart Card Authenticator"
-        },
         "description": "Chunghwa Telecom FIDO2 Smart Card Authenticator",
         "alternativeDescriptions": {
           "zh-CN": "中華電信智慧卡FIDO2身份驗證器"
@@ -7395,9 +7205,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
-        "friendlyNames": {
-          "en-US": "GoTrust Idem Key FIDO2 Authenticator"
-        },
         "description": "GoTrust Idem Key FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -7522,9 +7329,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4011",
-        "friendlyNames": {
-          "en-US": "Samsung Pass"
-        },
         "description": "Samsung Pass",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -7600,9 +7404,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3c22b597f30e8689ed2460f9dfe99b75103292f6"
         ],
-        "friendlyNames": {
-          "en-US": "Redsys U2F Authenticator"
-        },
         "description": "Redsys U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -7659,9 +7460,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "998f358b-2dd2-4cbe-a43a-e8107438dfb3",
-        "friendlyNames": {
-          "en-US": "OnlyKey Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "OnlyKey Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -7784,9 +7582,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
-        "friendlyNames": {
-          "en-US": "eWBM eFPA FIDO2 Authenticator"
-        },
         "description": "eWBM eFPA FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -7904,9 +7699,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series (Enterprise Profile)"
-        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -8012,8 +7804,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -8095,9 +7886,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
-        "friendlyNames": {
-          "en-US": "Security Key by Yubico"
-        },
         "description": "Security Key by Yubico",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -8214,9 +8002,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8976631b-d4a0-427f-5773-0ec71c9e0279",
-        "friendlyNames": {
-          "en-US": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -8321,9 +8106,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "516d3969-5a57-5651-5958-4e7a49434167",
-        "friendlyNames": {
-          "en-US": "SmartDisplayer BobeePass FIDO2 Authenticator"
-        },
         "description": "SmartDisplayer BobeePass FIDO2 Authenticator",
         "alternativeDescriptions": {
           "zh-TW": "SmartDisplayer BobeePass FIDO2 身份驗證器"
@@ -8451,9 +8233,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8681a073-5f50-4d52-bce4-e21658d207b3",
-        "friendlyNames": {
-          "en-US": "RSA Authenticator 4 for iOS"
-        },
         "description": "RSA Authenticator 4 for iOS",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -8560,9 +8339,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "573402ae901e27c11438eb8a44e746ec7372dee3"
         ],
-        "friendlyNames": {
-          "en-US": "SOLID webKey"
-        },
         "description": "SOLID webKey",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -8628,9 +8404,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0042#0002",
-        "friendlyNames": {
-          "en-US": "SSenStone FIDO UAF Authenticator for iOS"
-        },
         "description": "SSenStone FIDO UAF Authenticator for iOS",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -8718,9 +8491,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0022#1100",
-        "friendlyNames": {
-          "en-US": "Movenda Egomet FIDO UAF iOS Touch ID/Face ID Authenticator"
-        },
         "description": "Movenda Egomet FIDO UAF iOS Touch ID/Face ID Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -8805,9 +8575,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning"
-        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -8981,9 +8748,6 @@ let mdsJson={
           "a1833532e81bccc79245fa6f5296c4815dff599c",
           "f5f6eef729a0264752053c22e89fc3028f1536c1"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series with Lightning"
-        },
         "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -9042,9 +8806,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2c0df832-92de-4be1-8412-88a8f074df4a",
-        "friendlyNames": {
-          "en-US": "Feitian FIDO Smart Card"
-        },
         "description": "Feitian FIDO Smart Card",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -9157,9 +8918,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "59f85fe7-faa5-4c92-9f52-697b9d4d5473",
-        "friendlyNames": {
-          "en-US": "RSA Authenticator 4 for Android"
-        },
         "description": "RSA Authenticator 4 for Android",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -9262,9 +9020,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "006F#0002",
-        "friendlyNames": {
-          "en-US": "Hanko UAF Client/Authenticator Combo for iOS"
-        },
         "description": "Hanko UAF Client/Authenticator Combo for iOS",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -9334,9 +9089,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "786544772ecc9d3e85049222ae33226345b59c69"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series"
-        },
         "description": "YubiKey Bio Series",
         "authenticatorVersion": 328965,
         "protocolFamily": "u2f",
@@ -9414,9 +9166,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2bd915ec436fdae476aff40c51256cd61e0f2e4e"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico"
-        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -9487,9 +9236,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "970c8d9c-19d2-46af-aa32-3f448db49e35",
-        "friendlyNames": {
-          "en-US": "WinMagic FIDO Eazy - TPM"
-        },
         "description": "WinMagic FIDO Eazy - TPM",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -9583,9 +9329,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c5703116-972b-4851-a3e7-ae1259843399",
-        "friendlyNames": {
-          "en-US": "NEOWAVE Badgeo FIDO2"
-        },
         "description": "NEOWAVE Badgeo FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -9699,9 +9442,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "628756125e2f2242adbe979cf342992efc21c6de"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning"
-        },
         "description": "YubiKey 5 Series with Lightning",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -9770,9 +9510,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c80dbd9a-533f-4a17-b941-1a2f1c7cedff",
-        "friendlyNames": {
-          "en-US": "HID Crescendo C3000"
-        },
         "description": "HID Crescendo C3000",
         "authenticatorVersion": 30,
         "protocolFamily": "fido2",
@@ -9871,9 +9608,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "00c43ffcc8a97788f28aec0864c09cdd37aa37f8"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning (Enterprise Profile)"
-        },
         "description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -9932,9 +9666,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5b0e46ba-db02-44ac-b979-ca9b84f5e335",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series with Lightning Preview"
-        },
         "description": "YubiKey 5 FIPS Series with Lightning Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -10090,9 +9821,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2a55aee6-27cb-42c0-bc6e-04efe999e88a",
-        "friendlyNames": {
-          "en-US": "HID Crescendo 4000"
-        },
         "description": "HID Crescendo 4000",
         "alternativeDescriptions": {
           "en-US": "HID Crescendo 4000"
@@ -10211,9 +9939,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "820d89ed-d65a-409e-85cb-f73f0578f82a",
-        "friendlyNames": {
-          "en-US": "IDmelon iOS Authenticator"
-        },
         "description": "IDmelon iOS Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -10324,9 +10049,6 @@ let mdsJson={
           "c55f74c70c68e8dce5b7fdb4cdda772ad9294c67",
           "fd36573d24be3f7f32ad5040271ab61035a1fcad"
         ],
-        "friendlyNames": {
-          "en-US": "GoTrust Idem Card U2F Authenticator"
-        },
         "description": "GoTrust Idem Card U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -10396,9 +10118,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "096bfc8bdbaaa740b9ed8f74b054b5e8a81841d2"
         ],
-        "friendlyNames": {
-          "en-US": "TrustKey T120 U2F Authenticator"
-        },
         "description": "TrustKey T120 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -10474,9 +10193,6 @@ let mdsJson={
           "2806df6c60b1656a78f97a28e168e5ec8d2937b4",
           "2806df6c60b1656a78f97a28e168e5ec8d2937b4"
         ],
-        "friendlyNames": {
-          "en-US": "RSA DS100"
-        },
         "description": "RSA DS100",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -10549,9 +10265,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3124e301-f14e-4e38-876d-fbeeb090e7bf",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with Lightning Preview"
-        },
         "description": "YubiKey 5 Series with Lightning Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -10711,9 +10424,6 @@ let mdsJson={
           "44561a95d9a2664d32a267dbfe86ce0bb19e5926",
           "42db24c2644bd0c30948a33ccc26635d91dbe40f"
         ],
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO Security Key"
-        },
         "description": "Excelsecu eSecu FIDO Security Key",
         "authenticatorVersion": 3,
         "protocolFamily": "u2f",
@@ -10775,9 +10485,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
-        "friendlyNames": {
-          "en-US": "Feitian BioPass FIDO2 Plus Authenticator"
-        },
         "description": "Feitian BioPass FIDO2 Plus Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -10898,9 +10605,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "fff940d3579bc4404055747b3670d43a1e97d054"
         ],
-        "friendlyNames": {
-          "en-US": "Bluink Key U2F Authenticator"
-        },
         "description": "Bluink Key U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -10961,9 +10665,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series with Lightning"
-        },
         "description": "YubiKey 5 FIPS Series with Lightning",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -11134,9 +10835,6 @@ let mdsJson={
           "07e44a7c2e7e0b6054c0292fba691eebfdb481bd",
           "75d9266a79599e9cac604ac2be3f03a0f0444d74"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC"
-        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -11205,9 +10903,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
-        "friendlyNames": {
-          "en-US": "Hyper FIDO Bio Security Key"
-        },
         "description": "Hyper FIDO Bio Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -11331,9 +11026,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9876631b-d4a0-427f-5773-0ec71c9e0279",
-        "friendlyNames": {
-          "en-US": "Somu Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "Somu Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -11436,9 +11128,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f56f58b3-d711-4afc-ba7d-6ac05f88cb19",
-        "friendlyNames": {
-          "en-US": "WinMagic FIDO Eazy - Phone"
-        },
         "description": "WinMagic FIDO Eazy - Phone",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -11536,9 +11225,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "a867797eed1446ec184e3b5600ae00b49aba6214"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -11613,9 +11299,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3c6092374c0d0862bade1878b8647f7200519c23"
         ],
-        "friendlyNames": {
-          "en-US": "Arculus FIDO2/U2F Key Card [P71]"
-        },
         "description": "Arculus FIDO2/U2F Key Card [P71]",
         "authenticatorVersion": 100,
         "protocolFamily": "u2f",
@@ -11717,9 +11400,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f4c63eff-d26c-4248-801c-3736c7eaa93a",
-        "friendlyNames": {
-          "en-US": "FIDO KeyPass S3"
-        },
         "description": "FIDO KeyPass S3",
         "authenticatorVersion": 3,
         "protocolFamily": "fido2",
@@ -11804,9 +11484,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d384db22-4d50-ebde-2eac-5765cf1e2a44",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 Fingerprint Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -11912,9 +11589,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "85f44f9ff0f3be6c373c211e346e2e6bc4eb2d5c"
         ],
-        "friendlyNames": {
-          "en-US": "ACS FIDO Authenticator Card"
-        },
         "description": "ACS FIDO Authenticator Card",
         "authenticatorVersion": 10000,
         "protocolFamily": "u2f",
@@ -11996,9 +11670,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
-        "friendlyNames": {
-          "en-US": "Android Authenticator with SafetyNet Attestation"
-        },
         "description": "Android Authenticator with SafetyNet Attestation",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -12140,9 +11811,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC"
-        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -12283,9 +11951,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "31c3f7ff-bf15-4327-83ec-9336abcbcd34",
-        "friendlyNames": {
-          "en-US": "WinMagic FIDO Eazy - Software"
-        },
         "description": "WinMagic FIDO Eazy - Software",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -12382,9 +12047,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "e077926504cd75eb405a45be160f783044e3f5a2"
         ],
-        "friendlyNames": {
-          "en-US": "ATKey.Hello TypeC"
-        },
         "description": "ATKey.Hello TypeC",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -12454,9 +12116,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#400b",
-        "friendlyNames": {
-          "en-US": "Touch ID or Face ID"
-        },
         "description": "Touch ID or Face ID",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -12529,9 +12188,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ddd1817-af5a-4672-a2b9-3e3dd95000a9",
-        "friendlyNames": {
-          "en-US": "Windows Hello VBS Hardware Authenticator"
-        },
         "description": "Windows Hello VBS Hardware Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -12635,9 +12291,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series"
-        },
         "description": "YubiKey Bio Series",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
@@ -12830,9 +12483,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
-        "friendlyNames": {
-          "en-US": "ACS FIDO Authenticator"
-        },
         "description": "ACS FIDO Authenticator",
         "authenticatorVersion": 10000,
         "protocolFamily": "fido2",
@@ -12983,9 +12633,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f7c558a0-f465-11e8-b568-0800200c9a66",
-        "friendlyNames": {
-          "en-US": "KONAI Secp256R1 FIDO2 Conformance Testing CTAP2 Authenticator"
-        },
         "description": "KONAI Secp256R1 FIDO2 Conformance Testing CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -13078,9 +12725,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "dd66a09a46a1b7ad54ca335efdada2fcabf84bcb"
         ],
-        "friendlyNames": {
-          "en-US": "SHALO AUTH"
-        },
         "description": "SHALO AUTH",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -13149,9 +12793,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3f59672f-20aa-4afe-b6f4-7e5e916b6d98",
-        "friendlyNames": {
-          "en-US": "Arculus FIDO 2.1 Key Card [P71]"
-        },
         "description": "Arculus FIDO 2.1 Key Card [P71]",
         "authenticatorVersion": 100,
         "protocolFamily": "fido2",
@@ -13302,9 +12943,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "33e25f4ac1a431ea9bda37dbdd3febeb1e0d88ac"
         ],
-        "friendlyNames": {
-          "en-US": "IDEMIA ID-ONE Card"
-        },
         "description": "IDEMIA ID-ONE Card",
         "authenticatorVersion": 82,
         "protocolFamily": "u2f",
@@ -13385,9 +13023,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
-        "friendlyNames": {
-          "en-US": "Google Titan Security Key v2"
-        },
         "description": "Google Titan Security Key v2",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -13528,9 +13163,6 @@ let mdsJson={
           "aba470623cf889425307246b582b1ca19d2088c3",
           "5e24f0eb349a707b3ac4de536b905e59f5bcb845"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series"
-        },
         "description": "YubiKey 5 FIPS Series",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -13589,9 +13221,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "361a3082-0278-4583-a16f-72a527f973e4",
-        "friendlyNames": {
-          "en-US": "eWBM eFA500 FIDO2 Authenticator"
-        },
         "description": "eWBM eFA500 FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -13678,9 +13307,6 @@ let mdsJson={
           "6d1e2fbd1fed73771b039a8ba444456021b2e484",
           "d75e7bf9b2444b46698827d1be2e1b8f781cc4a4"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series with NFC"
-        },
         "description": "YubiKey 5 FIPS Series with NFC",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -13741,9 +13367,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2ffd6452-01da-471f-821b-ea4bf6c8676a",
-        "friendlyNames": {
-          "en-US": "IDPrime 941 Fido"
-        },
         "description": "IDPrime 941 Fido",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -13867,9 +13490,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4ff7-b00b-addc96ba6a98",
-        "friendlyNames": {
-          "en-US": "OneSpan DIGIPASS FX7"
-        },
         "description": "OneSpan DIGIPASS FX7",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -14013,9 +13633,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
-        "friendlyNames": {
-          "en-US": "HID Crescendo Key"
-        },
         "description": "HID Crescendo Key",
         "authenticatorVersion": 10,
         "protocolFamily": "fido2",
@@ -14128,9 +13745,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "99629e992e6d8f3b01ab17b401c12183a7836d79"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -14195,9 +13809,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "31116a647069d1493f58fc5b54e5449e2a52d43e"
         ],
-        "friendlyNames": {
-          "en-US": "Yubikey Edge"
-        },
         "description": "Yubikey Edge",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -14277,9 +13888,6 @@ let mdsJson={
           "8e900037d095ad7a8ada6c4c18143b7dbeb44674",
           "b88023f2545fdd6ea62060ab89d33294132b9bc9"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key by Yubico"
-        },
         "description": "Security Key by Yubico",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -14346,9 +13954,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 PRO Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 PRO Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -14444,9 +14049,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d",
-        "friendlyNames": {
-          "en-US": "Feitian iePass FIDO Authenticator"
-        },
         "description": "Feitian iePass FIDO Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -14570,9 +14172,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "910a763ddf79dbf496c482e7f313c520a89f7bec"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC"
-        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -14643,9 +14242,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "23786452-f02d-4344-87ed-aaf703726881",
-        "friendlyNames": {
-          "en-US": "SafeNet eToken Fusion CC"
-        },
         "description": "SafeNet eToken Fusion CC",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -14769,9 +14365,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "234cd403-35a2-4cc2-8015-77ea280c77f5",
-        "friendlyNames": {
-          "en-US": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)"
-        },
         "description": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -14918,9 +14511,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "bf8f39a5826eb910de4e436635a530e3ecce410f"
         ],
-        "friendlyNames": {
-          "en-US": "Hideez Key 4 U2F SDK"
-        },
         "description": "Hideez Key 4 U2F SDK",
         "alternativeDescriptions": {
           "uk-UA": "U2F Key SDK - від Hideez"
@@ -14993,9 +14583,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
-        "friendlyNames": {
-          "en-US": "HID Crescendo C2300"
-        },
         "description": "HID Crescendo C2300",
         "authenticatorVersion": 30,
         "protocolFamily": "fido2",
@@ -15103,9 +14690,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
-        "friendlyNames": {
-          "en-US": "eWBM eFA320 FIDO2 Authenticator"
-        },
         "description": "eWBM eFA320 FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -15210,9 +14794,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "70323a5e5a3a12682ddf96cba40a114ba6d21f21"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC (Enterprise Profile)"
-        },
         "description": "YubiKey 5 Series with NFC (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -15273,9 +14854,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "58276709-bb4b-4bb3-baf1-60eea99282a7",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -15381,7 +14959,6 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
         ],
         "icon": "data:image/png;base64,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",
@@ -15469,9 +15046,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7d2afadd-bf6b-44a2-a66b-e831fceb8eff",
-        "friendlyNames": {
-          "en-US": "Taglio CTAP2.1 EP"
-        },
         "description": "Taglio CTAP2.1 EP",
         "authenticatorVersion": 2308,
         "protocolFamily": "fido2",
@@ -15606,9 +15180,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "20ac7a17-c814-4833-93fe-539f0d5e3389",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series (Enterprise Profile)"
-        },
         "description": "YubiKey 5 Series (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -15685,8 +15256,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -15764,9 +15334,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#400a",
-        "friendlyNames": {
-          "en-US": "Touch ID or Face ID"
-        },
         "description": "Touch ID or Face ID",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -15839,9 +15406,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9f0d8150-baa5-4c00-9299-ad62c8bb4e87",
-        "friendlyNames": {
-          "en-US": "GoTrust Idem Card FIDO2 Authenticator"
-        },
         "description": "GoTrust Idem Card FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -15957,9 +15521,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "12ded745-4bed-47d4-abaa-e713f51d6393",
-        "friendlyNames": {
-          "en-US": "Feitian AllinOne FIDO2 Authenticator"
-        },
         "description": "Feitian AllinOne FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -16093,9 +15654,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "88bbd2f0-342a-42e7-9729-dd158be5407a",
-        "friendlyNames": {
-          "en-US": "Precision InnaIT Key FIDO 2 Level 2 certified"
-        },
         "description": "Precision InnaIT Key FIDO 2 Level 2 certified",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -16221,9 +15779,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "b6f1389fea15b3410381eb96d938cf12cade9692"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -16282,9 +15837,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "dd86a2da-86a0-4cbe-b462-4bd31f57bc6f",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio FIDO Edition"
-        },
         "description": "YubiKey Bio FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -16390,8 +15942,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -16482,9 +16033,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4009",
-        "friendlyNames": {
-          "en-US": "iOS Passcode"
-        },
         "description": "iOS Passcode",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -16551,9 +16099,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0052#0001",
-        "friendlyNames": {
-          "en-US": "i-Sprint iOS FingerPrint UAF Authenticator"
-        },
         "description": "i-Sprint iOS FingerPrint UAF Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -16628,9 +16173,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0022#0100",
-        "friendlyNames": {
-          "en-US": "Movenda Egomet FIDO UAF Android Fingerprint Authenticator"
-        },
         "description": "Movenda Egomet FIDO UAF Android Fingerprint Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -16719,9 +16261,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0056#0002",
-        "friendlyNames": {
-          "en-US": "PixelPin - Picture Login"
-        },
         "description": "PixelPin - Picture Login",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -16798,9 +16337,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "34f5766d-1536-4a24-9033-0e294e510fb0",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC Preview"
-        },
         "description": "YubiKey 5 Series with NFC Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -16959,9 +16495,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "83c47309-aabb-4108-8470-8be838b573cb",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series (Enterprise Profile)"
-        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
@@ -17156,9 +16689,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "be727034-574a-f799-5c76-0929e0430973",
-        "friendlyNames": {
-          "en-US": "Crayonic KeyVault K1 (USB-NFC-BLE FIDO2 Authenticator)"
-        },
         "description": "Crayonic KeyVault K1 (USB-NFC-BLE FIDO2 Authenticator)",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -17339,9 +16869,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "4e4e#4006",
-        "friendlyNames": {
-          "en-US": "Android PIN"
-        },
         "description": "Android PIN",
         "authenticatorVersion": 256,
         "protocolFamily": "uaf",
@@ -17415,9 +16942,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "092277e5-8437-46b5-b911-ea64b294acb7",
-        "friendlyNames": {
-          "en-US": "Taglio CTAP2.1 CS"
-        },
         "description": "Taglio CTAP2.1 CS",
         "authenticatorVersion": 2308,
         "protocolFamily": "fido2",
@@ -17550,9 +17074,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ca87cb70-4c1b-4579-a8e8-4efdd7c007e0",
-        "friendlyNames": {
-          "en-US": "FIDO Alliance TruU Sample FIDO2 Authenticator"
-        },
         "description": "FIDO Alliance TruU Sample FIDO2 Authenticator",
         "alternativeDescriptions": {
           "ru-RU": "Пример TruU FIDO2 аутентификатора от FIDO Alliance",
@@ -17682,9 +17203,6 @@ let mdsJson={
           "93761744e2aa5afce83a67fbeebdd3fe1ed24294",
           "93761744e2aa5afce83a67fbeebdd3fe1ed24294"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series"
-        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -17757,9 +17275,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "5fbc4ba753052187aab3c741d1f9ec6fb3c4d875"
         ],
-        "friendlyNames": {
-          "en-US": "HyperFIDO U2F Security Key"
-        },
         "description": "HyperFIDO U2F Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -17826,9 +17341,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "f83f10cabe50537051ba3086ac101ae4326e0de1"
         ],
-        "friendlyNames": {
-          "en-US": "Hideez Key 3 U2F"
-        },
         "description": "Hideez Key 3 U2F",
         "alternativeDescriptions": {
           "uk-UA": "U2F Key - від Hideez"
@@ -17896,9 +17408,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3e1b66cbc88605adbb34e0a2d6b86e8862c56627"
         ],
-        "friendlyNames": {
-          "en-US": "OCTATCO EzFinger2 U2F AUTHENTICATOR"
-        },
         "description": "OCTATCO EzFinger2 U2F AUTHENTICATOR",
         "alternativeDescriptions": {
           "ko-KR": "옥타코 이지핑거2 U2F 인증기 V 1.0",
@@ -17983,9 +17492,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "47268ea13d5e33ddbbb4ae000c13c9478cd173af"
         ],
-        "friendlyNames": {
-          "en-US": "ZTPass SmartAuth"
-        },
         "description": "ZTPass SmartAuth",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -18056,9 +17562,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "58b44d0b-0a7c-f33a-fd48-f7153c871352",
-        "friendlyNames": {
-          "en-US": "Ledger Nano S Plus FIDO2 Authenticator"
-        },
         "description": "Ledger Nano S Plus FIDO2 Authenticator",
         "authenticatorVersion": 10500,
         "protocolFamily": "fido2",
@@ -18186,9 +17689,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9b",
-        "friendlyNames": {
-          "en-US": "Ensurity AUTH BioPro"
-        },
         "description": "Ensurity AUTH BioPro",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -18350,9 +17850,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "a7c65ac944e8d5146f5cbeb5fc328931908a5352"
         ],
-        "friendlyNames": {
-          "en-US": "KONAI Secp256R1 Conformance Testing U2F Authenticator"
-        },
         "description": "KONAI Secp256R1 Conformance Testing U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -18421,9 +17918,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "4b3b80c3dab13dba48be234f30400b28483f6e43"
         ],
-        "friendlyNames": {
-          "en-US": "ID-One Card"
-        },
         "description": "ID-One Card",
         "authenticatorVersion": 16777216,
         "protocolFamily": "u2f",
@@ -18507,9 +18001,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico"
-        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -18684,9 +18175,6 @@ let mdsJson={
           "8bf7115763ea49b6549e083c9fe8dc7b4ef60e19",
           "80245f8e317cbc795c664bf84389e80a97c5e623"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey NEO"
-        },
         "description": "YubiKey NEO",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -18753,9 +18241,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "85d28d8324e23ab50b028592bdbbf4e4ac8a1317"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series (Enterprise Profile)"
-        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "u2f",
@@ -18833,9 +18318,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2fea8f357c7a54a57f45cda72fafb34d1d449fd4"
         ],
-        "friendlyNames": {
-          "en-US": "NEOWAVE Badgeo FIDO2"
-        },
         "description": "NEOWAVE Badgeo FIDO2",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -18900,9 +18382,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "79c1009622bbeed23ba0c493cf76ab088a1ad505"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329222,
         "protocolFamily": "u2f",
@@ -18944,8 +18423,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "MIIDHjCCAgagAwIBAgIEG0BT9zANBgkqhkiG9w0BAQsFADAuMSwwKgYDVQQDEyNZdWJpY28gVTJGIFJvb3QgQ0EgU2VyaWFsIDQ1NzIwMDYzMTAgFw0xNDA4MDEwMDAwMDBaGA8yMDUwMDkwNDAwMDAwMFowLjEsMCoGA1UEAxMjWXViaWNvIFUyRiBSb290IENBIFNlcmlhbCA0NTcyMDA2MzEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC/jwYuhBVlqaiYWEMsrWFisgJ+PtM91eSrpI4TK7U53mwCIawSDHy8vUmk5N2KAj9abvT9NP5SMS1hQi3usxoYGonXQgfO6ZXyUA9a+KAkqdFnBnlyugSeCOep8EdZFfsaRFtMjkwz5Gcz2Py4vIYvCdMHPtwaz0bVuzneueIEz6TnQjE63Rdt2zbwnebwTG5ZybeWSwbzy+BJ34ZHcUhPAY89yJQXuE0IzMZFcEBbPNRbWECRKgjq//qT9nmDOFVlSRCt2wiqPSzluwn+v+suQEBsUjTGMEd25tKXXTkNW21wIWbxeSyUoTXwLvGS6xlwQSgNpk2qXYwf8iXg7VWZAgMBAAGjQjBAMB0GA1UdDgQWBBQgIvz0bNGJhjgpToksyKpP9xv9oDAPBgNVHRMECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEAjvjuOMDSa+JXFCLyBKsycXtBVZsJ4Ue3LbaEsPY4MYN/hIQ5ZM5p7EjfcnMG4CtYkNsfNHc0AhBLdq45rnT87q/6O3vUEtNMafbhU6kthX7Y+9XFN9NpmYxr+ekVY5xOxi8h9JDIgoMP4VB1uS0aunL1IGqrNooL9mmFnL2kLVVee6/VR6C5+KSTCMCWppMuJIZII2v9o4dkoZ8Y7QRjQlLfYzd3qGtKbw7xaF1UsG/5xUb/Btwb2X2g4InpiB/yt/3CpQXpiWX/K4mBvUKiGn05ZsqeY1gx4g0xLBqcU9psmyPzK+Vsgw2jeRQ5JlKDyqE0hebfC1tvFu0CCrJFcw==",
-          "MIIDMzCCAhugAwIBAgIUSOEjTf//yqRfPW7Qq8qtIyCrAg8wDQYJKoZIhvcNAQELBQAwLzEtMCsGA1UEAwwkWXViaWNvIEZJRE8gUm9vdCBDQSBTZXJpYWwgNDUwMjAzNTU2MCAXDTI0MDUwMTAwMDAwMFoYDzIwNjAwNDMwMDAwMDAwWjAvMS0wKwYDVQQDDCRZdWJpY28gRklETyBSb290IENBIFNlcmlhbCA0NTAyMDM1NTYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdvl27w2gu1fPXeEFbIdqx0BalvVDVWrQPJ7HqviuEtZHlxSLxSFtcXpTolvLvof8f4tMerQTkVGzcmYzm1EBT4IJuMmoEqfkEEhWpsADMFrjZkqlZY9EqxQzLoVEEonE5oGxSdVCxCcLIackpyR/CCXvj1Bt/hTgE9hTlF4pRqxMkx3plF7y8dDZlRHWs7vbnhmBCGeI0ZPEQ6nl2mCg2r74adF2u6K9rrLfhBC3QLE8EPrgqUsI+hkuq2tK4M2SMOp8uUVVkqUeu3h0kr3WVI0W02pkgrOgiFKLFNkSrbYhdjMBDj5izmqfc9xJRKoDX612qd8ZGVHpT5AYFX+1hAgMBAAGjRTBDMB0GA1UdDgQWBBTZyU5DiQ/a2UEgE7qBK0zhIsRNRjASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEAXvnB4SLuUJfYMSVGAhssL/SmWli3FSccgxydvKlACcidIIWKQqa3q/QSUEQzC9DgEfMgr7iC1BkTZbILboV6UZ5knNsvjEZWuMeogJ8tgZs1hVvKwZizwJ+mEcmsjhIrBYuoL1T6yrOJvKFg1jv+Cy4ZwA9Bpk/V3UOir1VyK8dCtyHu6vfosotAdYx8FAuR243gRTMV6Jx8Jdig2JDIAQMlzVeDpSUHX/K2HXRHxHwfgjbgUjjBu/72r8OfehyhzHXI3K8CFFdflO+8nEOJK3y8F1ivgS5uN/8SmcYw/STQYwhrxPuwz3nP8baMum4BB2nnYmpB60sX3bl5k8QUSw=="
+          "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"
         ],
         "icon": "data:image/png;base64,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"
       },
@@ -18972,9 +18450,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329222,
         "protocolFamily": "fido2",
@@ -19171,9 +18646,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "07a9f89c-6407-4594-9d56-621d5f1e358b",
-        "friendlyNames": {
-          "en-US": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticato"
-        },
         "description": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -19258,9 +18730,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d61d3b87-3e7c-4aea-9c50-441c371903ad",
-        "friendlyNames": {
-          "en-US": "KeyVault Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "KeyVault Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -19359,9 +18828,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5ca1ab1e-1337-fa57-f1d0-a117e71ca702",
-        "friendlyNames": {
-          "en-US": "Allthenticator App: roaming BLE FIDO2 Allthenticator"
-        },
         "description": "Allthenticator App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers",
         "authenticatorVersion": 5,
         "protocolFamily": "fido2",
@@ -19491,9 +18957,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b92c3f9a-c014-4056-887f-140a2501163b",
-        "friendlyNames": {
-          "en-US": "Security Key by Yubico"
-        },
         "description": "Security Key by Yubico",
         "authenticatorVersion": 50200,
         "protocolFamily": "fido2",
@@ -19628,9 +19091,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "54d9fee8-e621-4291-8b18-7157b99c5bec",
-        "friendlyNames": {
-          "en-US": "HID Crescendo Enabled"
-        },
         "description": "HID Crescendo Enabled",
         "alternativeDescriptions": {
           "en-US": "HID Crescendo Enabled"
@@ -19761,9 +19221,6 @@ let mdsJson={
           "e3e26f22e55a3ee1a4493d7f0200985eafee2572",
           "99b011819a9b1539b28b86f625547f173eb5d57b"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series"
-        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -19830,9 +19287,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a25342c0-3cdc-4414-8e46-f4807fca511c",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC"
-        },
         "description": "YubiKey 5 Series with NFC",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -19997,9 +19451,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 Fingerprint Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -20105,9 +19556,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ca4cff1b-5a81-4404-8194-59aabcf1660b",
-        "friendlyNames": {
-          "en-US": "IDPrime 3930 FIDO"
-        },
         "description": "IDPrime 3930 FIDO",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -20232,9 +19680,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ab32f0c6-2239-afbb-c470-d2ef4e254db6",
-        "friendlyNames": {
-          "en-US": "TEST (DUMMY RECORD)"
-        },
         "description": "TEST (DUMMY RECORD)",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -20342,9 +19787,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "760eda36-00aa-4d29-855b-4012a182cdeb",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico Preview"
-        },
         "description": "Security Key NFC by Yubico Preview",
         "authenticatorVersion": 329472,
         "protocolFamily": "fido2",
@@ -20503,9 +19945,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "a97b3319eecdb5993c4184276441b059b48506f1"
         ],
-        "friendlyNames": {
-          "en-US": "TrustKey G310 U2F Authenticator"
-        },
         "description": "TrustKey G310 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -20574,9 +20013,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6028b017-b1d4-4c02-b4b3-afcdafc96bb2",
-        "friendlyNames": {
-          "en-US": "Windows Hello Software Authenticator"
-        },
         "description": "Windows Hello Software Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -20677,9 +20113,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
-        "friendlyNames": {
-          "en-US": "OneSpan FIDO Touch"
-        },
         "description": "OneSpan FIDO Touch",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -20789,9 +20222,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1ac71f64-468d-4fe0-bef1-0e5f2f551f18",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series with NFC (Enterprise Profile)"
-        },
         "description": "YubiKey 5 Series with NFC (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -20868,8 +20298,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -20952,9 +20381,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "c76507e315328fbb06d7184bdeef12af0e327f4e"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series (Enterprise Profile)"
-        },
         "description": "YubiKey 5 Series (Enterprise Profile)",
         "authenticatorVersion": 329473,
         "protocolFamily": "u2f",
@@ -21013,9 +20439,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
-        "friendlyNames": {
-          "en-US": "Security Key by Yubico with NFC"
-        },
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -21142,9 +20565,6 @@ let mdsJson={
           "b39e6a8f5e4da7117121b2b1481abb1d15f157bb",
           "b76632e2c75e992c90277f99afd2c139968f3d2e"
         ],
-        "friendlyNames": {
-          "en-US": "Gemalto MultiApp FIDO Authenticator"
-        },
         "description": "Gemalto MultiApp FIDO Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -21207,9 +20627,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5ca1ab1e-fa57-1337-f1d0-a117371ca702",
-        "friendlyNames": {
-          "en-US": "Allthenticator Android App"
-        },
         "description": "Allthenticator Android App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers",
         "authenticatorVersion": 5,
         "protocolFamily": "fido2",
@@ -21341,9 +20758,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "eabb46cc-e241-80bf-ae9e-96fa6d2975cf",
-        "friendlyNames": {
-          "en-US": "TOKEN2 PIN Plus Security Key Series "
-        },
         "description": "TOKEN2 PIN Plus Security Key Series ",
         "alternativeDescriptions": {
           "fr": "Série de clés de sécurité TOKEN2 PIN Plus"
@@ -21511,9 +20925,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "53414d53-554e-4700-0000-000000000000",
-        "friendlyNames": {
-          "en-US": "Samsung Pass"
-        },
         "description": "Samsung Pass",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -21592,9 +21003,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "bab1487181fa4b7f6064b7f6bba6cff9efdfd71e"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico"
-        },
         "description": "Security Key NFC by Yubico",
         "authenticatorVersion": 328707,
         "protocolFamily": "u2f",
@@ -21666,9 +21074,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e416201b-afeb-41ca-a03d-2281c28322aa",
-        "friendlyNames": {
-          "en-US": "ATKey.Pro CTAP2.1"
-        },
         "description": "ATKey.Pro CTAP2.1",
         "authenticatorVersion": 20001,
         "protocolFamily": "fido2",
@@ -21851,9 +21256,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "f367c73c58a67a95420778900dff4759a1354fec"
         ],
-        "friendlyNames": {
-          "en-US": "authenton1 - CTAP 2.1"
-        },
         "description": "authenton1 - CTAP 2.1",
         "alternativeDescriptions": {
           "fr-FR": "authenton1 - CTAP 2.1",
@@ -21940,9 +21342,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "0066#0001",
-        "friendlyNames": {
-          "en-US": "CAPY UAF"
-        },
         "description": "CAPY UAF",
         "authenticatorVersion": 3,
         "protocolFamily": "uaf",
@@ -22017,9 +21416,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cfcb13a2-244f-4b36-9077-82b79d6a7de7",
-        "friendlyNames": {
-          "en-US": "USB/NFC Passcode Authenticator"
-        },
         "description": "USB/NFC Passcode Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -22097,9 +21493,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "91ad6b93-264b-4987-8737-3a690cad6917",
-        "friendlyNames": {
-          "en-US": "Token Ring FIDO2 Authenticator"
-        },
         "description": "Token Ring FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -22193,9 +21586,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5753362b-4e6b-6345-7b2f-255438404c75",
-        "friendlyNames": {
-          "en-US": "WiSECURE Blentity FIDO2 Authenticator"
-        },
         "description": "WiSECURE Blentity FIDO2 Authenticator",
         "alternativeDescriptions": {
           "zh-TW": "WiSECURE Blentity FIDO2 身份驗證器"
@@ -22314,9 +21704,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
-        "friendlyNames": {
-          "en-US": "Hyper FIDO Pro"
-        },
         "description": "Hyper FIDO Pro",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -22433,9 +21820,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
-        "friendlyNames": {
-          "en-US": "Security Key NFC by Yubico - Enterprise Edition"
-        },
         "description": "Security Key NFC by Yubico - Enterprise Edition",
         "authenticatorVersion": 328707,
         "protocolFamily": "fido2",
@@ -22593,9 +21977,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "1f4bd023d5596ab8f504f6af93f98cff63a58507"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series (Enterprise Profile)"
-        },
         "description": "YubiKey Bio Series (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -22654,9 +22035,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
-        "friendlyNames": {
-          "en-US": "uTrust FIDO2 Security Key"
-        },
         "description": "uTrust FIDO2 Security Key",
         "authenticatorVersion": 100,
         "protocolFamily": "fido2",
@@ -22781,9 +22159,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "c889abd01627b98d2f7c1cd9d5d16d2d0262f696"
         ],
-        "friendlyNames": {
-          "en-US": "Egis U2F BLE Authenticator"
-        },
         "description": "Egis U2F BLE Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -22857,9 +22232,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 FIPS Series with NFC"
-        },
         "description": "YubiKey 5 FIPS Series with NFC",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -23018,9 +22390,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0e8020d782b67d00f47839f442ddc242dbe4fc2f"
         ],
-        "friendlyNames": {
-          "en-US": "VeriMark DT Fingerprint Key"
-        },
         "description": "VeriMark DT Fingerprint Key",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -23091,9 +22460,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
-        "friendlyNames": {
-          "en-US": "WiSECURE AuthTron USB FIDO2 Authenticator"
-        },
         "description": "WiSECURE AuthTron USB FIDO2 Authenticator",
         "alternativeDescriptions": {
           "zh-TW": "WiSECURE AuthTron USB FIDO2 身份驗證器"
@@ -23232,9 +22598,6 @@ let mdsJson={
           "3bc1211c12d952a32b03c55b88d3ea6f7d152f18",
           "8dc2a6f293ea4845bb76a42c42b89601aab547f8"
         ],
-        "friendlyNames": {
-          "en-US": "GoTrust Idem Key U2F Authenticator"
-        },
         "description": "GoTrust Idem Key U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -23320,9 +22683,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a3975549-b191-fd67-b8fb-017e2917fdb3",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 NFC Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 NFC Security Key",
         "authenticatorVersion": 256,
         "protocolFamily": "fido2",
@@ -23494,9 +22854,6 @@ let mdsJson={
           "418377e213db14abc6509db5e10c9598b42f92ea",
           "525ea96c47b9a47933a09b4871c398df6407aaa4"
         ],
-        "friendlyNames": {
-          "en-US": "Feitian MultiPass FIDO Security Key"
-        },
         "description": "Feitian MultiPass FIDO Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -23563,9 +22920,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series"
-        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 329473,
         "protocolFamily": "fido2",
@@ -23729,9 +23083,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "da1fa263-8b25-42b6-a820-c0036f21ba7f",
-        "friendlyNames": {
-          "en-US": "ATKey.Card NFC"
-        },
         "description": "ATKey.Card NFC",
         "authenticatorVersion": 501,
         "protocolFamily": "fido2",
@@ -23908,9 +23259,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6002f033-3c07-ce3e-d0f7-0ffe5ed42543",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 Fingerprint Key"
-        },
         "description": "Excelsecu eSecu FIDO2 Fingerprint Key",
         "authenticatorVersion": 256,
         "protocolFamily": "fido2",
@@ -24107,9 +23455,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5fdb81b8-53f0-4967-a881-f5ec26fe4d18",
-        "friendlyNames": {
-          "en-US": "VinCSS FIDO2 Authenticator"
-        },
         "description": "VinCSS FIDO2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -24197,9 +23542,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
-        "friendlyNames": {
-          "en-US": "ID-One Card"
-        },
         "description": "ID-One Card",
         "authenticatorVersion": 16777216,
         "protocolFamily": "fido2",
@@ -24356,9 +23698,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2d3bec26-15ee-4f5d-88b2-53622490270b",
-        "friendlyNames": {
-          "en-US": "HID Crescendo Key V2"
-        },
         "description": "HID Crescendo Key V2",
         "authenticatorVersion": 30,
         "protocolFamily": "fido2",
@@ -24454,9 +23793,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4ff1-010b-addc96ba6a98",
-        "friendlyNames": {
-          "en-US": "OneSpan DIGIPASS FX1a"
-        },
         "description": "OneSpan DIGIPASS FX1a",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -24621,9 +23957,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series"
-        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 50100,
         "protocolFamily": "fido2",
@@ -24744,9 +24077,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "96f0ccc135dff9dcd6b3ffe1852fe06e8f5cabeb"
         ],
-        "friendlyNames": {
-          "en-US": "ImproveID Authenticator"
-        },
         "description": "ImproveID Authenticator",
         "authenticatorVersion": 45,
         "protocolFamily": "u2f",
@@ -24828,9 +24158,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "0076631b-d4a0-427f-5773-0ec71c9e0279",
-        "friendlyNames": {
-          "en-US": "HYPR FIDO2 Authenticator"
-        },
         "description": "HYPR FIDO2 Authenticator",
         "alternativeDescriptions": {
           "en-US": "HYPR FIDO2 Authenticator"
@@ -24977,9 +24304,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "556d27f38b231bb3d818bfc1b615f260f6b08f20"
         ],
-        "friendlyNames": {
-          "en-US": "MK Keypass S1"
-        },
         "description": "MK Keypass S1",
         "authenticatorVersion": 3,
         "protocolFamily": "u2f",
@@ -25040,9 +24364,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d7a423ad-3e19-4492-9200-78137dccc136",
-        "friendlyNames": {
-          "en-US": "VivoKey Apex FIDO2"
-        },
         "description": "VivoKey Apex FIDO2",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -25126,9 +24447,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ba76a271-6eb6-4171-874d-b6428dbe3437",
-        "friendlyNames": {
-          "en-US": "ATKey.ProS"
-        },
         "description": "ATKey.ProS",
         "authenticatorVersion": 50001,
         "protocolFamily": "fido2",
@@ -25311,9 +24629,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "2eb9ff3572f67628d1291a3b57924f818aad9e72"
         ],
-        "friendlyNames": {
-          "en-US": "Hyper FIDO U2F Mini Security Key"
-        },
         "description": "Hyper FIDO U2F Mini Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -25380,9 +24695,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "cd9dd77cf580dfe05d9d089865a164dbb6432cd2"
         ],
-        "friendlyNames": {
-          "en-US": "TrustKey T110 U2F Authenticator"
-        },
         "description": "TrustKey T110 U2F Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -25448,9 +24760,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "97e6a830-c952-4740-95fc-7c78dc97ce47",
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
@@ -25556,8 +24865,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "MIIDMzCCAhugAwIBAgIUSOEjTf//yqRfPW7Qq8qtIyCrAg8wDQYJKoZIhvcNAQELBQAwLzEtMCsGA1UEAwwkWXViaWNvIEZJRE8gUm9vdCBDQSBTZXJpYWwgNDUwMjAzNTU2MCAXDTI0MDUwMTAwMDAwMFoYDzIwNjAwNDMwMDAwMDAwWjAvMS0wKwYDVQQDDCRZdWJpY28gRklETyBSb290IENBIFNlcmlhbCA0NTAyMDM1NTYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdvl27w2gu1fPXeEFbIdqx0BalvVDVWrQPJ7HqviuEtZHlxSLxSFtcXpTolvLvof8f4tMerQTkVGzcmYzm1EBT4IJuMmoEqfkEEhWpsADMFrjZkqlZY9EqxQzLoVEEonE5oGxSdVCxCcLIackpyR/CCXvj1Bt/hTgE9hTlF4pRqxMkx3plF7y8dDZlRHWs7vbnhmBCGeI0ZPEQ6nl2mCg2r74adF2u6K9rrLfhBC3QLE8EPrgqUsI+hkuq2tK4M2SMOp8uUVVkqUeu3h0kr3WVI0W02pkgrOgiFKLFNkSrbYhdjMBDj5izmqfc9xJRKoDX612qd8ZGVHpT5AYFX+1hAgMBAAGjRTBDMB0GA1UdDgQWBBTZyU5DiQ/a2UEgE7qBK0zhIsRNRjASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEAXvnB4SLuUJfYMSVGAhssL/SmWli3FSccgxydvKlACcidIIWKQqa3q/QSUEQzC9DgEfMgr7iC1BkTZbILboV6UZ5knNsvjEZWuMeogJ8tgZs1hVvKwZizwJ+mEcmsjhIrBYuoL1T6yrOJvKFg1jv+Cy4ZwA9Bpk/V3UOir1VyK8dCtyHu6vfosotAdYx8FAuR243gRTMV6Jx8Jdig2JDIAQMlzVeDpSUHX/K2HXRHxHwfgjbgUjjBu/72r8OfehyhzHXI3K8CFFdflO+8nEOJK3y8F1ivgS5uN/8SmcYw/STQYwhrxPuwz3nP8baMum4BB2nnYmpB60sX3bl5k8QUSw==",
-          "MIIC2TCCAcGgAwIBAgIJAIPFqEqGkW5gMA0GCSqGSIb3DQEBCwUAMC4xLDAqBgNVBAMTI1l1YmljbyBVMkYgUm9vdCBDQSBTZXJpYWwgNDU3MjAwNjMxMCAXDTE0MDgwMTAwMDAwMFoYDzIwNTAwOTA0MDAwMDAwWjBvMQswCQYDVQQGEwJTRTESMBAGA1UECgwJWXViaWNvIEFCMSIwIAYDVQQLDBlBdXRoZW50aWNhdG9yIEF0dGVzdGF0aW9uMSgwJgYDVQQDDB9ZdWJpY28gVTJGIEVFIFNlcmlhbCAxMjUyNTc0NTk1MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+UrfO8CoO+uopxk8+AoSTt2nke1Ndzwu0siqjlWFiVMs3jq+EK3ZS/j88jKijYx5OYrj9DnTuQkVAh5ZK0/6faOBgTB/MBMGCisGAQQBgsQKDQEEBQQDBQcBMCIGCSsGAQQBgsQKAgQVMS4zLjYuMS40LjEuNDE0ODIuMS43MBMGCysGAQQBguUcAgEBBAQDAgIkMCEGCysGAQQBguUcAQEEBBIEEKAhZ7mucUrHmgcGQy67bxwwDAYDVR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEAp0qsD7yv+uvpkBLe18MtLd6Ue0Ozs9feitB5AFlk0qCP64Jihl9jxDLDt7FJNgwGVZZGpf2Z2C6UT6DQiEl4ssAvPpK/onRvr3rXGPd1DUjlKbX41ykYkzBej0zE8VKaWUR7Hu01CcQifctPGBlQYn/iW602xPhvbnezYDfikDZ9Qh+8AtSPwIAMD3fd63oAt2HyGcfH5aLglCXCXfVO4jFfTf0lWTRWt3XTYsKbdejo/RRwuDuvvSWUo7TqaZ5Nmc/MaTxQUKmBzWZvliuq9ya1Ucyb0WSCe9zn6SlkvSAtxhTq0L21I43lVgC1AQbdekTMShyXjElSOuNThZ/9Ww=="
+          "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"
         ],
         "icon": "data:image/png;base64,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",
         "authenticatorGetInfo": {
@@ -25639,9 +24947,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
-        "friendlyNames": {
-          "en-US": "YubiKey 5 Series"
-        },
         "description": "YubiKey 5 Series",
         "authenticatorVersion": 328706,
         "protocolFamily": "fido2",
@@ -25779,9 +25084,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8876631b-d4a0-427f-5773-0ec71c9e0279",
-        "friendlyNames": {
-          "en-US": "Solo Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "Solo Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -25884,9 +25186,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fec067a1-f1d0-4c5e-b4c0-cc3237475461",
-        "friendlyNames": {
-          "en-US": "KX701 SmartToken FIDO"
-        },
         "description": "KX701 SmartToken FIDO",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -26024,9 +25323,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "30b5035e-d297-4ff1-b00b-addc96ba6a98",
-        "friendlyNames": {
-          "en-US": "OneSpan DIGIPASS FX1 BIO"
-        },
         "description": "OneSpan DIGIPASS FX1 BIO",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -26194,9 +25490,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b267239b-954f-4041-a01b-ee4f33c145b6",
-        "friendlyNames": {
-          "en-US": "authenton1 - CTAP2.1"
-        },
         "description": "authenton1 - CTAP2.1",
         "authenticatorVersion": 6,
         "protocolFamily": "fido2",
@@ -26318,9 +25611,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b50d5e0a-7f81-4959-9b12-f45407407503",
-        "friendlyNames": {
-          "en-US": "IDPrime 3940 FIDO"
-        },
         "description": "IDPrime 3940 FIDO",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -26417,9 +25707,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "3e2c42a59e85513f9edac8cf74c3953f5793dab6"
         ],
-        "friendlyNames": {
-          "en-US": "OneKey U2F Authenticator"
-        },
         "description": "OneKey U2F Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -26486,9 +25773,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c97a730-3f7b-41a6-87d6-1e9b62bda6f0",
-        "friendlyNames": {
-          "en-US": "FT-JCOS FIDO Fingerprint Card"
-        },
         "description": "FT-JCOS FIDO Fingerprint Card",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -26602,9 +25886,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "99bf4610-ec26-4252-b31f-7380ccd59db5",
-        "friendlyNames": {
-          "en-US": "ZTPass SmartAuth"
-        },
         "description": "ZTPass SmartAuth",
         "authenticatorVersion": 45,
         "protocolFamily": "fido2",
@@ -26723,9 +26004,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a1f52be5-dfab-4364-b51c-2bd496b14a56",
-        "friendlyNames": {
-          "en-US": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR"
-        },
         "description": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
           "ko-KR": "옥타코 이지핑거2 FIDO2 인증기 V 1.0",
@@ -26819,9 +26097,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ba86dc56-635f-4141-aef6-00227b1b9af6",
-        "friendlyNames": {
-          "en-US": "TruU Windows Authenticator"
-        },
         "description": "TruU Windows Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -26932,9 +26207,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e078ffd-4c54-4586-8baa-a77da113aec5",
-        "friendlyNames": {
-          "en-US": "Hideez Key 3 FIDO2"
-        },
         "description": "Hideez Key 3 FIDO2",
         "alternativeDescriptions": {
           "uk-UA": "FIDO2 Key - від Hideez"
@@ -27044,9 +26316,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
-        "friendlyNames": {
-          "en-US": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator"
-        },
         "description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -27190,9 +26459,6 @@ let mdsJson={
           "4b54614236c4c4e93beb2d3dc1b75b62978ee488",
           "ce68d1b75fb4cd3da077fd3f833c4d6e20bf287c"
         ],
-        "friendlyNames": {
-          "en-US": "Feitian BioPass FIDO Security Key"
-        },
         "description": "Feitian BioPass FIDO Security Key",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -27259,9 +26525,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5d629218-d3a5-11ed-afa1-0242ac120002",
-        "friendlyNames": {
-          "en-US": "Swissbit iShield Key Pro"
-        },
         "description": "Swissbit iShield Key Pro",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -27389,9 +26652,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
-        "friendlyNames": {
-          "en-US": "ATKey.Card CTAP2.0"
-        },
         "description": "ATKey.Card CTAP2.0",
         "authenticatorVersion": 3000039,
         "protocolFamily": "fido2",
@@ -27536,9 +26796,6 @@ let mdsJson={
           "d0d844edff117c979a05fa668a3296bce6965598",
           "ed5bdb96011e3d457d858af39e30ac57c5ac95e6"
         ],
-        "friendlyNames": {
-          "en-US": "Security Key by Yubico with NFC"
-        },
         "description": "Security Key by Yubico with NFC",
         "authenticatorVersion": 2,
         "protocolFamily": "u2f",
@@ -27607,9 +26864,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "e86addcd-7711-47e5-b42a-c18257b0bf61",
-        "friendlyNames": {
-          "en-US": "IDCore 3121 Fido"
-        },
         "description": "IDCore 3121 Fido",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -27734,9 +26988,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
-        "friendlyNames": {
-          "en-US": "eWBM eFA310 FIDO2 Authenticator"
-        },
         "description": "eWBM eFA310 FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -27837,9 +27088,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaid": "006F#0001",
-        "friendlyNames": {
-          "en-US": "Hanko UAF Client/Authenticator Combo for Android"
-        },
         "description": "Hanko UAF Client/Authenticator Combo for Android",
         "authenticatorVersion": 1,
         "protocolFamily": "uaf",
@@ -27925,9 +27173,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cdbdaea2-c415-5073-50f7-c04e968640b6",
-        "friendlyNames": {
-          "en-US": "Excelsecu eSecu FIDO2 Security Key"
-        },
         "description": "Excelsecu eSecu FIDO2 Security Key",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -28016,9 +27261,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bc2fe499-0d8e-4ffe-96f3-94a82840cf8c",
-        "friendlyNames": {
-          "en-US": "OCTATCO EzQuant FIDO2 AUTHENTICATOR"
-        },
         "description": "OCTATCO EzQuant FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
           "ko-KR": "옥타코 이지퀀트 FIDO2 인증기 V 1.0",
@@ -28116,9 +27358,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "d7c0c8dc35393096e717aa5b9cd3acc8c4ae8ce5"
         ],
-        "friendlyNames": {
-          "en-US": "YubiKey Bio Series - Multi-protocol Edition"
-        },
         "description": "YubiKey Bio Series - Multi-protocol Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
@@ -28160,8 +27399,7 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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"
+          "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"
         ],
         "icon": "data:image/png;base64,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"
       },
@@ -28188,9 +27426,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "eb3b131e-59dc-536a-d176-cb7306da10f5",
-        "friendlyNames": {
-          "en-US": "ellipticSecure MIRkey USB Authenticator"
-        },
         "description": "ellipticSecure MIRkey USB Authenticator",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
@@ -28284,9 +27519,6 @@ let mdsJson={
           "88c7c34b0c9cbbbdbbd7d4c0de404e14a74b6c8a",
           "aa8ce6fdcd722f701ee0657e18fa9f2a685e81cd"
         ],
-        "friendlyNames": {
-          "en-US": "YK4 Series Key by Yubico"
-        },
         "description": "YK4 Series Key by Yubico",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -28352,9 +27584,6 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0a426ee17afd16533b1cdfa95de1e920a6aedf3a"
         ],
-        "friendlyNames": {
-          "en-US": "VivoKey Apex U2F"
-        },
         "description": "VivoKey Apex U2F",
         "authenticatorVersion": 1,
         "protocolFamily": "u2f",
@@ -28416,9 +27645,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1c086528-58d5-f211-823c-356786e36140",
-        "friendlyNames": {
-          "en-US": "Atos CardOS FIDO2"
-        },
         "description": "Atos CardOS FIDO2",
         "alternativeDescriptions": {
           "de-DE": "Atos CardOS FIDO2"
@@ -28528,9 +27754,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
-        "friendlyNames": {
-          "en-US": "Feitian BioPass FIDO2 Authenticator"
-        },
         "description": "Feitian BioPass FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -28656,9 +27879,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d94a29d9-52dd-4247-9c2d-8b818b610389",
-        "friendlyNames": {
-          "en-US": "VeriMark Guard Fingerprint Key"
-        },
         "description": "VeriMark Guard Fingerprint Key",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -28772,9 +27992,6 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
-        "friendlyNames": {
-          "en-US": "Feitian ePass FIDO2 Authenticator"
-        },
         "description": "Feitian ePass FIDO2 Authenticator",
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
