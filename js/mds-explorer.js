@@ -156,16 +156,16 @@ $(function() {
   // build authenticators table
   table = new Tabulator("#mds-table", {
     data: mdsJson.entries,
-    layout:"fitDataTable",
-    selectable:false,
-    //responsiveLayout:"collapse",
-    columns:[
+    layout: "fitDataFill",
+    selectable: false,
+    //responsiveLayout: "collapse",
+    columns: [
       {
         title: "Name",
         field: "metadataStatement.description",
         sorter: "string",
-        headerFilter:true,
-        formatter: function(cell/*, formatterParams, onRendered*/){
+        headerFilter: true,
+        formatter: function(cell/*, formatterParams, onRendered*/) {
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
         },
@@ -177,7 +177,14 @@ $(function() {
         field: "metadataStatement.protocolFamily",
         sorter: "string",
         headerFilter: "list",
-        headerFilterParams: {values: ["uaf", "u2f", "fido2"]}
+        headerFilterParams: {
+          values: [
+            "uaf",
+            "u2f",
+            "fido2"
+          ]
+        },
+        clearable: true,
       },
       {
         title: "Icon",
@@ -196,10 +203,15 @@ $(function() {
         },
         headerFilter: "list",
         headerFilterParams: {
-          values:["NOT_FIDO_CERTIFIED", "FIDO_CERTIFIED", "FIDO_CERTIFIED_L1", "FIDO_CERTIFIED_L2"],
+          values: [
+            "NOT_FIDO_CERTIFIED",
+            "FIDO_CERTIFIED",
+            "FIDO_CERTIFIED_L1",
+            "FIDO_CERTIFIED_L2"
+          ]
         },
-        headerFilterFunc: filterCertifs,
-        sorter: "array"
+        clearable: true,
+        headerFilterFunc: filterCertifs
       },
       {
         title: "User Verif.",
@@ -211,24 +223,47 @@ $(function() {
         },
         headerFilter: "list",
         headerFilterParams: {
-          values:["presence_internal", "fingerprint_internal", "passcode_internal", "voiceprint_internal", "faceprint_internal", "location_internal",
-            "eyeprint_internal", "pattern_internal", "handprint_internal", "passcode_external", "pattern_external", "none", "all"]
+          values: [
+            "presence_internal",
+            "fingerprint_internal",
+            "passcode_internal",
+            "voiceprint_internal",
+            "faceprint_internal",
+            "location_internal",
+            "eyeprint_internal",
+            "pattern_internal",
+            "handprint_internal",
+            "passcode_external",
+            "pattern_external",
+            "none",
+            "all"
+          ]
         },
         headerFilterFunc: filterUserVerifs,
         sorter: "array"
       },
       {
         title: "Attachment",
-        field: "metadataStatement.attachmentHint", formatter:function(cell/*, formatterParams, onRendered*/) {
+        field: "metadataStatement.attachmentHint",
+        formatter: function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
           $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
           return res;
         },
         headerFilter: "list",
         headerFilterParams: {
-          values: ["internal", "external", "wired", "wireless", "nfc", "bluetooth", "network", "ready"]
+          values: [
+            "internal",
+            "external",
+            "wired",
+            "wireless",
+            "nfc",
+            "bluetooth",
+            "network",
+            "ready"
+          ]
         },
-        sorter: "array"
+        clearable: true
       },
       {
         title: "Key Protection",
@@ -240,9 +275,15 @@ $(function() {
         },
         headerFilter: "list",
         headerFilterParams: {
-          values: ["software", "hardware", "tee", "secure_element", "remote_handle" ]
+          values: [
+            "software",
+            "hardware",
+            "tee",
+            "secure_element",
+            "remote_handle"
+          ]
         },
-        sorter: "array"
+        clearable: true
       },
       {
         title: "Algorithms",
@@ -253,11 +294,14 @@ $(function() {
           return res;
         },
         headerFilter: true,
-        sorter: "array"
+        clearable: true,
+        sorter: "string"
       },
       {
-        title:"Updated", field:"timeOfLastStatusChange", sorter:"string", width:110
-      },
+        title: "Updated",
+        field: "timeOfLastStatusChange",
+        sorter: "string"
+      }
     ],
     footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
   });
