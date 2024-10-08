@@ -156,7 +156,7 @@ $(function() {
   // build authenticators table
   table = new Tabulator("#mds-table", {
     data: mdsJson.entries,
-    layout: "fitDataFill",
+    layout: "fitDataTable",
     selectable: false,
     //responsiveLayout: "collapse",
     columns: [
