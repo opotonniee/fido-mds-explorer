@@ -183,8 +183,7 @@ $(function() {
             "u2f",
             "fido2"
           ]
-        },
-        clearable: true,
+        }
       },
       {
         title: "Icon",
@@ -210,7 +209,7 @@ $(function() {
             "FIDO_CERTIFIED_L2"
           ]
         },
-        clearable: true,
+        sorter: "array",
         headerFilterFunc: filterCertifs
       },
       {
@@ -263,7 +262,7 @@ $(function() {
             "ready"
           ]
         },
-        clearable: true
+        sorter: "array"
       },
       {
         title: "Key Protection",
@@ -283,7 +282,7 @@ $(function() {
             "remote_handle"
           ]
         },
-        clearable: true
+        sorter: "array"
       },
       {
         title: "Algorithms",
@@ -294,8 +293,7 @@ $(function() {
           return res;
         },
         headerFilter: true,
-        clearable: true,
-        sorter: "string"
+        sorter: "array"
       },
       {
         title: "Updated",
