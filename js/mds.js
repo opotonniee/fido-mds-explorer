@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 107,
+  "no": 108,
   "nextUpdate": "2024-11-01",
   "entries": [
     {
@@ -15610,11 +15610,24 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-05"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473,
+          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241012001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473
         }
       ],
-      "timeOfLastStatusChange": "2024-08-05"
+      "timeOfLastStatusChange": "2024-10-25"
     },
     {
       "aaid": "4e4e#400a",
@@ -20726,11 +20739,24 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-15"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473,
+          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
+          "certificateNumber": "U2F100020241012001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473
         }
       ],
-      "timeOfLastStatusChange": "2024-08-15"
+      "timeOfLastStatusChange": "2024-10-25"
     },
     {
       "aaguid": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
