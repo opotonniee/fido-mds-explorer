@@ -154,10 +154,19 @@ $(function() {
   }
   $("#mds").show();
   // build authenticators table
+  let hideMenu = [
+    {
+      label: "Hide Column",
+      action: function (e, column) {
+        column.hide();
+      }
+    }
+  ];
   table = new Tabulator("#mds-table", {
     data: mdsJson.entries,
     layout: "fitDataTable",
     selectable: false,
+    movableColumns: true,
     //responsiveLayout: "collapse",
     columns: [
       {
@@ -183,14 +192,16 @@ $(function() {
             "u2f",
             "fido2"
           ]
-        }
+        },
+        headerMenu: hideMenu
       },
       {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: function(cell/*, formatterParams, onRendered*/){
           return imageTag(cell.getValue());
-        }
+        },
+        headerMenu: hideMenu
       },
       {
         title: "Certification",
@@ -210,7 +221,43 @@ $(function() {
           ]
         },
         sorter: "array",
-        headerFilterFunc: filterCertifs
+        headerFilterFunc: filterCertifs,
+        headerMenu: hideMenu
+      },
+      {
+        title: "ID (see popup)",
+        field: "metadataStatement",
+        sorter: "string",
+        headerFilter: true,
+        tooltip: function(e, cell){
+          let
+            item = cell.getValue(),
+            map = {
+              fido2: "aaguid",
+              u2f: "attestationCertificateKeyIdentifiers",
+              uaf: "aaid"
+            },
+            field = map[item.protocolFamily];
+          return field ? field : "?";
+        },
+        formatter: function(cell/*, formatterParams, onRendered*/){
+          let
+            item = cell.getValue(),
+            sep ="",
+            res = "?";
+          if (item.protocolFamily == "fido2") {
+            res = item.aaguid;
+          } else if (item.protocolFamily == "uaf") {
+            res = item.aaid;
+          } else if (item.protocolFamily == "u2f") {
+            res = "";
+            $.each(item.attestationCertificateKeyIdentifiers, function(idx,value) {
+               res += sep + value; sep ="<br>";
+            });
+          }
+          return res;
+        },
+        headerMenu: hideMenu
       },
       {
         title: "User Verif.",
@@ -239,6 +286,7 @@ $(function() {
           ]
         },
         headerFilterFunc: filterUserVerifs,
+        headerMenu: hideMenu,
         sorter: "array"
       },
       {
@@ -262,6 +310,7 @@ $(function() {
             "ready"
           ]
         },
+        headerMenu: hideMenu,
         sorter: "array"
       },
       {
@@ -282,6 +331,7 @@ $(function() {
             "remote_handle"
           ]
         },
+        headerMenu: hideMenu,
         sorter: "array"
       },
       {
@@ -293,11 +343,13 @@ $(function() {
           return res;
         },
         headerFilter: true,
+        headerMenu: hideMenu,
         sorter: "array"
       },
       {
         title: "Updated",
         field: "timeOfLastStatusChange",
+        headerMenu: hideMenu,
         sorter: "string"
       }
     ],
