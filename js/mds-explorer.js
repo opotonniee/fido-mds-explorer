@@ -287,6 +287,7 @@ $(function() {
         },
         headerFilterFunc: filterUserVerifs,
         headerMenu: hideMenu,
+        visible: false,
         sorter: "array"
       },
       {
@@ -311,6 +312,7 @@ $(function() {
           ]
         },
         headerMenu: hideMenu,
+        visible: false,
         sorter: "array"
       },
       {
@@ -332,6 +334,7 @@ $(function() {
           ]
         },
         headerMenu: hideMenu,
+        visible: false,
         sorter: "array"
       },
       {
@@ -344,6 +347,7 @@ $(function() {
         },
         headerFilter: true,
         headerMenu: hideMenu,
+        visible: false,
         sorter: "array"
       },
       {
@@ -363,6 +367,13 @@ $(function() {
     } else if (event.state && event.state.authr) {
       showAuthr(event.state.authr);
     }
+  });
+
+  $("#show-all").on("click", () => {
+    for (let c of table.getColumns()) {
+      c.show();
+    }
+    return false;
   });
 
   let searchedAuthr;
