@@ -155,6 +155,18 @@ function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
   return isMatchingFilter(headerValue, values);
 }
 
+function filterIds(headerValue, rowValue/*, rowData, filterParams*/) {
+  let res;
+  if (rowValue.protocolFamily == "fido2") {
+    res = isMatchingFilter(headerValue, rowValue.aaguid);
+  } else if (rowValue.protocolFamily == "uaf") {
+    res = isMatchingFilter(headerValue, rowValue.aaid);
+  } else if (rowValue.protocolFamily == "u2f") {
+    res = isMatchingFilter(headerValue, rowValue.attestationCertificateKeyIdentifiers);
+  }
+ return res;
+}
+
 function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   let values = [];
   for (let val1 of rowValue) {
@@ -280,6 +292,7 @@ ready(() => {
           }
           return res;
         },
+        headerFilterFunc: filterIds,
         headerMenu: hideMenu
       },
       {
