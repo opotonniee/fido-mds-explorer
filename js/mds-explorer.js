@@ -180,7 +180,7 @@ ready(() => {
     {
       label: "Hide Column",
       action: function (e, column) {
-        column.hidden = true;
+        column.hide();
       }
     }
   ];
