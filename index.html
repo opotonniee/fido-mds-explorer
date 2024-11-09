@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no">
   <title>FIDO MDS Explorer</title>
   <meta name="description" content="Online FIDO MDS parser and reader">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="css/tabulator.min.css" rel="stylesheet">
   <script src="js/tabulator.min.js"></script>
   <link rel="stylesheet" href="css/mds-explorer.css">
@@ -33,20 +32,25 @@
     </span>
   </h1>
 
-  <div id="mds-loading"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Loadingsome.gif/600px-Loadingsome.gif" alt="loading icon"></div>
-  <div id="mds-error" class="error">
+  <div id="mds-loading">Loading...</div>
+  <div id="mds-error" class="error" hidden>
     <h2>Error</h2>
     Failed to load the MDS blob :(
   </div>
 
-  <div id="mds">
+  <div id="mds" hidden>
     <span class="last-update">MDS data updated on <a href="https://github.com/opotonniee/fido-mds-explorer/commits/main/js/mds.js"><span id="last-update-date"></span></a></span>
     <h2>List of registered authenticators</h2>
-    <p>Click on authenticator name to view details - <a id="show-all" href="#">Show all columns</a></p>
+    <p>Click on authenticator name to view details - Show columns:
+      <select id="shown-columns">
+        <option value="few">Few</option>
+        <option value="all">All</option>
+      </select>
+    </p>
     <div id="mds-table"></div>
   </div>
 
-  <div id="authr">
+  <div id="authr" hidden>
     <h3>
       <span id="authr-close" class="clickable">⬅ BACK</span>
     </h3>

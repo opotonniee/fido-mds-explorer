@@ -18,6 +18,28 @@ function imageTag(src) {
   return src ? "<img src='" + src + "'>" : "";
 }
 
+// --- DOM/JS helper
+
+function e(selector) {
+  return document.querySelector(selector);
+}
+
+function newE(tag, attributes, html) {
+  let el = document.createElement(tag);
+  for (let a in attributes) {
+    el.a = attributes[a];
+  }
+  el.innerHTML = html;
+  return el;
+}
+
+const ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+}
+
+// ---
+
 function certificate(obj) {
   let certHtml = "<li><ul>";
   try {
@@ -100,10 +122,10 @@ function stringify(obj) {
 
 
 function showAuthr(json) {
-  $("#mds").hide();
-  $("#authr").show();
-  $("#authr-name").text(json.metadataStatement.description);
-  $("#authr-json").html(stringify(json));
+  e("#mds").hidden = true;
+  e("#authr").hidden = false;
+  e("#authr-name").innerText = json.metadataStatement.description;
+  e("#authr-json").innerHTML = stringify(json);
 }
 
 function clickAuthr(e, cell) {
@@ -111,7 +133,7 @@ function clickAuthr(e, cell) {
   history.pushState({"authr": cell.getData()}, "View", "#view");
 }
 
-$("#authr-close").click(function() {
+e("#authr-close").addEventListener("click", function() {
   history.back();
 });
 
@@ -127,44 +149,45 @@ function isMatchingFilter(headerValue, values) {
 
 function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
   let values = [];
-  $.each(rowValue, function(idx, val) {
+  for (let val of rowValue) {
     values.push(val.status);
-  });
+  }
   return isMatchingFilter(headerValue, values);
 }
 
 function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   let values = [];
-  $.each(rowValue, function(idx1, val1) {
-    $.each(val1, function(idx2, val2) {
+  for (let val1 of rowValue) {
+    for (let val2 of val1) {
       values.push(val2.userVerificationMethod);
-    });
-  });
+    }
+  }
   return isMatchingFilter(headerValue, values);
 }
 
-$(function() {
+ready(() => {
 
   console.log(mdsJson);
 
-  $("#mds-loading").hide();
+  e("#mds-loading").hidden = true;
   if (LAST_MDS_UPDATE) {
-    $("#last-update-date").text(LAST_MDS_UPDATE);
-    $(".last-update").show();
+    e("#last-update-date").innerText = LAST_MDS_UPDATE;
+    e(".last-update").hidden = false;
   }
-  $("#mds").show();
+  e("#mds").hidden = false;
   // build authenticators table
   let hideMenu = [
     {
       label: "Hide Column",
       action: function (e, column) {
-        column.hide();
+        column.hidden = true;
       }
     }
   ];
+
   table = new Tabulator("#mds-table", {
     data: mdsJson.entries,
-    layout: "fitDataTable",
+    layout: "fitData",
     selectable: false,
     movableColumns: true,
     //responsiveLayout: "collapse",
@@ -208,7 +231,7 @@ $(function() {
         field: "statusReports",
         formatter: function(cell/*, formatterParams, onRendered*/){
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) { res += sep + value.status; sep ="<br>"; });
+          for (let value of cell.getValue() || []) { res += sep + value.status; sep ="<br>"; }
           return res;
         },
         headerFilter: "list",
@@ -251,9 +274,9 @@ $(function() {
             res = item.aaid;
           } else if (item.protocolFamily == "u2f") {
             res = "";
-            $.each(item.attestationCertificateKeyIdentifiers, function(idx,value) {
-               res += sep + value; sep ="<br>";
-            });
+            for (let value of item.attestationCertificateKeyIdentifiers) {
+              res += sep + value; sep ="<br>";
+            }
           }
           return res;
         },
@@ -264,7 +287,11 @@ $(function() {
         field: "metadataStatement.userVerificationDetails",
         formatter: function(cell/*, formatterParams, onRendered*/){
           let res = "", sep="";
-          $.each(cell.getValue(), function(il,line) { $.each(line, function(ii,value) {res += sep + value.userVerificationMethod; sep ="<br>"; }); });
+          for (let line of cell.getValue() || []) {
+            for (let value of line) {
+              res += sep + value.userVerificationMethod; sep ="<br>";
+            }
+          }
           return res;
         },
         headerFilter: "list",
@@ -295,7 +322,7 @@ $(function() {
         field: "metadataStatement.attachmentHint",
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
+          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
           return res;
         },
         headerFilter: "list",
@@ -316,11 +343,34 @@ $(function() {
         sorter: "array"
       },
       {
+        title: "Transports",
+        field: "metadataStatement.authenticatorGetInfo.transports",
+        formatter: function(cell/*, formatterParams, onRendered*/) {
+          let res = "", sep="";
+          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
+          return res;
+        },
+        headerFilter: "list",
+        headerFilterParams: {
+          values: [
+            "usb",
+            "nfc",
+            "ble",
+            "smart-card",
+            "hybrid",
+            "internal"
+          ]
+        },
+        headerMenu: hideMenu,
+        visible: false,
+        sorter: "array"
+      },
+      {
         title: "Key Protection",
         field: "metadataStatement.keyProtection",
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
+          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
           return res;
         },
         headerFilter: "list",
@@ -342,7 +392,7 @@ $(function() {
         field: "metadataStatement.authenticationAlgorithms",
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let res = "", sep="";
-          $.each(cell.getValue(), function(idx,value) { res += sep + value; sep ="<br>"; });
+          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
           return res;
         },
         headerFilter: true,
@@ -360,20 +410,17 @@ $(function() {
     footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
   });
 
+  function showColumnsSelector(show) {
+    e("#shown-columns").disabled = !show;
+  }
+
   window.addEventListener('popstate', (event) => {
-    if ($("#authr").is(":visible")) {
-      $("#mds").show();
-      $("#authr").hide();
+    if (e("#authr").checkVisibility()) {
+      e("#mds").hidden = false;
+      e("#authr").hidden = true;
     } else if (event.state && event.state.authr) {
       showAuthr(event.state.authr);
     }
-  });
-
-  $("#show-all").on("click", () => {
-    for (let c of table.getColumns()) {
-      c.show();
-    }
-    return false;
   });
 
   let searchedAuthr;
@@ -403,7 +450,48 @@ $(function() {
       window.location = "."
     }
   } else {
-    // refresh UI so that icons column is properly sized
-    setTimeout(function() { table.redraw(true); }, 500);
+    // refresh so that icons column is properly sized
+    table.on("tableBuilt", function() {
+      table.redraw(true);
+
+      let hidableColumns = [];
+
+      for (let c of table.getColumns()) {
+        if (c.getDefinition()["visible"] === false) {
+          let title = c.getDefinition().title;
+          hidableColumns[title] = c;
+          e("#shown-columns").append(newE("option", { value: title }, title));
+        }
+      }
+
+      e("#shown-columns").addEventListener("change", () => {
+        let selected = e("#shown-columns").selectedOptions[0].value;
+        if (selected == "few") {
+          showColumnsSelector(false);
+          // Hide hidable columns
+          setTimeout(() => {
+            for (let c in hidableColumns) {
+              hidableColumns[c].hide();
+            }
+            table.redraw();
+            showColumnsSelector(true);
+          }, 10);
+        } else if (selected == "all") {
+          // Show all columns
+          showColumnsSelector(false);
+          setTimeout(() => {
+            for (let c of table.getColumns()) {
+              c.show();
+            }
+            table.redraw();
+            showColumnsSelector(true);
+          }, 10);
+        } else {
+          // Show selected columns
+          hidableColumns[selected].show();
+        }
+      });
+
+    });
   }
 });

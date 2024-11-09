@@ -68,6 +68,11 @@ input[type=password] {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+#mds-loading {
+  margin: 30px 10px;
+  font-size: 150%;
+}
+
 button:active {
   color: white;
 }
@@ -137,9 +142,7 @@ pre {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
-#authr, #mds, #mds-error {
-  display: none;
-}
+
 .vendor {
   font-style: italic;
   color: #555;
