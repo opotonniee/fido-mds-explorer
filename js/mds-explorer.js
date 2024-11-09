@@ -1,5 +1,5 @@
 'use strict';
-/* globals $, x509, mdsJson, Tabulator, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, Tabulator, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
