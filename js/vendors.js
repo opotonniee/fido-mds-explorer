@@ -8,90 +8,27 @@
 const vendors = {
 
   // extracted
-  "0010": "Sharp",
-  "0011": "FUJITSU CONNECTED TECHNOLOGIES LIMITED",
-  "0012": "RaonSecure Co., Ltd.",
-  "0013": "ETRI",
-  "0014": "CrucialTec",
-  "0015": "Egis Technology Inc.",
-  "0016": "Sensory, Inc.",
-  "0019": "GOTRUSTID Inc.",
-  "001B": "Huawei Device Co., Ltd.",
-  "001D": "Shenzhen National Engineering Laboratory of Digital Television  Co.,Ltd.",
-  "001F": "EyeVerify, Inc.",
-  "0020": "Dream Security Co., Ltd. Korea",
-  "0024": "Giesecke & Devrient",
-  "0027": "Secuve Co., Ltd.",
-  "0028": "SGA Solutions",
-  "002A": "Coolpad Group Limited",
-  "002C": "KT",
-  "002E": "Hancom WITH",
-  "0032": "Open Security Research",
-  "0033": "Tobesmart",
-  "0037": "Queralt Inc.",
-  "0038": "Redrock Biometrics, Inc.",
-  "0039": "Lightfactor",
-  "003A": "LG Uplus Corp.",
-  "003B": "",
-  "003D": "IsItYou, Ltd.",
-  "003F": "thinkAT",
-  "0040": "Highmaru Inc.",
-  "0041": "Gallagher North America Inc.",
-  "0042": "SsenStone",
-  "0043": "KICA Inc.",
-  "0044": "NBREDS Inc",
-  "0045": "HYPR",
-  "0048": "IRISYS CO.,Ltd.",
-  "0049": "HYUNDAI MOTOR GROUP",
-  "004A": "Uni-ID Technology (Beijing) Co.,Ltd",
-  "004B": "Ji Nan Sheng An Information Technology Co., Ltd",
-  "004D": "China Financial Certification Authority",
-  "004F": "Meizu Technology Co., Ltd.",
-  "0050": "Visionlabs LLC",
-  "0051": "Dayside, Inc.",
-  "0052": "i-Sprint Innovations Pte Ltd",
-  "0054": "IoTrust Co., Ltd",
-  "0056": "PixelPin Ltd.",
-  "0057": "Mobile-ID Technologies And Services Joint Stock Company",
-  "0059": "AIDEEP Co., Ltd.",
-  "005A": "AirCUVE",
-  "005B": "Rowem Inc",
-  "005C": "Penta Security Systems Inc.",
-  "005D": "Octatco",
-  "0062": "FUJITSU LIMITED",
-  "0075": "Tangem AG",
-  "0076": "Changing Information Technology Inc.",
-  "0077": "UbiNtisLab Co.,Ltd.",
-  "0079": "vivo Mobile Communication Co.,Ltd.",
-  "0080": "CybrSecurity Corporation",
-  "0081": "Honor Device Co., Ltd.",
-  "0083": "Hyweb Global Technology Co. Ltd",
-  "0085": "CyberLink Corp.",
-  "0087": "Wultra s.r.o.",
-  "008A": "Tendyron Corporation",
-  "0090": "CORETECH KNOWLEDGE INC.",
-  "0091": "Starfish GmbH",
-  "0093": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
-  "0261": "TWCA",
-  "0262": "TD Tech Ltd",
-  "0263": "Presidio Identity",
-  "096E": "Feitian Technologies Co., Ltd.",
-  "1111": "SK Planet",
-  "2E84": "MOTOROLA mobile technology (wuhan) communications co., LTD",
-  "4359": "Cypress",
-  "4746": "Shenzhen Goodix Technology Co., Ltd",
-  "4D48": "Safran Identity & Security",
-  "4E4E": "Nok Nok Labs",
-  "5143": "Qualcomm Technologies, Inc.",
-  "53D5": "Samsung SDS",
-  "565A": "Verizon",
-  "5AFE": "Synaptics Incorporated",
-  "9874": "ING",
-  "AD10": "Plantronics, Inc.",
-  "BD51": "OneSpan",
-  "CD01": "SK Telecom",
-  "D409": "Daon",
-  "FACE": "FaceTec",
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    <title>Caspio is down for maintenance</title>
+</head>
+<body>
+    <div class="maintenance">
+        <div class="maintenance__info">
+            <h4 class="maintenance__header">Caspio is down for maintenance</h4>
+            <p class="maintenance__text">
+                We will be up and running in no time, stronger than ever!! You can check our status <a class="maintenance__link" target="_blank" href="https://twitter.com/caspiostatus">on Twitter</a>.
+            </p>
+        </div>
+        <img class="maintenance__image" src="maintanance.svg" alt="Caspio_maintenance_image" />
+    </div>
+</body>
+</html>
 
   // manual
   "0017": "LGE",
