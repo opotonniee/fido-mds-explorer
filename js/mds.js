@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 115,
+  "no": 116,
   "nextUpdate": "2024-12-01",
   "entries": [
     {
@@ -4985,7 +4985,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1",
-        "description": "YubiKey 5 FIPS Series with NFC",
+        "description": "YubiKey 5 FIPS Series with NFC (RC Preview)",
         "authenticatorVersion": 329476,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -11087,11 +11087,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-07"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-07-18",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)",
+          "certificateNumber": "FIDO20020220718002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-07-18",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2024-11-07"
+      "timeOfLastStatusChange": "2024-11-19"
     },
     {
       "aaguid": "2a55aee6-27cb-42c0-bc6e-04efe999e88a",
@@ -15670,7 +15680,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d2fbd093-ee62-488d-9dad-1e36389f8826",
-        "description": "YubiKey 5 FIPS Series",
+        "description": "YubiKey 5 FIPS Series (RC Preview)",
         "authenticatorVersion": 329476,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -19119,7 +19129,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9e66c661-e428-452a-a8fb-51f7ed088acf",
-        "description": "YubiKey 5 FIPS Series with Lightning",
+        "description": "YubiKey 5 FIPS Series with Lightning (RC Preview)",
         "authenticatorVersion": 329476,
         "protocolFamily": "fido2",
         "schema": 3,
