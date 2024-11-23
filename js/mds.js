@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 117,
+  "no": 118,
   "nextUpdate": "2024-12-01",
   "entries": [
     {
@@ -2804,12 +2804,12 @@ let mdsJson={
           }
         ],
         "authenticationAlgorithms": [
-          "rsassa_pkcsv15_sha256_raw",
-          "secp256r1_ecdsa_sha256_raw"
+          "secp256r1_ecdsa_sha256_raw",
+          "rsassa_pss_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
-          "ecc_x962_raw",
-          "cose"
+          "cose",
+          "ecc_x962_raw"
         ],
         "attestationTypes": [
           "basic_full"
@@ -2817,17 +2817,13 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            }
-          ],
-          [
-            {
               "userVerificationMethod": "passcode_external"
-            }
-          ],
-          [
+            },
             {
               "userVerificationMethod": "fingerprint_internal"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -2862,11 +2858,14 @@ let mdsJson={
             "rk": true,
             "clientPin": true,
             "up": true,
-            "uv": true,
+            "uv": false,
             "pinUvAuthToken": true,
+            "authnrCfg": true,
+            "uvAcfg": true,
             "credMgmt": true,
-            "makeCredUvNotRqd": false,
-            "alwaysUv": true
+            "setMinPINLength": true,
+            "makeCredUvNotRqd": true,
+            "alwaysUv": false
           },
           "maxMsgSize": 1024,
           "pinUvAuthProtocols": [
@@ -2874,7 +2873,9 @@ let mdsJson={
             2
           ],
           "transports": [
-            "ble"
+            "ble",
+            "nfc",
+            "usb"
           ],
           "algorithms": [
             {
@@ -2883,14 +2884,14 @@ let mdsJson={
             },
             {
               "type": "public-key",
-              "alg": -257
+              "alg": -37
             }
           ],
           "forcePINChange": true,
           "minPINLength": 4,
-          "firmwareVersion": 1,
+          "firmwareVersion": 2,
           "preferredPlatformUvAttempts": 8,
-          "uvModality": 3
+          "uvModality": 2051
         }
       },
       "statusReports": [
