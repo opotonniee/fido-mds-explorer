@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 118,
+  "no": 119,
   "nextUpdate": "2024-12-01",
   "entries": [
     {
@@ -6783,11 +6783,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-15"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5,
+          "certificationDescriptor": "eToken Fusion NFC FIPS",
+          "certificateNumber": "FIDO20020241023001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5
         }
       ],
-      "timeOfLastStatusChange": "2024-11-15"
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "aaid": "0066#0002",
@@ -14093,11 +14103,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-15"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5,
+          "certificationDescriptor": "eToken Fusion FIPS",
+          "certificateNumber": "FIDO20020241023002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5
         }
       ],
-      "timeOfLastStatusChange": "2024-11-15"
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "aaguid": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
@@ -19876,11 +19896,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-30"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-11-25",
+          "authenticatorVersion": 2,
+          "certificationDescriptor": "Token Ring 3 FIDO2 Authenticator",
+          "certificateNumber": "U2F100020241125001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-25",
+          "authenticatorVersion": 2
         }
       ],
-      "timeOfLastStatusChange": "2024-08-30"
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9b",
@@ -21218,11 +21248,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-30"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-11-25",
+          "authenticatorVersion": 2,
+          "certificationDescriptor": "Token Ring 3 FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020241125001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-25",
+          "authenticatorVersion": 2
         }
       ],
-      "timeOfLastStatusChange": "2024-08-30"
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "aaguid": "5ca1ab1e-1337-fa57-f1d0-a117e71ca702",
