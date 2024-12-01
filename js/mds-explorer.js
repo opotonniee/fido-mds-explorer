@@ -252,7 +252,8 @@ ready(() => {
             "NOT_FIDO_CERTIFIED",
             "FIDO_CERTIFIED",
             "FIDO_CERTIFIED_L1",
-            "FIDO_CERTIFIED_L2"
+            "FIDO_CERTIFIED_L2",
+            "FIDO_CERTIFIED_L3"
           ]
         },
         sorter: "array",
@@ -423,6 +424,11 @@ ready(() => {
     footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
   });
 
+  e("#table-size").innerText = mdsJson.entries.length;
+  table.on("dataFiltered", function (filters, rows) {
+    e("#table-size").innerText = rows.length;
+  });
+
   function showColumnsSelector(show) {
     e("#shown-columns").disabled = !show;
   }
@@ -473,7 +479,7 @@ ready(() => {
         if (c.getDefinition()["visible"] === false) {
           let title = c.getDefinition().title;
           hidableColumns[title] = c;
-          e("#shown-columns").append(newE("option", { value: title }, title));
+          e("#shown-columns").append(newE("option", { value: title }, "+ " + title));
         }
       }
 
