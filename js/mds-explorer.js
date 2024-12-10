@@ -27,7 +27,7 @@ function e(selector) {
 function newE(tag, attributes, html) {
   let el = document.createElement(tag);
   for (let a in attributes) {
-    el.a = attributes[a];
+    el.setAttribute(a, attributes[a]);
   }
   el.innerHTML = html;
   return el;
