@@ -508,6 +508,8 @@ ready(() => {
         } else {
           // Show selected columns
           hidableColumns[selected].show();
+          // the new column may change row height
+          table.redraw();
         }
       });
 
