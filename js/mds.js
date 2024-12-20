@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 121,
+  "no": 122,
   "nextUpdate": "2025-01-01",
   "entries": [
     {
@@ -25175,6 +25175,119 @@ let mdsJson={
         }
       ],
       "timeOfLastStatusChange": "2023-03-29"
+    },
+    {
+      "aaguid": "70e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaguid": "70e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
+        "description": "OneKey FIDO2 Bluetooth Authenticator",
+        "authenticatorVersion": 5,
+        "protocolFamily": "fido2",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 0
+          },
+          {
+            "major": 1,
+            "minor": 1
+          }
+        ],
+        "authenticationAlgorithms": [
+          "secp256r1_ecdsa_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "cose"
+        ],
+        "attestationTypes": [
+          "basic_full",
+          "basic_surrogate"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_internal"
+            }
+          ]
+        ],
+        "keyProtection": [
+          "hardware",
+          "secure_element"
+        ],
+        "matcherProtection": [
+          "on_chip"
+        ],
+        "cryptoStrength": 128,
+        "attachmentHint": [
+          "external",
+          "wired",
+          "bluetooth"
+        ],
+        "tcDisplay": [],
+        "attestationRootCertificates": [
+          "MIICmDCCAj6gAwIBAgIIUO3rVZw+YIwwCgYIKoZIzj0EAwIwgZcxCzAJBgNVBAYTAkNOMRAwDgYDVQQIEwdCRUlKSU5HMRAwDgYDVQQHEwdIQUlESUFOMR8wHQYDVQQKExZPTkVLRVkgR0xPQkFMIENPLiwgTFREMQ8wDQYDVQQLEwZPTkVLRVkxFDASBgNVBAMTC09ORUtFWSBST09UMRwwGgYJKoZIhvcNAQkBFg1kZXZAb25la2V5LnNvMB4XDTIzMTEwNzAzNTEwMFoXDTMzMTEwNzAzNTEwMFowgZcxCzAJBgNVBAYTAkNOMRAwDgYDVQQIEwdCRUlKSU5HMRAwDgYDVQQHEwdIQUlESUFOMR8wHQYDVQQKExZPTkVLRVkgR0xPQkFMIENPLiwgTFREMQ8wDQYDVQQLEwZPTkVLRVkxFDASBgNVBAMTC09ORUtFWSBST09UMRwwGgYJKoZIhvcNAQkBFg1kZXZAb25la2V5LnNvMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEA9vMLJQDmnzfTfCEE33YE+NR6hZrxyz9TFoEk6Uo9xS7xu8xNge5/MnTg3EXwfdJiMQUdXHHt3cWAEGM9qbsJKNyMHAwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUZcufSzWAmVAJttArVQrbGgVF/ukwCwYDVR0PBAQDAgEGMBEGCWCGSAGG+EIBAQQEAwIABzAeBglghkgBhvhCAQ0EERYPeGNhIGNlcnRpZmljYXRlMAoGCCqGSM49BAMCA0gAMEUCIQCDFBXMKEWPdwFcyZsDC7ueQSKB5BlrgyM6KjWDWRv6JAIgH8WIJNhZqVfc1LYiI+ITHY/Pl9C5BoAVUov7vNpwGO0="
+        ],
+        "icon": "data:image/png;base64,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",
+        "authenticatorGetInfo": {
+          "versions": [
+            "U2F_V2",
+            "FIDO_2_0"
+          ],
+          "extensions": [
+            "hmac-secret"
+          ],
+          "aaguid": "70e7c36ff2f69e0d07a6bcc243262e6b",
+          "options": {
+            "rk": true,
+            "up": true,
+            "uv": true
+          },
+          "maxMsgSize": 1024,
+          "pinUvAuthProtocols": [
+            1
+          ],
+          "maxCredentialCountInList": 10,
+          "maxCredentialIdLength": 512,
+          "transports": [
+            "usb",
+            "ble"
+          ],
+          "algorithms": [
+            {
+              "type": "public-key",
+              "alg": -7
+            }
+          ],
+          "firmwareVersion": 5
+        }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-16"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-12-16"
     },
     {
       "attestationCertificateKeyIdentifiers": [
