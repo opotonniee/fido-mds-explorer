@@ -23,7 +23,7 @@ h1 {
 
 h2 {
   width: 100%;
-  margin: 10px 0 10px -15px;
+  margin: 10px 0 10px -5px;
   padding: 5px;
   background-color: lightgray;
   border-bottom: 1px solid black;
@@ -167,4 +167,9 @@ footer {
 #authr-json img {
   max-width: 100px;
   max-height: 100px;
+}
+#authr li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

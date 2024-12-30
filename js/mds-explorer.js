@@ -38,6 +38,10 @@ const ready = (callback) => {
   else document.addEventListener("DOMContentLoaded", callback);
 }
 
+const cpy = typeof navigator.clipboard?.writeText === "function" ?
+  "<span title='Copy to clipboard' class='cpy'>📋</span>" : "";
+
+
 // ---
 
 function certificate(obj) {
@@ -87,7 +91,7 @@ function stringify(obj) {
   } else if (type(obj) === "Array") {
     return '<ol>' + obj.map(function (o) { return "<li>" + stringify(o) + "</li>\n"; }).join("") + '</ol>\n';
   } else if (type(obj)  === "ArrayBuffer") {
-    return [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('');
+    return cpy + "<span>" + [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('') + "</span>";
   } else if (type(obj) === "Object") {
     var result = [];
     Object.keys(obj).forEach(function (key) {
@@ -126,6 +130,17 @@ function showAuthr(json) {
   e("#authr").hidden = false;
   e("#authr-name").innerText = json.metadataStatement.description;
   e("#authr-json").innerHTML = stringify(json);
+  for (let item of document.querySelectorAll(".cpy")) {
+    item.addEventListener("click",(event) => {
+      let elt = event.target.nextSibling;
+      let v = elt.textContent;
+      navigator.clipboard.writeText(v);
+      elt.textContent = "Copied to clipboard..."
+      setTimeout(() => {
+        elt.textContent = v;
+      }, 2000);
+    });
+  }
 }
 
 function clickAuthr(e, cell) {
