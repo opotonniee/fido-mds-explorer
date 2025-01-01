@@ -1,7 +1,7 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 124,
-  "nextUpdate": "2025-01-01",
+  "no": 125,
+  "nextUpdate": "2025-02-01",
   "entries": [
     {
       "aaguid": "fcb1bcb4-f370-078c-6993-bc24d0ae3fbe",
