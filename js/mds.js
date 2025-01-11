@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 127,
+  "no": 128,
   "nextUpdate": "2025-02-01",
   "entries": [
     {
@@ -3993,11 +3993,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico",
+          "certificateNumber": "FIDO20020241222008",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
@@ -4777,11 +4787,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -5880,11 +5900,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "99ed6c29-4573-4847-816d-78ad8f1c75ef",
@@ -6279,11 +6309,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
+          "certificateNumber": "U2F100020241222009",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
@@ -11958,11 +11998,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241221001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -13807,11 +13857,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
+          "certificateNumber": "FIDO20020241222009",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -14272,11 +14332,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-14"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC",
+          "certificateNumber": "FIDO20020241221002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-14"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
@@ -19690,11 +19760,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with NFC",
+          "certificateNumber": "FIDO20020241222006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "9f0d8150-baa5-4c00-9299-ad62c8bb4e87",
@@ -22738,11 +22818,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-15"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-11-07",
+          "authenticatorVersion": 6,
+          "certificationDescriptor": "eToken Fusion NFC PIV",
+          "certificateNumber": "FIDO20020241107001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-07",
+          "authenticatorVersion": 6
         }
       ],
-      "timeOfLastStatusChange": "2024-11-15"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -24848,11 +24938,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241221006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
@@ -26925,11 +27025,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241221004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -28283,11 +28393,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with NFC",
+          "certificateNumber": "U2F100020241222006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "70e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
@@ -28631,11 +28751,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with NFC (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "504d7149-4e4c-3841-4555-55445a677357",
@@ -30095,11 +30225,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-14"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series",
+          "certificateNumber": "FIDO20020241221003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-14"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
@@ -30505,11 +30645,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with Lightning (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "30b5035e-d297-4ff1-010b-addc96ba6a98",
@@ -31234,11 +31384,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with Lightning",
+          "certificateNumber": "FIDO20020241222007",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "42df17de-06ba-4177-a2bb-6701be1380d6",
@@ -33279,11 +33439,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series",
+          "certificateNumber": "FIDO20020241222005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "ba86dc56-635f-4141-aef6-00227b1b9af6",
@@ -34416,11 +34586,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-12"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico",
+          "certificateNumber": "U2F100020241222008",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-12"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaid": "006F#0001",
@@ -35481,11 +35661,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-15"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning",
+          "certificateNumber": "FIDO20020241221005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-15"
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "aaguid": "7991798a-a7f3-487f-98c0-3faf7a458a04",
