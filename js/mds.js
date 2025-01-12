@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 128,
+  "no": 129,
   "nextUpdate": "2025-02-01",
   "entries": [
     {
@@ -18308,11 +18308,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
+          "certificateNumber": "U2F100020241222004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-11"
     },
     {
       "aaguid": "d2fbd093-ee62-488d-9dad-1e36389f8826",
