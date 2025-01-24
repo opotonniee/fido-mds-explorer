@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 130,
+  "no": 131,
   "nextUpdate": "2025-02-01",
   "entries": [
     {
@@ -17938,11 +17938,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-05-26"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2025-01-16",
+          "authenticatorVersion": 10,
+          "certificationDescriptor": "cryptovision ePasslet Suite FIDO Authenticator v1.0",
+          "certificateNumber": "FIDO20020250116002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-16",
+          "authenticatorVersion": 10
         }
       ],
-      "timeOfLastStatusChange": "2024-05-26"
+      "timeOfLastStatusChange": "2025-01-23"
     },
     {
       "aaguid": "bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a",
@@ -36050,11 +36060,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-20"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2025-01-13",
+          "authenticatorVersion": 262144,
+          "certificationDescriptor": "HID Crescendo Key V3",
+          "certificateNumber": "FIDO20020250113001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-13",
+          "authenticatorVersion": 262144
         }
       ],
-      "timeOfLastStatusChange": "2024-12-20"
+      "timeOfLastStatusChange": "2025-01-23"
     },
     {
       "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
