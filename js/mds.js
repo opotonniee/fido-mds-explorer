@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 132,
+  "no": 133,
   "nextUpdate": "2025-02-01",
   "entries": [
     {
@@ -21230,11 +21230,21 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2025-01-14"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-12-30",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "GSTAG OAK FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020241230001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-30",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2025-01-14"
+      "timeOfLastStatusChange": "2025-01-29"
     },
     {
       "aaid": "0056#0002",
