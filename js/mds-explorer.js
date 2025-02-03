@@ -45,7 +45,7 @@ const cpy = typeof navigator.clipboard?.writeText === "function" ?
 // ---
 
 function certificate(obj) {
-  let certHtml = "<li><ul>";
+  let certHtml = "<ul>";
   try {
     obj = obj.replace(/[ \r\n]/gm, ''); // discard spaces and line breaks
 
@@ -71,7 +71,7 @@ function certificate(obj) {
   } catch (error) {
     certHtml += error;
   }
-  certHtml += "</ul></li>";
+  certHtml += "</ul>";
   return certHtml;
 }
 
@@ -105,7 +105,9 @@ function stringify(obj) {
 
       // Certificates
       } else if (key == "attestationRootCertificates") {
-        val = '<ol>' + obj[key].map(function (o) { return certificate(o); }).join("") + '</ol>\n';
+        val = '<ol>' + obj[key].map(function (o) { return "<li>" + certificate(o) + "</li>"; }).join("") + '</ol>\n';
+      } else if ((key == "certificate") || (key == "batchCertificate")) {
+        val = certificate(obj[key]) + '\n';
 
       // AAID
       } else if (key == "aaid") {
@@ -436,7 +438,7 @@ ready(() => {
         sorter: "string"
       }
     ],
-    footerElement: "<span>Next MDS update is planned on " + mdsJson.nextUpdate + " - " + mdsJson.legalHeader + "</span>"
+    footerElement: `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`
   });
 
   e("#table-size").innerText = mdsJson.entries.length;
