@@ -134,13 +134,16 @@ function showAuthr(json) {
   e("#authr-json").innerHTML = stringify(json);
   for (let item of document.querySelectorAll(".cpy")) {
     item.addEventListener("click",(event) => {
-      let elt = event.target.nextSibling;
+      const COPIED = "Copied to clipboard...";
+      let elt = event.target.parentNode.querySelector(".buffer");
       let v = elt.textContent;
-      navigator.clipboard.writeText(v);
-      elt.textContent = "Copied to clipboard..."
-      setTimeout(() => {
-        elt.textContent = v;
-      }, 2000);
+      if (v != COPIED) {
+        elt.textContent = COPIED;
+        navigator.clipboard.writeText(v);
+        setTimeout(() => {
+          elt.textContent = v;
+        }, 2000);
+      }
     });
   }
 }
