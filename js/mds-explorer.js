@@ -91,7 +91,7 @@ function stringify(obj) {
   } else if (type(obj) === "Array") {
     return '<ol>' + obj.map(function (o) { return "<li>" + stringify(o) + "</li>\n"; }).join("") + '</ol>\n';
   } else if (type(obj)  === "ArrayBuffer") {
-    return cpy + "<span>" + [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('') + "</span>";
+    return cpy + " <span class='buffer'>" + [...new Uint8Array(obj)].map(x => x.toString(16).padStart(2, '0')).join('') + "</span>";
   } else if (type(obj) === "Object") {
     var result = [];
     Object.keys(obj).forEach(function (key) {

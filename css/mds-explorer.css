@@ -168,8 +168,10 @@ footer {
   max-width: 100px;
   max-height: 100px;
 }
-#authr li {
-  white-space: nowrap;
+.buffer {
   overflow: hidden;
   text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 95%;
+  vertical-align: bottom;
 }
