@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 136,
+  "no": 137,
   "nextUpdate": "2025-03-01",
   "entries": [
     {
@@ -5756,7 +5756,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ad08c78a-4e41-49b9-86a2-ac15b06899e2",
-        "description": "YubiKey Bio Series ",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 329476,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -6240,7 +6240,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "fcb86e019086d4008f647698194a1f63644f521d"
         ],
-        "description": "YubiKey Bio FIDO Edition",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -6287,6 +6287,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474,
+          "certificationDescriptor": "YubiKey Bio FIDO Edition",
+          "certificateNumber": "U2F100020250201009",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
           "authenticatorVersion": 329474,
@@ -6301,7 +6310,7 @@ let mdsJson={
           "authenticatorVersion": 329474
         }
       ],
-      "timeOfLastStatusChange": "2024-08-13"
+      "timeOfLastStatusChange": "2025-02-07"
     },
     {
       "aaguid": "973446ca-e21c-9a9b-99f5-9b985a67af0f",
@@ -10435,7 +10444,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "716c16ce2140b72fe0b8c18dcfb2a78997d09715"
         ],
-        "description": "YubiKey Bio Series (Enterprise Profile)",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 329476,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -10624,7 +10633,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee",
-        "description": "YubiKey Bio Series (Enterprise Profile)",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -12503,7 +12512,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "786544772ecc9d3e85049222ae33226345b59c69"
         ],
-        "description": "YubiKey Bio Series",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 328965,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -16507,7 +16516,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
-        "description": "YubiKey Bio Series",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -21075,7 +21084,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "dd86a2da-86a0-4cbe-b462-4bd31f57bc6f",
-        "description": "YubiKey Bio FIDO Edition",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -21250,6 +21259,15 @@ let mdsJson={
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474,
+          "certificationDescriptor": "YubiKey Bio FIDO Edition",
+          "certificateNumber": "FIDO20020250201009",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
           "authenticatorVersion": 329474,
@@ -21264,7 +21282,7 @@ let mdsJson={
           "authenticatorVersion": 329474
         }
       ],
-      "timeOfLastStatusChange": "2024-08-13"
+      "timeOfLastStatusChange": "2025-02-07"
     },
     {
       "aaid": "4e4e#4009",
@@ -21886,7 +21904,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "83c47309-aabb-4108-8470-8be838b573cb",
-        "description": "YubiKey Bio Series (Enterprise Profile)",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -24024,7 +24042,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "0ff1d1306adc8dfba5fd5921fab0ec161f1b12bb"
         ],
-        "description": "YubiKey Bio Series",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 329476,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -24341,7 +24359,7 @@ let mdsJson={
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7409272d-1ff9-4e10-9fc9-ac0019c124fd",
-        "description": "YubiKey Bio Series",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 329476,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -24610,7 +24628,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "85d28d8324e23ab50b028592bdbbf4e4ac8a1317"
         ],
-        "description": "YubiKey Bio Series (Enterprise Profile)",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "u2f",
         "schema": 3,
@@ -29106,7 +29124,7 @@ let mdsJson={
         "attestationCertificateKeyIdentifiers": [
           "1f4bd023d5596ab8f504f6af93f98cff63a58507"
         ],
-        "description": "YubiKey Bio Series (Enterprise Profile)",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 329474,
         "protocolFamily": "u2f",
         "schema": 3,
