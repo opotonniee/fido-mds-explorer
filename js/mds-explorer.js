@@ -100,7 +100,7 @@ function stringify(obj) {
       // specific decodings:
 
       // Icon
-      if (key == "icon") {
+      if (["icon", "iconDark", "providerLogoLight", "providerLogoDark"].includes(key)) {
         val = imageTag(obj[key]);
 
       // Certificates
