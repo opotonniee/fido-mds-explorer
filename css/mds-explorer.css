@@ -175,3 +175,7 @@ footer {
   max-width: 95%;
   vertical-align: bottom;
 }
+
+ul, ol {
+  padding-left: 20px;
+}
