@@ -16,6 +16,11 @@ if [ ! -f $CSV ]; then
   echo Failed to fetch vendor list
   exit 1
 fi
+head -n1 $CSV | grep Assigned_Vendor_ID
+if [ $? -eq 1 ]; then
+  echo "Vendor list file doesn't look good"
+  exit 1
+fi
 
 tail -n +2 $CSV | sed -r 's/"([^"]*)","([^"]*)"/  "\2": "\1",/' > $TMP
 
