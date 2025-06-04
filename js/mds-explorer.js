@@ -217,6 +217,53 @@ ready(() => {
     }
   ];
 
+  // Fill filtering drop downs with entries's values
+  let statuses = [],
+    protocols = [],
+    uvs = [],
+    attachments = [], 
+    transports = [], 
+    kprots = [], 
+    algos = [];
+  for (let e of mdsJson.entries) {
+    for (let s of e.statusReports) {
+      if (s.status && !statuses.includes(s.status)) {
+        statuses.push(s.status);
+      }
+    }
+    if (!protocols.includes(e.metadataStatement.protocolFamily)) {
+      protocols.push(e.metadataStatement.protocolFamily);
+    }
+    for (let uv of e.metadataStatement.userVerificationDetails || []) {
+      for (let uvd of uv || []) {
+        if (uvd?.userVerificationMethod && !uvs.includes(uvd.userVerificationMethod)) {
+          uvs.push(uvd.userVerificationMethod);
+        }
+      }
+    }
+    for (let a of e?.metadataStatement?.attachmentHint || []) {
+      if (!attachments.includes(a)) {
+        attachments.push(a);
+      }
+    }
+    for (let t of e?.metadataStatement?.authenticatorGetInfo?.transports || []) {
+      if (!transports.includes(t)) {
+        transports.push(t);
+      }
+    }
+    for (let kp of e?.metadataStatement?.keyProtection || []) {
+      if (!kprots.includes(kp)) {
+        kprots.push(kp);
+      }
+    }
+    for (let alg of e?.metadataStatement?.authenticationAlgorithms || []) {
+      if (!algos.includes(alg)) {
+        algos.push(alg);
+      }
+    }
+  }
+  for (let a of [ statuses, protocols, uvs, attachments, transports, kprots, algos ]) a.sort();
+
   table = new Tabulator("#mds-table", {
     data: mdsJson.entries,
     layout: "fitData",
@@ -241,13 +288,7 @@ ready(() => {
         field: "metadataStatement.protocolFamily",
         sorter: "string",
         headerFilter: "list",
-        headerFilterParams: {
-          values: [
-            "uaf",
-            "u2f",
-            "fido2"
-          ]
-        },
+        headerFilterParams: { values: protocols },
         headerMenu: hideMenu
       },
       {
@@ -267,29 +308,7 @@ ready(() => {
           return res;
         },
         headerFilter: "list",
-        headerFilterParams: {
-          values: [
-            "NOT_FIDO_CERTIFIED",
-            "FIDO_CERTIFIED",
-            "USER_VERIFICATION_BYPASS",
-            "ATTESTATION_KEY_COMPROMISE",
-            "USER_KEY_REMOTE_COMPROMISE",
-            "USER_KEY_PHYSICAL_COMPROMISE",
-            "UPDATE_AVAILABLE",
-            "REVOKED",
-            "SELF_ASSERTION_SUBMITTED",
-            "FIDO_CERTIFIED_L1",
-            "FIDO_CERTIFIED_L1plus",
-            "FIDO_CERTIFIED_L2",
-            "FIDO_CERTIFIED_L2plus",
-            "FIDO_CERTIFIED_L3",
-            "FIDO_CERTIFIED_L3plus",
-            "FIPS140_CERTIFIED_L1",
-            "FIPS140_CERTIFIED_L2",
-            "FIPS140_CERTIFIED_L3",
-            "FIPS140_CERTIFIED_L4"
-          ]
-        },
+        headerFilterParams: { values: statuses },
         sorter: "array",
         headerFilterFunc: filterCertifs,
         headerMenu: hideMenu
@@ -343,23 +362,7 @@ ready(() => {
           return res;
         },
         headerFilter: "list",
-        headerFilterParams: {
-          values: [
-            "presence_internal",
-            "fingerprint_internal",
-            "passcode_internal",
-            "voiceprint_internal",
-            "faceprint_internal",
-            "location_internal",
-            "eyeprint_internal",
-            "pattern_internal",
-            "handprint_internal",
-            "passcode_external",
-            "pattern_external",
-            "none",
-            "all"
-          ]
-        },
+        headerFilterParams: { values: uvs },
         headerFilterFunc: filterUserVerifs,
         headerMenu: hideMenu,
         visible: false,
@@ -374,18 +377,7 @@ ready(() => {
           return res;
         },
         headerFilter: "list",
-        headerFilterParams: {
-          values: [
-            "internal",
-            "external",
-            "wired",
-            "wireless",
-            "nfc",
-            "bluetooth",
-            "network",
-            "ready"
-          ]
-        },
+        headerFilterParams: { values: attachments },
         headerMenu: hideMenu,
         visible: false,
         sorter: "array"
@@ -399,16 +391,7 @@ ready(() => {
           return res;
         },
         headerFilter: "list",
-        headerFilterParams: {
-          values: [
-            "usb",
-            "nfc",
-            "ble",
-            "smart-card",
-            "hybrid",
-            "internal"
-          ]
-        },
+        headerFilterParams: { values: transports },
         headerMenu: hideMenu,
         visible: false,
         sorter: "array"
@@ -422,15 +405,7 @@ ready(() => {
           return res;
         },
         headerFilter: "list",
-        headerFilterParams: {
-          values: [
-            "software",
-            "hardware",
-            "tee",
-            "secure_element",
-            "remote_handle"
-          ]
-        },
+        headerFilterParams: { values: kprots },
         headerMenu: hideMenu,
         visible: false,
         sorter: "array"
@@ -443,7 +418,8 @@ ready(() => {
           for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
           return res;
         },
-        headerFilter: true,
+        headerFilter: "list",
+        headerFilterParams: { values: algos },
         headerMenu: hideMenu,
         visible: false,
         sorter: "array"
