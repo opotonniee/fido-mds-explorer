@@ -72,6 +72,7 @@ const vendors = {
   "0090": "CORETECH KNOWLEDGE INC.",
   "0091": "Starfish GmbH",
   "0093": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
+  "0095": "fortanixor",
   "0261": "TWCA",
   "0262": "TD Tech Ltd",
   "0263": "Presidio Identity",
