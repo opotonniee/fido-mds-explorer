@@ -73,6 +73,7 @@ const vendors = {
   "0091": "Starfish GmbH",
   "0093": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
   "0095": "fortanixor",
+  "0096": "Beijing Spring Creation Technology Co., Ltd.",
   "0261": "TWCA",
   "0262": "TD Tech Ltd",
   "0263": "Presidio Identity",
