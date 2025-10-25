@@ -57,7 +57,7 @@ const vendors = {
   "005A": "AirCUVE",
   "005B": "Rowem Inc",
   "005C": "Penta Security Systems Inc.",
-  "005D": "Octatco",
+  "005D": "OCTATCO Co., Ltd.",
   "0062": "FUJITSU LIMITED",
   "0075": "Tangem AG",
   "0076": "Changing Information Technology Inc.",
