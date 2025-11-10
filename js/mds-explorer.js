@@ -154,7 +154,11 @@ function clickAuthr(e, cell) {
 }
 
 e("#authr-close").addEventListener("click", function() {
-  history.back();
+  if (history.length > 1) {
+    history.back();
+  } else {
+    document.location.href = location.protocol + "//" + location.host + location.pathname;
+  }
 });
 
 function isMatchingFilter(headerValue, values) {
