@@ -17,7 +17,7 @@ const vendors = {
   "0016": "Sensory, Inc.",
   "0019": "GOTRUSTID Inc.",
   "001B": "Huawei Device Co., Ltd.",
-  "001D": "Shenzhen National Engineering Laboratory of Digital Television  Co.,Ltd.",
+  "001D": "Shenzhen National Engineering Laboratory of Digital Television  Co.，Ltd.",
   "001F": "EyeVerify, Inc.",
   "0020": "Dream Security Co., Ltd. Korea",
   "0024": "Giesecke & Devrient",
