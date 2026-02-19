@@ -1,5 +1,5 @@
 'use strict';
-/* globals Tabulator */
+/* globals Tabulator, LAST_CMDS_UPDATE */
 
 let table;
 let mdsJson;
@@ -32,6 +32,11 @@ ready(async () => {
   console.log(mdsJson);
 
   e("#mds-loading").hidden = true;
+  if (LAST_CMDS_UPDATE) {
+    e("#last-cmds-update-date").innerText = LAST_CMDS_UPDATE;
+    e(".last-update").hidden = false;
+  }
+
   e("#mds").hidden = false;
 
   // build authenticators table
