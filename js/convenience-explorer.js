@@ -7,7 +7,7 @@ let mdsJson;
 function filterNames(headerValue, rowValue/*, rowData, filterParams*/) {
   const searched = headerValue.toLowerCase();
   for (let v of Object.values(rowValue)) {
-    if (v.toLowerCase().indexOf(headerValue) >= 0) {
+    if (v.toLowerCase().indexOf(searched) >= 0) {
       return true;
     }
   };
