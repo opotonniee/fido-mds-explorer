@@ -179,3 +179,11 @@ footer {
 ul, ol {
   padding-left: 20px;
 }
+
+.dark {
+  background-color: #5555;
+}
+
+#mds-switch {
+  margin: 10px 0;
+}

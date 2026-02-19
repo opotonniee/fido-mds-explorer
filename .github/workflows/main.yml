@@ -78,3 +78,19 @@ jobs:
           else
             echo "no MDS change detected"
           fi
+
+
+      - name: get remote convenience mds json
+        run: |
+          wget -O convenience-metadata.new https://c-mds.fidoalliance.org/
+          mv convenience-metadata.new js/convenience-metadata.json
+          if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
+          then
+            echo "Convenience MDS updated"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add js/convenience-metadata.json
+            git commit -m "Convenience metadata updated"
+            git push
+          fi
+ 

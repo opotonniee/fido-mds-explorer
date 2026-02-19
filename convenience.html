@@ -5,12 +5,11 @@
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <link rel="shortcut icon" href="favicon.png">
   <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no">
-  <title>FIDO MDS Explorer</title>
-  <meta name="description" content="Online FIDO MDS parser and reader">
+  <title>FIDO Convenience MDS Explorer</title>
+  <meta name="description" content="Online FIDO Convenience MDS parser and reader">
   <link href="css/tabulator.min.css" rel="stylesheet">
   <script src="js/tabulator.min.js"></script>
   <link rel="stylesheet" href="css/mds-explorer.css">
-  <script src="js/x509.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69741420-1"></script>
   <script>
@@ -24,7 +23,7 @@
 
 <body>
   <h1>
-    FIDO MDS Explorer
+    FIDO Convenience MDS Explorer
     <span id="about">
       <a href="https://github.com/opotonniee/fido-mds-explorer">
         <img src="img/github-mark.svg" alt="github icon" class="icon">
@@ -32,7 +31,7 @@
     </span>
   </h1>
 
-  <div id="mds-switch">Explore <a href="./convenience.html">Convenience MDS</a></div>
+  <div id="mds-switch">Explore <a href="./">Full MDS</a></div>
   <div id="mds-loading">Loading...</div>
   <div id="mds-error" class="error" hidden>
     <h2>Error</h2>
@@ -40,31 +39,13 @@
   </div>
 
   <div id="mds" hidden>
-    <span class="last-update">MDS data updated on <a href="https://github.com/opotonniee/fido-mds-explorer/commits/main/js/mds.js"><span id="last-update-date"></span></a></span>
     <h2>List of registered authenticators</h2>
-    <p>Click on authenticator name to view details - Show columns:
-      <select id="shown-columns">
-        <option value="few">Few</option>
-        <option value="all">All</option>
-      </select>
-      - Number of entries: <span id="table-size"></span>
-    </p>
+    <p>Number of entries: <span id="table-size"></span></p>
     <div id="mds-table"></div>
   </div>
 
-  <div id="authr" hidden>
-    <h3>
-      <span id="authr-close" class="clickable">⬅ BACK</span>
-    </h3>
-    <h2 id="authr-name">tbd</h2>
-    <div id="authr-json"></div>
-  </div>
-
-  <script src="js/mds.js"></script>
-  <script src="js/last-update.js"></script>
-  <script src="js/vendors.js"></script>
   <script src="js/utils.js"></script>
-  <script src="js/mds-explorer.js"></script>
+  <script src="js/convenience-explorer.js"></script>
   <footer>This site is not affiliated to FIDO Alliance</footer>
 </body>
 </html>

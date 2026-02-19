@@ -4,43 +4,12 @@
 let table;
 let cert;
 
-function type(obj) {
-  return Object.prototype.toString.call(obj).match(/.* (.*)\]/)[1];
-}
 
 function getVendor(aaid) {
   let vendorId = aaid ? aaid.substring(0,4) : undefined;
   let vendorName = vendorId ? vendors[vendorId.toUpperCase()] : undefined;
   return vendorName ? vendorName : "??";
 }
-
-function imageTag(src) {
-  return src ? "<img src='" + src + "'>" : "";
-}
-
-// --- DOM/JS helper
-
-function e(selector) {
-  return document.querySelector(selector);
-}
-
-function newE(tag, attributes, html) {
-  let el = document.createElement(tag);
-  for (let a in attributes) {
-    el.setAttribute(a, attributes[a]);
-  }
-  el.innerHTML = html;
-  return el;
-}
-
-const ready = (callback) => {
-  if (document.readyState != "loading") callback();
-  else document.addEventListener("DOMContentLoaded", callback);
-}
-
-const cpy = typeof navigator.clipboard?.writeText === "function" ?
-  "<span title='Copy to clipboard' class='cpy'>📋</span>" : "";
-
 
 // ---
 
