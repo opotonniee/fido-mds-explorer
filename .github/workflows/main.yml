@@ -67,7 +67,7 @@ jobs:
             MSG="MDS updated $(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | sed 's+\"+ +g')"
             rm prev.authrs new.authrs
             mv js/mds-new.js js/mds.js
-            echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-update.js
+            echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-mds-update.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add mds.blob
@@ -88,9 +88,11 @@ jobs:
           if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
           then
             echo "Convenience MDS updated"
+            echo "const LAST_CMDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-cmds-update.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add js/convenience-metadata.json
+            git add js/last-cmds-update.js
             git commit -m "Convenience metadata updated"
             git push
           fi
