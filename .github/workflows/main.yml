@@ -83,8 +83,8 @@ jobs:
       - name: get remote convenience mds json
         run: |
           wget -O convenience-metadata.new https://c-mds.fidoalliance.org/
+          sed -i 's/\r$//' convenience-metadata.new
           mv convenience-metadata.new js/convenience-metadata.json
-          git config core.autocrlf input
           if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
           then
             echo "Convenience MDS updated"
