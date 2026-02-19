@@ -84,6 +84,7 @@ jobs:
         run: |
           wget -O convenience-metadata.new https://c-mds.fidoalliance.org/
           mv convenience-metadata.new js/convenience-metadata.json
+          sed -i 's/\\r//g' js/convenience-metadata.json
           if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
           then
             echo "Convenience MDS updated"
