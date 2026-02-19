@@ -83,8 +83,12 @@ jobs:
       - name: get remote convenience mds json
         run: |
           wget -O convenience-metadata.new https://c-mds.fidoalliance.org/
+          echo BEFORE:
+          diff -q js/convenience-metadata.json convenience-metadata.new
+          sed -i 's/\\n/\n/g' convenience-metadata.new
+          echo AFTER:
+          diff -q js/convenience-metadata.json convenience-metadata.new
           mv convenience-metadata.new js/convenience-metadata.json
-          sed -i 's/\\n/\n/g' js/convenience-metadata.json
           if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
           then
             echo "Convenience MDS updated"
