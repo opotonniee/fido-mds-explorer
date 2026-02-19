@@ -16,8 +16,7 @@ function filterNames(headerValue, rowValue/*, rowData, filterParams*/) {
 
 ready(async () => {
 
-  const url = "https://c-mds.fidoalliance.org/";
-   // "js/convenience-metadata.json";
+  const url = "js/convenience-metadata.json";
   try {
     const response = await fetch(url);
     if (!response.ok) {
