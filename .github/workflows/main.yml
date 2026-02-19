@@ -83,11 +83,12 @@ jobs:
       - name: get remote convenience mds json
         run: |
           wget -O convenience-metadata.new https://c-mds.fidoalliance.org/
+          head -n 4 js/convenience-metadata.json | od -c
           echo BEFORE:
-          diff -q js/convenience-metadata.json convenience-metadata.new || true
-          sed -i 's/\\n/\n/g' convenience-metadata.new
+          head -n 4 convenience-metadata.new | od -c
+          sed -i 's/\r$//' convenience-metadata.new
           echo AFTER:
-          diff -q js/convenience-metadata.json convenience-metadata.new || true
+          head -n 4 convenience-metadata.new | od -c
           mv convenience-metadata.new js/convenience-metadata.json
           if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
           then
