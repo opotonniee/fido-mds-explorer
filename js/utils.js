@@ -9,10 +9,11 @@ function imageTag(src) {
 }
 
 function imageFormatter(cell/*, formatterParams, onRendered*/) {
+  cell.getElement().classList.add("img");
   return imageTag(cell.getValue());
 }
 function darkImageFormatter(cell/*, formatterParams, onRendered*/) {
-  cell.getElement().classList.add("dark");
+  cell.getElement().classList.add("img", "dark");
   return imageTag(cell.getValue());
 }
 
@@ -32,10 +33,7 @@ function newE(tag, attributes, html) {
   return el;
 }
 
-const ready = (callback) => {
+const onReady = (callback) => {
   if (document.readyState != "loading") callback();
   else document.addEventListener("DOMContentLoaded", callback);
 }
-
-const cpy = typeof navigator.clipboard?.writeText === "function" ?
-  "<span title='Copy to clipboard' class='cpy'>📋</span>" : "";

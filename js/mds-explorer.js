@@ -11,6 +11,9 @@ function getVendor(aaid) {
   return vendorName ? vendorName : "??";
 }
 
+const cpy = typeof navigator.clipboard?.writeText === "function" ?
+  "<span title='Copy to clipboard' class='cpy'>📋</span>" : "";
+
 // ---
 
 function certificate(obj) {
@@ -170,13 +173,15 @@ function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   return isMatchingFilter(headerValue, values);
 }
 
-ready(() => {
+onReady(() => {
 
   console.log(mdsJson);
 
   e("#mds-loading").hidden = true;
   if (LAST_MDS_UPDATE) {
-    e("#last-update-date").innerText = LAST_MDS_UPDATE;
+    e("#last-update-date").innerText = new Date(LAST_MDS_UPDATE).toLocaleString(undefined, {
+      year: "numeric", month: "short", day: "numeric",
+    });
     e(".last-update").hidden = false;
   }
   e("#mds").hidden = false;
@@ -267,9 +272,7 @@ ready(() => {
       {
         title: "Icon",
         field: "metadataStatement.icon",
-        formatter: function(cell/*, formatterParams, onRendered*/){
-          return imageTag(cell.getValue());
-        },
+        formatter: imageFormatter,
         headerMenu: hideMenu
       },
       {

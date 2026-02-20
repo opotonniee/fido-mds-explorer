@@ -14,7 +14,7 @@ function filterNames(headerValue, rowValue/*, rowData, filterParams*/) {
   return false
 }
 
-ready(async () => {
+onReady(async () => {
 
   const url = "js/convenience-metadata.json";
   try {
@@ -33,7 +33,9 @@ ready(async () => {
 
   e("#mds-loading").hidden = true;
   if (LAST_CMDS_UPDATE) {
-    e("#last-cmds-update-date").innerText = LAST_CMDS_UPDATE;
+    e("#last-cmds-update-date").innerText = new Date(LAST_CMDS_UPDATE).toLocaleString(undefined, {
+      year: "numeric", month: "short", day: "numeric",
+    });
     e(".last-update").hidden = false;
   }
 

@@ -180,7 +180,10 @@ ul, ol {
 }
 
 .dark {
-  background-color: #5555;
+  background-color: #6666;
+}
+.img {
+  text-align: center;
 }
 
 #mds-switch {
