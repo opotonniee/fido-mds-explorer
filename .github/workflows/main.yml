@@ -45,10 +45,12 @@ jobs:
       - name: get remote mds blob
         run: |
           LAST=$(grep -m 1 ' "no": ' js/mds.js  | sed -r "s/[^0-9]//g")
-          ignore="$(wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST})"
+          RES="$(wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST} 2>&1 | grep " HTTP/" |awk '{print $2}')"
           if [ -s mds.new ]
           then
             mv mds.new mds.blob
+          else
+            echo "Skipped download: $RES"
           fi
 
       - name: commit blob if new
