@@ -88,10 +88,14 @@ jobs:
       - name: get remote convenience mds
         run: |
           LAST=$(grep -m 1 ' "no": ' js/convenience-metadata.json  | sed -r "s/[^0-9]//g")
-          ignore="$(wget -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
+          ignore="$(wget -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} > c-mds.log || echo)"
           if [ -s convenience-metadata.new ]
           then
             sed -i 's/\r$//' convenience-metadata.new
+            # TEMP: get "no"  from ETag header, and insert it into the new JSON, since c-mds doesn't support it yet
+            NEWNO=$(grep -m 1 ' ETag: ' c-mds.log  | sed -r "s/[^0-9]//g")
+            sed -i "1s/^.*$/{\n  \"no\": ${NEWNO},/" convenience-metadata.new
+            # end of TEMP
             mv convenience-metadata.new js/convenience-metadata.json
           else
             echo "Skipped download"
@@ -109,5 +113,7 @@ jobs:
             git add js/last-cmds-update.js
             git commit -m "Convenience metadata updated"
             git push
+          else
+            echo "no convenience MDS change detected"
           fi
  
