@@ -44,8 +44,12 @@ jobs:
 
       - name: get remote mds blob
         run: |
-          wget -O mds.new https://mds.fidoalliance.org/
-          mv mds.new mds.blob
+          LAST=$(grep '"no":' js/mds.js  | sed -r "s/[^0-9]//g")
+          wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST}
+          if [ -s mds.new ]
+          then
+            mv mds.new mds.blob
+          fi
 
       - name: commit blob if new
         run: |
