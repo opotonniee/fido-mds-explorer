@@ -89,6 +89,7 @@ jobs:
         run: |
           LAST=$(grep -m 1 ' "no": ' js/convenience-metadata.json  | sed -r "s/[^0-9]//g")
           ignore="$(wget -NS -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} > c-mds.log 2>&1 || echo)"
+          cat c-mds.log
           if [ -s convenience-metadata.new ]
           then
             # convert to unix line endings
@@ -96,7 +97,7 @@ jobs:
             # TEMP: get "no"  from ETag header, and insert it into the new JSON, since c-mds doesn't support it yet
             NEWNO=$(grep -m 1 ' ETag: ' c-mds.log  | sed -r "s/[^0-9]//g")
             sed -i "1s/^.*$/{\n  \"no\": ${NEWNO},/" convenience-metadata.new
-            # end of TEMP
+            # end of TEMP (c-mds.log will be avoided once c-mds supports "no" in the JSON body (remove -NS in wget))
             mv convenience-metadata.new js/convenience-metadata.json
           else
             echo "Skipped download"
