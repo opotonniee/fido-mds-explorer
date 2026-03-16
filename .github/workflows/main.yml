@@ -88,7 +88,7 @@ jobs:
       - name: get remote convenience mds
         run: |
           LAST=$(grep -m 1 ' "no": ' js/convenience-metadata.json  | sed -r "s/[^0-9]//g")
-          ignore="$(wget -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} > c-mds.log || echo)"
+          ignore="$(wget -NS -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} > c-mds.log || echo)"
           if [ -s convenience-metadata.new ]
           then
             # convert to unix line endings
