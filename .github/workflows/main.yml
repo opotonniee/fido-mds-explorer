@@ -45,12 +45,12 @@ jobs:
       - name: get remote mds blob
         run: |
           LAST=$(grep -m 1 ' "no": ' js/mds.js  | sed -r "s/[^0-9]//g")
-          RES="$(wget -NS -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST} 2>&1 | grep " HTTP/" |awk '{print $2}')"
+          ignore="$(wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
           if [ -s mds.new ]
           then
             mv mds.new mds.blob
           else
-            echo "Skipped download: $RES"
+            echo "Skipped download"
           fi
 
       - name: commit blob if new
@@ -85,12 +85,20 @@ jobs:
             echo "no MDS change detected"
           fi
 
-
-      - name: get remote convenience mds json
+      - name: get remote convenience mds
         run: |
-          wget -O convenience-metadata.new https://c-mds.fidoalliance.org/
-          sed -i 's/\r$//' convenience-metadata.new
-          mv convenience-metadata.new js/convenience-metadata.json
+          LAST=$(grep -m 1 ' "no": ' js/convenience-metadata.json  | sed -r "s/[^0-9]//g")
+          ignore="$(wget -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
+          if [ -s convenience-metadata.new ]
+          then
+            sed -i 's/\r$//' convenience-metadata.new
+            mv convenience-metadata.new js/convenience-metadata.json
+          else
+            echo "Skipped download"
+          fi
+
+      - name: commit convenience mds json if new
+        run: |
           if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
           then
             echo "Convenience MDS updated"
