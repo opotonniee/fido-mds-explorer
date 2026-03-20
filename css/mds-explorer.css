@@ -195,12 +195,12 @@ ul, ol {
 }
 
 #cmds-table tr {
-    background-color: #fff;
-    height: 50px;
+  background-color: #efefef;
+  height: 50px;
 }
 
 #cmds-table tr.even {
-  background-color: #efefef
+  background-color: #fff;
 }
 
 #cmds-table th {
@@ -231,7 +231,13 @@ ul, ol {
 }
 
 #cmds-table td.dark {
+  background-color: #4e4e4e;
+}
+#cmds-table tr.even td.dark {
   background-color: #555;
+}
+#cmds-table th.dark {
+  background-color: #444;
   color: white;
 }
 
