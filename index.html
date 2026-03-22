@@ -11,15 +11,13 @@
   <script src="js/tabulator.min.js"></script>
   <link rel="stylesheet" href="css/mds-explorer.css">
   <script src="js/x509.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69741420-1"></script>
+  <!-- privacy-friendly usage stats -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-69741420-1');
+    // Only load on production environment.
+    if (window.location.host !== 'opoto.github.io')
+        window.goatcounter = {no_onload: true}
   </script>
-
+  <script data-goatcounter="https://fido-mds-explorer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
