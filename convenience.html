@@ -12,16 +12,14 @@
   <link rel="stylesheet" href="css/mds-explorer.css">
   <!-- privacy-friendly usage stats -->
   <script>
+    window.goatcounter = {
+      path: function(p) { return location.host + p } // add domain name
+    }
     // Only load on production environment, and manually opted-out
     if ((window.location.host !== 'opotonniee.github.io') ||
       (localStorage.getItem("goatcounter." + location.host) === "false") ||
       (localStorage.getItem("goatcounter.ALL") === "false")) {
-      window.goatcounter = {
-        no_onload: true
-      };
-    }
-    window.goatcounter = {
-      path: function(p) { return location.host + p } // add domain name
+      window.goatcounter.no_onload = true;
     }
   </script>
   <script data-goatcounter="https://fido-mds-explorer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
