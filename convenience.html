@@ -10,15 +10,13 @@
   <link href="css/tabulator.min.css" rel="stylesheet">
   <script src="js/tabulator.min.js"></script>
   <link rel="stylesheet" href="css/mds-explorer.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69741420-1"></script>
+  <!-- privacy-friendly usage stats -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-69741420-1');
+    // Only load on production environment.
+    if (window.location.host !== 'opotonniee.github.io')
+        window.goatcounter = {no_onload: true}
   </script>
-
+  <script data-goatcounter="https://fido-mds-explorer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
@@ -45,13 +43,13 @@
     <table id="cmds-table">
       <tr>
         <th>AAGUID</th>
-        <th>Name<br/> 
+        <th>Name<br/>
           <input id="filterLang" type="text" title="Filter by language" placeholder="Language"/>
           <input id="filterName" type="text" title="Filter by name" placeholder="Name"/>
           <a id="clear-filter" href="#" title="clear">✖</a>
         </th>
         <th>Icon</th>
-        <th class="dark">Icon</th>  
+        <th class="dark">Icon</th>
         <th>Provider</th>
         <th class="dark">Provider</th>
       </tr>
