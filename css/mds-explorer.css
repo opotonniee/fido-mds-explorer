@@ -244,9 +244,18 @@ ul, ol {
 #filterName {
   width: 60%;
 }
+
 #filterLang {
   width: 20%;
 }
+
+#clear-filter {
+  color: gray;
+}
+#clear-filter:hover {
+  color: #444;
+}
+
 div.friendly-name {
   margin: 5px 0;
 }
