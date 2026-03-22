@@ -1,1 +1,0 @@
-const LAST_MDS_UPDATE = 'Thu, 24 Jul 2025 00:49:02 +0000';

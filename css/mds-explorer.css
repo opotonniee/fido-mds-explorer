@@ -36,7 +36,6 @@ h2 {
   padding: 5px;
   font-style: italic;
   float:right;
-  display: none;
 }
 
 button, #file-label {
@@ -178,4 +177,85 @@ footer {
 
 ul, ol {
   padding-left: 20px;
+}
+
+.dark {
+  background-color: #6666;
+}
+.img {
+  text-align: center;
+}
+
+#mds-switch {
+  margin: 10px 0;
+}
+
+#cmds-table {
+    border-collapse: collapse;
+}
+
+#cmds-table tr {
+  background-color: #efefef;
+  height: 50px;
+}
+
+#cmds-table tr.even {
+  background-color: #fff;
+}
+
+#cmds-table th {
+  background-color: #DDD;
+}
+
+#cmds-table th:nth-of-type(1) {
+  min-width: 19em;
+}
+
+#cmds-table th:nth-of-type(2) {
+  min-width: 20em;
+}
+
+#cmds-table th, #cmds-table td {
+  border: black 1px solid;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+#cmds-table td.img {
+  text-align: center;
+}
+
+#cmds-table img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+#cmds-table td.dark {
+  background-color: #4e4e4e;
+}
+#cmds-table tr.even td.dark {
+  background-color: #555;
+}
+#cmds-table th.dark {
+  background-color: #444;
+  color: white;
+}
+
+#filterName {
+  width: 60%;
+}
+
+#filterLang {
+  width: 20%;
+}
+
+#clear-filter {
+  color: gray;
+}
+#clear-filter:hover {
+  color: #444;
+}
+
+div.friendly-name {
+  margin: 5px 0;
 }

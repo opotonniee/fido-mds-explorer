@@ -44,8 +44,14 @@ jobs:
 
       - name: get remote mds blob
         run: |
-          wget -O mds.new https://mds.fidoalliance.org/
-          mv mds.new mds.blob
+          LAST=$(grep -m 1 ' "no": ' js/mds.js  | sed -r "s/[^0-9]//g")
+          ignore="$(wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
+          if [ -s mds.new ]
+          then
+            mv mds.new mds.blob
+          else
+            echo "Skipped download"
+          fi
 
       - name: commit blob if new
         run: |
@@ -67,14 +73,48 @@ jobs:
             MSG="MDS updated $(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | sed 's+\"+ +g')"
             rm prev.authrs new.authrs
             mv js/mds-new.js js/mds.js
-            echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-update.js
+            echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-mds-update.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add mds.blob
             git add js/mds.js
-            git add js/last-update.js
+            git add js/last-mds-update.js
             git commit -m "$MSG"
             git push
           else
             echo "no MDS change detected"
+          fi
+
+      - name: get remote convenience mds
+        run: |
+          LAST=$(grep -m 1 ' "no": ' js/convenience-metadata.json  | sed -r "s/[^0-9]//g")
+          ignore="$(wget -NS -O convenience-metadata.new https://c-mds.fidoalliance.org/?localCopySerial=${LAST} > c-mds.log 2>&1 || echo)"
+          cat c-mds.log
+          if [ -s convenience-metadata.new ]
+          then
+            # convert to unix line endings
+            sed -i 's/\r$//' convenience-metadata.new
+            # TEMP: get "no"  from ETag header, and insert it into the new JSON, since c-mds doesn't support it yet
+            NEWNO=$(grep -m 1 ' ETag: ' c-mds.log  | sed -r "s/[^0-9]//g")
+            sed -i "1s/^.*$/{\n  \"no\": ${NEWNO},/" convenience-metadata.new
+            # end of TEMP (c-mds.log will be avoided once c-mds supports "no" in the JSON body (remove -NS in wget))
+            mv convenience-metadata.new js/convenience-metadata.json
+          else
+            echo "Skipped download"
+          fi
+
+      - name: commit convenience mds json if new
+        run: |
+          if [ "$(git status -s js/convenience-metadata.json | xargs)" != "" ]
+          then
+            echo "Convenience MDS updated"
+            echo "const LAST_CMDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-cmds-update.js
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add js/convenience-metadata.json
+            git add js/last-cmds-update.js
+            git commit -m "Convenience metadata updated"
+            git push
+          else
+            echo "no convenience MDS change detected"
           fi

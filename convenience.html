@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no">
+  <title>FIDO Convenience MDS Explorer</title>
+  <meta name="description" content="Online FIDO Convenience MDS parser and reader">
+  <link href="css/tabulator.min.css" rel="stylesheet">
+  <script src="js/tabulator.min.js"></script>
+  <link rel="stylesheet" href="css/mds-explorer.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69741420-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-69741420-1');
+  </script>
+
+</head>
+
+<body>
+  <h1>
+    FIDO Convenience MDS Explorer
+    <span id="about">
+      <a href="https://github.com/opotonniee/fido-mds-explorer">
+        <img src="img/github-mark.svg" alt="github icon" class="icon">
+      </a>
+    </span>
+  </h1>
+
+  <div id="mds-switch">Explore <a href="./">Full MDS</a></div>
+  <div id="mds-loading">Loading...</div>
+  <div id="mds-error" class="error" hidden>
+    <h2>Error</h2>
+    Failed to load the metadata :(
+  </div>
+
+  <div id="mds" hidden>
+    <span class="last-update">Convenience data updated on <a href="https://github.com/opotonniee/fido-mds-explorer/commits/main/js/convenience-metadata.json"><span id="last-cmds-update-date">??</span></a></span>
+    <h2>List of registered authenticators</h2>
+    <p>Number of entries: <span id="table-size"></span></p>
+    <table id="cmds-table">
+      <tr>
+        <th>AAGUID</th>
+        <th>Name<br/> 
+          <input id="filterLang" type="text" title="Filter by language" placeholder="Language"/>
+          <input id="filterName" type="text" title="Filter by name" placeholder="Name"/>
+          <a id="clear-filter" href="#" title="clear">✖</a>
+        </th>
+        <th>Icon</th>
+        <th class="dark">Icon</th>  
+        <th>Provider</th>
+        <th class="dark">Provider</th>
+      </tr>
+    </table>
+  </div>
+  <div id="footer"></div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/last-cmds-update.js"></script>
+  <script src="js/convenience-explorer.js"></script>
+  <footer>This site is not affiliated to FIDO Alliance</footer>
+</body>
+</html>
