@@ -4,7 +4,7 @@
   <meta charset='utf-8'>
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <link rel="shortcut icon" href="favicon.png">
-  <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no">
+  <meta name="viewport" content="width=device-width,height=device-height">
   <title>FIDO Convenience MDS Explorer</title>
   <meta name="description" content="Online FIDO Convenience MDS parser and reader">
   <link href="css/tabulator.min.css" rel="stylesheet">
@@ -19,6 +19,9 @@
       window.goatcounter = {
         no_onload: true
       };
+    }
+    window.goatcounter = {
+      path: function(p) { return location.host + p } // add domain name
     }
   </script>
   <script data-goatcounter="https://fido-mds-explorer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

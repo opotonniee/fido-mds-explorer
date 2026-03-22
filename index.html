@@ -4,7 +4,7 @@
   <meta charset='utf-8'>
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <link rel="shortcut icon" href="favicon.png">
-  <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no">
+  <meta name="viewport" content="width=device-width,height=device-height">
   <title>FIDO MDS Explorer</title>
   <meta name="description" content="Online FIDO MDS parser and reader">
   <link href="css/tabulator.min.css" rel="stylesheet">
@@ -13,9 +13,17 @@
   <script src="js/x509.js"></script>
   <!-- privacy-friendly usage stats -->
   <script>
-    // Only load on production environment.
-    if (window.location.host !== 'opotonniee.github.io')
-        window.goatcounter = {no_onload: true}
+    // Only load on production environment, and manually opted-out
+    if ((window.location.host !== 'opotonniee.github.io') ||
+      (localStorage.getItem("goatcounter." + location.host) === "false") ||
+      (localStorage.getItem("goatcounter.ALL") === "false")) {
+      window.goatcounter = {
+        no_onload: true
+      };
+    }
+    window.goatcounter = {
+      path: function(p) { return location.host + p } // add domain name
+    }
   </script>
   <script data-goatcounter="https://fido-mds-explorer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
