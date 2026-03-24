@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, mdsJson, Tabulator, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
@@ -138,9 +138,12 @@ function isMatchingFilter(headerValue, values) {
     // array with single value, use it
     headerValue = headerValue[0];
   }
-  return Array.isArray(headerValue) || // if multiple values (i.e. all): no filter
-          (headerValue == "") || // empty: no filter
-          values.includes(headerValue); // ?
+  if (Array.isArray(headerValue) || headerValue == "") {
+    return true; // if multiple values (i.e. all) or empty: no filter
+  }
+  // Case-insensitive substring matching
+  const lowerHeaderValue = String(headerValue).toLowerCase();
+  return values.some(v => String(v).toLowerCase().includes(lowerHeaderValue));
 }
 
 function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
@@ -152,11 +155,11 @@ function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
 }
 
 function filterIds(headerValue, rowValue/*, rowData, filterParams*/) {
-  let res;
+  let res = true; // default to true if no protocol family matches
   if (rowValue.protocolFamily == "fido2") {
-    res = isMatchingFilter(headerValue, rowValue.aaguid);
+    res = isMatchingFilter(headerValue, [rowValue.aaguid]);
   } else if (rowValue.protocolFamily == "uaf") {
-    res = isMatchingFilter(headerValue, rowValue.aaid);
+    res = isMatchingFilter(headerValue, [rowValue.aaid]);
   } else if (rowValue.protocolFamily == "u2f") {
     res = isMatchingFilter(headerValue, rowValue.attestationCertificateKeyIdentifiers);
   }
@@ -242,12 +245,8 @@ onReady(() => {
   }
   for (let a of [ statuses, protocols, uvs, attachments, transports, kprots, algos ]) a.sort();
 
-  table = new Tabulator("#mds-table", {
+  table = new CustomTable("#mds-table", {
     data: mdsJson.entries,
-    layout: "fitData",
-    selectable: false,
-    movableColumns: true,
-    //responsiveLayout: "collapse",
     columns: [
       {
         title: "Name",
@@ -266,8 +265,7 @@ onReady(() => {
         field: "metadataStatement.protocolFamily",
         sorter: "string",
         headerFilter: "list",
-        headerFilterParams: { values: protocols },
-        headerMenu: hideMenu
+        headerFilterParams: { values: protocols }
       },
       {
         title: "Icon",
@@ -290,7 +288,7 @@ onReady(() => {
         headerMenu: hideMenu
       },
       {
-        title: "ID (see popup)",
+        title: "ID",
         field: "metadataStatement",
         sorter: "string",
         headerFilter: true,
@@ -407,16 +405,15 @@ onReady(() => {
         sorter: "string"
       }
     ],
-    footerElement: `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`
+    onUpdate: function () {
+      e("#table-size").innerText = document.querySelectorAll("#mds-table tbody tr:not([hidden])").length;
+    }
   });
 
-  e("#table-size").innerText = mdsJson.entries.length;
-  table.on("dataFiltered", function (filters, rows) {
-    e("#table-size").innerText = rows.length;
-  });
+  e(".table-footer").innerHTML = `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`;
 
   function showColumnsSelector(show) {
-    e("#shown-columns").disabled = !show;
+   // e("#shown-columns").disabled = !show;
   }
 
   window.addEventListener('popstate', (event) => {
@@ -455,50 +452,49 @@ onReady(() => {
       window.location = "."
     }
   } else {
-    // refresh so that icons column is properly sized
-    table.on("tableBuilt", function() {
-      table.redraw(true);
+    // Setup column visibility menu
+    table.redraw(true);
 
-      let hidableColumns = [];
+    let hidableColumns = {};
+    let allColumns = table.getColumns();
 
-      for (let c of table.getColumns()) {
-        if (c.getDefinition()["visible"] === false) {
-          let title = c.getDefinition().title;
-          hidableColumns[title] = c;
-          e("#shown-columns").append(newE("option", { value: title }, "+ " + title));
-        }
+    // Populate hidable columns (columns that are hidden by default)
+    for (let c of allColumns) {
+      if (c.getDefinition()["visible"] === false) {
+        let title = c.getDefinition().title;
+        hidableColumns[title] = c;
+        e("#shown-columns").append(newE("option", { value: title }, "+ " + title));
       }
+    }
 
-      e("#shown-columns").addEventListener("change", () => {
-        let selected = e("#shown-columns").selectedOptions[0].value;
-        if (selected == "few") {
-          showColumnsSelector(false);
-          // Hide hidable columns
-          setTimeout(() => {
-            for (let c in hidableColumns) {
-              hidableColumns[c].hide();
-            }
-            table.redraw();
-            showColumnsSelector(true);
-          }, 10);
-        } else if (selected == "all") {
-          // Show all columns
-          showColumnsSelector(false);
-          setTimeout(() => {
-            for (let c of table.getColumns()) {
-              c.show();
-            }
-            table.redraw();
-            showColumnsSelector(true);
-          }, 10);
-        } else {
-          // Show selected columns
+    e("#shown-columns").addEventListener("change", () => {
+      let selectElement = e("#shown-columns");
+      let selected = selectElement.value;
+      
+      if (selected == "few") {
+        showColumnsSelector(false);
+        // Hide hidable columns
+        for (let title in hidableColumns) {
+          hidableColumns[title].hide();
+        }
+        table.redraw();
+        showColumnsSelector(true);
+      } else if (selected == "all") {
+        // Show all columns
+        showColumnsSelector(false);
+        for (let c of allColumns) {
+          c.show();
+        }
+        table.redraw();
+        showColumnsSelector(true);
+      } else {
+        // Show selected columns
+        if (hidableColumns[selected]) {
           hidableColumns[selected].show();
           // the new column may change row height
           table.redraw();
         }
-      });
-
+      }
     });
   }
 });
