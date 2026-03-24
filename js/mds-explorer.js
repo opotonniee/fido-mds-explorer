@@ -392,10 +392,6 @@ onReady(() => {
 
   e(".table-footer").innerHTML = `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`;
 
-  function showColumnsSelector(show) {
-   // e("#shown-columns").disabled = !show;
-  }
-
   window.addEventListener('popstate', (event) => {
     if (e("#authr").checkVisibility()) {
       e("#mds").hidden = false;
@@ -432,8 +428,6 @@ onReady(() => {
       window.location = "."
     }
   } else {
-    // Setup column visibility menu
-    table.redraw(true);
 
     let hidableColumns = {};
     let allColumns = table.getColumns();
@@ -452,27 +446,20 @@ onReady(() => {
       let selected = selectElement.value;
       
       if (selected == "few") {
-        showColumnsSelector(false);
         // Hide hidable columns
         for (let title in hidableColumns) {
           hidableColumns[title].hide();
         }
-        table.redraw();
-        showColumnsSelector(true);
       } else if (selected == "all") {
         // Show all columns
-        showColumnsSelector(false);
         for (let c of allColumns) {
           c.show();
         }
-        table.redraw();
-        showColumnsSelector(true);
       } else {
         // Show selected columns
         if (hidableColumns[selected]) {
           hidableColumns[selected].show();
           // the new column may change row height
-          table.redraw();
         }
       }
     });

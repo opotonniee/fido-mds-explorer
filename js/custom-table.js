@@ -1,9 +1,8 @@
 'use strict';
 
 /**
- * CustomTable - A simple table implementation to replace Tabulator
+ * CustomTable - A simple table implementation
  * Features: sorting, filtering, column visibility toggle
- * No fancy features: no drag/drop reordering, no column resize
  */
 
 class CustomTable {
@@ -146,60 +145,10 @@ class CustomTable {
     thead.appendChild(headerRow);
     table.appendChild(thead);
 
-    // Create body
-    const tbody = document.createElement('tbody');
-
-    for (let i = 0; i < this.filteredData.length; i++) {
-      const row = document.createElement('tr');
-      row.className = i % 2 === 0 ? 'even' : 'odd';
-      row.dataset.index = i;
-
-      const rowData = this.filteredData[i];
-
-      for (const column of this.columns) {
-        const td = document.createElement('td');
-        td.className = 'table-cell';
-        if (column.visible === false) {
-          td.style.display = 'none';
-        }
-
-        const cellValue = this.getNestedValue(rowData, column.field);
-
-        let cellContent = cellValue;
-        if (column.formatter) {
-          const mockCell = {
-            getValue: () => cellValue,
-            getData: () => rowData,
-            getElement: () => td
-          };
-          cellContent = column.formatter(mockCell);
-        } else if (Array.isArray(cellValue)) {
-          cellContent = cellValue.join('<br>');
-        }
-
-        td.innerHTML = cellContent;
-
-        if (column.cellClick) {
-          td.style.cursor = 'pointer';
-          const mockCell = {
-            getValue: () => cellValue,
-            getData: () => rowData
-          };
-          td.addEventListener('click', (e) => column.cellClick(e, mockCell));
-        }
-
-        row.appendChild(td);
-      }
-
-      tbody.appendChild(row);
-    }
-
-    table.appendChild(tbody);
     this.container.appendChild(table);
+    // Create body
+    this.renderBody();
 
-    if (this.onUpdate) {
-      this.onUpdate();
-    }
   }
 
   getNestedValue(obj, field) {
@@ -393,11 +342,7 @@ class CustomTable {
     }
   }
 
-  redraw(force) {
+  redraw() {
     this.render();
-  }
-
-  attachEventListeners() {
-    // Event listeners are attached during render
   }
 }
