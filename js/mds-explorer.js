@@ -4,7 +4,6 @@
 let table;
 let cert;
 
-
 function getVendor(aaid) {
   let vendorId = aaid ? aaid.substring(0,4) : undefined;
   let vendorName = vendorId ? vendors[vendorId.toUpperCase()] : undefined;
@@ -188,15 +187,6 @@ onReady(() => {
     e(".last-update").hidden = false;
   }
   e("#mds").hidden = false;
-  // build authenticators table
-  let hideMenu = [
-    {
-      label: "Hide Column",
-      action: function (e, column) {
-        column.hide();
-      }
-    }
-  ];
 
   // Fill filtering drop downs with entries's values
   let statuses = [],
@@ -251,19 +241,18 @@ onReady(() => {
       {
         title: "Name",
         field: "metadataStatement.description",
-        sorter: "string",
+        sorter: true,
         headerFilter: true,
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
         },
-        maxWidth: 350,
         cellClick: clickAuthr
       },
       {
         title: "Protocol",
         field: "metadataStatement.protocolFamily",
-        sorter: "string",
+        sorter: true,
         headerFilter: "list",
         headerFilterParams: { values: protocols }
       },
@@ -271,7 +260,6 @@ onReady(() => {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: imageFormatter,
-        headerMenu: hideMenu
       },
       {
         title: "Certification",
@@ -283,14 +271,13 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: statuses },
-        sorter: "array",
-        headerFilterFunc: filterCertifs,
-        headerMenu: hideMenu
+        sorter: true,
+        headerFilterFunc: filterCertifs
       },
       {
         title: "ID",
         field: "metadataStatement",
-        sorter: "string",
+        sorter: true,
         headerFilter: true,
         tooltip: function(e, cell){
           let
@@ -320,8 +307,7 @@ onReady(() => {
           }
           return res;
         },
-        headerFilterFunc: filterIds,
-        headerMenu: hideMenu
+        headerFilterFunc: filterIds
       },
       {
         title: "User Verif.",
@@ -338,9 +324,8 @@ onReady(() => {
         headerFilter: "list",
         headerFilterParams: { values: uvs },
         headerFilterFunc: filterUserVerifs,
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Attachment",
@@ -352,9 +337,8 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: attachments },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Transports",
@@ -366,9 +350,8 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: transports },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Key Protection",
@@ -380,9 +363,8 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: kprots },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Algorithms",
@@ -394,15 +376,13 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: algos },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Updated",
         field: "timeOfLastStatusChange",
-        headerMenu: hideMenu,
-        sorter: "string"
+        sorter: true
       }
     ],
     onUpdate: function () {

@@ -257,6 +257,10 @@ ul, ol {
   margin: 10px 0;
 }
 
+#mds-table td:first-of-type {
+  max-width: 500px;
+}
+
 .friendly-name {
   margin: 5px 0;
 }

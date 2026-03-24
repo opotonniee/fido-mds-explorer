@@ -50,13 +50,13 @@ onReady(async () => {
       {
         title: "AAGUID",
         field: "aaguid",
-        sorter: "string",
+        sorter: true,
         headerFilter: true
       },
       {
         title: "Name",
         field: "friendlyNames",
-        sorter: "string",
+        sorter: true,
         headerFilter: true,
         headerFilterInputs: [
           { key: "lang", placeholder: "Language" },
