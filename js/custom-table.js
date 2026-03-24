@@ -23,7 +23,6 @@ class CustomTable {
 
   init() {
     this.render();
-    this.attachEventListeners();
   }
 
   render() {
