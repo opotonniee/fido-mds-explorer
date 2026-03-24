@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width,height=device-height">
   <title>FIDO Convenience MDS Explorer</title>
   <meta name="description" content="Online FIDO Convenience MDS parser and reader">
-  <link href="css/tabulator.min.css" rel="stylesheet">
-  <script src="js/tabulator.min.js"></script>
   <link rel="stylesheet" href="css/mds-explorer.css">
   <!-- privacy-friendly usage stats -->
   <script>
@@ -46,24 +44,12 @@
     <span class="last-update">Convenience data updated on <a href="https://github.com/opotonniee/fido-mds-explorer/commits/main/js/convenience-metadata.json"><span id="last-cmds-update-date">??</span></a></span>
     <h2>List of registered authenticators</h2>
     <p>Number of entries: <span id="table-size"></span></p>
-    <table id="cmds-table">
-      <tr>
-        <th>AAGUID</th>
-        <th>Name<br/>
-          <input id="filterLang" type="text" title="Filter by language" placeholder="Language"/>
-          <input id="filterName" type="text" title="Filter by name" placeholder="Name"/>
-          <a id="clear-filter" href="#" title="clear">✖</a>
-        </th>
-        <th>Icon</th>
-        <th class="dark">Icon</th>
-        <th>Provider</th>
-        <th class="dark">Provider</th>
-      </tr>
-    </table>
+    <div id="cmds-table"></div>
+    <div class="table-footer"></div>
   </div>
-  <div id="footer"></div>
 
   <script src="js/utils.js"></script>
+  <script src="js/custom-table.js"></script>
   <script src="js/last-cmds-update.js"></script>
   <script src="js/convenience-explorer.js"></script>
   <footer>This site is not affiliated to FIDO Alliance</footer>

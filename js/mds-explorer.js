@@ -1,9 +1,8 @@
 'use strict';
-/* globals x509, mdsJson, Tabulator, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
-
 
 function getVendor(aaid) {
   let vendorId = aaid ? aaid.substring(0,4) : undefined;
@@ -138,9 +137,12 @@ function isMatchingFilter(headerValue, values) {
     // array with single value, use it
     headerValue = headerValue[0];
   }
-  return Array.isArray(headerValue) || // if multiple values (i.e. all): no filter
-          (headerValue == "") || // empty: no filter
-          values.includes(headerValue); // ?
+  if (Array.isArray(headerValue) || headerValue == "") {
+    return true; // if multiple values (i.e. all) or empty: no filter
+  }
+  // Case-insensitive substring matching
+  const lowerHeaderValue = String(headerValue).toLowerCase();
+  return values.some(v => String(v).toLowerCase().includes(lowerHeaderValue));
 }
 
 function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
@@ -152,11 +154,11 @@ function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
 }
 
 function filterIds(headerValue, rowValue/*, rowData, filterParams*/) {
-  let res;
+  let res = true; // default to true if no protocol family matches
   if (rowValue.protocolFamily == "fido2") {
-    res = isMatchingFilter(headerValue, rowValue.aaguid);
+    res = isMatchingFilter(headerValue, [rowValue.aaguid]);
   } else if (rowValue.protocolFamily == "uaf") {
-    res = isMatchingFilter(headerValue, rowValue.aaid);
+    res = isMatchingFilter(headerValue, [rowValue.aaid]);
   } else if (rowValue.protocolFamily == "u2f") {
     res = isMatchingFilter(headerValue, rowValue.attestationCertificateKeyIdentifiers);
   }
@@ -185,15 +187,6 @@ onReady(() => {
     e(".last-update").hidden = false;
   }
   e("#mds").hidden = false;
-  // build authenticators table
-  let hideMenu = [
-    {
-      label: "Hide Column",
-      action: function (e, column) {
-        column.hide();
-      }
-    }
-  ];
 
   // Fill filtering drop downs with entries's values
   let statuses = [],
@@ -242,38 +235,31 @@ onReady(() => {
   }
   for (let a of [ statuses, protocols, uvs, attachments, transports, kprots, algos ]) a.sort();
 
-  table = new Tabulator("#mds-table", {
+  table = new CustomTable("#mds-table", {
     data: mdsJson.entries,
-    layout: "fitData",
-    selectable: false,
-    movableColumns: true,
-    //responsiveLayout: "collapse",
     columns: [
       {
         title: "Name",
         field: "metadataStatement.description",
-        sorter: "string",
+        sorter: true,
         headerFilter: true,
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
         },
-        maxWidth: 350,
         cellClick: clickAuthr
       },
       {
         title: "Protocol",
         field: "metadataStatement.protocolFamily",
-        sorter: "string",
+        sorter: true,
         headerFilter: "list",
-        headerFilterParams: { values: protocols },
-        headerMenu: hideMenu
+        headerFilterParams: { values: protocols }
       },
       {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: imageFormatter,
-        headerMenu: hideMenu
       },
       {
         title: "Certification",
@@ -285,14 +271,13 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: statuses },
-        sorter: "array",
-        headerFilterFunc: filterCertifs,
-        headerMenu: hideMenu
+        sorter: true,
+        headerFilterFunc: filterCertifs
       },
       {
-        title: "ID (see popup)",
+        title: "ID",
         field: "metadataStatement",
-        sorter: "string",
+        sorter: true,
         headerFilter: true,
         tooltip: function(e, cell){
           let
@@ -322,8 +307,7 @@ onReady(() => {
           }
           return res;
         },
-        headerFilterFunc: filterIds,
-        headerMenu: hideMenu
+        headerFilterFunc: filterIds
       },
       {
         title: "User Verif.",
@@ -340,9 +324,8 @@ onReady(() => {
         headerFilter: "list",
         headerFilterParams: { values: uvs },
         headerFilterFunc: filterUserVerifs,
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Attachment",
@@ -354,9 +337,8 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: attachments },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Transports",
@@ -368,9 +350,8 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: transports },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Key Protection",
@@ -382,9 +363,8 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: kprots },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Algorithms",
@@ -396,28 +376,21 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: algos },
-        headerMenu: hideMenu,
         visible: false,
-        sorter: "array"
+        sorter: true
       },
       {
         title: "Updated",
         field: "timeOfLastStatusChange",
-        headerMenu: hideMenu,
-        sorter: "string"
+        sorter: true
       }
     ],
-    footerElement: `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`
+    onUpdate: function () {
+      e("#table-size").innerText = document.querySelectorAll("#mds-table tbody tr:not([hidden])").length;
+    }
   });
 
-  e("#table-size").innerText = mdsJson.entries.length;
-  table.on("dataFiltered", function (filters, rows) {
-    e("#table-size").innerText = rows.length;
-  });
-
-  function showColumnsSelector(show) {
-    e("#shown-columns").disabled = !show;
-  }
+  e(".table-footer").innerHTML = `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`;
 
   window.addEventListener('popstate', (event) => {
     if (e("#authr").checkVisibility()) {
@@ -455,50 +428,40 @@ onReady(() => {
       window.location = "."
     }
   } else {
-    // refresh so that icons column is properly sized
-    table.on("tableBuilt", function() {
-      table.redraw(true);
 
-      let hidableColumns = [];
+    let hidableColumns = {};
+    let allColumns = table.getColumns();
 
-      for (let c of table.getColumns()) {
-        if (c.getDefinition()["visible"] === false) {
-          let title = c.getDefinition().title;
-          hidableColumns[title] = c;
-          e("#shown-columns").append(newE("option", { value: title }, "+ " + title));
-        }
+    // Populate hidable columns (columns that are hidden by default)
+    for (let c of allColumns) {
+      if (c.getDefinition()["visible"] === false) {
+        let title = c.getDefinition().title;
+        hidableColumns[title] = c;
+        e("#shown-columns").append(newE("option", { value: title }, "+ " + title));
       }
+    }
 
-      e("#shown-columns").addEventListener("change", () => {
-        let selected = e("#shown-columns").selectedOptions[0].value;
-        if (selected == "few") {
-          showColumnsSelector(false);
-          // Hide hidable columns
-          setTimeout(() => {
-            for (let c in hidableColumns) {
-              hidableColumns[c].hide();
-            }
-            table.redraw();
-            showColumnsSelector(true);
-          }, 10);
-        } else if (selected == "all") {
-          // Show all columns
-          showColumnsSelector(false);
-          setTimeout(() => {
-            for (let c of table.getColumns()) {
-              c.show();
-            }
-            table.redraw();
-            showColumnsSelector(true);
-          }, 10);
-        } else {
-          // Show selected columns
+    e("#shown-columns").addEventListener("change", () => {
+      let selectElement = e("#shown-columns");
+      let selected = selectElement.value;
+      
+      if (selected == "few") {
+        // Hide hidable columns
+        for (let title in hidableColumns) {
+          hidableColumns[title].hide();
+        }
+      } else if (selected == "all") {
+        // Show all columns
+        for (let c of allColumns) {
+          c.show();
+        }
+      } else {
+        // Show selected columns
+        if (hidableColumns[selected]) {
           hidableColumns[selected].show();
           // the new column may change row height
-          table.redraw();
         }
-      });
-
+      }
     });
   }
 });

@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width,height=device-height">
   <title>FIDO MDS Explorer</title>
   <meta name="description" content="Online FIDO MDS parser and reader">
-  <link href="css/tabulator.min.css" rel="stylesheet">
-  <script src="js/tabulator.min.js"></script>
   <link rel="stylesheet" href="css/mds-explorer.css">
   <script src="js/x509.js"></script>
   <!-- privacy-friendly usage stats -->
@@ -47,13 +45,15 @@
     <span class="last-update">MDS data updated on <a href="https://github.com/opotonniee/fido-mds-explorer/commits/main/js/mds.js"><span id="last-update-date">??</span></a></span>
     <h2>List of registered authenticators</h2>
     <p>Click on authenticator name to view details - Show columns:
-      <select id="shown-columns">
+      <select id="shown-columns" class="filter-select">
         <option value="few">Few</option>
         <option value="all">All</option>
       </select>
       - Number of entries: <span id="table-size"></span>
     </p>
     <div id="mds-table"></div>
+    <div class="table-footer"></div>
+
   </div>
 
   <div id="authr" hidden>
@@ -68,6 +68,7 @@
   <script src="js/last-mds-update.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/utils.js"></script>
+  <script src="js/custom-table.js"></script>
   <script src="js/mds-explorer.js"></script>
   <footer>This site is not affiliated to FIDO Alliance</footer>
 </body>
