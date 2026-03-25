@@ -254,12 +254,14 @@ onReady(() => {
         field: "metadataStatement.protocolFamily",
         sorter: true,
         headerFilter: "list",
-        headerFilterParams: { values: protocols }
+        headerFilterParams: { values: protocols },
+        isHidable: true
       },
       {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: imageFormatter,
+        isHidable: true
       },
       {
         title: "Certification",
@@ -271,13 +273,12 @@ onReady(() => {
         },
         headerFilter: "list",
         headerFilterParams: { values: statuses },
-        sorter: true,
-        headerFilterFunc: filterCertifs
+        headerFilterFunc: filterCertifs,
+        isHidable: true
       },
       {
         title: "ID",
         field: "metadataStatement",
-        sorter: true,
         headerFilter: true,
         tooltip: function(e, cell){
           let
@@ -307,7 +308,8 @@ onReady(() => {
           }
           return res;
         },
-        headerFilterFunc: filterIds
+        headerFilterFunc: filterIds,
+        isHidable: true
       },
       {
         title: "User Verif.",
@@ -325,8 +327,9 @@ onReady(() => {
         headerFilterParams: { values: uvs },
         headerFilterFunc: filterUserVerifs,
         visible: false,
-        sorter: true
+        isHidable: true
       },
+
       {
         title: "Attachment",
         field: "metadataStatement.attachmentHint",
@@ -338,8 +341,9 @@ onReady(() => {
         headerFilter: "list",
         headerFilterParams: { values: attachments },
         visible: false,
-        sorter: true
+        isHidable: true
       },
+
       {
         title: "Transports",
         field: "metadataStatement.authenticatorGetInfo.transports",
@@ -351,8 +355,9 @@ onReady(() => {
         headerFilter: "list",
         headerFilterParams: { values: transports },
         visible: false,
-        sorter: true
+        isHidable: true
       },
+
       {
         title: "Key Protection",
         field: "metadataStatement.keyProtection",
@@ -364,7 +369,7 @@ onReady(() => {
         headerFilter: "list",
         headerFilterParams: { values: kprots },
         visible: false,
-        sorter: true
+        isHidable: true
       },
       {
         title: "Algorithms",
@@ -377,8 +382,9 @@ onReady(() => {
         headerFilter: "list",
         headerFilterParams: { values: algos },
         visible: false,
-        sorter: true
+        isHidable: true
       },
+
       {
         title: "Updated",
         field: "timeOfLastStatusChange",

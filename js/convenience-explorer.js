@@ -50,8 +50,8 @@ onReady(async () => {
       {
         title: "AAGUID",
         field: "aaguid",
-        sorter: true,
-        headerFilter: true
+        headerFilter: true,
+        isHidable: true
       },
       {
         title: "Name",
@@ -90,27 +90,32 @@ onReady(async () => {
             const nameMatch = !nameFilter || name.toLowerCase().includes(nameFilter);
             return langMatch && nameMatch;
           });
-        }
+        },
+        isHidable: true
       },
       {
         title: "Icon",
         field: "icon",
-        formatter: imageFormatter
+        formatter: imageFormatter,
+        isHidable: true
       },
       {
-        title: "(dark)",
+        title: "Icon",
         field: "iconDark",
-        formatter: darkImageFormatter
+        formatter: darkImageFormatter,
+        isHidable: true
       },
       {
         title: "Provider",
         field: "providerLogoLight",
-        formatter: imageFormatter
+        formatter: imageFormatter,
+        isHidable: true
       },
       {
-        title: "(dark)",
+        title: "Provider",
         field: "providerLogoDark",
-        formatter: darkImageFormatter
+        formatter: darkImageFormatter,
+        isHidable: true
       }
     ],
     onUpdate: function () {

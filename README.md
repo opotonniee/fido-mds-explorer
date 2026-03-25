@@ -2,20 +2,17 @@
 
 Online explorer for the [FIDO Metadata Service v3](https://fidoalliance.org/metadata/)
 
-You can find the MDS change history [here](https://github.com/opotonniee/fido-mds-explorer/commits/main/js/mds.js) (older changes are [here](https://github.com/opotonniee/fido-mds-explorer/commits/main/mds.js))
+# Full MDS Explorer
 
+The [home page](https://opotonniee.github.io/fido-mds-explorer/) lists all the authenticators registered in MDS. You can filter and search the authenticators by different criteria, and customize the displayed columns to suit your needs.
 
-## Browsing
+Click on an authenticator name to view the full authenticator details from the MDS.
 
-The [home page](https://opotonniee.github.io/fido-mds-explorer/) lists all the authenticators registered in MDS.
-
-To only display authenticators with some caracteristics - such as certification level, supported FIDO protocol, or key protection type - click on the column headers and select your criteria.
-
-Click on an authenticator name to view the authenticator details.
+You can find the MDS change history [here](https://github.com/opotonniee/fido-mds-explorer/commits/main/js/mds.js) 
 
 ## Querying
 
-If you want to reference a given authenticator through a hyperlink, you can directly open the detailed authenticator page using one of the following URL query parameters:
+You can get a direct link to the detailed authenticator page using one of the following URL query parameters:
 
 - **aaguid**: View the authenticator with the given aaguid.
 
@@ -28,3 +25,12 @@ https://opotonniee.github.io/fido-mds-explorer/?x5c=MIIECTCCAvGgAwIBAgIMR3MEC%2B
 
 
 If the query does not match any registered authenticator, an error will be displayed and you will be redirected to the home page.
+
+
+## Convenience MDS Explorer
+
+The [Convenience MDS Explorer](https://opotonniee.github.io/fido-mds-explorer/convenience.html) provides a lightweight view of the FIDO Alliance Convenience MDS, which provides human facing description for FIDO2 authenticators. This page displays localized names for the authenticator, and their vendor-provided icons (light and dark)
+
+You can filter and search the authenticators by AAGUID or name, and customize the displayed columns to suit your needs.
+
+You can find the Convenience MDS change history [here](https://github.com/opotonniee/fido-mds-explorer/commits/main/js/convenience-metadata.js)

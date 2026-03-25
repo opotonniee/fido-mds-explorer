@@ -38,7 +38,7 @@ h2 {
   float:right;
 }
 
-button, #file-label {
+button {
   border: 1px solid #777;
   border-radius: 3px;
   padding: 3px 8px;
@@ -47,13 +47,10 @@ button, #file-label {
   font-size: 13px;
   text-align: center;
 }
-button:hover,
-#file-label:hover {
-  background-color: #c4e2a5;
-}
+
 input[type=text],
 input[type=password] {
-  padding: 5px;
+  padding: 5px 25px 5px 5px;
   margin: 0;
   font-size: 13px;
 }
@@ -177,10 +174,34 @@ footer {
 .header-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+}
+
+.header-title-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .header-title {
+  font-weight: bold;
+}
+.header-separator {
+  width: 100%;
+}
+
+.hide-column-icon, .sort-indicator {
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  padding: 0 6px;
+  border-radius: 3px;
+  display: inline-block;
+  user-select: none;
+}
+
+.hide-column-icon:hover, .sort-indicator:hover {
+  color: #0066cc;
   font-weight: bold;
 }
 
@@ -189,14 +210,53 @@ footer {
   gap: 5px;
 }
 
+.filter-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+select {
+  padding: 4px 24px 4px 4px;
+  border-radius: 3px;
+}
+
 .filter-input,
 .filter-select {
-  padding: 4px;
+  padding: 4px 24px 4px 4px;
   font-size: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
   width: 100%;
-  max-width: 150px;
+  box-sizing: border-box;
+}
+
+.filter-clear-btn {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  padding: 0 4px;
+  display: none;
+  line-height: 1;
+  height: 24px;
+  width: 24px;
+}
+
+.filter-clear-btn:hover {
+  color: #333;
+  font-weight: bold;
+}
+
+.filter-input-wrapper.has-content .filter-clear-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-table tbody tr {
@@ -263,4 +323,10 @@ ul, ol {
 
 .friendly-name {
   margin: 5px 0;
+}
+
+#cmds-table th:nth-of-type(4),
+#cmds-table th:nth-of-type(6) {
+  background: black;
+  color: white;
 }

@@ -46,15 +46,52 @@ class CustomTable {
       const headerContent = document.createElement('div');
       headerContent.className = 'header-content';
 
+      // Title and hide icon container
+      const titleContainer = document.createElement('div');
+      titleContainer.className = 'header-title-container';
+
       // Title
       const titleSpan = document.createElement('span');
       titleSpan.className = 'header-title';
       titleSpan.textContent = column.title;
+      titleContainer.appendChild(titleSpan);
+      // Separator
+      const sepSpan = document.createElement('span');
+      sepSpan.className = 'header-separator';
+      titleContainer.appendChild(sepSpan);
+
+      // Sort indicator icon (if sortable)
       if (column.sorter) {
-        titleSpan.style.cursor = 'pointer';
-        titleSpan.addEventListener('click', () => this.sort(column.field));
+        const sortIcon = document.createElement('span');
+        sortIcon.className = 'sort-indicator';
+        sortIcon.addEventListener('click', () => this.sort(column.field));
+        //sortIcon.style.cursor = 'pointer';
+
+        // Show icon based on current sort state
+        if (this.sortField === column.field) {
+          sortIcon.textContent = this.sortDirection === 'asc' ? '↑' : '↓';
+        } else {
+          sortIcon.textContent = '↕';
+        }
+
+        titleContainer.appendChild(sortIcon);
       }
-      headerContent.appendChild(titleSpan);
+
+      // Hide icon (if isHidable is true)
+      if (column.isHidable) {
+        const hideIcon = document.createElement('span');
+        hideIcon.className = 'hide-column-icon';
+        hideIcon.title = 'Hide this column';
+        hideIcon.textContent = '⊘';
+        hideIcon.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.hideColumn(column);
+        });
+        titleContainer.appendChild(hideIcon);
+      }
+
+      headerContent.appendChild(titleContainer);
+
 
       // Filter
       if (column.headerFilter) {
@@ -91,6 +128,9 @@ class CustomTable {
           if (column.headerFilterInputs) {
             // Create multiple input fields
             for (const inputConfig of column.headerFilterInputs) {
+              const wrapper = document.createElement('div');
+              wrapper.className = 'filter-input-wrapper';
+
               const input = document.createElement('input');
               input.type = 'text';
               input.placeholder = inputConfig.placeholder || 'Filter...';
@@ -98,7 +138,37 @@ class CustomTable {
               input.dataset.filterKey = inputConfig.key;
               input.className = 'filter-input';
 
+              const clearBtn = document.createElement('button');
+              clearBtn.className = 'filter-clear-btn';
+              clearBtn.textContent = '×';
+              clearBtn.type = 'button';
+              clearBtn.title = 'Clear filter';
+
               input.addEventListener('input', (e) => {
+                // Get all input values for this field
+                const filterValues = {};
+                const inputs = filterDiv.querySelectorAll('input[data-field="' + column.field + '"]');
+                inputs.forEach(inp => {
+                  const key = inp.dataset.filterKey || 'value';
+                  filterValues[key] = inp.value;
+                });
+
+                // Update wrapper class based on content
+                const hasContent = Object.values(filterValues).some(v => v !== '');
+                wrapper.classList.toggle('has-content', hasContent);
+
+                if (column.headerFilterFunc) {
+                  this.setFilter(column.field, filterValues, column.headerFilterFunc);
+                } else {
+                  this.setFilter(column.field, filterValues);
+                }
+              });
+
+              clearBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                input.value = '';
+                wrapper.classList.remove('has-content');
+                
                 // Get all input values for this field
                 const filterValues = {};
                 const inputs = filterDiv.querySelectorAll('input[data-field="' + column.field + '"]');
@@ -113,24 +183,51 @@ class CustomTable {
                   this.setFilter(column.field, filterValues);
                 }
               });
-              filterDiv.appendChild(input);
+
+              wrapper.appendChild(input);
+              wrapper.appendChild(clearBtn);
+              filterDiv.appendChild(wrapper);
             }
           } else {
             // Single input field
+            const wrapper = document.createElement('div');
+            wrapper.className = 'filter-input-wrapper';
+
             const input = document.createElement('input');
             input.type = 'text';
             input.placeholder = 'Filter...';
             input.dataset.field = column.field;
             input.className = 'filter-input';
 
+            const clearBtn = document.createElement('button');
+            clearBtn.className = 'filter-clear-btn';
+            clearBtn.textContent = '×';
+            clearBtn.type = 'button';
+            clearBtn.title = 'Clear filter';
+
             input.addEventListener('input', (e) => {
+              wrapper.classList.toggle('has-content', e.target.value !== '');
               if (column.headerFilterFunc) {
                 this.setFilter(column.field, e.target.value, column.headerFilterFunc);
               } else {
                 this.setFilter(column.field, e.target.value);
               }
             });
-            filterDiv.appendChild(input);
+
+            clearBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              input.value = '';
+              wrapper.classList.remove('has-content');
+              if (column.headerFilterFunc) {
+                this.setFilter(column.field, '', column.headerFilterFunc);
+              } else {
+                this.setFilter(column.field, '');
+              }
+            });
+
+            wrapper.appendChild(input);
+            wrapper.appendChild(clearBtn);
+            filterDiv.appendChild(wrapper);
           }
         }
 
@@ -164,8 +261,15 @@ class CustomTable {
     }
 
     this.filteredData.sort((a, b) => {
-      const valA = this.getNestedValue(a, field);
-      const valB = this.getNestedValue(b, field);
+      let valA = this.getNestedValue(a, field);
+      let valB = this.getNestedValue(b, field);
+      /* workaround to sort objects */
+      if (valA && typeof valA !== "string") {
+        valA = JSON.stringify(valA);
+      }
+      if (valB && typeof valB !== "string") {
+        valB = JSON.stringify(valB);
+      }
 
       let comparison = 0;
       if (valA < valB) comparison = -1;
@@ -329,6 +433,11 @@ class CustomTable {
           const input = this.container.querySelector(`input[data-field="${field}"][data-filter-key="${key}"]`);
           if (input) {
             input.value = value || '';
+            const wrapper = input.closest('.filter-input-wrapper');
+            if (wrapper) {
+              const hasContent = Object.values(filter.value).some(v => v !== '');
+              wrapper.classList.toggle('has-content', hasContent);
+            }
           }
         }
       } else {
@@ -336,6 +445,10 @@ class CustomTable {
         const input = this.container.querySelector(`input[data-field="${field}"]`);
         if (input && !input.dataset.filterKey) {
           input.value = filter.value || '';
+          const wrapper = input.closest('.filter-input-wrapper');
+          if (wrapper) {
+            wrapper.classList.toggle('has-content', filter.value !== '');
+          }
         }
       }
     }
