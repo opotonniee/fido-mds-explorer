@@ -144,7 +144,7 @@ class CustomTable {
               clearBtn.type = 'button';
               clearBtn.title = 'Clear filter';
 
-              input.addEventListener('input', (e) => {
+              input.addEventListener('input', (/*event*/) => {
                 // Get all input values for this field
                 const filterValues = {};
                 const inputs = filterDiv.querySelectorAll('input[data-field="' + column.field + '"]');
@@ -168,7 +168,7 @@ class CustomTable {
                 e.preventDefault();
                 input.value = '';
                 wrapper.classList.remove('has-content');
-                
+
                 // Get all input values for this field
                 const filterValues = {};
                 const inputs = filterDiv.querySelectorAll('input[data-field="' + column.field + '"]');
@@ -327,7 +327,7 @@ class CustomTable {
   }
 
   getColumns() {
-    return this.columns.map((col, index) => ({
+    return this.columns.map((col/*, index*/) => ({
       getDefinition: () => col,
       hide: () => this.hideColumn(col),
       show: () => this.showColumn(col),

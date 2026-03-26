@@ -1,7 +1,6 @@
 'use strict';
-/* globals CustomTable, LAST_CMDS_UPDATE */
+/* globals e, onReady, imageFormatter, darkImageFormatter, CustomTable, LAST_CMDS_UPDATE */
 
-let table;
 let mdsJson;
 
 onReady(async () => {
@@ -44,7 +43,7 @@ onReady(async () => {
     }));
 
   // Create table using CustomTable
-  table = new CustomTable("#cmds-table", {
+  new CustomTable("#cmds-table", {
     data: data,
     columns: [
       {
@@ -75,15 +74,15 @@ onReady(async () => {
           if (!friendlyNames || Object.keys(friendlyNames).length === 0) {
             return true;
           }
-          
+
           const langFilter = filterValue.lang ? String(filterValue.lang).toLowerCase() : "";
           const nameFilter = filterValue.name ? String(filterValue.name).toLowerCase() : "";
-          
+
           // If no filters, show all
           if (!langFilter && !nameFilter) {
             return true;
           }
-          
+
           // Check if any entry matches both filters
           return Object.entries(friendlyNames).some(([lang, name]) => {
             const langMatch = !langFilter || lang.toLowerCase().includes(langFilter);

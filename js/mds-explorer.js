@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, mdsJson, CustomTable, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
@@ -195,9 +195,9 @@ onReady(() => {
   let statuses = [],
     protocols = [],
     uvs = [],
-    attachments = [], 
-    transports = [], 
-    kprots = [], 
+    attachments = [],
+    transports = [],
+    kprots = [],
     algos = [];
   for (let e of mdsJson.entries) {
     for (let s of e.statusReports) {
@@ -453,7 +453,7 @@ onReady(() => {
     e("#shown-columns").addEventListener("change", () => {
       let selectElement = e("#shown-columns");
       let selected = selectElement.value;
-      
+
       if (selected == "few") {
         // Hide hidable columns
         for (let title in hidableColumns) {
