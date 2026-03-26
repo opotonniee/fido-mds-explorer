@@ -64,9 +64,15 @@ onReady(async () => {
         formatter: function(cell) {
           const friendlyNames = cell.getValue();
           if (!friendlyNames) return "";
+          const langFilter = e("input[placeholder='Language']").value.trim().toLowerCase();
+          const nameFilter = e("input[placeholder='Name']").value.trim().toLowerCase();
           return Object.entries(friendlyNames)
-            .map(([lang, name]) => `<div class="friendly-name"><span class="lang">${lang}</span>: <span class="name">${name}</span></div>`)
-            .join("");
+            .map(([lang, name]) => {
+              if ((!nameFilter || name.toLowerCase().includes(nameFilter)) &&
+                (!langFilter || lang.toLowerCase().includes(langFilter))) {
+                return `<div class="friendly-name"><span class="lang">${lang}</span>: <span class="name">${name}</span></div>`;
+              }
+          }).join("");
         },
         headerFilterFunc: function(filterValue, rowValue) {
           // filterValue is an object like { name: "...", lang: "..." }
@@ -75,8 +81,8 @@ onReady(async () => {
             return true;
           }
 
-          const langFilter = filterValue.lang ? String(filterValue.lang).toLowerCase() : "";
-          const nameFilter = filterValue.name ? String(filterValue.name).toLowerCase() : "";
+          const langFilter = filterValue.lang ? String(filterValue.lang.trim()).toLowerCase() : "";
+          const nameFilter = filterValue.name ? String(filterValue.name.trim()).toLowerCase() : "";
 
           // If no filters, show all
           if (!langFilter && !nameFilter) {
