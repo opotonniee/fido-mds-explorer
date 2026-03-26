@@ -33,4 +33,4 @@ The [Convenience MDS Explorer](https://opotonniee.github.io/fido-mds-explorer/co
 
 You can filter and search the authenticators by AAGUID or name, and customize the displayed columns to suit your needs.
 
-You can find the Convenience MDS change history [here](https://github.com/opotonniee/fido-mds-explorer/commits/main/js/convenience-metadata.js)
+You can find the Convenience MDS change history [here](https://github.com/opotonniee/fido-mds-explorer/commits/main/js/convenience-metadata.json)
