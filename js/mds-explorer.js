@@ -132,17 +132,20 @@ e("#authr-close").addEventListener("click", function() {
   }
 });
 
-function isMatchingFilter(headerValue, values) {
-  if (Array.isArray(headerValue) && headerValue.length == 1) {
-    // array with single value, use it
-    headerValue = headerValue[0];
-  }
-  if (Array.isArray(headerValue) || headerValue == "") {
-    return true; // if multiple values (i.e. all) or empty: no filter
+function isMatchingFilter(headerValue, values, exact = false) {
+  if (headerValue == "") {
+    return true; // if empty: no filter
   }
   // Case-insensitive substring matching
   const lowerHeaderValue = String(headerValue).toLowerCase();
-  return values.some(v => String(v).toLowerCase().includes(lowerHeaderValue));
+  return values.some(v => {
+    const lowerV = String(v).toLowerCase();
+    if (exact) {
+      return lowerV == lowerHeaderValue;
+    } else {
+      return lowerV.includes(lowerHeaderValue);
+    }
+  });
 }
 
 function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
@@ -150,7 +153,7 @@ function filterCertifs(headerValue, rowValue/*, rowData, filterParams*/) {
   for (let val of rowValue) {
     values.push(val.status);
   }
-  return isMatchingFilter(headerValue, values);
+  return isMatchingFilter(headerValue, values, true);
 }
 
 function filterIds(headerValue, rowValue/*, rowData, filterParams*/) {
@@ -172,7 +175,7 @@ function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
       values.push(val2.userVerificationMethod);
     }
   }
-  return isMatchingFilter(headerValue, values);
+  return isMatchingFilter(headerValue, values, true);
 }
 
 onReady(() => {
