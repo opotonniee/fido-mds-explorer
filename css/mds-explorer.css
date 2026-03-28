@@ -158,6 +158,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .custom-table thead {
   background-color: #DDD;
 }

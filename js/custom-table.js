@@ -18,116 +18,149 @@ class CustomTable {
     this.sortField = null;
     this.sortDirection = 'asc';
     this.onUpdate = this.options.onUpdate || null;
+    this.table = null; // Cache table element
+    this.thead = null; // Cache header
+    this.debounceTimer = null; // For debouncing filters
     this.render();
+  }
+
+  // Simple debounce utility
+  debounce(func, delay) {
+    clearTimeout(this.debounceTimer);
+    this.debounceTimer = setTimeout(func, delay);
   }
 
   render() {
     this.container.innerHTML = '';
+    this.table = document.createElement('table');
+    this.table.className = 'custom-table';
+    this.renderHeader();
+    this.container.appendChild(this.table);
+    this.renderBody();
+  }
 
-    // Create table element
-    const table = document.createElement('table');
-    table.className = 'custom-table';
+  renderHeader() {
+    if (!this.thead) {
+      this.thead = document.createElement('thead');
+      const headerRow = document.createElement('tr');
 
-    // Create header
-    const thead = document.createElement('thead');
-    const headerRow = document.createElement('tr');
+      for (const column of this.columns) {
+        const th = document.createElement('th');
+        th.className = 'table-header';
+        th.classList.toggle('hidden', column.visible === false);
 
-    for (const column of this.columns) {
-      const th = document.createElement('th');
-      th.className = 'table-header';
-      if (column.visible === false) {
-        th.style.display = 'none';
-      }
+        const headerContent = document.createElement('div');
+        headerContent.className = 'header-content';
 
-      const headerContent = document.createElement('div');
-      headerContent.className = 'header-content';
+        // Title and hide icon container
+        const titleContainer = document.createElement('div');
+        titleContainer.className = 'header-title-container';
 
-      // Title and hide icon container
-      const titleContainer = document.createElement('div');
-      titleContainer.className = 'header-title-container';
+        // Title
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'header-title';
+        titleSpan.textContent = column.title;
+        titleContainer.appendChild(titleSpan);
+        // Separator
+        const sepSpan = document.createElement('span');
+        sepSpan.className = 'header-separator';
+        titleContainer.appendChild(sepSpan);
 
-      // Title
-      const titleSpan = document.createElement('span');
-      titleSpan.className = 'header-title';
-      titleSpan.textContent = column.title;
-      titleContainer.appendChild(titleSpan);
-      // Separator
-      const sepSpan = document.createElement('span');
-      sepSpan.className = 'header-separator';
-      titleContainer.appendChild(sepSpan);
+        // Sort indicator icon (if sortable)
+        if (column.sorter) {
+          const sortIcon = document.createElement('span');
+          sortIcon.className = 'sort-indicator';
+          sortIcon.addEventListener('click', () => this.sort(column.field, column.sortFunc));
+          //sortIcon.style.cursor = 'pointer';
 
-      // Sort indicator icon (if sortable)
-      if (column.sorter) {
-        const sortIcon = document.createElement('span');
-        sortIcon.className = 'sort-indicator';
-        sortIcon.addEventListener('click', () => this.sort(column.field, column.sortFunc));
-        //sortIcon.style.cursor = 'pointer';
-
-        // Show icon based on current sort state
-        if (this.sortField === column.field) {
-          sortIcon.textContent = this.sortDirection === 'asc' ? '↑' : '↓';
-        } else {
-          sortIcon.textContent = '↕';
-        }
-
-        titleContainer.appendChild(sortIcon);
-      }
-
-      // Hide icon (if isHidable is true)
-      if (column.isHidable) {
-        const hideIcon = document.createElement('span');
-        hideIcon.className = 'hide-column-icon';
-        hideIcon.title = 'Hide this column';
-        hideIcon.textContent = '⊘';
-        hideIcon.addEventListener('click', (e) => {
-          e.stopPropagation();
-          this.hideColumn(column);
-        });
-        titleContainer.appendChild(hideIcon);
-      }
-
-      headerContent.appendChild(titleContainer);
-
-
-      // Filter
-      if (column.headerFilter) {
-        const filterDiv = document.createElement('div');
-        filterDiv.className = 'header-filter';
-
-        if (column.headerFilter === 'list' && column.headerFilterParams?.values) {
-          const select = document.createElement('select');
-          select.dataset.field = column.field;
-          select.className = 'filter-select';
-
-          const allOption = document.createElement('option');
-          allOption.value = '';
-          allOption.textContent = 'All';
-          select.appendChild(allOption);
-
-          for (const value of column.headerFilterParams.values) {
-            const option = document.createElement('option');
-            option.value = value;
-            option.textContent = value;
-            select.appendChild(option);
+          // Show icon based on current sort state
+          if (this.sortField === column.field) {
+            sortIcon.textContent = this.sortDirection === 'asc' ? '↑' : '↓';
+          } else {
+            sortIcon.textContent = '↕';
           }
 
-          select.addEventListener('change', (e) => {
-            this.setFilter(column.field, e.target.value, column.headerFilterFunc, column.headerFilterNormalize);
+          titleContainer.appendChild(sortIcon);
+        }
+
+        // Hide icon (if isHidable is true)
+        if (column.isHidable) {
+          const hideIcon = document.createElement('span');
+          hideIcon.className = 'hide-column-icon';
+          hideIcon.title = 'Hide this column';
+          hideIcon.textContent = '⊘';
+          hideIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.hideColumn(column);
           });
-          filterDiv.appendChild(select);
-        } else if (column.headerFilter === true) {
-          // Check if column has multiple filter inputs
-          if (column.headerFilterInputs) {
-            // Create multiple input fields
-            for (const inputConfig of column.headerFilterInputs) {
+          titleContainer.appendChild(hideIcon);
+        }
+
+        headerContent.appendChild(titleContainer);
+
+
+        // Filter
+        if (column.headerFilter) {
+          const filterDiv = document.createElement('div');
+          filterDiv.className = 'header-filter';
+
+          if (column.headerFilter === 'list' && column.headerFilterParams?.values) {
+            const select = document.createElement('select');
+            select.dataset.field = column.field;
+            select.className = 'filter-select';
+
+            const allOption = document.createElement('option');
+            allOption.value = '';
+            allOption.textContent = 'All';
+            select.appendChild(allOption);
+
+            for (const value of column.headerFilterParams.values) {
+              const option = document.createElement('option');
+              option.value = value;
+              option.textContent = value;
+              select.appendChild(option);
+            }
+
+            select.addEventListener('change', (e) => {
+              this.setFilter(column.field, e.target.value, column.headerFilterFunc, column.headerFilterNormalize);
+            });
+            filterDiv.appendChild(select);
+          } else if (column.headerFilter === true) {
+            // Check if column has multiple filter inputs
+            if (column.headerFilterInputs) {
+              // Create multiple input fields
+              for (const inputConfig of column.headerFilterInputs) {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'filter-input-wrapper';
+
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = inputConfig.placeholder || 'Filter...';
+                input.dataset.field = column.field;
+                input.dataset.filterKey = inputConfig.key;
+                input.className = 'filter-input';
+
+                const clearBtn = document.createElement('button');
+                clearBtn.className = 'filter-clear-btn';
+                clearBtn.textContent = '×';
+                clearBtn.type = 'button';
+                clearBtn.title = 'Clear filter';
+
+                this.createFilterInput(wrapper, input, clearBtn, column.field, column.headerFilterFunc, column.headerFilterNormalize);
+
+                wrapper.appendChild(input);
+                wrapper.appendChild(clearBtn);
+                filterDiv.appendChild(wrapper);
+              }
+            } else {
+              // Single input field
               const wrapper = document.createElement('div');
               wrapper.className = 'filter-input-wrapper';
 
               const input = document.createElement('input');
               input.type = 'text';
-              input.placeholder = inputConfig.placeholder || 'Filter...';
+              input.placeholder = 'Filter...';
               input.dataset.field = column.field;
-              input.dataset.filterKey = inputConfig.key;
               input.className = 'filter-input';
 
               const clearBtn = document.createElement('button');
@@ -136,91 +169,46 @@ class CustomTable {
               clearBtn.type = 'button';
               clearBtn.title = 'Clear filter';
 
-              input.addEventListener('input', (/*event*/) => {
-                // Get all input values for this field
-                const filterValues = {};
-                const inputs = filterDiv.querySelectorAll('input[data-field="' + column.field + '"]');
-                inputs.forEach(inp => {
-                  const key = inp.dataset.filterKey || 'value';
-                  filterValues[key] = inp.value;
-                });
-
-                // Update wrapper class based on content
-                const hasContent = Object.values(filterValues).some(v => v !== '');
-                wrapper.classList.toggle('has-content', hasContent);
-
-                this.setFilter(column.field, filterValues, column.headerFilterFunc, column.headerFilterNormalize);
-              });
-
-              clearBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                input.value = '';
-                wrapper.classList.remove('has-content');
-
-                // Get all input values for this field
-                const filterValues = {};
-                const inputs = filterDiv.querySelectorAll('input[data-field="' + column.field + '"]');
-                inputs.forEach(inp => {
-                  const key = inp.dataset.filterKey || 'value';
-                  filterValues[key] = inp.value;
-                });
-
-                this.setFilter(column.field, filterValues, column.headerFilterFunc, column.headerFilterNormalize);
-              });
+              this.createFilterInput(wrapper, input, clearBtn, column.field, column.headerFilterFunc, column.headerFilterNormalize);
 
               wrapper.appendChild(input);
               wrapper.appendChild(clearBtn);
               filterDiv.appendChild(wrapper);
             }
-          } else {
-            // Single input field
-            const wrapper = document.createElement('div');
-            wrapper.className = 'filter-input-wrapper';
-
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.placeholder = 'Filter...';
-            input.dataset.field = column.field;
-            input.className = 'filter-input';
-
-            const clearBtn = document.createElement('button');
-            clearBtn.className = 'filter-clear-btn';
-            clearBtn.textContent = '×';
-            clearBtn.type = 'button';
-            clearBtn.title = 'Clear filter';
-
-            input.addEventListener('input', (e) => {
-              wrapper.classList.toggle('has-content', e.target.value !== '');
-              this.setFilter(column.field, e.target.value, column.headerFilterFunc, column.headerFilterNormalize);
-            });
-
-            clearBtn.addEventListener('click', (e) => {
-              e.preventDefault();
-              input.value = '';
-              wrapper.classList.remove('has-content');
-              this.setFilter(column.field, '', column.headerFilterFunc, column.headerFilterNormalize);
-            });
-
-            wrapper.appendChild(input);
-            wrapper.appendChild(clearBtn);
-            filterDiv.appendChild(wrapper);
           }
+
+          headerContent.appendChild(filterDiv);
         }
 
-        headerContent.appendChild(filterDiv);
+        th.appendChild(headerContent);
+        headerRow.appendChild(th);
       }
 
-      th.appendChild(headerContent);
-      headerRow.appendChild(th);
+      this.thead.appendChild(headerRow);
     }
+    this.table.appendChild(this.thead);
+  }
 
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-
-    this.container.appendChild(table);
-    // Create body
-    this.renderBody();
-
+  // Extracted helper for filter inputs
+  createFilterInput(wrapper, input, clearBtn, field, filterFunc, normalizeFunc) {
+    const updateFilter = () => {
+      const filterValues = {};
+      const inputs = wrapper.closest('.header-filter').querySelectorAll('input[data-field="' + field + '"]');
+      inputs.forEach(inp => {
+        const key = inp.dataset.filterKey || 'value';
+        filterValues[key] = inp.value;
+      });
+      const hasContent = Object.values(filterValues).some(v => v !== '');
+      wrapper.classList.toggle('has-content', hasContent);
+      const filterValue = inputs.length > 1 ? filterValues : input.value;
+      this.debounce(() => this.setFilter(field, filterValue, filterFunc, normalizeFunc), 300);
+    };
+    input.addEventListener('input', updateFilter);
+    clearBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      input.value = '';
+      updateFilter();
+    });
   }
 
   getNestedValue(obj, field) {
@@ -239,7 +227,7 @@ class CustomTable {
     this.filteredData.sort((a, b) => {
       let valA = this.getNestedValue(a, field);
       let valB = this.getNestedValue(b, field);
-      let comparison = 0;
+      let comparison;
 
       if (sortFunc) {
         comparison = sortFunc(valA, valB, a, b);
@@ -251,13 +239,35 @@ class CustomTable {
         if (valB && typeof valB !== "string") {
           valB = JSON.stringify(valB);
         }
+        valA = valA.toLowerCase();
+        valB = valB.toLowerCase();
         if (valA < valB) comparison = -1;
         else if (valA > valB) comparison = 1;
+        else comparison = 0;
       }
       return this.sortDirection === 'asc' ? comparison : -comparison;
     });
 
-    this.render();
+    this.renderBody();
+    this.updateSortIndicators();
+  }
+
+  updateSortIndicators() {
+    if (!this.thead) return;
+    const ths = this.thead.querySelectorAll('th');
+    for (let i = 0; i < this.columns.length; i++) {
+      const column = this.columns[i];
+      if (column.sorter) {
+        const sortIcon = ths[i]?.querySelector('.sort-indicator');
+        if (sortIcon) {
+          if (this.sortField === column.field) {
+            sortIcon.textContent = this.sortDirection === 'asc' ? '↑' : '↓';
+          } else {
+            sortIcon.textContent = '↕';
+          }
+        }
+      }
+    }
   }
 
   getFilter(field) {
@@ -299,17 +309,30 @@ class CustomTable {
             return false;
           }
         } else {
-          // Default filter (case-insensitive)
-          if (filter.value === '') {
+          // Default filtering
+          let isEmpty = false;
+          if (typeof filter.value === 'string') {
+            isEmpty = filter.value === '';
+          } else if (typeof filter.value === 'object') {
+            isEmpty = Object.values(filter.value).every(v => v === '');
+          }
+          if (isEmpty) {
             continue; // No filter
           }
 
+          let searchTerms = [];
+          if (typeof filter.value === 'string') {
+            searchTerms = [filter.value];
+          } else if (typeof filter.value === 'object') {
+            searchTerms = Object.values(filter.value).filter(v => v !== '');
+          }
+
           if (Array.isArray(cellValue)) {
-            if (!cellValue.some(v => filter.normalize(v).includes(filter.value))) {
+            if (!cellValue.some(v => searchTerms.some(term => filter.normalize(v).includes(term)))) {
               return false;
             }
           } else {
-            if (!(filter.normalize(cellValue).includes(filter.value))) {
+            if (!searchTerms.some(term => filter.normalize(cellValue).includes(term))) {
               return false;
             }
           }
@@ -337,7 +360,14 @@ class CustomTable {
     const col = typeof column === 'object' ? column : this.columns[column];
     if (col) {
       col.visible = false;
-      this.render();
+      // Toggle classes instead of re-rendering
+      const index = this.columns.indexOf(col);
+      if (index !== -1) {
+        const ths = this.table.querySelectorAll('th');
+        const tds = this.table.querySelectorAll('td:nth-child(' + (index + 1) + ')');
+        ths[index]?.classList.add('hidden');
+        tds.forEach(td => td.classList.add('hidden'));
+      }
     }
   }
 
@@ -345,77 +375,57 @@ class CustomTable {
     const col = typeof column === 'object' ? column : this.columns[column];
     if (col) {
       col.visible = true;
-      this.render();
+      // Toggle classes instead of re-rendering
+      const index = this.columns.indexOf(col);
+      if (index !== -1) {
+        const ths = this.table.querySelectorAll('th');
+        const tds = this.table.querySelectorAll('td:nth-child(' + (index + 1) + ')');
+        ths[index]?.classList.remove('hidden');
+        tds.forEach(td => td.classList.remove('hidden'));
+      }
     }
   }
 
   renderBody() {
-    const table = this.container.querySelector('table');
-    if (!table) return;
-
-    // Remove old tbody
-    const oldTbody = table.querySelector('tbody');
-    if (oldTbody) {
-      oldTbody.remove();
-    }
-
-    // Create new tbody
+    const oldTbody = this.table.querySelector('tbody');
+    if (oldTbody) oldTbody.remove();
     const tbody = document.createElement('tbody');
-
+    const fragment = document.createDocumentFragment(); // Batch DOM updates
     for (let i = 0; i < this.filteredData.length; i++) {
       const row = document.createElement('tr');
       row.className = i % 2 === 0 ? 'even' : 'odd';
       row.dataset.index = i;
-
       const rowData = this.filteredData[i];
-
       for (const column of this.columns) {
         const td = document.createElement('td');
         td.className = 'table-cell';
-        if (column.visible === false) {
-          td.style.display = 'none';
-        }
-
+        td.classList.toggle('hidden', column.visible === false);
         const cellValue = this.getNestedValue(rowData, column.field);
-
         let cellContent = cellValue;
         if (column.formatter) {
-          const mockCell = {
-            getValue: () => cellValue,
-            getData: () => rowData,
-            getElement: () => td,
-            getFilter: () => this.getFilter(column.field)
-          };
+          const mockCell = { getValue: () => cellValue, getData: () => rowData, getElement: () => td, getFilter: () => this.getFilter(column.field) };
           cellContent = column.formatter(mockCell);
+          td.innerHTML = cellContent; // Assume formatter returns safe HTML
         } else if (Array.isArray(cellValue)) {
-          cellContent = cellValue.join('<br>');
+          td.innerHTML = cellValue.join('<br>'); // Keep HTML for line breaks
+        } else {
+          td.textContent = cellValue || '';
         }
-
-        td.innerHTML = cellContent;
-
         if (column.cellClick) {
           td.style.cursor = 'pointer';
-          const mockCell = {
-            getValue: () => cellValue,
-            getData: () => rowData
-          };
+          const mockCell = { getValue: () => cellValue, getData: () => rowData };
           td.addEventListener('click', (e) => column.cellClick(e, mockCell));
         }
-
         row.appendChild(td);
       }
-
-      tbody.appendChild(row);
+      fragment.appendChild(row);
     }
-
-    table.appendChild(tbody);
-
-    // Restore filter values after rendering body
+    tbody.appendChild(fragment);
+    this.table.appendChild(tbody);
     this.restoreFilterValues();
     if (this.onUpdate) {
       this.onUpdate();
     }
-
   }
 
   restoreFilterValues() {
