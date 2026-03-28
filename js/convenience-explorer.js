@@ -1,5 +1,5 @@
 'use strict';
-/* globals e, onReady, imageFormatter, darkImageFormatter, normalizeString, matchesFilter, CustomTable, LAST_CMDS_UPDATE */
+/* globals e, onReady, imageFormatter, darkImageFormatter, matchesFilter, CustomTable, LAST_CMDS_UPDATE */
 
 let mdsJson;
 
@@ -50,7 +50,7 @@ onReady(async () => {
         title: "AAGUID",
         field: "aaguid",
         headerFilter: true,
-        headerFilterNormalize: normalizeString,
+        headerFilterNormalize: CustomTable.trimLower,
         isHidable: true
       },
       {
@@ -62,7 +62,7 @@ onReady(async () => {
           { key: "lang", placeholder: "Language" },
           { key: "name", placeholder: "Name" }
         ],
-        headerFilterNormalize: normalizeString,
+        headerFilterNormalize: CustomTable.trimLower,
         formatter: function(cell) {
           const friendlyNames = cell.getValue();
           if (!friendlyNames) return "";

@@ -5,6 +5,7 @@
  * Features: sorting, filtering, column visibility toggle
  */
 
+// eslint-disable-next-line no-unused-vars
 class CustomTable {
   constructor(selector, options) {
     this.selector = selector;
@@ -450,6 +451,10 @@ class CustomTable {
         }
       }
     }
+  }
+
+  static trimLower(str) {
+    return str ? str.trim().toLowerCase() : '';
   }
 
   redraw() {

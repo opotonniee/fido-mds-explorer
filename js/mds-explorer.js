@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, normalizeString, CustomTable, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
@@ -246,7 +246,7 @@ onReady(() => {
         field: "metadataStatement.description",
         sorter: true,
         headerFilter: true,
-        headerFilterNormalize: normalizeString,
+        headerFilterNormalize: CustomTable.trimLower,
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
@@ -285,7 +285,7 @@ onReady(() => {
         title: "ID",
         field: "metadataStatement",
         headerFilter: true,
-        headerFilterNormalize: normalizeString,
+        headerFilterNormalize: CustomTable.trimLower,
         tooltip: function(e, cell){
           let
             item = cell.getValue(),

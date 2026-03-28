@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* globals CustomTable */
 'use strict';
 
 function type(obj) {
@@ -39,11 +41,7 @@ const onReady = (callback) => {
 }
 
 // Table filtering helpers
-function normalizeString(str) {
-  return str ? str.trim().toLowerCase() : "";
-}
-
 function matchesFilter(value, filter) {
-  return (!filter) || normalizeString(value).includes(filter);
+  return (!filter) || CustomTable.trimLower(value).includes(filter);
 }
 
