@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, CustomTable, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, normalizeString, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
@@ -246,11 +246,13 @@ onReady(() => {
         field: "metadataStatement.description",
         sorter: true,
         headerFilter: true,
+        headerFilterNormalize: normalizeString,
         formatter: function(cell/*, formatterParams, onRendered*/) {
           let name = cell.getValue();
           return `<span class='clickable notranslate' translate='no' title='${name}'>${name}</a>`;
         },
-        cellClick: clickAuthr
+        cellClick: clickAuthr,
+        isHidable: true
       },
       {
         title: "Protocol",
@@ -283,6 +285,7 @@ onReady(() => {
         title: "ID",
         field: "metadataStatement",
         headerFilter: true,
+        headerFilterNormalize: normalizeString,
         tooltip: function(e, cell){
           let
             item = cell.getValue(),
@@ -391,7 +394,8 @@ onReady(() => {
       {
         title: "Updated",
         field: "timeOfLastStatusChange",
-        sorter: true
+        sorter: true,
+        isHidable: true
       }
     ],
     onUpdate: function () {
@@ -438,16 +442,11 @@ onReady(() => {
     }
   } else {
 
-    let hidableColumns = {};
+    let fewColumns = [ "Name", "Protocol", "Icon", "ID", "Updated" ];
     let allColumns = table.getColumns();
 
-    // Populate hidable columns (columns that are hidden by default)
-    for (let c of allColumns) {
-      if (c.getDefinition()["visible"] === false) {
-        let title = c.getDefinition().title;
-        hidableColumns[title] = c;
-        e("#shown-columns").append(newE("option", { value: title }, "+ " + title));
-      }
+    for (let colTitle in allColumns) {
+      e("#shown-columns").appendChild(newE("option", { value: colTitle }, "+ " + colTitle));
     }
 
     e("#shown-columns").addEventListener("change", () => {
@@ -455,19 +454,20 @@ onReady(() => {
       let selected = selectElement.value;
 
       if (selected == "few") {
-        // Hide hidable columns
-        for (let title in hidableColumns) {
-          hidableColumns[title].hide();
+        // Only show fewColumns
+        for (let colTitle in allColumns) {
+          const op = fewColumns.includes(colTitle) ? "show" : "hide";
+          allColumns[colTitle][op]();
         }
       } else if (selected == "all") {
         // Show all columns
-        for (let c of allColumns) {
-          c.show();
+        for (let c in allColumns) {
+          allColumns[c].show();
         }
       } else {
         // Show selected columns
-        if (hidableColumns[selected]) {
-          hidableColumns[selected].show();
+        if (allColumns[selected]) {
+          allColumns[selected].show();
           // the new column may change row height
         }
       }

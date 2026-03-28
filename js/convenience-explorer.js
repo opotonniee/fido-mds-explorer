@@ -1,5 +1,5 @@
 'use strict';
-/* globals e, onReady, imageFormatter, darkImageFormatter, CustomTable, LAST_CMDS_UPDATE */
+/* globals e, onReady, imageFormatter, darkImageFormatter, normalizeString, matchesFilter, CustomTable, LAST_CMDS_UPDATE */
 
 let mdsJson;
 
@@ -50,6 +50,7 @@ onReady(async () => {
         title: "AAGUID",
         field: "aaguid",
         headerFilter: true,
+        headerFilterNormalize: normalizeString,
         isHidable: true
       },
       {
@@ -61,17 +62,20 @@ onReady(async () => {
           { key: "lang", placeholder: "Language" },
           { key: "name", placeholder: "Name" }
         ],
+        headerFilterNormalize: normalizeString,
         formatter: function(cell) {
           const friendlyNames = cell.getValue();
           if (!friendlyNames) return "";
-          const langFilter = e("input[placeholder='Language']").value.trim().toLowerCase();
-          const nameFilter = e("input[placeholder='Name']").value.trim().toLowerCase();
+          const filter = cell.getFilter('friendlyNames');
           return Object.entries(friendlyNames)
             .map(([lang, name]) => {
-              if ((!nameFilter || name.toLowerCase().includes(nameFilter)) &&
-                (!langFilter || lang.toLowerCase().includes(langFilter))) {
-                return `<div class="friendly-name"><span class="lang">${lang}</span>: <span class="name">${name}</span></div>`;
+              if (matchesFilter(name, filter?.value.name) &&
+                (matchesFilter(lang, filter?.value.lang))) {
+                return `<div class="friendly-name">
+                  <span class="name" title="${lang}">${name}</span>
+                </div>`;
               }
+              return "";
           }).join("");
         },
         headerFilterFunc: function(filterValue, rowValue) {
@@ -81,20 +85,27 @@ onReady(async () => {
             return true;
           }
 
-          const langFilter = filterValue.lang ? String(filterValue.lang.trim()).toLowerCase() : "";
-          const nameFilter = filterValue.name ? String(filterValue.name.trim()).toLowerCase() : "";
-
           // If no filters, show all
-          if (!langFilter && !nameFilter) {
+          if (!filterValue.lang && !filterValue.name) {
             return true;
           }
 
           // Check if any entry matches both filters
           return Object.entries(friendlyNames).some(([lang, name]) => {
-            const langMatch = !langFilter || lang.toLowerCase().includes(langFilter);
-            const nameMatch = !nameFilter || name.toLowerCase().includes(nameFilter);
-            return langMatch && nameMatch;
+            return matchesFilter(lang, filterValue.lang) &&
+             matchesFilter(name, filterValue.name);
           });
+        },
+        sortFunc: function (a, b/*, aRow, bRow*/) {
+          let comparison = 0;
+          a = Object.values(a || {}).join(" ").toLowerCase();
+          b = Object.values(b || {}).join(" ").toLowerCase();
+          if (a > b) {
+            comparison = 1;
+          } else if (a < b) {
+            comparison = -1;
+          }
+          return comparison;
         },
         isHidable: true
       },

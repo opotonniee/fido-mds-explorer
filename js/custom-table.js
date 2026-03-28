@@ -17,11 +17,6 @@ class CustomTable {
     this.sortField = null;
     this.sortDirection = 'asc';
     this.onUpdate = this.options.onUpdate || null;
-
-    this.init();
-  }
-
-  init() {
     this.render();
   }
 
@@ -64,7 +59,7 @@ class CustomTable {
       if (column.sorter) {
         const sortIcon = document.createElement('span');
         sortIcon.className = 'sort-indicator';
-        sortIcon.addEventListener('click', () => this.sort(column.field));
+        sortIcon.addEventListener('click', () => this.sort(column.field, column.sortFunc));
         //sortIcon.style.cursor = 'pointer';
 
         // Show icon based on current sort state
@@ -116,11 +111,7 @@ class CustomTable {
           }
 
           select.addEventListener('change', (e) => {
-            if (column.headerFilterFunc) {
-              this.setFilter(column.field, e.target.value, column.headerFilterFunc);
-            } else {
-              this.setFilter(column.field, e.target.value);
-            }
+            this.setFilter(column.field, e.target.value, column.headerFilterFunc, column.headerFilterNormalize);
           });
           filterDiv.appendChild(select);
         } else if (column.headerFilter === true) {
@@ -157,11 +148,7 @@ class CustomTable {
                 const hasContent = Object.values(filterValues).some(v => v !== '');
                 wrapper.classList.toggle('has-content', hasContent);
 
-                if (column.headerFilterFunc) {
-                  this.setFilter(column.field, filterValues, column.headerFilterFunc);
-                } else {
-                  this.setFilter(column.field, filterValues);
-                }
+                this.setFilter(column.field, filterValues, column.headerFilterFunc, column.headerFilterNormalize);
               });
 
               clearBtn.addEventListener('click', (e) => {
@@ -177,11 +164,7 @@ class CustomTable {
                   filterValues[key] = inp.value;
                 });
 
-                if (column.headerFilterFunc) {
-                  this.setFilter(column.field, filterValues, column.headerFilterFunc);
-                } else {
-                  this.setFilter(column.field, filterValues);
-                }
+                this.setFilter(column.field, filterValues, column.headerFilterFunc, column.headerFilterNormalize);
               });
 
               wrapper.appendChild(input);
@@ -207,22 +190,14 @@ class CustomTable {
 
             input.addEventListener('input', (e) => {
               wrapper.classList.toggle('has-content', e.target.value !== '');
-              if (column.headerFilterFunc) {
-                this.setFilter(column.field, e.target.value, column.headerFilterFunc);
-              } else {
-                this.setFilter(column.field, e.target.value);
-              }
+              this.setFilter(column.field, e.target.value, column.headerFilterFunc, column.headerFilterNormalize);
             });
 
             clearBtn.addEventListener('click', (e) => {
               e.preventDefault();
               input.value = '';
               wrapper.classList.remove('has-content');
-              if (column.headerFilterFunc) {
-                this.setFilter(column.field, '', column.headerFilterFunc);
-              } else {
-                this.setFilter(column.field, '');
-              }
+              this.setFilter(column.field, '', column.headerFilterFunc, column.headerFilterNormalize);
             });
 
             wrapper.appendChild(input);
@@ -252,7 +227,7 @@ class CustomTable {
     return field.split('.').reduce((acc, part) => acc?.[part], obj);
   }
 
-  sort(field) {
+  sort(field, sortFunc) {
     if (this.sortField === field) {
       this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
     } else {
@@ -263,30 +238,44 @@ class CustomTable {
     this.filteredData.sort((a, b) => {
       let valA = this.getNestedValue(a, field);
       let valB = this.getNestedValue(b, field);
-      /* workaround to sort objects */
-      if (valA && typeof valA !== "string") {
-        valA = JSON.stringify(valA);
-      }
-      if (valB && typeof valB !== "string") {
-        valB = JSON.stringify(valB);
-      }
-
       let comparison = 0;
-      if (valA < valB) comparison = -1;
-      else if (valA > valB) comparison = 1;
 
+      if (sortFunc) {
+        comparison = sortFunc(valA, valB, a, b);
+      } else {
+        /* objects are sorted as strings */
+        if (valA && typeof valA !== "string") {
+          valA = JSON.stringify(valA);
+        }
+        if (valB && typeof valB !== "string") {
+          valB = JSON.stringify(valB);
+        }
+        if (valA < valB) comparison = -1;
+        else if (valA > valB) comparison = 1;
+      }
       return this.sortDirection === 'asc' ? comparison : -comparison;
     });
 
     this.render();
   }
 
-  setFilter(field, value, filterFunc) {
-    if (value === '' && !filterFunc) {
-      // Remove filter if empty value and no custom filter function
+  getFilter(field) {
+    if (!field) {
+      return this.filters;
+    }
+    return this.filters[field];
+  }
+
+  setFilter(field, value, filterFunc, normalizeFunc) {
+    if (value === '' && !filterFunc && !normalizeFunc) {
+      // Remove filter if empty value and no custom function
       delete this.filters[field];
     } else {
-      this.filters[field] = { value, func: filterFunc };
+      this.filters[field] = {
+        value,
+        func: filterFunc,
+        normalize: normalizeFunc ? normalizeFunc : (v => String(v || ''))
+      };
     }
     this.applyFilters();
   }
@@ -295,6 +284,13 @@ class CustomTable {
     this.filteredData = this.data.filter(row => {
       for (const [field, filter] of Object.entries(this.filters)) {
         const cellValue = this.getNestedValue(row, field);
+        if (typeof filter.value === 'string') {
+          filter.value = filter.normalize(filter.value);
+        } else if (typeof filter.value === 'object') {
+          for (const [key, value] of Object.entries(filter.value)) {
+            filter.value[key] = filter.normalize(value);
+          }
+        }
 
         if (filter.func) {
           // Custom filter function - pass the filter value and the cell value
@@ -307,14 +303,12 @@ class CustomTable {
             continue; // No filter
           }
 
-          const lowerFilterValue = String(filter.value).toLowerCase();
-
           if (Array.isArray(cellValue)) {
-            if (!cellValue.some(v => String(v).toLowerCase().includes(lowerFilterValue))) {
+            if (!cellValue.some(v => filter.normalize(v).includes(filter.value))) {
               return false;
             }
           } else {
-            if (!String(cellValue || '').toLowerCase().includes(lowerFilterValue)) {
+            if (!(filter.normalize(cellValue).includes(filter.value))) {
               return false;
             }
           }
@@ -327,12 +321,15 @@ class CustomTable {
   }
 
   getColumns() {
-    return this.columns.map((col/*, index*/) => ({
-      getDefinition: () => col,
-      hide: () => this.hideColumn(col),
-      show: () => this.showColumn(col),
-      getField: () => col.field
-    }));
+    return this.columns.reduce((obj, col) => {
+      obj[col.title] = {
+        getDefinition: () => col,
+        hide: () => this.hideColumn(col),
+        show: () => this.showColumn(col),
+        getField: () => col.field
+      };
+      return obj;
+    }, {});
   }
 
   hideColumn(column) {
@@ -385,7 +382,8 @@ class CustomTable {
           const mockCell = {
             getValue: () => cellValue,
             getData: () => rowData,
-            getElement: () => td
+            getElement: () => td,
+            getFilter: () => this.getFilter(column.field)
           };
           cellContent = column.formatter(mockCell);
         } else if (Array.isArray(cellValue)) {

@@ -37,3 +37,13 @@ const onReady = (callback) => {
   if (document.readyState != "loading") callback();
   else document.addEventListener("DOMContentLoaded", callback);
 }
+
+// Table filtering helpers
+function normalizeString(str) {
+  return str ? str.trim().toLowerCase() : "";
+}
+
+function matchesFilter(value, filter) {
+  return (!filter) || normalizeString(value).includes(filter);
+}
+
