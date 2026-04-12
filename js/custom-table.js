@@ -401,11 +401,9 @@ class CustomTable {
         td.className = 'table-cell';
         td.classList.toggle('hidden', column.visible === false);
         const cellValue = this.getNestedValue(rowData, column.field);
-        let cellContent = cellValue;
         if (column.formatter) {
           const mockCell = { getValue: () => cellValue, getData: () => rowData, getElement: () => td, getFilter: () => this.getFilter(column.field) };
-          cellContent = column.formatter(mockCell);
-          td.innerHTML = cellContent; // Assume formatter returns safe HTML
+          td.innerHTML = column.formatter(mockCell); // Assume formatter returns safe HTML
         } else if (Array.isArray(cellValue)) {
           td.innerHTML = cellValue.join('<br>'); // Keep HTML for line breaks
         } else {
