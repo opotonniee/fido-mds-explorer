@@ -20,7 +20,6 @@ h1 {
   box-shadow: 0 2px 2px 1px #888;
 }
 
-
 h2 {
   width: 100%;
   margin: 10px 0 10px -5px;
@@ -38,40 +37,11 @@ h2 {
   float:right;
 }
 
-button {
-  border: 1px solid #777;
-  border-radius: 3px;
-  padding: 3px 8px;
-  margin: 2px;
-  background: #E4E4E4;
-  font-size: 13px;
-  text-align: center;
-}
-
-input[type=text],
-input[type=password] {
-  padding: 5px 25px 5px 5px;
-  margin: 0;
-  font-size: 13px;
-}
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
 #mds-loading {
   margin: 30px 10px;
   font-size: 150%;
 }
 
-button:active {
-  color: white;
-}
 #about {
   float: right;
 }
@@ -83,41 +53,11 @@ button:active {
   max-width: 36px;
 }
 
-.fold {
-  color: #1992ca;
-}
-
-.fold:hover {
-  cursor: pointer;
-}
-
 .clickable, a {
   color: #0783bd;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
-}
-
-.centered {
-  text-align: center !important;
-}
-.disabled {
-  text-decoration: line-through;
-  color: gray;
-}
-
-input[type="checkbox"] {
-  height: 15px;
-  width: 15px;
-}
-input[type="checkbox"]:not(:checked) {
-  background: #fff;
-  border: 1px solid #ccc;
-}
-input[type="checkbox"]:checked {
-  background: black;
-  color: white;
-  content: "X";
 }
 
 /* for 480px or less */
