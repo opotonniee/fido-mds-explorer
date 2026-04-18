@@ -3,6 +3,7 @@
 
 let table;
 let cert;
+const DEFAULT_PAGE_TITLE = document.title;
 
 function getVendor(aaid) {
   let vendorId = aaid ? aaid.substring(0,4) : undefined;
@@ -98,10 +99,12 @@ function stringify(obj) {
 }
 
 
-function showAuthr(json) {
+function showAuthr(json, statSource) {
   e("#mds").hidden = true;
   e("#authr").hidden = false;
   e("#authr-name").innerText = json.metadataStatement.description;
+  statEvent(json.metadataStatement.description, statSource);
+  document.title = json.metadataStatement.description;
   e("#authr-json").innerHTML = stringify(json);
   for (let item of document.querySelectorAll(".cpy")) {
     item.addEventListener("click",(event) => {
@@ -120,8 +123,8 @@ function showAuthr(json) {
 }
 
 function clickAuthr(e, cell) {
-  showAuthr(cell.getData());
   history.pushState({"authr": cell.getData()}, "View", "#view");
+  showAuthr(cell.getData(), "click");
 }
 
 e("#authr-close").addEventListener("click", function() {
@@ -409,33 +412,35 @@ onReady(() => {
     if (e("#authr").checkVisibility()) {
       e("#mds").hidden = false;
       e("#authr").hidden = true;
+      document.title = DEFAULT_PAGE_TITLE;
     } else if (event.state && event.state.authr) {
-      showAuthr(event.state.authr);
+      showAuthr(event.state.authr, "back"); // ??
     }
   });
 
-  let searchedAuthr;
+  let searchedAuthr, searchBy;
   if (location.search) {
-    let params = new URLSearchParams(location.search);
-    if (params.has("aaguid")) {
-      let aaguid = params.get("aaguid");
+    const params = new URLSearchParams(location.search);
+    const paramHandler = {
+      "aaguid": (entry, val) => entry?.aaguid === val,
+      "ackId": (entry, val) => entry?.attestationCertificateKeyIdentifiers?.includes(val),
+      "aaid": (entry, val) => entry?.aaid === val,
+      "x5c": (entry, val) => entry?.metadataStatement?.attestationRootCertificates?.includes(val),
+    }
+    if (params.size > 0) {
+      const query = params.keys().toArray()[0];
+      const searchedVal = params.get(query);
+      const qHandler = paramHandler[query];
       for (const entry of mdsJson.entries) {
-        if (entry.aaguid == aaguid) {
+        if (qHandler(entry, searchedVal)) {
           searchedAuthr = entry;
-          break;
-        }
-      }
-    } else if (params.has("x5c")) {
-      let x5c = params.get("x5c");
-      for (const entry of mdsJson.entries) {
-        if (entry.metadataStatement.attestationRootCertificates.includes(x5c)) {
-          searchedAuthr = entry;
+          searchBy = "?" + query;
           break;
         }
       }
     }
     if (searchedAuthr) {
-      showAuthr(searchedAuthr);
+      showAuthr(searchedAuthr, searchBy);
     } else {
       alert("The authenticator your are looking for was not found");
       window.location = "."

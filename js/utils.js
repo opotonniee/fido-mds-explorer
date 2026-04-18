@@ -45,3 +45,14 @@ function matchesFilter(value, filter) {
   return (!filter) || CustomTable.trimLower(value).includes(filter);
 }
 
+// Anonymous usage stats
+function statEvent(name, status) {
+  console.debug(`${name}${status ? `: ${status}` : ""}`)
+  if (window.goatcounter && !window.goatcounter.no_onload) {
+    window.goatcounter.count({
+      path: `${name}${status ? `: ${status}` : ""}`,
+      event: true,
+    });
+  }
+}
+
