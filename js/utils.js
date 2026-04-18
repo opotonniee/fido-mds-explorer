@@ -46,11 +46,12 @@ function matchesFilter(value, filter) {
 }
 
 // Anonymous usage stats
-function statEvent(name, status) {
-  console.debug(`${name}${status ? `: ${status}` : ""}`)
+function statEvent(name, title) {
+  console.debug(`${name}${title ? ` - ${title}` : ""}`)
   if (window?.goatcounter?.count && !window.goatcounter.no_onload) {
     window.goatcounter.count({
-      path: `${name}${status ? `: ${status}` : ""}`,
+      path: name,
+      title: title,
       event: true,
     });
   }
