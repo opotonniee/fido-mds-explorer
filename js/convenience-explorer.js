@@ -159,6 +159,6 @@ onReady(async () => {
       e("#table-size").innerText = document.querySelectorAll("#cmds-table tbody tr:not([hidden])").length;
     }
   });
-  e(".table-footer").innerHTML = `<span>Payload serial: ${mdsJson.no}</span>`;
+  e("#serial").innerText = mdsJson.no || "";
 
 });

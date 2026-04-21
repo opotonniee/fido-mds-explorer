@@ -32,10 +32,13 @@ class CustomTable {
 
   render() {
     this.container.innerHTML = '';
+    const tableWrapper = document.createElement('div');
+    tableWrapper.className = 'table-wrapper';
     this.table = document.createElement('table');
     this.table.className = 'custom-table';
     this.renderHeader();
-    this.container.appendChild(this.table);
+    tableWrapper.appendChild(this.table);
+    this.container.appendChild(tableWrapper);
     this.renderBody();
   }
 
@@ -194,7 +197,7 @@ class CustomTable {
     const wrapper = document.createElement('div');
     wrapper.className = 'filter-input-wrapper';
     const isDropdown = inputConfig.values && Array.isArray(inputConfig.values);
-    
+
     let control;
     if (isDropdown) {
       // Create dropdown
@@ -202,12 +205,12 @@ class CustomTable {
       control.className = 'filter-select';
       control.dataset.field = column.field;
       control.dataset.filterKey = inputConfig.key;
-      
+
       const allOption = document.createElement('option');
       allOption.value = '';
       allOption.textContent = inputConfig.placeholder || 'All';
       control.appendChild(allOption);
-      
+
       for (const valueItem of inputConfig.values) {
         const option = document.createElement('option');
         const value = typeof valueItem === 'string' ? valueItem : (valueItem.value || valueItem);
@@ -216,7 +219,7 @@ class CustomTable {
         option.textContent = display;
         control.appendChild(option);
       }
-      
+
       control.addEventListener('change', () => {
         this.setFilter(column.field, this.getFilterValues(column.field, filterDiv), column.headerFilterFunc, column.headerFilterNormalize);
       });
@@ -229,14 +232,14 @@ class CustomTable {
       control.dataset.field = column.field;
       control.dataset.filterKey = inputConfig.key;
       control.className = 'filter-input';
-      
+
       control.addEventListener('input', () => {
         const filterValues = this.getFilterValues(column.field, filterDiv);
         const hasContent = Object.values(filterValues).some(v => v !== '');
         wrapper.classList.toggle('has-content', hasContent);
         this.debounce(() => this.setFilter(column.field, filterValues, column.headerFilterFunc, column.headerFilterNormalize), 300);
       });
-      
+
       const clearBtn = document.createElement('button');
       clearBtn.className = 'filter-clear-btn';
       clearBtn.textContent = '×';
@@ -247,11 +250,11 @@ class CustomTable {
         control.value = '';
         this.setFilter(column.field, this.getFilterValues(column.field, filterDiv), column.headerFilterFunc, column.headerFilterNormalize);
       });
-      
+
       wrapper.appendChild(control);
       wrapper.appendChild(clearBtn);
     }
-    
+
     filterDiv.appendChild(wrapper);
   }
 
@@ -262,7 +265,7 @@ class CustomTable {
 
     // Get all controls in filter for this field within this filterDiv
     const controls = filterDiv.querySelectorAll(`[data-field="${field}"]`);
-    
+
     if (controls.length === 0) {
       return '';
     }
@@ -365,7 +368,7 @@ class CustomTable {
     this.filteredData = this.data.filter(row => {
       for (const [field, filter] of Object.entries(this.filters)) {
         const cellValue = this.getNestedValue(row, field);
-        
+
         // Normalize filter values for comparison, but don't mutate the original
         let normalizedFilterValue = filter.value;
         if (typeof filter.value === 'string') {

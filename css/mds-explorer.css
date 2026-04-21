@@ -83,13 +83,13 @@ pre {
   font-style: italic;
   color: #555;
 }
-footer {
-  color: grey;
-  font-size: 80%;
-  text-align: right;
-  margin-top: 10px;
-}
+
 /* Custom Table Styles */
+.table-wrapper {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .custom-table {
   max-width: 100%;
   border-collapse: collapse;
@@ -104,6 +104,9 @@ footer {
 
 .custom-table thead {
   background-color: #DDD;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .custom-table th {
@@ -163,6 +166,7 @@ footer {
 select {
   padding: 4px 24px 4px 4px;
   border-radius: 3px;
+  background: white;
 }
 
 .filter-input,
@@ -212,7 +216,7 @@ select {
 }
 
 .custom-table tbody tr.even {
-  background-color: #f9f9f9;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .custom-table td {
@@ -227,7 +231,9 @@ select {
   white-space: nowrap;
   font-style: italic;
   font-weight: initial;
+  font-size: 80%;
   padding: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .custom-table img {
@@ -257,8 +263,8 @@ ul, ol {
   text-align: center;
 }
 
-#mds-switch {
-  margin: 10px 0;
+.smaller {
+  font-size: 70%;
 }
 
 #mds-table td:first-of-type {

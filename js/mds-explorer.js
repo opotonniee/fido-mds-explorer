@@ -406,7 +406,8 @@ onReady(() => {
     }
   });
 
-  e(".table-footer").innerHTML = `<span>Payload serial: ${mdsJson.no} - Next update planned on ${mdsJson.nextUpdate} - ${mdsJson.legalHeader}</span>`;
+  e(".table-footer span").innerText = mdsJson.legalHeader;
+  e("#serial").innerText = mdsJson.no || "";
 
   window.addEventListener('popstate', (event) => {
     if (e("#authr").checkVisibility()) {
