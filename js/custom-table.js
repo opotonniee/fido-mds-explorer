@@ -127,31 +127,10 @@ class CustomTable {
             filterDiv.appendChild(select);
           } else if (column.headerFilter === true) {
             // Check if column has multiple filter inputs
-            if (column.headerFilterInputs) {
-              // Create multiple input fields
-              for (const inputConfig of column.headerFilterInputs) {
-                const wrapper = document.createElement('div');
-                wrapper.className = 'filter-input-wrapper';
-
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.placeholder = inputConfig.placeholder || 'Filter...';
-                input.dataset.field = column.field;
-                input.dataset.filterKey = inputConfig.key;
-                input.className = 'filter-input';
-
-                const clearBtn = document.createElement('button');
-                clearBtn.className = 'filter-clear-btn';
-                clearBtn.textContent = '×';
-                clearBtn.type = 'button';
-                clearBtn.title = 'Clear filter';
-
-                this.createFilterInput(wrapper, input, clearBtn, column.field, column.headerFilterFunc, column.headerFilterNormalize);
-
-                wrapper.appendChild(input);
-                wrapper.appendChild(clearBtn);
-                filterDiv.appendChild(wrapper);
-              }
+           if (column.headerFilterInputs) {
+             for (const inputConfig of column.headerFilterInputs) {
+               this.createHeaderFilterInput(inputConfig, column, filterDiv);
+             }
             } else {
               // Single input field
               const wrapper = document.createElement('div');
@@ -209,6 +188,97 @@ class CustomTable {
       input.value = '';
       updateFilter();
     });
+  }
+
+  createHeaderFilterInput(inputConfig, column, filterDiv) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'filter-input-wrapper';
+    const isDropdown = inputConfig.values && Array.isArray(inputConfig.values);
+    
+    let control;
+    if (isDropdown) {
+      // Create dropdown
+      control = document.createElement('select');
+      control.className = 'filter-select';
+      control.dataset.field = column.field;
+      control.dataset.filterKey = inputConfig.key;
+      
+      const allOption = document.createElement('option');
+      allOption.value = '';
+      allOption.textContent = inputConfig.placeholder || 'All';
+      control.appendChild(allOption);
+      
+      for (const valueItem of inputConfig.values) {
+        const option = document.createElement('option');
+        const value = typeof valueItem === 'string' ? valueItem : (valueItem.value || valueItem);
+        const display = typeof valueItem === 'string' ? valueItem : (valueItem.display || valueItem.value || valueItem);
+        option.value = value;
+        option.textContent = display;
+        control.appendChild(option);
+      }
+      
+      control.addEventListener('change', () => {
+        this.setFilter(column.field, this.getFilterValues(column.field, filterDiv), column.headerFilterFunc, column.headerFilterNormalize);
+      });
+      wrapper.appendChild(control);
+    } else {
+      // Create text input
+      control = document.createElement('input');
+      control.type = 'text';
+      control.placeholder = inputConfig.placeholder || 'Filter...';
+      control.dataset.field = column.field;
+      control.dataset.filterKey = inputConfig.key;
+      control.className = 'filter-input';
+      
+      control.addEventListener('input', () => {
+        const filterValues = this.getFilterValues(column.field, filterDiv);
+        const hasContent = Object.values(filterValues).some(v => v !== '');
+        wrapper.classList.toggle('has-content', hasContent);
+        this.debounce(() => this.setFilter(column.field, filterValues, column.headerFilterFunc, column.headerFilterNormalize), 300);
+      });
+      
+      const clearBtn = document.createElement('button');
+      clearBtn.className = 'filter-clear-btn';
+      clearBtn.textContent = '×';
+      clearBtn.type = 'button';
+      clearBtn.title = 'Clear filter';
+      clearBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        control.value = '';
+        this.setFilter(column.field, this.getFilterValues(column.field, filterDiv), column.headerFilterFunc, column.headerFilterNormalize);
+      });
+      
+      wrapper.appendChild(control);
+      wrapper.appendChild(clearBtn);
+    }
+    
+    filterDiv.appendChild(wrapper);
+  }
+
+  getFilterValues(field, filterDivContext = null) {
+    // Use provided filterDiv context or search for first header-filter
+    const filterDiv = filterDivContext || this.table.querySelector(`.header-filter`);
+    if (!filterDiv) return '';
+
+    // Get all controls in filter for this field within this filterDiv
+    const controls = filterDiv.querySelectorAll(`[data-field="${field}"]`);
+    
+    if (controls.length === 0) {
+      return '';
+    }
+
+    if (controls.length === 1) {
+      // Single control - return its value directly
+      return controls[0].value;
+    }
+
+    // Multiple controls - return as object with filter keys
+    const filterValues = {};
+    controls.forEach(control => {
+      const key = control.dataset.filterKey || 'value';
+      filterValues[key] = control.value;
+    });
+    return filterValues;
   }
 
   getNestedValue(obj, field) {
@@ -295,36 +365,40 @@ class CustomTable {
     this.filteredData = this.data.filter(row => {
       for (const [field, filter] of Object.entries(this.filters)) {
         const cellValue = this.getNestedValue(row, field);
+        
+        // Normalize filter values for comparison, but don't mutate the original
+        let normalizedFilterValue = filter.value;
         if (typeof filter.value === 'string') {
-          filter.value = filter.normalize(filter.value);
+          normalizedFilterValue = filter.normalize(filter.value);
         } else if (typeof filter.value === 'object') {
+          normalizedFilterValue = {};
           for (const [key, value] of Object.entries(filter.value)) {
-            filter.value[key] = filter.normalize(value);
+            normalizedFilterValue[key] = filter.normalize(value);
           }
         }
 
         if (filter.func) {
-          // Custom filter function - pass the filter value and the cell value
-          if (!filter.func(filter.value, cellValue)) {
+          // Custom filter function - pass the normalized filter value and the cell value
+          if (!filter.func(normalizedFilterValue, cellValue)) {
             return false;
           }
         } else {
           // Default filtering
           let isEmpty = false;
-          if (typeof filter.value === 'string') {
-            isEmpty = filter.value === '';
-          } else if (typeof filter.value === 'object') {
-            isEmpty = Object.values(filter.value).every(v => v === '');
+          if (typeof normalizedFilterValue === 'string') {
+            isEmpty = normalizedFilterValue === '';
+          } else if (typeof normalizedFilterValue === 'object') {
+            isEmpty = Object.values(normalizedFilterValue).every(v => v === '');
           }
           if (isEmpty) {
             continue; // No filter
           }
 
           let searchTerms = [];
-          if (typeof filter.value === 'string') {
-            searchTerms = [filter.value];
-          } else if (typeof filter.value === 'object') {
-            searchTerms = Object.values(filter.value).filter(v => v !== '');
+          if (typeof normalizedFilterValue === 'string') {
+            searchTerms = [normalizedFilterValue];
+          } else if (typeof normalizedFilterValue === 'object') {
+            searchTerms = Object.values(normalizedFilterValue).filter(v => v !== '');
           }
 
           if (Array.isArray(cellValue)) {
@@ -428,15 +502,16 @@ class CustomTable {
 
   restoreFilterValues() {
     for (const [field, filter] of Object.entries(this.filters)) {
-      const select = this.container.querySelector(`select[data-field="${field}"]`);
+      const select = this.container.querySelector(`select[data-field="${field}"]:not([data-filter-key])`);
       if (select) {
         select.value = filter.value;
       }
 
-      // Handle multiple input fields
+      // Handle multiple input fields or selects
       if (typeof filter.value === 'object' && filter.value !== null) {
-        // Multiple inputs with filter keys
+        // Multiple inputs/selects with filter keys
         for (const [key, value] of Object.entries(filter.value)) {
+          // Restore text inputs
           const input = this.container.querySelector(`input[data-field="${field}"][data-filter-key="${key}"]`);
           if (input) {
             input.value = value || '';
@@ -446,13 +521,34 @@ class CustomTable {
               wrapper.classList.toggle('has-content', hasContent);
             }
           }
+
+          // Restore dropdown selects with filter keys
+          const selectControl = this.container.querySelector(`select[data-field="${field}"][data-filter-key="${key}"]`);
+          if (selectControl) {
+            selectControl.value = value || '';
+            const wrapper = selectControl.closest('.filter-input-wrapper');
+            if (wrapper) {
+              const hasContent = Object.values(filter.value).some(v => v !== '');
+              wrapper.classList.toggle('has-content', hasContent);
+            }
+          }
         }
       } else {
-        // Single input field
+        // Single input field (string value, no filter keys)
         const input = this.container.querySelector(`input[data-field="${field}"]`);
         if (input && !input.dataset.filterKey) {
           input.value = filter.value || '';
           const wrapper = input.closest('.filter-input-wrapper');
+          if (wrapper) {
+            wrapper.classList.toggle('has-content', filter.value !== '');
+          }
+        }
+
+        // Restore single dropdown select (string value, with filter key)
+        const singleSelect = this.container.querySelector(`select[data-field="${field}"][data-filter-key]`);
+        if (singleSelect && typeof filter.value === 'string') {
+          singleSelect.value = filter.value || '';
+          const wrapper = singleSelect.closest('.filter-input-wrapper');
           if (wrapper) {
             wrapper.classList.toggle('has-content', filter.value !== '');
           }

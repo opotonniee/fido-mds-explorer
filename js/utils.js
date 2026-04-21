@@ -42,7 +42,7 @@ const onReady = (callback) => {
 
 // Table filtering helpers
 function matchesFilter(value, filter) {
-  return (!filter) || CustomTable.trimLower(value).includes(filter);
+  return (!filter) || CustomTable.trimLower(value).includes(CustomTable.trimLower(filter));
 }
 
 // Anonymous usage stats

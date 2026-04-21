@@ -30,8 +30,28 @@ onReady(async () => {
 
   e("#mds").hidden = false;
 
+  // Extract language codes with counts from mdsJson
+  const langCounts = {};
+  Object.entries(mdsJson)
+    .filter(([key]) => key !== "no")
+    .forEach(([, details]) => {
+      const friendlyNames = details.friendlyNames || {};
+      Object.keys(friendlyNames).forEach(lang => {
+        langCounts[lang] = (langCounts[lang] || 0) + 1;
+      });
+    });
+
+  // Convert to sorted array of objects with value and display
+  const langOptions = Object.entries(langCounts)
+    .sort((a, b) => b[1] - a[1]) // Sort by count descending
+    .map(([lang, count]) => ({
+      value: lang,
+      display: `${lang} (${count})`
+    }));
+
   // Convert mdsJson to array format for CustomTable
   const data = Object.entries(mdsJson)
+
     .filter(([key]) => key !== "no")
     .map(([aaguid, details]) => ({
       aaguid,
@@ -59,9 +79,10 @@ onReady(async () => {
         sorter: true,
         headerFilter: true,
         headerFilterInputs: [
-          { key: "lang", placeholder: "Language" },
+          { key: "lang", values: langOptions },
           { key: "name", placeholder: "Name" }
         ],
+
         headerFilterNormalize: CustomTable.trimLower,
         formatter: function(cell) {
           const friendlyNames = cell.getValue();
