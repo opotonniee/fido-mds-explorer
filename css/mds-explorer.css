@@ -234,6 +234,7 @@ select {
   font-size: 80%;
   padding: 10px;
   border-top: 1px solid #ddd;
+  text-wrap: auto;
 }
 
 .custom-table img {
@@ -279,4 +280,51 @@ ul, ol {
 #cmds-table th:nth-of-type(6) {
   background: black;
   color: white;
+}
+
+/* for small screens */
+@media screen and (max-width: 680px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .header-title-container {
+    gap: 0;
+  }
+  .header-separator {
+    display: none;
+  }
+  h1, h2, .last-update {
+    font-size: 93%;
+  }
+  .smaller {
+    font-size: 83%;
+  }
+  .last-update {
+    float: right;
+    margin-right: 3px;
+    margin-top: 0;
+  }
+  #about img {
+    max-width: 24px;
+  }
+  .table-wrapper {
+    max-height: 72vh;
+  }
+  .hide-if-small {
+    display: none;
+  }
+}
+/* for mobile */
+@media screen and (max-width: 480px) {
+  .custom-table th, .custom-table td {
+    padding: 5px;
+  }
+  select {
+    padding: 2px;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+  .filter-input, .filter-select {
+    font-size: 10px;
+  }
 }
