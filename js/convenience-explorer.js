@@ -32,7 +32,8 @@ onReady(async () => {
 
   // Extract language codes with counts from mdsJson
   const langCounts = {};
-  Object.entries(mdsJson)
+  const mdsEntries = mdsJson.entries ? mdsJson.entries : mdsJson;
+  Object.entries(mdsEntries)
     .filter(([key]) => key !== "no")
     .forEach(([, details]) => {
       const friendlyNames = details.friendlyNames || {};
