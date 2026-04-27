@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, CustomTable, LAST_MDS_UPDATE, vendors */
+/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
