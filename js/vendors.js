@@ -15,7 +15,7 @@ const vendors = {
   "0014": "CrucialTec",
   "0015": "Egis Technology Inc.",
   "0016": "Sensory, Inc.",
-  "0019": "GOTRUSTID Inc.",
+  "0019": "GoTrustID Inc.",
   "001B": "Huawei Device Co., Ltd.",
   "001D": "Shenzhen National Engineering Laboratory of Digital Television  Co.，Ltd.",
   "001F": "EyeVerify, Inc.",
