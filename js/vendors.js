@@ -8,7 +8,7 @@
 const vendors = {
 
   // extracted
-  "0010": "Sharp",
+  "0010": "SHARP CORPORATION",
   "0011": "FUJITSU CONNECTED TECHNOLOGIES LIMITED",
   "0012": "RaonSecure Co., Ltd.",
   "0013": "ETRI",
@@ -53,8 +53,8 @@ const vendors = {
   "0054": "IoTrust Co., Ltd",
   "0056": "PixelPin Ltd.",
   "0057": "Mobile-ID Technologies And Services Joint Stock Company",
-  "0059": "AIDEEP Co., Ltd.",
-  "005A": "AirCUVE",
+  "0059": "SC Techone Co., Ltd.",
+  "005A": "AirCUVE Inc.",
   "005B": "Rowem Inc",
   "005C": "Penta Security Systems Inc.",
   "005D": "OCTATCO Co., Ltd.",
@@ -72,7 +72,7 @@ const vendors = {
   "0090": "CORETECH KNOWLEDGE INC.",
   "0091": "Starfish GmbH",
   "0093": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
-  "0095": "fortanixor",
+  "0095": "Fortanixor",
   "0096": "Beijing Spring Creation Technology Co., Ltd.",
   "0261": "TWCA",
   "0262": "TD Tech Ltd",
