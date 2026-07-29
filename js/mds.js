@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 273,
+  "no": 274,
   "nextUpdate": "2026-08-01",
   "entries": [
     {
@@ -38044,11 +38044,24 @@ let mdsJson={
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-04-03"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-08-11",
+          "authenticatorVersion": 256,
+          "certificationDescriptor": "Thetis Pro Series FIDO2 LV2 Security Key",
+          "certificateNumber": "FIDO20020250811002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-08-11",
+          "authenticatorVersion": 256
         }
       ],
-      "timeOfLastStatusChange": "2026-04-03"
+      "timeOfLastStatusChange": "2026-07-28"
     },
     {
       "attestationCertificateKeyIdentifiers": [
