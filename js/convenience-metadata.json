@@ -1,5 +1,5 @@
 {
-  "no": 275,
+  "no": 276,
   "d61d3b87-3e7c-4aea-9c50-441c371903ad": {
     "friendlyNames": {
       "en-US": "KeyVault Secp256R1 FIDO2 CTAP2 Authenticator"
@@ -1084,11 +1084,11 @@
       "hi-IN": "CorePass",
       "hu": "CorePass",
       "th": "CorePass",
-      "en-US": "CorePass",
       "ja": "CorePass",
+      "en-US": "CorePass",
       "sw": "CorePass",
-      "uk-UA": "CorePass",
       "es": "CorePass",
+      "uk-UA": "CorePass",
       "zh-CN": "CorePass",
       "tr": "CorePass",
       "tl-PH": "CorePass",
