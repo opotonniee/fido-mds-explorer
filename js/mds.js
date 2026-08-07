@@ -1,6 +1,6 @@
 let mdsJson={
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 275,
+  "no": 276,
   "nextUpdate": "2026-09-01",
   "entries": [
     {
@@ -75,10 +75,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -405,6 +405,164 @@ let mdsJson={
         }
       ],
       "timeOfLastStatusChange": "2025-02-06"
+    },
+    {
+      "aaguid": "51787637-8ab8-460c-9302-de0b853d4ffb",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaguid": "51787637-8ab8-460c-9302-de0b853d4ffb",
+        "friendlyNames": {
+          "en-US": "SpearID FIDO2 Standard"
+        },
+        "description": "SpearID FIDO2 Standard",
+        "authenticatorVersion": 256,
+        "protocolFamily": "fido2",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 1
+          },
+          {
+            "major": 1,
+            "minor": 0
+          }
+        ],
+        "authenticationAlgorithms": [
+          "ed25519_eddsa_sha512_raw",
+          "secp256r1_ecdsa_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "cose"
+        ],
+        "attestationTypes": [
+          "basic_full"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 64,
+                "minLength": 4,
+                "maxRetries": 8,
+                "blockSlowdown": 0
+              }
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "none"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ]
+        ],
+        "keyProtection": [
+          "hardware",
+          "secure_element"
+        ],
+        "matcherProtection": [
+          "on_chip"
+        ],
+        "cryptoStrength": 128,
+        "attachmentHint": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "tcDisplay": [],
+        "attestationRootCertificates": [
+          "MIICQDCCAeagAwIBAgIURiD05WMGe9dECU5vS8C7rKvGoWowCgYIKoZIzj0EAwIwYDEtMCsGA1UEAwwkU3BlYXJJRCBGSURPMi1MMSBBdHRlc3RhdGlvbiBSb290IENBMSIwIAYDVQQKDBlTcGVhciBJbm5vdmF0aW9ucyBPeSBMdGQuMQswCQYDVQQGEwJGSTAeFw0yNjAzMjcwOTM0MjVaFw00NjAzMjIwOTM0MjRaMGAxLTArBgNVBAMMJFNwZWFySUQgRklETzItTDEgQXR0ZXN0YXRpb24gUm9vdCBDQTEiMCAGA1UECgwZU3BlYXIgSW5ub3ZhdGlvbnMgT3kgTHRkLjELMAkGA1UEBhMCRkkwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQsFgLJjQWJr19kjGWAAPMJW2jK0x7xttzVuqB2DG5mhI5CFGpFdry/cu50Bnt4hXXj41FNfcBZloxv2RMq4PXXo34wfDAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFAvLHnz8mCidBBemRE+qeYdWAMpJMBkGA1UdIAQSMBAwDgYMKwYBBAGDyHkBAQEBMB0GA1UdDgQWBBQLyx58/JgonQQXpkRPqnmHVgDKSTAOBgNVHQ8BAf8EBAMCAYYwCgYIKoZIzj0EAwIDSAAwRQIgPMu2SewB50uMIZfDRBzxuDhoofhjjUjCkxxIfstXxzoCIQD2f6hr43MYuoCb7cBXnUsaE5k7v8o6ikDJDye7podQFw=="
+        ],
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAEtWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMjAwIgogICB0aWZmOkltYWdlV2lkdGg9IjIwMCIKICAgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIKICAgdGlmZjpYUmVzb2x1dGlvbj0iNzIvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iNzIvMSIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjIwMCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjIwMCIKICAgZXhpZjpDb2xvclNwYWNlPSIxIgogICBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIgogICBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiCiAgIHhtcDpNb2RpZnlEYXRlPSIyMDI2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",
+        "authenticatorGetInfo": {
+          "versions": [
+            "U2F_V2",
+            "FIDO_2_0",
+            "FIDO_2_1_PRE",
+            "FIDO_2_1"
+          ],
+          "extensions": [
+            "credBlob",
+            "credProtect",
+            "hmac-secret",
+            "largeBlobKey",
+            "minPinLength"
+          ],
+          "aaguid": "517876378ab8460c9302de0b853d4ffb",
+          "options": {
+            "plat": false,
+            "rk": true,
+            "clientPin": false,
+            "up": true,
+            "pinUvAuthToken": true,
+            "largeBlobs": true,
+            "authnrCfg": true,
+            "credMgmt": true,
+            "credentialMgmtPreview": true,
+            "setMinPINLength": true,
+            "makeCredUvNotRqd": true,
+            "alwaysUv": false
+          },
+          "maxMsgSize": 2048,
+          "pinUvAuthProtocols": [
+            2,
+            1
+          ],
+          "maxCredentialCountInList": 8,
+          "maxCredentialIdLength": 96,
+          "transports": [
+            "usb",
+            "nfc"
+          ],
+          "algorithms": [
+            {
+              "type": "public-key",
+              "alg": -7
+            },
+            {
+              "type": "public-key",
+              "alg": -8
+            }
+          ],
+          "maxSerializedLargeBlobArray": 2048,
+          "forcePINChange": false,
+          "minPINLength": 4,
+          "firmwareVersion": 256,
+          "maxCredBlobLength": 32,
+          "maxRPIDsForSetMinPINLength": 6,
+          "certifications": {
+            "FIDO": 1
+          },
+          "remainingDiscoverableCredentials": 200
+        }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2026-06-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2026-06-07"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -1668,9 +1826,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
@@ -1680,6 +1835,9 @@ let mdsJson={
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -2140,6 +2298,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -2147,9 +2308,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -2959,13 +3117,13 @@ let mdsJson={
               "userVerificationMethod": "fingerprint_internal"
             },
             {
-              "userVerificationMethod": "pattern_internal"
-            },
-            {
               "userVerificationMethod": "handprint_internal"
             },
             {
               "userVerificationMethod": "eyeprint_internal"
+            },
+            {
+              "userVerificationMethod": "pattern_internal"
             }
           ]
         ],
@@ -3386,9 +3544,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_internal",
               "caDesc": {
                 "base": 10,
@@ -3396,6 +3551,9 @@ let mdsJson={
                 "maxRetries": 3,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -3410,10 +3568,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -3975,10 +4133,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -4734,9 +4892,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -4744,6 +4899,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -5521,6 +5679,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -5528,9 +5689,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -6956,6 +7114,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -6963,9 +7124,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -7837,10 +7995,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -8259,13 +8417,13 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_internal"
             },
             {
               "userVerificationMethod": "fingerprint_internal"
             },
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -9037,9 +9195,6 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -9047,6 +9202,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -9383,6 +9541,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -9390,9 +9551,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -10444,9 +10602,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -10454,6 +10609,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -10761,10 +10919,10 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -12116,6 +12274,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
@@ -12125,9 +12286,6 @@ let mdsJson={
                 "maxRetries": 3,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -14326,6 +14484,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -14333,9 +14494,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -15054,10 +15212,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_internal"
             }
           ],
           [
@@ -15302,9 +15460,6 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -15312,6 +15467,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -15799,9 +15957,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
-            },
-            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -15809,6 +15964,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -16427,10 +16585,10 @@ let mdsJson={
               "userVerificationMethod": "passcode_internal"
             },
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "faceprint_internal"
@@ -21344,10 +21502,22 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "pattern_internal"
             },
             {
               "userVerificationMethod": "passcode_internal"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "location_internal"
+            },
+            {
+              "userVerificationMethod": "faceprint_internal"
+            },
+            {
+              "userVerificationMethod": "eyeprint_internal"
             },
             {
               "userVerificationMethod": "fingerprint_internal"
@@ -21357,18 +21527,6 @@ let mdsJson={
             },
             {
               "userVerificationMethod": "handprint_internal"
-            },
-            {
-              "userVerificationMethod": "pattern_internal"
-            },
-            {
-              "userVerificationMethod": "eyeprint_internal"
-            },
-            {
-              "userVerificationMethod": "location_internal"
-            },
-            {
-              "userVerificationMethod": "faceprint_internal"
             }
           ]
         ],
@@ -21936,9 +22094,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -21946,6 +22101,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -22778,9 +22936,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
-            },
-            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -22788,6 +22943,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -23281,10 +23439,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -23497,6 +23655,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -23504,9 +23665,6 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -23908,6 +24066,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
@@ -23917,9 +24078,6 @@ let mdsJson={
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -24123,6 +24281,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -24130,9 +24291,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -24337,10 +24495,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             }
           ],
           [
@@ -24935,6 +25093,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -24942,9 +25103,6 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -26775,6 +26933,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -26782,9 +26943,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -27154,6 +27312,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
@@ -27166,9 +27327,6 @@ let mdsJson={
             },
             {
               "userVerificationMethod": "presence_internal"
-            },
-            {
-              "userVerificationMethod": "passcode_internal"
             }
           ]
         ],
@@ -27324,9 +27482,6 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -27334,6 +27489,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -27760,13 +27918,13 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "passcode_internal"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -29403,10 +29561,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -30051,9 +30209,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -30061,6 +30216,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -30513,10 +30671,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -30944,9 +31102,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -30954,6 +31109,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -31921,10 +32079,10 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -32327,10 +32485,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -32516,13 +32674,13 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
-            },
-            {
               "userVerificationMethod": "passcode_internal"
             },
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "fingerprint_internal"
             }
           ]
         ],
@@ -32825,9 +32983,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -32835,6 +32990,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -33146,10 +33304,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -34261,10 +34419,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -34636,9 +34794,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -34646,6 +34801,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -35131,9 +35289,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -35141,6 +35296,9 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -35442,9 +35600,6 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "all"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -35455,6 +35610,9 @@ let mdsJson={
             },
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "all"
             }
           ],
           [
@@ -35717,6 +35875,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
@@ -35726,9 +35887,6 @@ let mdsJson={
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -36653,6 +36811,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -36660,9 +36821,6 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -38635,6 +38793,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -38642,9 +38803,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -38817,10 +38975,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -38924,10 +39082,10 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             }
           ]
         ],
@@ -39084,9 +39242,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -39094,6 +39249,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -39821,6 +39979,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -39828,9 +39989,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -41049,9 +41207,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -41059,6 +41214,9 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -41500,6 +41658,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -41507,9 +41668,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -42426,13 +42584,13 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "presence_internal"
-            },
-            {
-              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -42842,6 +43000,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -42849,9 +43010,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -43824,6 +43982,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -43831,9 +43992,6 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -44398,10 +44556,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -44516,9 +44674,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_internal",
               "caDesc": {
                 "base": 10,
@@ -44526,6 +44681,9 @@ let mdsJson={
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -45332,6 +45490,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -45339,9 +45500,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -47260,6 +47418,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -47267,9 +47428,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -47659,9 +47817,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -47669,6 +47824,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -47803,13 +47961,13 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
-            },
-            {
               "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -49685,6 +49843,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -49692,9 +49853,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -51564,10 +51722,10 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -52372,9 +52530,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -52382,6 +52537,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -52554,6 +52712,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.03,
@@ -52563,9 +52724,6 @@ let mdsJson={
                 "maxRetries": 3,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -54852,6 +55010,9 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -54859,9 +55020,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -55220,9 +55378,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
-            },
-            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -55230,6 +55385,9 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -55343,10 +55501,10 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -57466,9 +57624,6 @@ let mdsJson={
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -57476,6 +57631,9 @@ let mdsJson={
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -57747,6 +57905,9 @@ let mdsJson={
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -57754,9 +57915,6 @@ let mdsJson={
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -57951,10 +58109,10 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -58985,12 +59143,12 @@ let mdsJson={
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
-          "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"
+          "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"
         ],
         "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHdpZHRoPSIxMDAwcHQiIGhlaWdodD0iMTAwMHB0IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiB2ZXJzaW9uPSIxLjIiIGJhc2VQcm9maWxlPSJ0aW55LXBzIj48dGl0bGU+WXViaUtleTwvdGl0bGU+PGRlZnMgaWQ9ImRlZnMxIj48L2RlZnM+PGRlc2MgaWQ9ImxvZ28tZGVzYy12MiI+WXViaUtleTwvZGVzYz48ZyBpZD0iIzc2YjkzZGZmIj48cGF0aCBmaWxsPSIjNzZCOTNEIiBkPSIgTSA0OTEuNzggMC4wMCBMIDUxMS4zNyAwLjAwIEMgNTc0LjI0IDEuMzggNjM2LjY3IDE1LjE2IDY5NC41NyAzOS41OCBDIDcxNy43MyA1MC42MCA3NDEuMTMgNjEuMzggNzYyLjc3IDc1LjI1IEMgNzc5LjY5IDg0LjcxIDc5NC44MyA5Ni44OSA4MDkuOTggMTA4Ljg4IEMgODI1LjEyIDEyMC4yNSA4MzkuMzggMTMyLjgwIDg1Mi42MSAxNDYuMzYgQyA4NTYuOTIgMTUwLjcyIDg2MC43OCAxNTUuNTAgODY1LjIzIDE1OS43MyBDIDg3OS40OSAxNzMuOTYgODkyLjE0IDE4OS43MyA5MDMuNzcgMjA2LjE2IEMgOTEwLjYxIDIxNi4yOSA5MTguMzYgMjI1LjgxIDkyNC42NyAyMzYuMzAgQyA5MzQuNzUgMjUyLjM5IDk0My4yOSAyNjkuMzcgOTUxLjUzIDI4Ni40NSBDIDk3OS40NSAzNDMuMjggOTk1LjI4IDQwNS44MCA5OTkuMjkgNDY4LjkyIEMgOTk5LjkwIDQ4MS4yOCAxMDAwLjg2IDQ5My42MyAxMDAwLjYyIDUwNi4wMiBDIDk5OS45MiA1MzAuMjggOTk4LjI3IDU1NC41NSA5OTQuMjggNTc4LjUxIEMgOTkwLjcxIDYwMC41MCA5ODUuNjYgNjIyLjI1IDk3OS40MCA2NDMuNjIgQyA5NzQuNTQgNjU5Ljg4IDk2OS40NiA2NzYuMTIgOTYyLjQ5IDY5MS42MSBDIDk0OS44OCA3MjAuMDEgOTM2LjM3IDc0OC4yMSA5MTguNzIgNzczLjg3IEMgOTE1LjUzIDc3OC42MSA5MTEuODYgNzgzLjAxIDkwOC43MSA3ODcuNzggQyA4OTguOTQgODAyLjM2IDg4Ny44NiA4MTYuMDMgODc2LjE3IDgyOS4xMSBDIDg2Mi40NiA4NDQuMzUgODQ4LjIyIDg1OS4xNiA4MzIuODQgODcyLjc0IEMgODIyLjcwIDg4Mi4wNCA4MTEuNDMgODg5Ljk2IDgwMC45NiA4OTguODUgQyA3ODQuOTMgOTExLjY2IDc2Ny41NCA5MjIuNjUgNzQ5LjgwIDkzMi45MCBDIDcyMS4wMCA5NDkuOTAgNjkwLjY0IDk2NC4zMCA2NTguOTIgOTc0Ljk4IEMgNjEzLjA2IDk5MC41OSA1NjQuNzkgOTk4Ljk4IDUxNi4zNiAxMDAwLjAwIEwgNTA0LjQ3IDEwMDAuMDAgQyA1MTEuNzUgOTgxLjQyIDUxOS4wMSA5NjIuODIgNTI2LjExIDk0NC4xNyBDIDUzNy4zMiA5MTkuMzkgNTQ1Ljk1IDg5My41NSA1NTYuNDIgODY4LjQ3IEMgNTYyLjg2IDg1Mi43MyA1NjguNTEgODM2LjY3IDU3NS4yMSA4MjEuMDQgQyA1ODIuNTkgODA1LjYzIDU4OC4xMCA3ODkuNDIgNTk0LjU0IDc3My42MSBDIDYwNS45NyA3NDYuODEgNjE1LjQyIDcxOS4xOSA2MjcuNzQgNjkyLjc3IEMgNjQzLjc3IDY1My4xMCA2NTkuMzAgNjEzLjIyIDY3Ni4xMiA1NzMuODcgQyA2OTIuOTEgNTMzLjkwIDcwNy45OCA0OTMuMjMgNzI1LjMxIDQ1My40OSBDIDczMi45NCA0MzUuMjcgNzQwLjA2IDQxNi44NCA3NDcuMzQgMzk4LjQ4IEMgNzUzLjg5IDM4Mi41MSA3NjAuMjEgMzY2LjQ0IDc2Ni41MCAzNTAuMzcgQyA3NzQuOTcgMzMyLjU1IDc4MS40NiAzMTMuOTEgNzg4Ljc5IDI5NS42MyBDIDczMC41NiAyOTUuNjQgNjcyLjMzIDI5Ni4wMCA2MTQuMTAgMjk1LjQ3IEMgNjAwLjQ0IDMzMi4zNSA1ODguMzEgMzY5Ljc4IDU3NC40MCA0MDYuNTcgQyA1NTkuNzIgNDQ4LjYxIDU0NS40MyA0OTAuNzggNTMwLjY2IDUzMi43OSBDIDUyNC45NyA1NDYuMTUgNTIwLjM5IDU1OS45NCA1MTUuNDQgNTczLjU5IEMgNTA4LjAzIDU5NS4zNCA0OTkuMzggNjE2LjY0IDQ5MS43NSA2MzguMzEgQyA0ODcuNzIgNjIyLjA4IDQ4Mi4wMSA2MDYuMzQgNDc2LjQ0IDU5MC41OSBDIDQ2Mi41MyA1NDkuNzYgNDQ3LjQ4IDUwOS4zMyA0MzEuODAgNDY5LjE1IEMgNDI1LjA5IDQ1Mi44OCA0MTkuNDMgNDM2LjIxIDQxMy4yNyA0MTkuNzMgQyA0MDQuODMgMzk2LjcwIDM5Ni40MiAzNzMuNjUgMzg4LjUzIDM1MC40MiBDIDM4Ni42MiAzNDQuNjEgMzg0LjAyIDMzOS4wNyAzODEuNzggMzMzLjM5IEMgMzc2LjQ3IDMyMC40MiAzNzEuMTMgMzA3LjQzIDM2NC45OSAyOTQuODIgQyAzMDYuODEgMjk2Ljc2IDI0OC41OSAyOTUuMTIgMTkwLjQwIDI5NS45MCBDIDIwNC43OSAzMzQuMDcgMjE4LjgxIDM3Mi4zOCAyMzMuNzggNDEwLjMzIEMgMjUwLjc5IDQ1Mi41OSAyNjYuNTYgNDk1LjMzIDI4My4xMSA1MzcuNzYgQyAyOTMuNDkgNTYwLjc0IDMwMS40NyA1ODQuNjggMzExLjAxIDYwOC4wMCBDIDMxOS4yMCA2MjguODAgMzI2Ljc1IDY0OS44NiAzMzUuNzUgNjcwLjMyIEMgMzQ3LjE3IDY5OC42NyAzNTguMDggNzI3LjIxIDM2OS4yNCA3NTUuNjYgQyAzNzcuNjYgNzc2Ljg3IDM4Ni42NCA3OTcuODUgMzk0Ljk0IDgxOS4xMiBDIDM4NS4wMCA4NDMuMDMgMzc0LjUyIDg2Ni43MSAzNjQuNTYgODkwLjYyIEMgMzU5Ljc4IDkwMi4zOCAzNTQuOTAgOTE0LjExIDM0OS44MCA5MjUuNzQgQyAzNDMuMzYgOTQwLjc0IDMzNy4xMSA5NTUuODYgMzI5LjUwIDk3MC4zMiBDIDMwMi44MSA5NjAuODcgMjc3LjM1IDk0OC4yNyAyNTIuODIgOTM0LjIwIEMgMjQxLjA3IDkyNy40MSAyMjkuMzAgOTIwLjYxIDIxOC4yNCA5MTIuNzIgQyAxNDQuMjYgODYxLjE4IDgzLjIwIDc5MC4zNyA0Ni4xOSA3MDcuOTIgQyA0MS4zMSA2OTguNDQgMzYuODkgNjg4LjcxIDMzLjQ5IDY3OC41OSBDIC0xNi41MSA1NTAuNTQgLTkuOTAgNDAxLjIwIDUyLjg5IDI3OC43MiBDIDYzLjk1IDI1Ni41MSA3NS45MiAyMzQuNjEgOTAuNzkgMjE0LjY5IEMgMTA2LjQzIDE5My4wMiAxMjIuNzQgMTcxLjY2IDE0MS45NyAxNTMuMDEgQyAxNTkuMDkgMTM0LjA4IDE3OC44NSAxMTcuNzggMTk5LjA2IDEwMi4yNiBDIDIwNy4yNyA5Ni4wNiAyMTUuMjUgODkuNTMgMjIzLjk0IDgzLjk5IEMgMjUzLjcwIDY0LjQxIDI4NS41OCA0OC4xNSAzMTguNDggMzQuNTUgQyAzNzMuNjEgMTIuOTAgNDMyLjU4IDEuMjUgNDkxLjc4IDAuMDAgWiIgaWQ9InBhdGgxIj48L3BhdGg+PC9nPjxtZXRhZGF0YT48L21ldGFkYXRhPjwvc3ZnPg==",
         "iconDark": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHdpZHRoPSIxMDAwcHQiIGhlaWdodD0iMTAwMHB0IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiB2ZXJzaW9uPSIxLjIiIGJhc2VQcm9maWxlPSJ0aW55LXBzIj48dGl0bGU+WXViaUtleTwvdGl0bGU+PGRlZnMgaWQ9ImRlZnMxIj48L2RlZnM+PGRlc2MgaWQ9ImxvZ28tZGVzYy12MiI+WXViaUtleTwvZGVzYz48ZyBpZD0iIzc2YjkzZGZmIj48cGF0aCBmaWxsPSIjNzZCOTNEIiBkPSIgTSA0OTEuNzggMC4wMCBMIDUxMS4zNyAwLjAwIEMgNTc0LjI0IDEuMzggNjM2LjY3IDE1LjE2IDY5NC41NyAzOS41OCBDIDcxNy43MyA1MC42MCA3NDEuMTMgNjEuMzggNzYyLjc3IDc1LjI1IEMgNzc5LjY5IDg0LjcxIDc5NC44MyA5Ni44OSA4MDkuOTggMTA4Ljg4IEMgODI1LjEyIDEyMC4yNSA4MzkuMzggMTMyLjgwIDg1Mi42MSAxNDYuMzYgQyA4NTYuOTIgMTUwLjcyIDg2MC43OCAxNTUuNTAgODY1LjIzIDE1OS43MyBDIDg3OS40OSAxNzMuOTYgODkyLjE0IDE4OS43MyA5MDMuNzcgMjA2LjE2IEMgOTEwLjYxIDIxNi4yOSA5MTguMzYgMjI1LjgxIDkyNC42NyAyMzYuMzAgQyA5MzQuNzUgMjUyLjM5IDk0My4yOSAyNjkuMzcgOTUxLjUzIDI4Ni40NSBDIDk3OS40NSAzNDMuMjggOTk1LjI4IDQwNS44MCA5OTkuMjkgNDY4LjkyIEMgOTk5LjkwIDQ4MS4yOCAxMDAwLjg2IDQ5My42MyAxMDAwLjYyIDUwNi4wMiBDIDk5OS45MiA1MzAuMjggOTk4LjI3IDU1NC41NSA5OTQuMjggNTc4LjUxIEMgOTkwLjcxIDYwMC41MCA5ODUuNjYgNjIyLjI1IDk3OS40MCA2NDMuNjIgQyA5NzQuNTQgNjU5Ljg4IDk2OS40NiA2NzYuMTIgOTYyLjQ5IDY5MS42MSBDIDk0OS44OCA3MjAuMDEgOTM2LjM3IDc0OC4yMSA5MTguNzIgNzczLjg3IEMgOTE1LjUzIDc3OC42MSA5MTEuODYgNzgzLjAxIDkwOC43MSA3ODcuNzggQyA4OTguOTQgODAyLjM2IDg4Ny44NiA4MTYuMDMgODc2LjE3IDgyOS4xMSBDIDg2Mi40NiA4NDQuMzUgODQ4LjIyIDg1OS4xNiA4MzIuODQgODcyLjc0IEMgODIyLjcwIDg4Mi4wNCA4MTEuNDMgODg5Ljk2IDgwMC45NiA4OTguODUgQyA3ODQuOTMgOTExLjY2IDc2Ny41NCA5MjIuNjUgNzQ5LjgwIDkzMi45MCBDIDcyMS4wMCA5NDkuOTAgNjkwLjY0IDk2NC4zMCA2NTguOTIgOTc0Ljk4IEMgNjEzLjA2IDk5MC41OSA1NjQuNzkgOTk4Ljk4IDUxNi4zNiAxMDAwLjAwIEwgNTA0LjQ3IDEwMDAuMDAgQyA1MTEuNzUgOTgxLjQyIDUxOS4wMSA5NjIuODIgNTI2LjExIDk0NC4xNyBDIDUzNy4zMiA5MTkuMzkgNTQ1Ljk1IDg5My41NSA1NTYuNDIgODY4LjQ3IEMgNTYyLjg2IDg1Mi43MyA1NjguNTEgODM2LjY3IDU3NS4yMSA4MjEuMDQgQyA1ODIuNTkgODA1LjYzIDU4OC4xMCA3ODkuNDIgNTk0LjU0IDc3My42MSBDIDYwNS45NyA3NDYuODEgNjE1LjQyIDcxOS4xOSA2MjcuNzQgNjkyLjc3IEMgNjQzLjc3IDY1My4xMCA2NTkuMzAgNjEzLjIyIDY3Ni4xMiA1NzMuODcgQyA2OTIuOTEgNTMzLjkwIDcwNy45OCA0OTMuMjMgNzI1LjMxIDQ1My40OSBDIDczMi45NCA0MzUuMjcgNzQwLjA2IDQxNi44NCA3NDcuMzQgMzk4LjQ4IEMgNzUzLjg5IDM4Mi41MSA3NjAuMjEgMzY2LjQ0IDc2Ni41MCAzNTAuMzcgQyA3NzQuOTcgMzMyLjU1IDc4MS40NiAzMTMuOTEgNzg4Ljc5IDI5NS42MyBDIDczMC41NiAyOTUuNjQgNjcyLjMzIDI5Ni4wMCA2MTQuMTAgMjk1LjQ3IEMgNjAwLjQ0IDMzMi4zNSA1ODguMzEgMzY5Ljc4IDU3NC40MCA0MDYuNTcgQyA1NTkuNzIgNDQ4LjYxIDU0NS40MyA0OTAuNzggNTMwLjY2IDUzMi43OSBDIDUyNC45NyA1NDYuMTUgNTIwLjM5IDU1OS45NCA1MTUuNDQgNTczLjU5IEMgNTA4LjAzIDU5NS4zNCA0OTkuMzggNjE2LjY0IDQ5MS43NSA2MzguMzEgQyA0ODcuNzIgNjIyLjA4IDQ4Mi4wMSA2MDYuMzQgNDc2LjQ0IDU5MC41OSBDIDQ2Mi41MyA1NDkuNzYgNDQ3LjQ4IDUwOS4zMyA0MzEuODAgNDY5LjE1IEMgNDI1LjA5IDQ1Mi44OCA0MTkuNDMgNDM2LjIxIDQxMy4yNyA0MTkuNzMgQyA0MDQuODMgMzk2LjcwIDM5Ni40MiAzNzMuNjUgMzg4LjUzIDM1MC40MiBDIDM4Ni42MiAzNDQuNjEgMzg0LjAyIDMzOS4wNyAzODEuNzggMzMzLjM5IEMgMzc2LjQ3IDMyMC40MiAzNzEuMTMgMzA3LjQzIDM2NC45OSAyOTQuODIgQyAzMDYuODEgMjk2Ljc2IDI0OC41OSAyOTUuMTIgMTkwLjQwIDI5NS45MCBDIDIwNC43OSAzMzQuMDcgMjE4LjgxIDM3Mi4zOCAyMzMuNzggNDEwLjMzIEMgMjUwLjc5IDQ1Mi41OSAyNjYuNTYgNDk1LjMzIDI4My4xMSA1MzcuNzYgQyAyOTMuNDkgNTYwLjc0IDMwMS40NyA1ODQuNjggMzExLjAxIDYwOC4wMCBDIDMxOS4yMCA2MjguODAgMzI2Ljc1IDY0OS44NiAzMzUuNzUgNjcwLjMyIEMgMzQ3LjE3IDY5OC42NyAzNTguMDggNzI3LjIxIDM2OS4yNCA3NTUuNjYgQyAzNzcuNjYgNzc2Ljg3IDM4Ni42NCA3OTcuODUgMzk0Ljk0IDgxOS4xMiBDIDM4NS4wMCA4NDMuMDMgMzc0LjUyIDg2Ni43MSAzNjQuNTYgODkwLjYyIEMgMzU5Ljc4IDkwMi4zOCAzNTQuOTAgOTE0LjExIDM0OS44MCA5MjUuNzQgQyAzNDMuMzYgOTQwLjc0IDMzNy4xMSA5NTUuODYgMzI5LjUwIDk3MC4zMiBDIDMwMi44MSA5NjAuODcgMjc3LjM1IDk0OC4yNyAyNTIuODIgOTM0LjIwIEMgMjQxLjA3IDkyNy40MSAyMjkuMzAgOTIwLjYxIDIxOC4yNCA5MTIuNzIgQyAxNDQuMjYgODYxLjE4IDgzLjIwIDc5MC4zNyA0Ni4xOSA3MDcuOTIgQyA0MS4zMSA2OTguNDQgMzYuODkgNjg4LjcxIDMzLjQ5IDY3OC41OSBDIC0xNi41MSA1NTAuNTQgLTkuOTAgNDAxLjIwIDUyLjg5IDI3OC43MiBDIDYzLjk1IDI1Ni41MSA3NS45MiAyMzQuNjEgOTAuNzkgMjE0LjY5IEMgMTA2LjQzIDE5My4wMiAxMjIuNzQgMTcxLjY2IDE0MS45NyAxNTMuMDEgQyAxNTkuMDkgMTM0LjA4IDE3OC44NSAxMTcuNzggMTk5LjA2IDEwMi4yNiBDIDIwNy4yNyA5Ni4wNiAyMTUuMjUgODkuNTMgMjIzLjk0IDgzLjk5IEMgMjUzLjcwIDY0LjQxIDI4NS41OCA0OC4xNSAzMTguNDggMzQuNTUgQyAzNzMuNjEgMTIuOTAgNDMyLjU4IDEuMjUgNDkxLjc4IDAuMDAgWiIgaWQ9InBhdGgxIj48L3BhdGg+PC9nPjxtZXRhZGF0YT48L21ldGFkYXRhPjwvc3ZnPg==",
@@ -60523,10 +60681,10 @@ let mdsJson={
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
