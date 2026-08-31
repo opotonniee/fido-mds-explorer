@@ -57,3 +57,16 @@ function statEvent(name, title) {
   }
 }
 
+async function fetchJson(url) {
+  let res;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    res = await response.json();
+  } catch (error) {
+    console.error(error.message);
+  }
+  return res;
+}

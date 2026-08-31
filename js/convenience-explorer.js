@@ -5,22 +5,14 @@ let mdsJson;
 
 onReady(async () => {
 
-  const url = "js/convenience-metadata.json";
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-
-    mdsJson = await response.json();
-  } catch (error) {
+  mdsJson = await fetchJson("js/convenience-metadata.json");
+  if (mdsJson) {
+    console.log(mdsJson);
+  } else {
     e("#mds-error").hidden = false;
-    console.error(error.message);
-    return;
   }
-  console.log(mdsJson);
-
   e("#mds-loading").hidden = true;
+
   if (LAST_CMDS_UPDATE) {
     e("#last-cmds-update-date").innerText = new Date(LAST_CMDS_UPDATE).toLocaleString(undefined, {
       year: "numeric", month: "short", day: "numeric",
