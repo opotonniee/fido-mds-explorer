@@ -61,7 +61,7 @@ jobs:
             echo "No new version to download"
           fi
 
-      - name: commit blob if new
+      - name: commit mds if new
         run: |
           if [ "$(git status -s js/mds.json | xargs)" != "" ]
           then

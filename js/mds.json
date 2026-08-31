@@ -1,6 +1,6 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 277,
+  "no": 276,
   "nextUpdate": "2026-09-01",
   "entries": [
     {
@@ -814,7 +814,7 @@
         "friendlyNames": {
           "en-US": "Thales IDPrime FIDO Bio"
         },
-        "description": "Thales IDPrime FIDO Bio",
+        "description": "Test",
         "authenticatorVersion": 2,
         "protocolFamily": "fido2",
         "schema": 3,
