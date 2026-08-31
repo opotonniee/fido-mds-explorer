@@ -44,7 +44,7 @@ jobs:
 
       - name: get remote mds blob
         run: |
-          LAST=$(grep -m 1 ' "no": ' js/mds.js  | sed -r "s/[^0-9]//g")
+          LAST=$(grep -m 1 ' "no": ' js/mds.json  | sed -r "s/[^0-9]//g")
           ignore="$(wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
           if [ -s mds.new ]
           then
