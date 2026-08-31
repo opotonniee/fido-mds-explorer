@@ -36,7 +36,7 @@ onReady(async () => {
 
   // Convert to sorted array of objects with value and display
   const langOptions = Object.entries(langCounts)
-    .sort((a, b) => b[1] - a[1]) // Sort by count descending
+    .sort((a, b) => b[0] > a[0] ? -1 : 1) // Sort by name ascending
     .map(([lang, count]) => ({
       value: lang,
       display: `${lang} (${count})`
