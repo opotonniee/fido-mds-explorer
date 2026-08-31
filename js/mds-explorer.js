@@ -1,8 +1,9 @@
 'use strict';
-/* globals x509, mdsJson, type, imageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, LAST_MDS_UPDATE, vendors */
+/* globals x509, type, imageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
+let mdsJson;
 const DEFAULT_PAGE_TITLE = document.title;
 
 function getVendor(aaid) {
@@ -181,11 +182,15 @@ function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   return isMatchingFilter(headerValue, values, true);
 }
 
-onReady(() => {
-
-  console.log(mdsJson);
-
+onReady(async () => {
+  mdsJson = await fetchJson("js/mds.json");
+  if (mdsJson) {
+    console.log(mdsJson);
+  } else {
+    e("#mds-error").hidden = false;
+  }
   e("#mds-loading").hidden = true;
+
   if (LAST_MDS_UPDATE) {
     e("#last-update-date").innerText = new Date(LAST_MDS_UPDATE).toLocaleString(undefined, {
       year: "numeric", month: "short", day: "numeric",
