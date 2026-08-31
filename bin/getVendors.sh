@@ -10,7 +10,7 @@ COOKIES=cookies.tmp
 
 CASPIO_ID=$1
 
-wget -O $CSV "https://c0ezh785.caspio.com/dp.asp?AppKey=${CASPIO_ID}&downloadFormat=csv&RecordID=&PageID=2&PrevPageID=&cpipage=&download=1&rnd=1712004236605"
+wget -O $CSV "https://c0ezh785.caspio.com/dp.asp?AppKey=${CASPIO_ID}&downloadFormat=csv&download=1"
 
 if [ ! -f $CSV ]; then
   echo Failed to fetch vendor list
