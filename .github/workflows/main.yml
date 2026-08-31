@@ -50,39 +50,37 @@ jobs:
           then
             mv mds.new mds.blob
           else
-            echo "Skipped download"
+            echo "No new version to download"
           fi
 
       - name: commit blob if new
         run: |
-          if [ "$(git status -s mds.blob | xargs)" != "" ]
+          mv js/mds.json js/mds-prev.json
+          cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
+          let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
+          echo base64 size: ${b64Size}
+          if [ "$((${b64Size} % 4))" == "2" ]
           then
-            echo "MDS updated:"
-            cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
-            let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
-            echo base64 size: ${b64Size}
-            if [ "$((${b64Size} % 4))" == "2" ]
-            then
-              echo -n "==" >> mdsBody.b64
-            fi
-            base64 -d mdsBody.b64 | jq . > mdsBody.json
-            echo -n "let mdsJson=" > js/mds-new.js
-            cat mdsBody.json >> js/mds-new.js
-            sed "s+let mdsJson={+{+" js/mds.js | jq -r ".entries[].metadataStatement.description" > prev.authrs
-            sed "s+let mdsJson={+{+" js/mds-new.js | jq -r ".entries[].metadataStatement.description" > new.authrs
+            echo -n "==" >> mdsBody.b64
+          fi
+          base64 -d mdsBody.b64 | jq . > js/mds.json
+          if [ "$(git status -s js/mds.json | xargs)" != "" ]
+          then
+            echo "MDS updated"
+            cat js/mds-prev.json | jq -r ".entries[].metadataStatement.description" > prev.authrs
+            cat js/mds.json | jq -r ".entries[].metadataStatement.description" > new.authrs
             MSG="MDS updated $(diff -U0 prev.authrs new.authrs | sed '1,2d' | sed '/^@@ /d' | sed 's+\"+ +g')"
-            rm prev.authrs new.authrs
-            mv js/mds-new.js js/mds.js
             echo "const LAST_MDS_UPDATE = '$(date --utc --rfc-2822)';" > js/last-mds-update.js
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            git add mds.blob
-            git add js/mds.js
+            git add js/mds.json
             git add js/last-mds-update.js
             git commit -m "$MSG"
             git push
+            rm prev.authrs new.authrs
+            rm js/mds-prev.json
           else
-            echo "no MDS change detected"
+            echo "No MDS change detected"
           fi
 
       - name: get remote convenience mds
@@ -97,7 +95,7 @@ jobs:
 
             mv convenience-metadata.new js/convenience-metadata.json
           else
-            echo "Skipped download"
+            echo "No new convenience MDS version to download"
           fi
 
       - name: commit convenience mds json if new
@@ -113,5 +111,5 @@ jobs:
             git commit -m "Convenience metadata updated"
             git push
           else
-            echo "no convenience MDS change detected"
+            echo "No convenience MDS change detected"
           fi
