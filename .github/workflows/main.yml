@@ -45,25 +45,24 @@ jobs:
       - name: get remote mds blob
         run: |
           LAST=$(grep -m 1 ' "no": ' js/mds.json  | sed -r "s/[^0-9]//g")
-          ignore="$(wget -O mds.new https://mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
-          if [ -s mds.new ]
+          ignore="$(wget -O mds.blob https://mds.fidoalliance.org/?localCopySerial=${LAST} || echo)"
+          if [ -s mds.blob ]
           then
-            mv mds.new mds.blob
+            mv js/mds.json js/mds-prev.json
+            cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
+            let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
+            echo base64 size: ${b64Size}
+            if [ "$((${b64Size} % 4))" == "2" ]
+            then
+              echo -n "==" >> mdsBody.b64
+            fi
+            base64 -d mdsBody.b64 | jq . > js/mds.json
           else
             echo "No new version to download"
           fi
 
       - name: commit blob if new
         run: |
-          mv js/mds.json js/mds-prev.json
-          cut -d. -f2 mds.blob | tr '_-' '/+' | tr -d '\n' > mdsBody.b64
-          let b64Size=$(wc -c mdsBody.b64 | awk '{ print $1 }')
-          echo base64 size: ${b64Size}
-          if [ "$((${b64Size} % 4))" == "2" ]
-          then
-            echo -n "==" >> mdsBody.b64
-          fi
-          base64 -d mdsBody.b64 | jq . > js/mds.json
           if [ "$(git status -s js/mds.json | xargs)" != "" ]
           then
             echo "MDS updated"
