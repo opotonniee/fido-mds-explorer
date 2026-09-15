@@ -1,6 +1,6 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 280,
+  "no": 281,
   "nextUpdate": "2026-10-01",
   "entries": [
     {
@@ -75,10 +75,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -681,6 +681,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -688,9 +691,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -866,6 +866,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -873,9 +876,6 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -1155,8 +1155,8 @@
         ],
         "authenticationAlgorithms": [
           "secp384r1_ecdsa_sha384_raw",
-          "secp256r1_ecdsa_sha256_raw",
-          "ed25519_eddsa_sha512_raw"
+          "ed25519_eddsa_sha512_raw",
+          "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -1167,6 +1167,9 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -1174,9 +1177,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -1673,10 +1673,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -1765,8 +1765,8 @@
           }
         ],
         "authenticationAlgorithms": [
-          "secp384r1_ecdsa_sha384_raw",
           "ed25519_eddsa_sha512_raw",
+          "secp384r1_ecdsa_sha384_raw",
           "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
@@ -1826,9 +1826,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
@@ -1838,6 +1835,9 @@
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -2298,6 +2298,9 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -2305,9 +2308,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -3114,6 +3114,9 @@
               "userVerificationMethod": "fingerprint_internal"
             },
             {
+              "userVerificationMethod": "handprint_internal"
+            },
+            {
               "userVerificationMethod": "eyeprint_internal"
             },
             {
@@ -3121,9 +3124,6 @@
             },
             {
               "userVerificationMethod": "passcode_internal"
-            },
-            {
-              "userVerificationMethod": "handprint_internal"
             }
           ]
         ],
@@ -3544,6 +3544,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_internal",
               "caDesc": {
                 "base": 10,
@@ -3551,9 +3554,6 @@
                 "maxRetries": 3,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -3568,10 +3568,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -3811,10 +3811,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -4133,10 +4133,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -6015,10 +6015,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -6640,9 +6640,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -6650,6 +6647,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -6992,6 +6992,9 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "passcode_internal",
               "caDesc": {
                 "base": 64,
@@ -7005,9 +7008,6 @@
             },
             {
               "userVerificationMethod": "none"
-            },
-            {
-              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -8393,9 +8393,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -8403,6 +8400,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -8965,10 +8965,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -9410,9 +9410,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -9420,6 +9417,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -10268,10 +10268,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -10608,9 +10608,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_internal",
               "caDesc": {
                 "base": 256,
@@ -10618,6 +10615,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -12334,10 +12334,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -13012,9 +13012,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -13022,6 +13019,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -13989,9 +13989,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -13999,6 +13996,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -14247,6 +14247,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -14254,9 +14257,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -15845,10 +15845,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -16172,9 +16172,6 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
-            },
-            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -16182,6 +16179,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -16800,16 +16800,16 @@
               "userVerificationMethod": "passcode_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "faceprint_internal"
             },
             {
               "userVerificationMethod": "location_internal"
             },
             {
-              "userVerificationMethod": "faceprint_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -16903,10 +16903,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -17466,10 +17466,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -17854,11 +17854,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-08-25"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2026-09-14",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Thales PAY GFCX20.1 Authenticator",
+          "certificateNumber": "FIDO20020260720003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-09-14",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2026-08-25"
+      "timeOfLastStatusChange": "2026-09-14"
     },
     {
       "aaguid": "eb7ef748-cbe0-4b40-b8f6-07bd2d592d35",
@@ -18366,9 +18379,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -18376,6 +18386,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -18627,6 +18640,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -18634,9 +18650,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -18946,13 +18959,13 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "eyeprint_internal"
             },
             {
               "userVerificationMethod": "location_internal"
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             },
             {
               "userVerificationMethod": "faceprint_internal"
@@ -19147,6 +19160,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -19154,9 +19170,6 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -19424,11 +19437,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-08-25"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2026-09-14",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Thales PAY GFCX19 Authenticator",
+          "certificateNumber": "FIDO20020260720001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-09-14",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2026-08-25"
+      "timeOfLastStatusChange": "2026-09-14"
     },
     {
       "aaguid": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
@@ -21747,10 +21773,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -22007,10 +22033,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "voiceprint_internal"
             },
             {
-              "userVerificationMethod": "voiceprint_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "handprint_internal"
@@ -22019,19 +22045,19 @@
               "userVerificationMethod": "eyeprint_internal"
             },
             {
+              "userVerificationMethod": "faceprint_internal"
+            },
+            {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "location_internal"
             },
             {
               "userVerificationMethod": "pattern_internal"
             },
             {
               "userVerificationMethod": "passcode_internal"
-            },
-            {
-              "userVerificationMethod": "location_internal"
-            },
-            {
-              "userVerificationMethod": "faceprint_internal"
             }
           ]
         ],
@@ -22944,6 +22970,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -22951,9 +22980,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -23196,6 +23222,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -23203,9 +23232,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -24055,10 +24081,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -26148,6 +26174,9 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -26155,9 +26184,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -28140,6 +28166,9 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -28147,9 +28176,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -28423,13 +28449,13 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "passcode_internal"
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -28739,6 +28765,9 @@
         "userVerificationDetails": [
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -28746,9 +28775,6 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -30066,10 +30092,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -31607,6 +31633,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -31614,9 +31643,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -31794,9 +31820,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -31804,6 +31827,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -32028,8 +32054,8 @@
         ],
         "tcDisplay": [],
         "attestationRootCertificates": [
-          "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",
+          "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",
@@ -32375,10 +32401,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -32549,6 +32575,89 @@
         }
       ],
       "timeOfLastStatusChange": "2021-09-13"
+    },
+    {
+      "aaid": "0064#0001",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaid": "0064#0001",
+        "friendlyNames": {
+          "en-US": "SecuGen Authenticator"
+        },
+        "description": "SecuGen Unity 20 FIDO2 Biometric Security Key with USB connectivity and fingerprint, PIN, and user verification for FIDO2 and WebAuthn.",
+        "alternativeDescriptions": {
+          "en-US": "SecuGen Unity 20 FIDO2 biometric security key supporting connectivity, fingerprint, PIN, and user verification."
+        },
+        "authenticatorVersion": 2,
+        "protocolFamily": "uaf",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 1
+          }
+        ],
+        "authenticationAlgorithms": [
+          "rsassa_pss_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "rsa_2048_der"
+        ],
+        "attestationTypes": [
+          "basic_full"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "fingerprint_internal",
+              "baDesc": {
+                "selfAttestedFRR": 0.0,
+                "selfAttestedFAR": 0.0,
+                "iAPARThreshold": 0.0,
+                "maxTemplates": 0,
+                "maxRetries": 5,
+                "blockSlowdown": 30
+              }
+            }
+          ]
+        ],
+        "keyProtection": [
+          "software"
+        ],
+        "isKeyRestricted": true,
+        "matcherProtection": [
+          "software"
+        ],
+        "attachmentHint": [
+          "wired"
+        ],
+        "tcDisplay": [
+          "any"
+        ],
+        "tcDisplayContentType": "text/plain",
+        "attestationRootCertificates": [
+          "MIIDbDCCAlQCCQDyyhNU6fJgejANBgkqhkiG9w0BAQUFADCBuzEmMCQGCSqGSIb3DQEJARYXdGVjaHN1cHBvcnRAc2VjdWdlbi5jb20xCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRQwEgYDVQQHDAtTYW50YSBDbGFyYTEcMBoGA1UECgwTU2VjdUdlbiBDb3Jwb3JhdGlvbjElMCMGA1UECwwcU2VjdUdlbiBVMjAtQVNGLUZJRE8gUm9vdCBDQTEUMBIGA1UEAwwLc2VjdWdlbi5jb20wHhcNMTkxMjI4MDYyMDA2WhcNNDkxMjIwMDYyMDA2WjA0MQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEQMA4GA1UECgwHU2VjdUdlbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMW8Kt/1xki1s5SmVDwpZ0/VHXWfaPVmR9ePSQA49L2SAu2EX7PDQKnaDMgYJwQhoPAh5o5rZlqzZ9U57onCD2kTQrCRik6nqgnLbc24f5t7yTmQY3UaIL4corQTmV5sC8QeljwpIr3kDm1hCsToWlMIio0QNqzXqvFlF/2RtQ81mjxTyHr0Rrk96IrMRc7OMTFHYsuMVwJS16ubwxdASsDkj7bQy3+WIs8skk4Vm68+jaBIiw7fs9OaWRjqjVWO7kFJmj0iPO3eVhyTz95h58zYk/6lXKugpDeJPxWVTlt74LzGt42RueWEwwo8/77jny8001/7PQFT851ciW6iAV0CAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAVxf8v34/IcWTvjpirnxcmI/Di7PoKKY9POF/5QnllmSNt5Qwm6Kj8vA2oBvccnkBKJQ0crM5xAM0WLNwJBjNyvN7732rss0Bzayinicpg4r0rObbZboLYlj79qObvffAs8exjDz9TUTn2F94Vb8G+t610Y0/ZOixEO/KiZgLFKui5nNNk+WTPLAlA/iKoR0a6SsNzIRDfNZHnV8skpgo7Pew9HLTKD3I4FNpF+i9mftD/q9+9XM4fLz56rcV5B3CIJL37Ni1gV9RO0t7caeWSoM1KS/upC0/NZ2cskxf5K2ZzG+uMX9KgjJKG+PQHjd2xaLMGHj8XRxckZxRlK16UQ=="
+        ],
+        "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnktcHMiIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIiB2aWV3Qm94PSIwIDAgMTQwIDE0MCI+PHRpdGxlPlNlY3VHZW48L3RpdGxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwIDU3LjE0MjkpIHNjYWxlKDAuODU3MTQyODYpIj48cGF0aCBmaWxsPSIjMjMxRjIwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NywxMCBMNTcsMjQgTDU4LDI1IEw1OSwyOCBMNjAsMjggTDYxLDI5IEw2NSwyOSBMNjgsMjcgTDY5LDI4IEw3MywyOCBMNzQsMjkgTDc0LDEwIEw2OSwxMCBMNjksMjQgTDY3LDI2IEw2NSwyNiBMNjMsMjQgTDYzLDIzIEw2MiwyMiBMNjIsMTAgWiBNNDQsMTAgTDQwLDE0IEw0MCwxNSBMMzksMTYgTDM5LDIzIEw0MCwyNCBMNDAsMjUgTDQzLDI4IEw0NSwyOCBMNDYsMjkgTDUxLDI5IEw1NCwyNyBMNTQsMjUgTDUxLDI3IEw0OSwyNyBMNDgsMjYgTDQ3LDI2IEw0NSwyNCBMNDUsMjIgTDQ0LDIxIEw0NCwxNiBMNDUsMTUgTDQ1LDE0IEw0OCwxMSBMNTEsMTEgTDUyLDEyIEw1MywxNSBMNTQsMTUgTDU0LDE0IEw1NSwxMyBMNTUsMTEgTDU0LDEwIFogTTI1LDEwIEwyMSwxNCBMMjEsMjQgTDIzLDI2IEwyMywyNyBMMjQsMjcgTDI3LDI5IEwzMiwyOSBMMzMsMjggTDM0LDI4IEwzNiwyNiBMMzYsMjUgTDM1LDI2IEwzMywyNiBMMzIsMjcgTDMwLDI3IEwyNywyNSBMMjcsMjQgTDI2LDIzIEwyNiwyMCBMMjcsMTkgTDM3LDE5IEwzNywxNiBMMzYsMTUgTDM2LDEzIEwzMywxMCBaIE0yOCwxMSBMMzAsMTEgTDMyLDE0IEwzMiwxNyBMMzEsMTggTDI3LDE4IEwyNiwxNyBMMjYsMTQgWiBNMTM1LDEwIEwxMzQsMTAgTDEzMyw5IEwxMzIsOSBMMTMxLDEwIEwxMjksMTAgTDEyOCwxMSBMMTI3LDExIEwxMjYsMTAgTDEyMSwxMCBMMTIxLDI5IEwxMjYsMjkgTDEyNiwxNSBMMTI5LDEyIEwxMzAsMTIgTDEzMywxNSBMMTMzLDI5IEwxMzgsMjkgTDEzOCwxNCBMMTM3LDEzIEwxMzcsMTIgWiBNMTEwLDkgTDEwOSwxMCBMMTA3LDEwIEwxMDQsMTIgTDEwNCwxMyBMMTAzLDE0IEwxMDMsMTYgTDEwMiwxNyBMMTAyLDIxIEwxMDMsMjIgTDEwMywyNCBMMTA1LDI3IEwxMDYsMjcgTDEwOSwyOSBMMTE0LDI5IEwxMTUsMjggTDExNiwyOCBMMTE4LDI2IEwxMTgsMjUgTDExNywyNSBMMTE0LDI3IEwxMTIsMjcgTDEwOSwyNSBMMTA5LDI0IEwxMDgsMjMgTDEwOCwyMCBMMTA5LDE5IEwxMTksMTkgTDExOSwxNyBMMTE4LDE2IEwxMTgsMTMgTDExNSwxMCBMMTEzLDEwIEwxMTIsOSBaIE0xMTAsMTEgTDExMiwxMSBMMTEzLDEyIEwxMTMsMTQgTDExNCwxNSBMMTE0LDE2IEwxMTIsMTggTDEwOSwxOCBMMTA4LDE3IEwxMDgsMTMgWiBNODksMCBMODgsMSBMODUsMSBMODQsMiBMODMsMiBMNzksNiBMNzksNyBMNzcsMTAgTDc3LDIwIEw3OCwyMSBMNzksMjQgTDgyLDI3IEw4MywyNyBMODQsMjggTDg2LDI4IEw4NywyOSBMOTQsMjkgTDk1LDI4IEw5OCwyOCBMOTksMjcgTDEwMCwyNyBMMTAwLDE1IEw4OCwxNSBMODgsMTcgTDk0LDE3IEw5NSwxOCBMOTUsMjUgTDkzLDI3IEw4OSwyNyBMODgsMjYgTDg3LDI2IEw4MywyMiBMODMsMjAgTDgyLDE5IEw4MiwxMiBMODMsMTEgTDgzLDkgTDg0LDggTDg0LDcgTDg4LDMgTDg5LDMgTDkwLDIgTDkyLDIgTDkzLDMgTDk1LDMgTDk4LDYgTDk5LDUgTDk5LDIgTDk4LDIgTDk3LDEgTDk0LDEgTDkzLDAgWiBNMTUsMSBMMTMsMSBMMTIsMCBMOCwwIEw3LDEgTDUsMSBMMSw1IEwxLDEyIEwyLDEzIEwyLDE0IEwzLDE1IEw0LDE1IEw1LDE2IEw2LDE2IEw3LDE3IEwxMCwxOCBMMTMsMjEgTDEzLDI0IEwxMCwyNyBMNiwyNyBMMiwyMyBMMSwyMyBMMSwyNiBMMCwyNyBMMSwyOCBMMywyOCBMNCwyOSBMMTAsMjkgTDExLDI4IEwxMywyOCBMMTQsMjcgTDE1LDI3IEwxNywyNSBMMTcsMjQgTDE4LDIzIEwxOCwxNyBMMTQsMTMgTDEzLDEzIEwxMiwxMiBMOSwxMSBMNSw3IEw1LDUgTDcsMyBMOCwzIEw5LDIgTDExLDIgTDEyLDMgTDEzLDMgTDE1LDUgTDE1LDYgTDE2LDUgTDE2LDMgTDE3LDIgTDE2LDIgWiIvPjwvZz48L3N2Zz4=",
+        "iconDark": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnktcHMiIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIiB2aWV3Qm94PSIwIDAgMTQwIDE0MCI+PHRpdGxlPlNlY3VHZW48L3RpdGxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwIDU3LjE0MjkpIHNjYWxlKDAuODU3MTQyODYpIj48cGF0aCBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NywxMCBMNTcsMjQgTDU4LDI1IEw1OSwyOCBMNjAsMjggTDYxLDI5IEw2NSwyOSBMNjgsMjcgTDY5LDI4IEw3MywyOCBMNzQsMjkgTDc0LDEwIEw2OSwxMCBMNjksMjQgTDY3LDI2IEw2NSwyNiBMNjMsMjQgTDYzLDIzIEw2MiwyMiBMNjIsMTAgWiBNNDQsMTAgTDQwLDE0IEw0MCwxNSBMMzksMTYgTDM5LDIzIEw0MCwyNCBMNDAsMjUgTDQzLDI4IEw0NSwyOCBMNDYsMjkgTDUxLDI5IEw1NCwyNyBMNTQsMjUgTDUxLDI3IEw0OSwyNyBMNDgsMjYgTDQ3LDI2IEw0NSwyNCBMNDUsMjIgTDQ0LDIxIEw0NCwxNiBMNDUsMTUgTDQ1LDE0IEw0OCwxMSBMNTEsMTEgTDUyLDEyIEw1MywxNSBMNTQsMTUgTDU0LDE0IEw1NSwxMyBMNTUsMTEgTDU0LDEwIFogTTI1LDEwIEwyMSwxNCBMMjEsMjQgTDIzLDI2IEwyMywyNyBMMjQsMjcgTDI3LDI5IEwzMiwyOSBMMzMsMjggTDM0LDI4IEwzNiwyNiBMMzYsMjUgTDM1LDI2IEwzMywyNiBMMzIsMjcgTDMwLDI3IEwyNywyNSBMMjcsMjQgTDI2LDIzIEwyNiwyMCBMMjcsMTkgTDM3LDE5IEwzNywxNiBMMzYsMTUgTDM2LDEzIEwzMywxMCBaIE0yOCwxMSBMMzAsMTEgTDMyLDE0IEwzMiwxNyBMMzEsMTggTDI3LDE4IEwyNiwxNyBMMjYsMTQgWiBNMTM1LDEwIEwxMzQsMTAgTDEzMyw5IEwxMzIsOSBMMTMxLDEwIEwxMjksMTAgTDEyOCwxMSBMMTI3LDExIEwxMjYsMTAgTDEyMSwxMCBMMTIxLDI5IEwxMjYsMjkgTDEyNiwxNSBMMTI5LDEyIEwxMzAsMTIgTDEzMywxNSBMMTMzLDI5IEwxMzgsMjkgTDEzOCwxNCBMMTM3LDEzIEwxMzcsMTIgWiBNMTEwLDkgTDEwOSwxMCBMMTA3LDEwIEwxMDQsMTIgTDEwNCwxMyBMMTAzLDE0IEwxMDMsMTYgTDEwMiwxNyBMMTAyLDIxIEwxMDMsMjIgTDEwMywyNCBMMTA1LDI3IEwxMDYsMjcgTDEwOSwyOSBMMTE0LDI5IEwxMTUsMjggTDExNiwyOCBMMTE4LDI2IEwxMTgsMjUgTDExNywyNSBMMTE0LDI3IEwxMTIsMjcgTDEwOSwyNSBMMTA5LDI0IEwxMDgsMjMgTDEwOCwyMCBMMTA5LDE5IEwxMTksMTkgTDExOSwxNyBMMTE4LDE2IEwxMTgsMTMgTDExNSwxMCBMMTEzLDEwIEwxMTIsOSBaIE0xMTAsMTEgTDExMiwxMSBMMTEzLDEyIEwxMTMsMTQgTDExNCwxNSBMMTE0LDE2IEwxMTIsMTggTDEwOSwxOCBMMTA4LDE3IEwxMDgsMTMgWiBNODksMCBMODgsMSBMODUsMSBMODQsMiBMODMsMiBMNzksNiBMNzksNyBMNzcsMTAgTDc3LDIwIEw3OCwyMSBMNzksMjQgTDgyLDI3IEw4MywyNyBMODQsMjggTDg2LDI4IEw4NywyOSBMOTQsMjkgTDk1LDI4IEw5OCwyOCBMOTksMjcgTDEwMCwyNyBMMTAwLDE1IEw4OCwxNSBMODgsMTcgTDk0LDE3IEw5NSwxOCBMOTUsMjUgTDkzLDI3IEw4OSwyNyBMODgsMjYgTDg3LDI2IEw4MywyMiBMODMsMjAgTDgyLDE5IEw4MiwxMiBMODMsMTEgTDgzLDkgTDg0LDggTDg0LDcgTDg4LDMgTDg5LDMgTDkwLDIgTDkyLDIgTDkzLDMgTDk1LDMgTDk4LDYgTDk5LDUgTDk5LDIgTDk4LDIgTDk3LDEgTDk0LDEgTDkzLDAgWiBNMTUsMSBMMTMsMSBMMTIsMCBMOCwwIEw3LDEgTDUsMSBMMSw1IEwxLDEyIEwyLDEzIEwyLDE0IEwzLDE1IEw0LDE1IEw1LDE2IEw2LDE2IEw3LDE3IEwxMCwxOCBMMTMsMjEgTDEzLDI0IEwxMCwyNyBMNiwyNyBMMiwyMyBMMSwyMyBMMSwyNiBMMCwyNyBMMSwyOCBMMywyOCBMNCwyOSBMMTAsMjkgTDExLDI4IEwxMywyOCBMMTQsMjcgTDE1LDI3IEwxNywyNSBMMTcsMjQgTDE4LDIzIEwxOCwxNyBMMTQsMTMgTDEzLDEzIEwxMiwxMiBMOSwxMSBMNSw3IEw1LDUgTDcsMyBMOCwzIEw5LDIgTDExLDIgTDEyLDMgTDEzLDMgTDE1LDUgTDE1LDYgTDE2LDUgTDE2LDMgTDE3LDIgTDE2LDIgWiIvPjwvZz48L3N2Zz4=",
+        "providerLogoLight": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnktcHMiIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIiB2aWV3Qm94PSIwIDAgMTQwIDE0MCI+PHRpdGxlPlNlY3VHZW48L3RpdGxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwIDU3LjE0MjkpIHNjYWxlKDAuODU3MTQyODYpIj48cGF0aCBmaWxsPSIjMjMxRjIwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NywxMCBMNTcsMjQgTDU4LDI1IEw1OSwyOCBMNjAsMjggTDYxLDI5IEw2NSwyOSBMNjgsMjcgTDY5LDI4IEw3MywyOCBMNzQsMjkgTDc0LDEwIEw2OSwxMCBMNjksMjQgTDY3LDI2IEw2NSwyNiBMNjMsMjQgTDYzLDIzIEw2MiwyMiBMNjIsMTAgWiBNNDQsMTAgTDQwLDE0IEw0MCwxNSBMMzksMTYgTDM5LDIzIEw0MCwyNCBMNDAsMjUgTDQzLDI4IEw0NSwyOCBMNDYsMjkgTDUxLDI5IEw1NCwyNyBMNTQsMjUgTDUxLDI3IEw0OSwyNyBMNDgsMjYgTDQ3LDI2IEw0NSwyNCBMNDUsMjIgTDQ0LDIxIEw0NCwxNiBMNDUsMTUgTDQ1LDE0IEw0OCwxMSBMNTEsMTEgTDUyLDEyIEw1MywxNSBMNTQsMTUgTDU0LDE0IEw1NSwxMyBMNTUsMTEgTDU0LDEwIFogTTI1LDEwIEwyMSwxNCBMMjEsMjQgTDIzLDI2IEwyMywyNyBMMjQsMjcgTDI3LDI5IEwzMiwyOSBMMzMsMjggTDM0LDI4IEwzNiwyNiBMMzYsMjUgTDM1LDI2IEwzMywyNiBMMzIsMjcgTDMwLDI3IEwyNywyNSBMMjcsMjQgTDI2LDIzIEwyNiwyMCBMMjcsMTkgTDM3LDE5IEwzNywxNiBMMzYsMTUgTDM2LDEzIEwzMywxMCBaIE0yOCwxMSBMMzAsMTEgTDMyLDE0IEwzMiwxNyBMMzEsMTggTDI3LDE4IEwyNiwxNyBMMjYsMTQgWiBNMTM1LDEwIEwxMzQsMTAgTDEzMyw5IEwxMzIsOSBMMTMxLDEwIEwxMjksMTAgTDEyOCwxMSBMMTI3LDExIEwxMjYsMTAgTDEyMSwxMCBMMTIxLDI5IEwxMjYsMjkgTDEyNiwxNSBMMTI5LDEyIEwxMzAsMTIgTDEzMywxNSBMMTMzLDI5IEwxMzgsMjkgTDEzOCwxNCBMMTM3LDEzIEwxMzcsMTIgWiBNMTEwLDkgTDEwOSwxMCBMMTA3LDEwIEwxMDQsMTIgTDEwNCwxMyBMMTAzLDE0IEwxMDMsMTYgTDEwMiwxNyBMMTAyLDIxIEwxMDMsMjIgTDEwMywyNCBMMTA1LDI3IEwxMDYsMjcgTDEwOSwyOSBMMTE0LDI5IEwxMTUsMjggTDExNiwyOCBMMTE4LDI2IEwxMTgsMjUgTDExNywyNSBMMTE0LDI3IEwxMTIsMjcgTDEwOSwyNSBMMTA5LDI0IEwxMDgsMjMgTDEwOCwyMCBMMTA5LDE5IEwxMTksMTkgTDExOSwxNyBMMTE4LDE2IEwxMTgsMTMgTDExNSwxMCBMMTEzLDEwIEwxMTIsOSBaIE0xMTAsMTEgTDExMiwxMSBMMTEzLDEyIEwxMTMsMTQgTDExNCwxNSBMMTE0LDE2IEwxMTIsMTggTDEwOSwxOCBMMTA4LDE3IEwxMDgsMTMgWiBNODksMCBMODgsMSBMODUsMSBMODQsMiBMODMsMiBMNzksNiBMNzksNyBMNzcsMTAgTDc3LDIwIEw3OCwyMSBMNzksMjQgTDgyLDI3IEw4MywyNyBMODQsMjggTDg2LDI4IEw4NywyOSBMOTQsMjkgTDk1LDI4IEw5OCwyOCBMOTksMjcgTDEwMCwyNyBMMTAwLDE1IEw4OCwxNSBMODgsMTcgTDk0LDE3IEw5NSwxOCBMOTUsMjUgTDkzLDI3IEw4OSwyNyBMODgsMjYgTDg3LDI2IEw4MywyMiBMODMsMjAgTDgyLDE5IEw4MiwxMiBMODMsMTEgTDgzLDkgTDg0LDggTDg0LDcgTDg4LDMgTDg5LDMgTDkwLDIgTDkyLDIgTDkzLDMgTDk1LDMgTDk4LDYgTDk5LDUgTDk5LDIgTDk4LDIgTDk3LDEgTDk0LDEgTDkzLDAgWiBNMTUsMSBMMTMsMSBMMTIsMCBMOCwwIEw3LDEgTDUsMSBMMSw1IEwxLDEyIEwyLDEzIEwyLDE0IEwzLDE1IEw0LDE1IEw1LDE2IEw2LDE2IEw3LDE3IEwxMCwxOCBMMTMsMjEgTDEzLDI0IEwxMCwyNyBMNiwyNyBMMiwyMyBMMSwyMyBMMSwyNiBMMCwyNyBMMSwyOCBMMywyOCBMNCwyOSBMMTAsMjkgTDExLDI4IEwxMywyOCBMMTQsMjcgTDE1LDI3IEwxNywyNSBMMTcsMjQgTDE4LDIzIEwxOCwxNyBMMTQsMTMgTDEzLDEzIEwxMiwxMiBMOSwxMSBMNSw3IEw1LDUgTDcsMyBMOCwzIEw5LDIgTDExLDIgTDEyLDMgTDEzLDMgTDE1LDUgTDE1LDYgTDE2LDUgTDE2LDMgTDE3LDIgTDE2LDIgWiIvPjwvZz48L3N2Zz4=",
+        "providerLogoDark": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnktcHMiIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIiB2aWV3Qm94PSIwIDAgMTQwIDE0MCI+PHRpdGxlPlNlY3VHZW48L3RpdGxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwIDU3LjE0MjkpIHNjYWxlKDAuODU3MTQyODYpIj48cGF0aCBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NywxMCBMNTcsMjQgTDU4LDI1IEw1OSwyOCBMNjAsMjggTDYxLDI5IEw2NSwyOSBMNjgsMjcgTDY5LDI4IEw3MywyOCBMNzQsMjkgTDc0LDEwIEw2OSwxMCBMNjksMjQgTDY3LDI2IEw2NSwyNiBMNjMsMjQgTDYzLDIzIEw2MiwyMiBMNjIsMTAgWiBNNDQsMTAgTDQwLDE0IEw0MCwxNSBMMzksMTYgTDM5LDIzIEw0MCwyNCBMNDAsMjUgTDQzLDI4IEw0NSwyOCBMNDYsMjkgTDUxLDI5IEw1NCwyNyBMNTQsMjUgTDUxLDI3IEw0OSwyNyBMNDgsMjYgTDQ3LDI2IEw0NSwyNCBMNDUsMjIgTDQ0LDIxIEw0NCwxNiBMNDUsMTUgTDQ1LDE0IEw0OCwxMSBMNTEsMTEgTDUyLDEyIEw1MywxNSBMNTQsMTUgTDU0LDE0IEw1NSwxMyBMNTUsMTEgTDU0LDEwIFogTTI1LDEwIEwyMSwxNCBMMjEsMjQgTDIzLDI2IEwyMywyNyBMMjQsMjcgTDI3LDI5IEwzMiwyOSBMMzMsMjggTDM0LDI4IEwzNiwyNiBMMzYsMjUgTDM1LDI2IEwzMywyNiBMMzIsMjcgTDMwLDI3IEwyNywyNSBMMjcsMjQgTDI2LDIzIEwyNiwyMCBMMjcsMTkgTDM3LDE5IEwzNywxNiBMMzYsMTUgTDM2LDEzIEwzMywxMCBaIE0yOCwxMSBMMzAsMTEgTDMyLDE0IEwzMiwxNyBMMzEsMTggTDI3LDE4IEwyNiwxNyBMMjYsMTQgWiBNMTM1LDEwIEwxMzQsMTAgTDEzMyw5IEwxMzIsOSBMMTMxLDEwIEwxMjksMTAgTDEyOCwxMSBMMTI3LDExIEwxMjYsMTAgTDEyMSwxMCBMMTIxLDI5IEwxMjYsMjkgTDEyNiwxNSBMMTI5LDEyIEwxMzAsMTIgTDEzMywxNSBMMTMzLDI5IEwxMzgsMjkgTDEzOCwxNCBMMTM3LDEzIEwxMzcsMTIgWiBNMTEwLDkgTDEwOSwxMCBMMTA3LDEwIEwxMDQsMTIgTDEwNCwxMyBMMTAzLDE0IEwxMDMsMTYgTDEwMiwxNyBMMTAyLDIxIEwxMDMsMjIgTDEwMywyNCBMMTA1LDI3IEwxMDYsMjcgTDEwOSwyOSBMMTE0LDI5IEwxMTUsMjggTDExNiwyOCBMMTE4LDI2IEwxMTgsMjUgTDExNywyNSBMMTE0LDI3IEwxMTIsMjcgTDEwOSwyNSBMMTA5LDI0IEwxMDgsMjMgTDEwOCwyMCBMMTA5LDE5IEwxMTksMTkgTDExOSwxNyBMMTE4LDE2IEwxMTgsMTMgTDExNSwxMCBMMTEzLDEwIEwxMTIsOSBaIE0xMTAsMTEgTDExMiwxMSBMMTEzLDEyIEwxMTMsMTQgTDExNCwxNSBMMTE0LDE2IEwxMTIsMTggTDEwOSwxOCBMMTA4LDE3IEwxMDgsMTMgWiBNODksMCBMODgsMSBMODUsMSBMODQsMiBMODMsMiBMNzksNiBMNzksNyBMNzcsMTAgTDc3LDIwIEw3OCwyMSBMNzksMjQgTDgyLDI3IEw4MywyNyBMODQsMjggTDg2LDI4IEw4NywyOSBMOTQsMjkgTDk1LDI4IEw5OCwyOCBMOTksMjcgTDEwMCwyNyBMMTAwLDE1IEw4OCwxNSBMODgsMTcgTDk0LDE3IEw5NSwxOCBMOTUsMjUgTDkzLDI3IEw4OSwyNyBMODgsMjYgTDg3LDI2IEw4MywyMiBMODMsMjAgTDgyLDE5IEw4MiwxMiBMODMsMTEgTDgzLDkgTDg0LDggTDg0LDcgTDg4LDMgTDg5LDMgTDkwLDIgTDkyLDIgTDkzLDMgTDk1LDMgTDk4LDYgTDk5LDUgTDk5LDIgTDk4LDIgTDk3LDEgTDk0LDEgTDkzLDAgWiBNMTUsMSBMMTMsMSBMMTIsMCBMOCwwIEw3LDEgTDUsMSBMMSw1IEwxLDEyIEwyLDEzIEwyLDE0IEwzLDE1IEw0LDE1IEw1LDE2IEw2LDE2IEw3LDE3IEwxMCwxOCBMMTMsMjEgTDEzLDI0IEwxMCwyNyBMNiwyNyBMMiwyMyBMMSwyMyBMMSwyNiBMMCwyNyBMMSwyOCBMMywyOCBMNCwyOSBMMTAsMjkgTDExLDI4IEwxMywyOCBMMTQsMjcgTDE1LDI3IEwxNywyNSBMMTcsMjQgTDE4LDIzIEwxOCwxNyBMMTQsMTMgTDEzLDEzIEwxMiwxMiBMOSwxMSBMNSw3IEw1LDUgTDcsMyBMOCwzIEw5LDIgTDExLDIgTDEyLDMgTDEzLDMgTDE1LDUgTDE1LDYgTDE2LDUgTDE2LDMgTDE3LDIgTDE2LDIgWiIvPjwvZz48L3N2Zz4="
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2020-06-09",
+          "certificationDescriptor": "SecuGen FIDO Fingerprint Authenticator",
+          "certificateNumber": "UAF110020190417001",
+          "certificationPolicyVersion": "1.3.6",
+          "certificationRequirementsVersion": "1.1.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-06-09"
+        }
+      ],
+      "timeOfLastStatusChange": "2020-06-09"
     },
     {
       "aaguid": "6999180d-630c-442d-b8f7-424b90a43fae",
@@ -33179,13 +33288,13 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_internal"
-            },
-            {
               "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "presence_internal"
+            },
+            {
+              "userVerificationMethod": "passcode_internal"
             }
           ]
         ],
@@ -33809,10 +33918,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -34296,9 +34405,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -34306,6 +34412,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -34924,10 +35033,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -35761,8 +35870,8 @@
         },
         "description": "GSTAG OAK FIDO2 Authenticator",
         "alternativeDescriptions": {
-          "en-EN": "GSTAG OAK FIDO2 Authenticator",
-          "fr-FR": "GSTAG OAK Authentificateur FIDO2"
+          "fr-FR": "GSTAG OAK Authentificateur FIDO2",
+          "en-EN": "GSTAG OAK FIDO2 Authenticator"
         },
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -36355,9 +36464,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -36365,6 +36471,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -36988,6 +37097,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_internal",
               "caDesc": {
                 "base": 10,
@@ -36995,9 +37107,6 @@
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -37316,9 +37425,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -37326,6 +37432,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -38570,9 +38679,9 @@
         "description": "Virtual FIDO2 authenticator for Linux-based systems",
         "alternativeDescriptions": {
           "es-ES": "Autenticador FIDO2 virtual para sistemas basados en Linux",
-          "fr-FR": "Authentificateur FIDO2 virtuel pour les systèmes basés sur Linux",
           "ru-RU": "Виртуальный FIDO2 аутентификатор для систем на базе ядра Linux",
-          "zh-CN": "适用于 Linux 系统的虚拟 FIDO2 身份验证器"
+          "zh-CN": "适用于 Linux 系统的虚拟 FIDO2 身份验证器",
+          "fr-FR": "Authentificateur FIDO2 virtuel pour les systèmes basés sur Linux"
         },
         "authenticatorVersion": 1,
         "protocolFamily": "fido2",
@@ -41345,9 +41454,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -41355,6 +41461,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -43229,10 +43338,10 @@
               "userVerificationMethod": "fingerprint_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_internal"
             },
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -43330,10 +43439,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "passcode_external"
@@ -43341,10 +43450,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -44446,9 +44555,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -44456,6 +44562,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -45115,10 +45224,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             }
           ]
         ],
@@ -46421,9 +46530,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -46431,6 +46537,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -46957,10 +47066,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ]
         ],
@@ -48957,10 +49066,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -49238,10 +49347,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -49889,6 +49998,9 @@
           ],
           [
             {
+              "userVerificationMethod": "passcode_external"
+            },
+            {
               "userVerificationMethod": "presence_internal",
               "caDesc": {
                 "base": 64,
@@ -49896,9 +50008,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -50349,10 +50458,10 @@
           ],
           [
             {
-              "userVerificationMethod": "passcode_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_internal"
             }
           ]
         ],
@@ -51121,10 +51230,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -51372,6 +51481,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -51379,9 +51491,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -52348,6 +52457,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.00001,
@@ -52357,9 +52469,6 @@
                 "maxRetries": 5,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -52619,10 +52728,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -52967,6 +53076,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -52974,9 +53086,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -53205,9 +53314,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -53215,6 +53321,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -53596,10 +53705,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -53608,9 +53717,6 @@
             }
           ],
           [
-            {
-              "userVerificationMethod": "presence_internal"
-            },
             {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
@@ -53621,6 +53727,9 @@
                 "maxRetries": 3,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -53886,9 +53995,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -53896,6 +54002,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -54690,10 +54799,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -54975,10 +55084,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "none"
             },
             {
-              "userVerificationMethod": "none"
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -55570,6 +55679,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -55577,9 +55689,6 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -56398,10 +56507,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -56665,6 +56774,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.03,
@@ -56674,9 +56786,6 @@
                 "maxRetries": 3,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -57605,9 +57714,6 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -57615,6 +57721,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -57795,9 +57904,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -57805,6 +57911,9 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -59006,10 +59115,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -59097,6 +59206,110 @@
       "timeOfLastStatusChange": "2026-07-15"
     },
     {
+      "aaguid": "6f706c75-7366-6964-6f2d-70732d303031",
+      "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+        "aaguid": "6f706c75-7366-6964-6f2d-70732d303031",
+        "friendlyNames": {
+          "en-US": "OPPO FIDO2 Authenticator"
+        },
+        "description": "OPPO FIDO2 Authenticator",
+        "alternativeDescriptions": {
+          "zh-CN": "OPPO FIDO2身份认证器"
+        },
+        "authenticatorVersion": 214,
+        "protocolFamily": "fido2",
+        "schema": 3,
+        "upv": [
+          {
+            "major": 1,
+            "minor": 1
+          }
+        ],
+        "authenticationAlgorithms": [
+          "secp256r1_ecdsa_sha256_raw"
+        ],
+        "publicKeyAlgAndEncodings": [
+          "cose"
+        ],
+        "attestationTypes": [
+          "basic_full"
+        ],
+        "userVerificationDetails": [
+          [
+            {
+              "userVerificationMethod": "presence_internal"
+            }
+          ],
+          [
+            {
+              "userVerificationMethod": "passcode_external",
+              "caDesc": {
+                "base": 10,
+                "minLength": 4,
+                "maxRetries": 0,
+                "blockSlowdown": 0
+              }
+            }
+          ]
+        ],
+        "keyProtection": [
+          "hardware",
+          "tee"
+        ],
+        "matcherProtection": [
+          "on_chip"
+        ],
+        "cryptoStrength": 112,
+        "attachmentHint": [
+          "internal"
+        ],
+        "tcDisplay": [],
+        "attestationRootCertificates": [
+          "MIIC6DCCAo+gAwIBAgIBATAJBgcqhkjOPQQBMIGIMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzEWMBQGA1UEChMNbm9rbm9rbGFicy5jbjEMMAoGA1UECxQDUiZEMRAwDgYDVQQDEwdSb2NrIENBMR0wGwYJKoZIhvcNAQkBFg5saWJpbkBvcHBvLmNvbTAeFw0yMDA3MjgwOTIwMjZaFw0zMDA3MjYwOTIwMjZaMIGIMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzEWMBQGA1UEChMNbm9rbm9rbGFicy5jbjEMMAoGA1UECxQDUiZEMRAwDgYDVQQDEwdSb2NrIENBMR0wGwYJKoZIhvcNAQkBFg5saWJpbkBvcHBvLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABBUfQMKxp/dyZXBHoAmP8TZkspRcbcFSGP/HdE+RdisBKScMP3V2CJDFoaXwSYfsRXaQ0ufJ4o7ociQiwrrkV4GjgegwgeUwHQYDVR0OBBYEFHJH3an2L8UdKfw0qK/lqAlfOnKAMIG1BgNVHSMEga0wgaqAFHJH3an2L8UdKfw0qK/lqAlfOnKAoYGOpIGLMIGIMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzEWMBQGA1UEChMNbm9rbm9rbGFicy5jbjEMMAoGA1UECxQDUiZEMRAwDgYDVQQDEwdSb2NrIENBMR0wGwYJKoZIhvcNAQkBFg5saWJpbkBvcHBvLmNvbYIBATAMBgNVHRMEBTADAQH/MAkGByqGSM49BAEDSAAwRQIgevOOWE3PwSFiwmYjxtoIRn2CejFSAaqMb3m0oNfQ/UwCIQDenEbwg3TJTsmEHK02G17KnY5z+tRxRsVaO5rudTFr9g=="
+        ],
+        "icon": "data:image/png;base64,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",
+        "authenticatorGetInfo": {
+          "versions": [
+            "FIDO_2_1"
+          ],
+          "extensions": [
+            "credProtect"
+          ],
+          "aaguid": "6f706c75736669646f2d70732d303031",
+          "options": {
+            "rk": true,
+            "clientPin": true,
+            "up": true,
+            "pinUvAuthToken": true,
+            "credMgmt": true
+          },
+          "maxMsgSize": 512,
+          "pinUvAuthProtocols": [
+            1,
+            2
+          ],
+          "transports": [
+            "ble"
+          ],
+          "algorithms": [
+            {
+              "type": "public-key",
+              "alg": -7
+            }
+          ],
+          "firmwareVersion": 214
+        }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2026-09-11"
+        }
+      ],
+      "timeOfLastStatusChange": "2026-09-11"
+    },
+    {
       "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
@@ -59131,10 +59344,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
@@ -59481,6 +59694,9 @@
           ],
           [
             {
+              "userVerificationMethod": "presence_internal"
+            },
+            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 10,
@@ -59488,9 +59704,6 @@
                 "maxRetries": 0,
                 "blockSlowdown": 0
               }
-            },
-            {
-              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -59547,11 +59760,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-05-13"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2026-08-10",
+          "authenticatorVersion": 12,
+          "certificationDescriptor": "USB GoldKey Security Token",
+          "certificateNumber": "FA001202600015",
+          "certificationPolicyVersion": "1.4.1",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-08-10",
+          "authenticatorVersion": 12
         }
       ],
-      "timeOfLastStatusChange": "2026-05-13"
+      "timeOfLastStatusChange": "2026-09-14"
     },
     {
       "aaguid": "8108bdcd-8483-46b3-b3ce-359f8190325e",
@@ -59587,9 +59813,6 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            },
-            {
               "userVerificationMethod": "passcode_external",
               "caDesc": {
                 "base": 64,
@@ -59597,6 +59820,9 @@
                 "maxRetries": 8,
                 "blockSlowdown": 0
               }
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -59877,10 +60103,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "fingerprint_internal"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "fingerprint_internal"
             },
             {
               "userVerificationMethod": "passcode_internal"
@@ -60548,8 +60774,8 @@
         },
         "description": "OCTATCO EzQuant FIDO2 AUTHENTICATOR",
         "alternativeDescriptions": {
-          "ko-KR": "옥타코 이지퀀트 FIDO2 인증기 V 1.0",
-          "en-US": "OCTATCO EzQuant FIDO2 AUTHENTICATOR V 1.0"
+          "en-US": "OCTATCO EzQuant FIDO2 AUTHENTICATOR V 1.0",
+          "ko-KR": "옥타코 이지퀀트 FIDO2 인증기 V 1.0"
         },
         "authenticatorVersion": 5,
         "protocolFamily": "fido2",
@@ -61799,10 +62025,10 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             },
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             }
           ],
           [
@@ -62553,10 +62779,10 @@
           ],
           [
             {
-              "userVerificationMethod": "presence_internal"
+              "userVerificationMethod": "passcode_external"
             },
             {
-              "userVerificationMethod": "passcode_external"
+              "userVerificationMethod": "presence_internal"
             }
           ],
           [
