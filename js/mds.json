@@ -1,6 +1,6 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 281,
+  "no": 282,
   "nextUpdate": "2026-10-01",
   "entries": [
     {
@@ -1155,8 +1155,8 @@
         ],
         "authenticationAlgorithms": [
           "secp384r1_ecdsa_sha384_raw",
-          "ed25519_eddsa_sha512_raw",
-          "secp256r1_ecdsa_sha256_raw"
+          "secp256r1_ecdsa_sha256_raw",
+          "ed25519_eddsa_sha512_raw"
         ],
         "publicKeyAlgAndEncodings": [
           "cose"
@@ -1765,8 +1765,8 @@
           }
         ],
         "authenticationAlgorithms": [
-          "ed25519_eddsa_sha512_raw",
           "secp384r1_ecdsa_sha384_raw",
+          "ed25519_eddsa_sha512_raw",
           "secp256r1_ecdsa_sha256_raw"
         ],
         "publicKeyAlgAndEncodings": [
@@ -20366,11 +20366,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-07-21"
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2026-07-15",
+          "authenticatorVersion": 262144,
+          "certificationDescriptor": "HID Crescendo Key V3 FIPS",
+          "certificateNumber": "FIDO20020260715001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.6.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-07-15",
+          "authenticatorVersion": 262144
         }
       ],
-      "timeOfLastStatusChange": "2026-07-21"
+      "timeOfLastStatusChange": "2026-09-15"
     },
     {
       "aaguid": "def8ab1a-9f91-44f1-a103-088d8dc7d681",
