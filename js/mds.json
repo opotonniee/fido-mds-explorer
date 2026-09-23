@@ -1,6 +1,6 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 283,
+  "no": 284,
   "nextUpdate": "2026-10-01",
   "entries": [
     {
@@ -59316,11 +59316,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-09-11"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2026-08-18",
+          "authenticatorVersion": 214,
+          "certificationDescriptor": "OPPO FIDO2 Authenticator",
+          "certificateNumber": "FA001202600018",
+          "certificationPolicyVersion": "1.4.1",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-08-18",
+          "authenticatorVersion": 214
         }
       ],
-      "timeOfLastStatusChange": "2026-09-11"
+      "timeOfLastStatusChange": "2026-09-22"
     },
     {
       "aaguid": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
