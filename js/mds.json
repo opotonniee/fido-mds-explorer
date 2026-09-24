@@ -1,6 +1,6 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 284,
+  "no": 285,
   "nextUpdate": "2026-10-01",
   "entries": [
     {
@@ -1042,11 +1042,21 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-07-15"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2026-07-17",
+          "authenticatorVersion": 1107448831,
+          "certificationDescriptor": "IDEMIA SOLVO Fly 80 R3 FIDO Card for j",
+          "certificateNumber": "U2F100020260717001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-07-17",
+          "authenticatorVersion": 1107448831
         }
       ],
-      "timeOfLastStatusChange": "2026-07-15"
+      "timeOfLastStatusChange": "2026-09-23"
     },
     {
       "attestationCertificateKeyIdentifiers": [
@@ -46434,11 +46444,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-07-14"
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2026-07-17",
+          "authenticatorVersion": 1107448831,
+          "certificationDescriptor": "IDEMIA SOLVO Fly 80 R3 FIDO Card for j",
+          "certificateNumber": "FIDO20020260717001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2026-07-17",
+          "authenticatorVersion": 1107448831
         }
       ],
-      "timeOfLastStatusChange": "2026-07-14"
+      "timeOfLastStatusChange": "2026-09-23"
     },
     {
       "attestationCertificateKeyIdentifiers": [
