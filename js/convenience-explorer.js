@@ -56,7 +56,7 @@ onReady(async () => {
     }));
 
   // Create table using CustomTable
-  new CustomTable("#cmds-table", {
+  const table = new CustomTable("#cmds-table", {
     data: data,
     columns: [
       {
@@ -152,6 +152,35 @@ onReady(async () => {
       e("#table-size").innerText = document.querySelectorAll("#cmds-table tbody tr:not([hidden])").length;
     }
   });
+
+  if (location.search) {
+    const params = new URLSearchParams(location.search);
+    const filters = {};
+
+    if (params.has("aaguid")) {
+      filters.aaguid = params.get("aaguid");
+      table.container.querySelector('input[data-field="aaguid"]').value = filters.aaguid;
+    }
+
+    if (params.has("name")) {
+      filters.name = params.get("name");
+      table.container.querySelector('input[data-field="friendlyNames"][data-filter-key="name"]').value = filters.name;
+    }
+
+    if (Object.hasOwn(filters, "aaguid")) {
+      const aaguidColumn = table.columns.find(column => column.field === "aaguid");
+      table.setFilter(aaguidColumn.field, filters.aaguid, aaguidColumn.headerFilterFunc, aaguidColumn.headerFilterNormalize);
+    }
+
+    if (Object.hasOwn(filters, "name")) {
+      const nameColumn = table.columns.find(column => column.field === "friendlyNames");
+      table.setFilter(nameColumn.field, { lang: "", name: filters.name }, nameColumn.headerFilterFunc, nameColumn.headerFilterNormalize);
+    }
+
+    table.restoreFilterValues();
+    window.history.replaceState(window.history.state, "", window.location.pathname + window.location.hash);
+  }
+
   e("#serial").innerText = mdsJson.no || "";
 
 });
