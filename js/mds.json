@@ -1,7 +1,7 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 293,
-  "nextUpdate": "2026-11-01",
+  "no": 294,
+  "nextUpdate": "2026-12-01",
   "entries": [
     {
       "aaguid": "fcb1bcb4-f370-078c-6993-bc24d0ae3fbe",
@@ -8944,8 +8944,8 @@
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8caf7e7b-6c8b-46a9-b36b-5d04740d7463",
         "friendlyNames": {
-          "en-US": "cryptovision ePasslet Suite FIDO Authenticator",
-          "de-DE": "cryptovision ePasslet Suite FIDO Authenticator"
+          "de-DE": "cryptovision ePasslet Suite FIDO Authenticator",
+          "en-US": "cryptovision ePasslet Suite FIDO Authenticator"
         },
         "description": "cryptovision ePasslet Suite FIDO Authenticator",
         "alternativeDescriptions": {
