@@ -1,6 +1,6 @@
 {
   "legalHeader": "Retrieval and use of this BLOB indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/",
-  "no": 296,
+  "no": 297,
   "nextUpdate": "2026-12-01",
   "entries": [
     {
@@ -13465,11 +13465,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-03-12"
+          "status": "FIDO_CERTIFIED_L3plus",
+          "effectiveDate": "2025-10-17",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Infineon SECORA™ ID V2 Consumer Edition",
+          "certificateNumber": "FIDO20020251017001",
+          "certificationPolicyVersion": "1.4.1",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-10-17",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2026-03-12"
+      "timeOfLastStatusChange": "2026-11-05"
     },
     {
       "aaguid": "50cbf15a-238c-4457-8f16-812c43bf3c49",
@@ -27441,11 +27454,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-03-12"
+          "status": "FIDO_CERTIFIED_L3plus",
+          "effectiveDate": "2025-10-17",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Infineon SECORA™ ID Key S USB Enterprise Edition",
+          "certificateNumber": "FIDO20020251017004",
+          "certificationPolicyVersion": "1.4.1",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-10-17",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2026-03-12"
+      "timeOfLastStatusChange": "2026-11-05"
     },
     {
       "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
@@ -60564,11 +60590,24 @@
       },
       "statusReports": [
         {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2026-03-12"
+          "status": "FIDO_CERTIFIED_L3plus",
+          "effectiveDate": "2025-10-17",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Infineon SECORA™ ID V2 Enterprise Edition",
+          "certificateNumber": "FIDO20020251017002",
+          "certificationPolicyVersion": "1.4.1",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-10-17",
+          "authenticatorVersion": 1
         }
       ],
-      "timeOfLastStatusChange": "2026-03-12"
+      "timeOfLastStatusChange": "2026-11-05"
     },
     {
       "aaguid": "b113a455-cfb6-4c17-8cba-cd952feb7d48",
