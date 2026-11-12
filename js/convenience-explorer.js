@@ -95,9 +95,6 @@ onReady(async () => {
         headerFilterFunc: function(filterValue, rowValue) {
           // filterValue is an object like { name: "...", lang: "..." }
           const friendlyNames = rowValue;
-          if (!friendlyNames || Object.keys(friendlyNames).length === 0) {
-            return true;
-          }
 
           // If no filters, show all
           if (!filterValue.lang && !filterValue.name) {
