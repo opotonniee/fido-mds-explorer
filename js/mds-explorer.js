@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, type, imageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, fetchJson, LAST_MDS_UPDATE, vendors */
+/* globals x509, type, imageFormatter, darkImageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, fetchJson, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
@@ -318,6 +318,16 @@ onReady(async () => {
         headerFilter: "checkbox",
         headerFilterParams: { ariaLabel: "Only show rows with an icon" },
         headerFilterFunc: filterHasImage,
+        isHidable: true
+      },
+      {
+        title: "IconD",
+        field: "metadataStatement.iconDark",
+        formatter: darkImageFormatter,
+        headerFilter: "checkbox",
+        headerFilterParams: { ariaLabel: "Only show rows with a dark icon" },
+        headerFilterFunc: filterHasImage,
+        visible: false,
         isHidable: true
       },
       {
