@@ -182,6 +182,10 @@ function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   return isMatchingFilter(headerValue, values, true);
 }
 
+function formatListValues(values) {
+  return (values || []).map((value) => value).join("<br>");
+}
+
 onReady(async () => {
   mdsJson = await fetchJson("js/mds.json");
   if (mdsJson) {
@@ -244,7 +248,40 @@ onReady(async () => {
       }
     }
   }
-  for (let a of [ statuses, protocols, uvs, attachments, transports, kprots, algos ]) a.sort();
+  [statuses, protocols, uvs, attachments, transports, kprots, algos].forEach((values) => values.sort());
+
+  const formatStringList = function(cell) {
+    const items = cell.getValue() || [];
+    return formatListValues(items);
+  };
+
+  const formatCertificationList = function(cell) {
+    return (cell.getValue() || []).map((value) => value.status).join("<br>");
+  };
+
+  const formatVerificationList = function(cell) {
+    return (cell.getValue() || [])
+      .flatMap((line) => line || [])
+      .map((value) => value.userVerificationMethod)
+      .join("<br>");
+  };
+
+  const formatMetadataId = function(cell) {
+    let item = cell.getValue();
+    let sep = "";
+    let res = "?";
+    if (item.protocolFamily == "fido2") {
+      res = item.aaguid;
+    } else if (item.protocolFamily == "uaf") {
+      res = item.aaid;
+    } else if (item.protocolFamily == "u2f") {
+      res = "";
+      for (let value of item.attestationCertificateKeyIdentifiers) {
+        res += sep + value; sep = "<br>";
+      }
+    }
+    return res;
+  };
 
   table = new CustomTable("#mds-table", {
     data: mdsJson.entries,
@@ -279,11 +316,7 @@ onReady(async () => {
       {
         title: "Certification",
         field: "statusReports",
-        formatter: function(cell/*, formatterParams, onRendered*/){
-          let res = "", sep="";
-          for (let value of cell.getValue() || []) { res += sep + value.status; sep ="<br>"; }
-          return res;
-        },
+        formatter: formatCertificationList,
         headerFilter: "list",
         headerFilterParams: { values: statuses },
         headerFilterFunc: filterCertifs,
@@ -305,38 +338,14 @@ onReady(async () => {
             field = map[item.protocolFamily];
           return field ? field : "?";
         },
-        formatter: function(cell/*, formatterParams, onRendered*/){
-          let
-            item = cell.getValue(),
-            sep ="",
-            res = "?";
-          if (item.protocolFamily == "fido2") {
-            res = item.aaguid;
-          } else if (item.protocolFamily == "uaf") {
-            res = item.aaid;
-          } else if (item.protocolFamily == "u2f") {
-            res = "";
-            for (let value of item.attestationCertificateKeyIdentifiers) {
-              res += sep + value; sep ="<br>";
-            }
-          }
-          return res;
-        },
+        formatter: formatMetadataId,
         headerFilterFunc: filterIds,
         isHidable: true
       },
       {
         title: "User Verif.",
         field: "metadataStatement.userVerificationDetails",
-        formatter: function(cell/*, formatterParams, onRendered*/){
-          let res = "", sep="";
-          for (let line of cell.getValue() || []) {
-            for (let value of line) {
-              res += sep + value.userVerificationMethod; sep ="<br>";
-            }
-          }
-          return res;
-        },
+        formatter: formatVerificationList,
         headerFilter: "list",
         headerFilterParams: { values: uvs },
         headerFilterFunc: filterUserVerifs,
@@ -347,11 +356,7 @@ onReady(async () => {
       {
         title: "Attachment",
         field: "metadataStatement.attachmentHint",
-        formatter: function(cell/*, formatterParams, onRendered*/) {
-          let res = "", sep="";
-          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
-          return res;
-        },
+        formatter: formatStringList,
         headerFilter: "list",
         headerFilterParams: { values: attachments },
         visible: false,
@@ -361,11 +366,7 @@ onReady(async () => {
       {
         title: "Transports",
         field: "metadataStatement.authenticatorGetInfo.transports",
-        formatter: function(cell/*, formatterParams, onRendered*/) {
-          let res = "", sep="";
-          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
-          return res;
-        },
+        formatter: formatStringList,
         headerFilter: "list",
         headerFilterParams: { values: transports },
         visible: false,
@@ -375,11 +376,7 @@ onReady(async () => {
       {
         title: "Key Protection",
         field: "metadataStatement.keyProtection",
-        formatter: function(cell/*, formatterParams, onRendered*/) {
-          let res = "", sep="";
-          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
-          return res;
-        },
+        formatter: formatStringList,
         headerFilter: "list",
         headerFilterParams: { values: kprots },
         visible: false,
@@ -388,11 +385,7 @@ onReady(async () => {
       {
         title: "Algorithms",
         field: "metadataStatement.authenticationAlgorithms",
-        formatter: function(cell/*, formatterParams, onRendered*/) {
-          let res = "", sep="";
-          for (let value of cell.getValue() || []) { res += sep + value; sep ="<br>"; }
-          return res;
-        },
+        formatter: formatStringList,
         headerFilter: "list",
         headerFilterParams: { values: algos },
         visible: false,

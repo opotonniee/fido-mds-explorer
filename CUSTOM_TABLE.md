@@ -162,11 +162,12 @@ values: [
 
 ### Filter Behavior
 
-- **Text inputs**: Debounced with 300ms delay, matches substring case-insensitively
-- **Dropdowns**: Trigger immediately on selection, match exact value case-insensitively
-- **Multiple filters**: All must match for row to display (AND logic)
-- **Empty filters**: Show all rows
-- **Clear buttons**: Only appear on text inputs; dropdowns reset via "All" option
+- **Text inputs**: Debounced with 300ms delay, matches substring case-insensitively after normalization
+- **Dropdowns**: Trigger immediately on selection and match exact value after normalization
+- **Multiple filters**: All active filters for the same field are combined with AND logic; different fields are also AND-ed together
+- **Empty filters**: Show all rows for that field when the value is empty or all sub-values are empty
+- **Clear buttons**: Only appear on text inputs; dropdowns reset via the "All" option
+- **Normalization**: `headerFilterNormalize` is applied to the filter value before comparison. If omitted, values are converted to strings.
 
 ## Events & Callbacks
 
@@ -189,16 +190,17 @@ new CustomTable("#table", {
 ## Methods
 
 ### `redraw()`
-Force complete table redraw:
+Force a complete table redraw:
 ```javascript
 table.redraw();
 ```
 
 ### `getFilter(field)`
-Get current filter for a field:
+Get the current filter state for a field:
 ```javascript
 const filter = table.getFilter("name");
-console.log(filter); // { value: "search", func: ..., normalize: ... }
+console.log(filter);
+// { value: "search", func: ..., normalize: ... }
 ```
 
 ### `getColumns()`
@@ -214,6 +216,14 @@ Programmatically sort a column:
 ```javascript
 table.sort("name", (a, b) => a.localeCompare(b));
 ```
+
+### `setFilter(field, value, filterFunc, normalizeFunc)`
+Apply a filter programmatically for a field:
+```javascript
+table.setFilter("name", "alice", undefined, CustomTable.trimLower);
+```
+
+This is useful when you want to restore URL query parameters or drive filters from app state.
 
 ## Styling
 
@@ -295,6 +305,8 @@ Normalize function that trims whitespace and converts to lowercase:
 const normalized = CustomTable.trimLower("  HELLO  ");
 console.log(normalized); // "hello"
 ```
+
+This is a convenient default for text-based filters when the column data may contain leading/trailing whitespace or mixed casing.
 
 ## Complete Example
 
@@ -400,18 +412,19 @@ new CustomTable("#devices-table", {
 ## Troubleshooting
 
 ### Filter not working
-- Ensure `headerFilterFunc` returns boolean
-- Check that filter value matches data format
-- Verify `headerFilterNormalize` is consistent with data
+- Ensure `headerFilterFunc` returns a boolean
+- Check that the filter value matches the data format expected by the column
+- Verify `headerFilterNormalize` is consistent with the data you are comparing
+- For multi-field filters, confirm that all active sub-filters are intentionally set and not left as empty strings
 
 ### Dropdown values not displaying
 - Ensure values are strings or have `value`/`display` properties
-- Check for console errors in browser DevTools
+- Check for browser console errors in DevTools
 
 ### Performance issues
 - Reduce data size with pagination
 - Simplify formatter functions
-- Use indexes for faster property access in nested objects
+- Avoid expensive work in custom filter logic when rendering each row
 
 ## License
 

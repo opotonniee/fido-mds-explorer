@@ -55,6 +55,87 @@ onReady(async () => {
       providerLogoDark: details.providerLogoDark
     }));
 
+  const filterFriendlyNames = function(filterValue, rowValue) {
+    const friendlyNames = rowValue;
+    if (!filterValue.lang && !filterValue.name) {
+      return true;
+    }
+    return Object.entries(friendlyNames).some(([lang, name]) => {
+      return matchesFilter(lang, filterValue.lang) &&
+        matchesFilter(name, filterValue.name);
+    });
+  };
+
+  const formatFriendlyNames = function(cell) {
+    const friendlyNames = cell.getValue();
+    if (!friendlyNames) return "";
+
+    const filter = cell.getFilter('friendlyNames');
+    const seen = new Set();
+
+    return Object.entries(friendlyNames)
+      .filter(([lang, name]) => {
+        if (!matchesFilter(name, filter?.value.name) || !matchesFilter(lang, filter?.value.lang)) {
+          return false;
+        }
+
+        const key = String(name || '').trim().toLowerCase();
+        if (!key || seen.has(key)) {
+          return false;
+        }
+
+        seen.add(key);
+        return true;
+      })
+      .map(([lang, name]) => {
+        return `<div class="friendly-name"><span class="name" title="${lang}">${name}</span></div>`;
+      }).join("");
+  };
+
+  const sortFriendlyNames = function(a, b) {
+    let comparison = 0;
+    a = Object.values(a || {}).join(" ").toLowerCase();
+    b = Object.values(b || {}).join(" ").toLowerCase();
+    if (a > b) {
+      comparison = 1;
+    } else if (a < b) {
+      comparison = -1;
+    }
+    return comparison;
+  };
+
+  const applyUrlFilters = function(tableInstance) {
+    const params = new URLSearchParams(location.search);
+    const columnFilters = [
+      {
+        key: "aaguid",
+        field: "aaguid",
+        value: params.get("aaguid")
+      },
+      {
+        key: "name",
+        field: "friendlyNames",
+        value: params.has("name") ? { lang: "", name: params.get("name") } : null
+      }
+    ].filter((filter) => filter.value !== null && filter.value !== undefined && filter.value !== "");
+
+    for (const filter of columnFilters) {
+      const column = tableInstance.columns.find((entry) => entry.field === filter.field);
+      if (!column) continue;
+      tableInstance.setFilter(column.field, filter.value, column.headerFilterFunc, column.headerFilterNormalize);
+      const inputSelector = filter.key === "aaguid"
+        ? `input[data-field="${filter.field}"]`
+        : `input[data-field="friendlyNames"][data-filter-key="name"]`;
+      const input = tableInstance.container.querySelector(inputSelector);
+      if (input) {
+        input.value = filter.key === "aaguid" ? filter.value : filter.value.name;
+      }
+    }
+
+    tableInstance.restoreFilterValues();
+    window.history.replaceState(window.history.state, "", window.location.pathname + window.location.hash);
+  };
+
   // Create table using CustomTable
   const table = new CustomTable("#cmds-table", {
     data: data,
@@ -75,49 +156,10 @@ onReady(async () => {
           { key: "lang", values: langOptions },
           { key: "name", placeholder: "Name" }
         ],
-
         headerFilterNormalize: CustomTable.trimLower,
-        formatter: function(cell) {
-          const friendlyNames = cell.getValue();
-          if (!friendlyNames) return "";
-          const filter = cell.getFilter('friendlyNames');
-          return Object.entries(friendlyNames)
-            .map(([lang, name]) => {
-              if (matchesFilter(name, filter?.value.name) &&
-                (matchesFilter(lang, filter?.value.lang))) {
-                return `<div class="friendly-name">
-                  <span class="name" title="${lang}">${name}</span>
-                </div>`;
-              }
-              return "";
-          }).join("");
-        },
-        headerFilterFunc: function(filterValue, rowValue) {
-          // filterValue is an object like { name: "...", lang: "..." }
-          const friendlyNames = rowValue;
-
-          // If no filters, show all
-          if (!filterValue.lang && !filterValue.name) {
-            return true;
-          }
-
-          // Check if any entry matches both filters
-          return Object.entries(friendlyNames).some(([lang, name]) => {
-            return matchesFilter(lang, filterValue.lang) &&
-             matchesFilter(name, filterValue.name);
-          });
-        },
-        sortFunc: function (a, b/*, aRow, bRow*/) {
-          let comparison = 0;
-          a = Object.values(a || {}).join(" ").toLowerCase();
-          b = Object.values(b || {}).join(" ").toLowerCase();
-          if (a > b) {
-            comparison = 1;
-          } else if (a < b) {
-            comparison = -1;
-          }
-          return comparison;
-        },
+        formatter: formatFriendlyNames,
+        headerFilterFunc: filterFriendlyNames,
+        sortFunc: sortFriendlyNames,
         isHidable: true
       },
       {
@@ -151,31 +193,7 @@ onReady(async () => {
   });
 
   if (location.search) {
-    const params = new URLSearchParams(location.search);
-    const filters = {};
-
-    if (params.has("aaguid")) {
-      filters.aaguid = params.get("aaguid");
-      table.container.querySelector('input[data-field="aaguid"]').value = filters.aaguid;
-    }
-
-    if (params.has("name")) {
-      filters.name = params.get("name");
-      table.container.querySelector('input[data-field="friendlyNames"][data-filter-key="name"]').value = filters.name;
-    }
-
-    if (Object.hasOwn(filters, "aaguid")) {
-      const aaguidColumn = table.columns.find(column => column.field === "aaguid");
-      table.setFilter(aaguidColumn.field, filters.aaguid, aaguidColumn.headerFilterFunc, aaguidColumn.headerFilterNormalize);
-    }
-
-    if (Object.hasOwn(filters, "name")) {
-      const nameColumn = table.columns.find(column => column.field === "friendlyNames");
-      table.setFilter(nameColumn.field, { lang: "", name: filters.name }, nameColumn.headerFilterFunc, nameColumn.headerFilterNormalize);
-    }
-
-    table.restoreFilterValues();
-    window.history.replaceState(window.history.state, "", window.location.pathname + window.location.hash);
+    applyUrlFilters(table);
   }
 
   e("#serial").innerText = mdsJson.no || "";
