@@ -41,9 +41,9 @@ class CustomTable {
     this.table.className = 'custom-table';
 
     this.renderHeader();
-    this.renderBody();
     wrapper.appendChild(this.table);
     this.container.appendChild(wrapper);
+    this.renderBody();
   }
 
   renderHeader() {
@@ -114,6 +114,24 @@ class CustomTable {
     const filterDiv = document.createElement('div');
     filterDiv.className = 'header-filter';
 
+    if (column.headerFilter === 'checkbox') {
+      const label = document.createElement('label');
+      label.className = 'filter-checkbox-label';
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.dataset.field = column.field;
+      checkbox.className = 'filter-checkbox';
+      checkbox.setAttribute('aria-label', column.headerFilterParams?.ariaLabel || `Filter ${column.title}`);
+      checkbox.addEventListener('change', () => {
+        this.setFilter(column.field, checkbox.checked, column.headerFilterFunc, column.headerFilterNormalize);
+      });
+
+      label.appendChild(checkbox);
+      filterDiv.appendChild(label);
+      return filterDiv;
+    }
+
     if (column.headerFilter === 'list' && column.headerFilterParams?.values) {
       const select = document.createElement('select');
       select.dataset.field = column.field;
@@ -152,6 +170,7 @@ class CustomTable {
       const input = document.createElement('input');
       input.type = 'text';
       input.placeholder = 'Filter...';
+      input.setAttribute('aria-label', `Filter ${column.title}`);
       input.dataset.field = column.field;
       input.className = 'filter-input';
 
@@ -529,6 +548,11 @@ class CustomTable {
 
   restoreFilterValues() {
     for (const [field, filter] of Object.entries(this.filters)) {
+      const checkbox = this.container.querySelector(`input[type="checkbox"][data-field="${field}"]`);
+      if (checkbox) {
+        checkbox.checked = Boolean(filter.value);
+      }
+
       const select = this.container.querySelector(`select[data-field="${field}"]:not([data-filter-key])`);
       if (select) {
         select.value = filter.value || '';

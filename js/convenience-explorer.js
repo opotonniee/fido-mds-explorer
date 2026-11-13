@@ -1,5 +1,5 @@
 'use strict';
-/* globals e, onReady, imageFormatter, darkImageFormatter, matchesFilter, CustomTable, LAST_CMDS_UPDATE */
+/* globals e, onReady, imageFormatter, darkImageFormatter, matchesFilter, CustomTable, fetchJson, LAST_CMDS_UPDATE */
 
 let mdsJson;
 
@@ -54,6 +54,12 @@ onReady(async () => {
       providerLogoLight: details.providerLogoLight,
       providerLogoDark: details.providerLogoDark
     }));
+
+  const imageFilter = (filterValue, rowValue) => {
+    return filterValue !== "true" || Boolean(rowValue);
+  };
+
+  const imageFilterLabel = { ariaLabel: "Only show rows with an icon" };
 
   const filterFriendlyNames = function(filterValue, rowValue) {
     const friendlyNames = rowValue;
@@ -166,24 +172,36 @@ onReady(async () => {
         title: "Icon",
         field: "icon",
         formatter: imageFormatter,
+        headerFilter: "checkbox",
+        headerFilterParams: imageFilterLabel,
+        headerFilterFunc: imageFilter,
         isHidable: true
       },
       {
         title: "Icon",
         field: "iconDark",
         formatter: darkImageFormatter,
+        headerFilter: "checkbox",
+        headerFilterParams: imageFilterLabel,
+        headerFilterFunc: imageFilter,
         isHidable: true
       },
       {
         title: "Provider",
         field: "providerLogoLight",
         formatter: imageFormatter,
+        headerFilter: "checkbox",
+        headerFilterParams: imageFilterLabel,
+        headerFilterFunc: imageFilter,
         isHidable: true
       },
       {
         title: "Provider",
         field: "providerLogoDark",
         formatter: darkImageFormatter,
+        headerFilter: "checkbox",
+        headerFilterParams: imageFilterLabel,
+        headerFilterFunc: imageFilter,
         isHidable: true
       }
     ],

@@ -7,7 +7,7 @@
 ## Features
 
 - **Sorting**: Click column headers to sort ascending/descending
-- **Filtering**: Text inputs, dropdown selects, and custom filter functions
+- **Filtering**: Text inputs, dropdown selects, checkboxes, and custom filter functions
 - **Column Visibility**: Hide/show columns with the ⊘ icon
 - **Custom Formatting**: Format cell content with custom functions
 - **Cell Click Handlers**: Execute custom logic when cells are clicked
@@ -160,10 +160,28 @@ values: [
 ]
 ```
 
+### Checkbox Filter
+
+Use a checkbox in a column header to include only rows whose value passes the custom filter:
+
+```javascript
+{
+  field: "icon",
+  headerFilter: "checkbox",
+  headerFilterParams: { ariaLabel: "Only show rows with an icon" },
+  headerFilterFunc: (filterValue, rowValue) => {
+    return filterValue !== "true" || Boolean(rowValue);
+  }
+}
+```
+
+Use `headerFilterParams.ariaLabel` to give the checkbox an accessible name without displaying a label in the header. Filters on different columns are combined with AND logic.
+
 ### Filter Behavior
 
 - **Text inputs**: Debounced with 300ms delay, matches substring case-insensitively after normalization
 - **Dropdowns**: Trigger immediately on selection and match exact value after normalization
+- **Checkboxes**: Trigger immediately on change and pass the checked state to the column's custom filter function
 - **Multiple filters**: All active filters for the same field are combined with AND logic; different fields are also AND-ed together
 - **Empty filters**: Show all rows for that field when the value is empty or all sub-values are empty
 - **Clear buttons**: Only appear on text inputs; dropdowns reset via the "All" option
@@ -249,6 +267,8 @@ This is useful when you want to restore URL query parameters or drive filters fr
 .filter-input-wrapper { }
 .filter-input { }
 .filter-select { }
+.filter-checkbox-label { }
+.filter-checkbox { }
 .filter-clear-btn { }
 .has-content { } /* Applied when filter has a value */
 

@@ -1,5 +1,5 @@
 'use strict';
-/* globals x509, type, imageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, LAST_MDS_UPDATE, vendors */
+/* globals x509, type, imageFormatter, imageTag, e, newE, onReady, statEvent, CustomTable, fetchJson, LAST_MDS_UPDATE, vendors */
 
 let table;
 let cert;
@@ -182,6 +182,10 @@ function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
   return isMatchingFilter(headerValue, values, true);
 }
 
+function filterHasImage(headerValue, rowValue) {
+  return headerValue !== "true" || Boolean(rowValue);
+}
+
 function formatListValues(values) {
   return (values || []).map((value) => value).join("<br>");
 }
@@ -311,6 +315,9 @@ onReady(async () => {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: imageFormatter,
+        headerFilter: "checkbox",
+        headerFilterParams: { ariaLabel: "Only show rows with an icon" },
+        headerFilterFunc: filterHasImage,
         isHidable: true
       },
       {
@@ -396,6 +403,8 @@ onReady(async () => {
         title: "Updated",
         field: "timeOfLastStatusChange",
         sorter: true,
+        headerFilter: true,
+        headerFilterNormalize: CustomTable.trimLower,
         isHidable: true
       }
     ],

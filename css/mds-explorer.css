@@ -154,7 +154,24 @@ pre {
 
 .header-filter {
   display: flex;
+  align-items: center;
   gap: 5px;
+  min-height: 44px;
+}
+
+.filter-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  min-width: 44px;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.filter-checkbox {
+  margin: 0;
 }
 
 .filter-input-wrapper {
