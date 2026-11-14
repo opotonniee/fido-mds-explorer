@@ -327,7 +327,7 @@ onReady(async () => {
         isHidable: true
       },
       {
-        title: "IconD",
+        title: "Icon D.",
         field: "metadataStatement.iconDark",
         formatter: darkImageFormatter,
         headerFilter: "list",
@@ -397,7 +397,7 @@ onReady(async () => {
       },
 
       {
-        title: "Key Protection",
+        title: "Key Prot.",
         field: "metadataStatement.keyProtection",
         formatter: formatStringList,
         headerFilter: "list",

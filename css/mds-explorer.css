@@ -166,6 +166,7 @@ pre {
 
 .header-title {
   font-weight: bold;
+  white-space: nowrap;
 }
 .header-separator {
   width: 100%;

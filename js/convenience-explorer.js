@@ -184,7 +184,7 @@ onReady(async () => {
         isHidable: true
       },
       {
-        title: "IconD",
+        title: "Icon D.",
         field: "iconDark",
         formatter: darkImageFormatter,
         headerFilter: "list",
@@ -202,7 +202,7 @@ onReady(async () => {
         isHidable: true
       },
       {
-        title: "ProviderD",
+        title: "Provider D.",
         field: "providerLogoDark",
         formatter: darkImageFormatter,
         headerFilter: "list",
