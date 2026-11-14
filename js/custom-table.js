@@ -366,6 +366,22 @@ class CustomTable {
     return this.filters[field];
   }
 
+  clearFilters() {
+    clearTimeout(this.debounceTimer);
+    this.debounceTimer = null;
+    this.filters = {};
+
+    this.container?.querySelectorAll('.filter-input, .filter-select').forEach((control) => {
+      control.value = '';
+      control.closest('.filter-input-wrapper')?.classList.remove('has-content');
+    });
+    this.container?.querySelectorAll('.filter-checkbox').forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+
+    this.applyFilters();
+  }
+
   normalizeFilterValue(value, normalize) {
     if (value === null || value === undefined) {
       return '';

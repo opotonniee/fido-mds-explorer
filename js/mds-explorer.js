@@ -467,6 +467,10 @@ onReady(async () => {
 
     let fewColumns = [ "Name", "Protocol", "Icon", "ID", "Updated" ];
     let allColumns = table.getColumns();
+    const initialColumnVisibility = Object.fromEntries(
+      Object.entries(allColumns).map(([title, column]) => [title, column.getDefinition().visible !== false])
+    );
+    const initialColumnsSelection = e("#shown-columns").value;
 
     for (let colTitle in allColumns) {
       e("#shown-columns").appendChild(newE("option", { value: colTitle }, "+ " + colTitle));
@@ -494,6 +498,14 @@ onReady(async () => {
           // the new column may change row height
         }
       }
+    });
+
+    e("#reset-table").addEventListener("click", () => {
+      table.clearFilters();
+      for (const [title, visible] of Object.entries(initialColumnVisibility)) {
+        allColumns[title][visible ? "show" : "hide"]();
+      }
+      e("#shown-columns").value = initialColumnsSelection;
     });
   }
 });

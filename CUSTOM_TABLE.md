@@ -221,6 +221,12 @@ console.log(filter);
 // { value: "search", func: ..., normalize: ... }
 ```
 
+### `clearFilters()`
+Clear all active filters and reset the filter controls:
+```javascript
+table.clearFilters();
+```
+
 ### `getColumns()`
 Get column API objects:
 ```javascript

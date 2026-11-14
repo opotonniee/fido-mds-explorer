@@ -178,7 +178,7 @@ onReady(async () => {
         isHidable: true
       },
       {
-        title: "Icon",
+        title: "IconD",
         field: "iconDark",
         formatter: darkImageFormatter,
         headerFilter: "checkbox",
@@ -196,7 +196,7 @@ onReady(async () => {
         isHidable: true
       },
       {
-        title: "Provider",
+        title: "ProviderD",
         field: "providerLogoDark",
         formatter: darkImageFormatter,
         headerFilter: "checkbox",
@@ -210,9 +210,22 @@ onReady(async () => {
     }
   });
 
+  const initialColumnVisibility = table.columns.map((column) => column.visible !== false);
+
   if (location.search) {
     applyUrlFilters(table);
   }
+
+  e("#reset-table").addEventListener("click", () => {
+    table.clearFilters();
+    table.columns.forEach((column, index) => {
+      if (initialColumnVisibility[index]) {
+        table.showColumn(column);
+      } else {
+        table.hideColumn(column);
+      }
+    });
+  });
 
   e("#serial").innerText = mdsJson.no || "";
 

@@ -30,6 +30,40 @@ h2 {
   box-shadow: 0 2px 2px 1px #888;
 }
 
+#reset-table {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#reset-table:hover {
+  color: #0783bd;
+}
+
+#reset-table:focus-visible {
+  outline: 2px solid #0783bd;
+  outline-offset: 2px;
+}
+
+#reset-table svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .last-update {
   margin: 5px 10px 0 0;
   padding: 5px;
