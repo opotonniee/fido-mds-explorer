@@ -147,6 +147,26 @@ new CustomTable("#table-container", {
 
 ### Dropdown Filter Formats
 
+`headerFilter: "list"` adds an "All" option for no filtering. For example, an icon presence filter can provide "Yes" and "No" options:
+
+```javascript
+{
+  field: "icon",
+  headerFilter: "list",
+  headerFilterParams: {
+    values: ["Yes", "No"],
+    ariaLabel: "Filter icon presence"
+  },
+  headerFilterFunc: (filterValue, rowValue) => {
+    if (filterValue === "Yes") return Boolean(rowValue);
+    if (filterValue === "No") return !rowValue;
+    return true;
+  }
+}
+```
+
+Set `headerFilterParams.ariaLabel` to give the select an accessible name.
+
 #### Simple String Values
 ```javascript
 values: ["Option 1", "Option 2", "Option 3"]

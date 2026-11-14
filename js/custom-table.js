@@ -136,6 +136,7 @@ class CustomTable {
       const select = document.createElement('select');
       select.dataset.field = column.field;
       select.className = 'filter-select';
+      select.setAttribute('aria-label', column.headerFilterParams.ariaLabel || `Filter ${column.title}`);
 
       const allOption = document.createElement('option');
       allOption.value = '';

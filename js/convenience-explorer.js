@@ -56,10 +56,16 @@ onReady(async () => {
     }));
 
   const imageFilter = (filterValue, rowValue) => {
-    return filterValue !== "true" || Boolean(rowValue);
+    if (filterValue === "Yes") {
+      return Boolean(rowValue);
+    }
+    if (filterValue === "No") {
+      return !rowValue;
+    }
+    return true;
   };
 
-  const imageFilterLabel = { ariaLabel: "Only show rows with an icon" };
+  const imageFilterValues = ["Yes", "No"];
 
   const filterFriendlyNames = function(filterValue, rowValue) {
     const friendlyNames = rowValue;
@@ -172,8 +178,8 @@ onReady(async () => {
         title: "Icon",
         field: "icon",
         formatter: imageFormatter,
-        headerFilter: "checkbox",
-        headerFilterParams: imageFilterLabel,
+        headerFilter: "list",
+        headerFilterParams: { values: imageFilterValues, ariaLabel: "Filter icon presence" },
         headerFilterFunc: imageFilter,
         isHidable: true
       },
@@ -181,8 +187,8 @@ onReady(async () => {
         title: "IconD",
         field: "iconDark",
         formatter: darkImageFormatter,
-        headerFilter: "checkbox",
-        headerFilterParams: imageFilterLabel,
+        headerFilter: "list",
+        headerFilterParams: { values: imageFilterValues, ariaLabel: "Filter dark icon presence" },
         headerFilterFunc: imageFilter,
         isHidable: true
       },
@@ -190,8 +196,8 @@ onReady(async () => {
         title: "Provider",
         field: "providerLogoLight",
         formatter: imageFormatter,
-        headerFilter: "checkbox",
-        headerFilterParams: imageFilterLabel,
+        headerFilter: "list",
+        headerFilterParams: { values: imageFilterValues, ariaLabel: "Filter light provider logo presence" },
         headerFilterFunc: imageFilter,
         isHidable: true
       },
@@ -199,8 +205,8 @@ onReady(async () => {
         title: "ProviderD",
         field: "providerLogoDark",
         formatter: darkImageFormatter,
-        headerFilter: "checkbox",
-        headerFilterParams: imageFilterLabel,
+        headerFilter: "list",
+        headerFilterParams: { values: imageFilterValues, ariaLabel: "Filter dark provider logo presence" },
         headerFilterFunc: imageFilter,
         isHidable: true
       }

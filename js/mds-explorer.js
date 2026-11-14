@@ -183,7 +183,13 @@ function filterUserVerifs(headerValue, rowValue/*, rowData, filterParams*/) {
 }
 
 function filterHasImage(headerValue, rowValue) {
-  return headerValue !== "true" || Boolean(rowValue);
+  if (headerValue === "Yes") {
+    return Boolean(rowValue);
+  }
+  if (headerValue === "No") {
+    return !rowValue;
+  }
+  return true;
 }
 
 function formatListValues(values) {
@@ -315,8 +321,8 @@ onReady(async () => {
         title: "Icon",
         field: "metadataStatement.icon",
         formatter: imageFormatter,
-        headerFilter: "checkbox",
-        headerFilterParams: { ariaLabel: "Only show rows with an icon" },
+        headerFilter: "list",
+        headerFilterParams: { values: ["Yes", "No"], ariaLabel: "Filter icon presence" },
         headerFilterFunc: filterHasImage,
         isHidable: true
       },
@@ -324,8 +330,8 @@ onReady(async () => {
         title: "IconD",
         field: "metadataStatement.iconDark",
         formatter: darkImageFormatter,
-        headerFilter: "checkbox",
-        headerFilterParams: { ariaLabel: "Only show rows with a dark icon" },
+        headerFilter: "list",
+        headerFilterParams: { values: ["Yes", "No"], ariaLabel: "Filter dark icon presence" },
         headerFilterFunc: filterHasImage,
         visible: false,
         isHidable: true
